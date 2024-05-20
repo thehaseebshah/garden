@@ -1,7 +1,6 @@
 ---
 title: Home 🌍
 ---
-
 ## Entry Point
 Entry point into my knowledge:
 - Life OS
