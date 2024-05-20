@@ -6,10 +6,10 @@ Entry point into my knowledge:
 - Life OS
 	- [[Life Right Now]]
 	- [[The Plan]]
-	- [[Your Main Skills]]
+	- [[My Main Skills]]
 	- [[Motivation Doc]]
 	- [[Promises]]
-	- [[Rules ALHAMDOLILLAH]]
+	- [[Full Rules]]
 	- [[House Organization]]
 	- [[To Buy in Life]]
 	- [[Maulwified Possessions]]
