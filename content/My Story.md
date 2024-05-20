@@ -1,0 +1,43 @@
+- 2008-09
+    - In Risalpur, wrote a novel called “Space Heroes”
+- 2010
+    - In Karachi, Started writing English poetry
+    - Wrote a booklet called “Let the Games Begin” that had a set of games and activities
+    - Designed games for children
+    - Designed a game in Microsoft PowerPoint
+    - Started a local friends group called “SPY Club”, focusing on haunted house exploration, tree houses and other activities
+- 2014-15
+    - In Mianwali, An islamophobic comment on Facebook caused atheistic tendencies and doubts
+    - Started researching and found out about Islamic YouTube channels like TheMercifulServant and Miracles of the Quran
+    - Started debating islamophobes in Facebook groups
+    - Started sessions on Miracles of the Quran in college assembly
+    - Watched a series named The Arrivals and was motivated to make a change and “save the world”
+    - Did a speech on Illuminati and The End of Times in college assembly which turned college and school teachers against me and I was unable to do its second part in assembly
+    - The Chief of the Air Staff visited our college and I planned on approaching him to tell him about Dajjal, Illuminati and The End of Times
+    - Wrote two booklets on saving yourself from the system of the Illuminati and achieving freedom and light through Islam and “Spiritual enlightenment”
+    - Wrote poetry and essays on above topics
+    - Designed two games, one in GW BASIC and another in Adobe Flash
+    - Started “Project Light”, a project to spread awareness about secret societies, Islam and Spiritual enlightenment; started a Facebook group under the project
+    - Compiled a collection of Islamic videos titled “Enter in Peace” and started circulating it in local community and college/colony friends
+    - Got control over feelings of attraction towards a female that I had encountered in 2010 (but had not met her) after 5 years of being attravted
+    - Developed extreme love for children, animals and plants and started feeling connected to children of the local community and playing with them
+    - Started a project called #DoGood lessons wherein I would give daily tasks of goodness to local children and then rewarding and ranking them
+    - Compiled a register of Tasks and Rewards for #DoGood lessons
+    - Family shifted to Karachi while I stayed in the home of one of my father's friends in Mianwali; there I became extremely interested in Tassawuf and started experiencing the power of love through seeing changes in the elders of that home
+- 2016
+    - At Karachi, a stage was set up in Alladin Park for public demonstration of talent; went to the stage and did an impromptu speech on Secret Societies, Ishq and Islam
+    - Started a project for animal rehab
+- 2017
+    - Joined Air University and Youth Club, and became part of a Literature Club, a Tech Club, an Islamic Club, a Media Club and an Activism Club
+- 2018-21
+    - Did stand up comedy in welcome party, and started doing informal motivational lectures in random classes by walking into them and asking permission from the teacher; did a naseeha session at youth club
+    - Suicidal thoughts due to heartbreak in Haram relationship
+    - Started participating in writing, debating, programing and public speaking contests and incorporated hidden spiritual messages in writings and speeches; won multiple national and regional contests; spoke at workshops and events
+    - Started doing Freelancing and got a job at Toptal, the world's largest fully remote company, becoming the first Pakistani data scientist to become a part of their core team, with an annual salary of $77K
+- 2022
+    - Started a project called “Ummah Tour” wherein we interviewed Ulamma, Daees and Managers of Islamic organizations asking them what the problems of the Ummah are and what their solutions are; in the second phase we found out which organizations are working on these problems the most
+    - Left Youth Club; found out Al Burhan is working on the most prominent challenges of the Ummah
+- 31 August 2023
+    - Discussion with Ustaad Jee
+- 2023
+    - Joined Shabab Evening

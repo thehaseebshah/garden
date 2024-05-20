@@ -1,0 +1,32 @@
+- Public Speaking
+- Research
+- Designing Activities and Games
+- Google Sheets
+- Notion
+- Automation
+- Back End Development
+- Poetry Writing
+- Story Writing
+- Speech Writing
+- Debating
+- Philosophy
+- Theology
+- Isms
+- Python Programming
+- Organization
+- Gamification
+- Copywriting
+- Digital Privacy
+- Personal Development And Productivity Knowledge
+- The Science of Discipline and Habits
+- Computer Science
+- English Literature
+- Literary Devices
+- Confidence for Speaking to Strangers and Initiating Seemingly Hard Things
+- Essay Writing
+- Minimalism
+- Digital Minimalism
+- Personal Knowledge Management
+- Project Management Strategies
+- Task Management Strategies
+- Teaching and Training Tactics
