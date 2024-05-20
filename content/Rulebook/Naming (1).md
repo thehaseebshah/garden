@@ -1,0 +1,9 @@
+---
+Created: 2018-05-01 16:05
+Updated: 2018-05-01 16:44
+---
+
+
+![Naming%20(1)%20b5478d9a0f7e417581d7646d74c9b78b/img_20180501_164335.372.jpg](img_20180501_164335.372.jpg)
+
+BISMILLAH, write here INSHAALLAH...

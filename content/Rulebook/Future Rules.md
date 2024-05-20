@@ -1,0 +1,29 @@
+# Future [[Rules]]
+
+- ***Marriage Training [[Rules]]:***
+- ***Kindness [[Rules]]:***
+- ***Youth Club [[Rules]]:***
+- ***Charity [[Rules]]:***
+- ***Khushoo [[Rules]]:***
+- ***Green Time [[Rules]]:***
+- ***Cleanliness [[Rules]]:***
+- ***Qur'an [[Rules]]:***
+- ***Azkar [[Rules]]:***
+- ***Saum [[Rules]]:***
+- ***Job*** ***[[Rules]]:***
+- ***Digital Detox [[Rules]]:***
+- ***Isolation [[Rules]]***
+- ***Tahajjud [[Rules]]***
+- ***Book Reading [[Rules]]***
+- ***Seerah [[Rules]]***
+- ***Bodycare Routine [[Rules]]***
+- ***Fam Time [[Rules]]***
+- ***Sunnah [[Salah]] [[Rules]]***
+- ***Beard [[Rules]]:***
+- ***Qadha [[Salah]] Completion [[Rules]]:***
+- ***Visualization and Affirmation [[Rules]]:***
+- ***Journaling [[Rules]]:***
+- ***Recreation Scores:***
+- ***Shukr and Presence [[Rules]]:***
+- ***Room Lockup [[Rules]]***
+- ***Uni Attendance [[Rules]]:***
