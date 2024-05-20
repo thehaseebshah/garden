@@ -2,6 +2,7 @@
 Created: 2023-09-21 00:31
 ---
 This will take 1 to 2 Hours
+This will take 1 to 2 Hours
 - Do this in the [[Weekly]] note
 - Plan This Week tasks
 - Plan any projects
@@ -10,3 +11,4 @@ This will take 1 to 2 Hours
 - Review previous week's [[Weekly]] notes
 - [[While going through your task list each week]]
 - Delete unused apps, documents and photos
+

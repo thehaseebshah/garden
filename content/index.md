@@ -15,7 +15,7 @@ Entry point into my knowledge:
 	- [[Maulwified Possessions]]
 	- [[Productivity Tactics]]
 	- [[Health MOC]] 
-	- [[Resources/Rulebook/Finances]]
+	- [[Finances]]
 	- [[Life Map 🗺]] 
 	- [[Meta PKM -- Best Practices for PKM]] 
 	- [[PKM Guide]]

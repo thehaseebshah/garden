@@ -1,0 +1,99 @@
+## Old Research
+- While Reading a Book
+    - Insights from Book [[notes]] can be implemented in life
+    - Important quotes can be memorized and resurfaced when forgotten
+    - You want them to answer your inner, unanswered questions
+    - You want to document your insights so that others who read your [[notes]] can continue your mission
+- While Watching an Informative YouTube Video
+    - Insights from these videos can be implemented in life
+    - Important quotes can be memorized and resurfaced when forgotten
+    - You want them to answer your inner, unanswered questions
+    - You want to document your insights so that others who read your [[notes]] can continue your mission
+- During an [[Islamic]] Live Lecture
+    - Tafsir
+        - We can memorize Important Ayahs along with significance of their meanings
+        - We can understand rules of Tafsir
+        - We can get motivated by Quranic Tafsir
+    - Hadith
+        - We can understand and memorize rules of Hadith and can memorize Hadith
+    - Fiqh
+        - We can implement sharih knowledge in our life, to improve our Ibadahs and to add more Ibadahs to our life
+        - We understand and memorize Fiqhi rules to implement later in life
+        - We can implement learnings of shariah on our dealings with society
+    - Tadreeb
+        - Insights can be implemented in life
+    - Seerah
+        - Insights can be implemented in life
+        - We memorize important incidents from the Seerah
+        - Our [[Love]] of Prophet increases
+        - Our [[Love]] of ALLAH increases
+    - Arabic
+        - We can learn Arabic
+- While we get an idea and want to capture it. Ideas can fall into the following types:
+    - A task
+        - Review it by assessing its importance, then pass it through the GTD method
+        - Have a Keep of Tasks.
+            - It has three sub-lists:
+                - The Main Storage:
+                - The This Month List
+                - The This week List
+            - Review the main storage each month, get tasks out of the main storage to the this month list. Delete tasks no longer relevant
+            - Review the old This month list each month and see if you want to move a few tasks to the main storage, or keep it there
+            - Review the this month list each week to add tasks to this week list, and move back or delete tasks no longer relevant to this week
+            - Review the weekly list daily to add tasks to tomorrow
+            - Tasks can be of three types:
+                - P1 — The One Thing
+                - P2 — The Two Other Things
+                - P3 — The Maybe List
+            - P1 and P2 tasks should be done in Pomos if possible
+            - P3 tasks can be scheduled or done with context tags, or ignored altogether if you don’t have energy (and rescheduled)
+            - Projects can be extracted from the This Month list, and can also be extracted from the month’s goals
+    - An Idea that can be implemented
+        - Implement it
+    - A life lesson
+        - Implement it
+        - Document it for others to implement
+        - Create a guide out of it — express your knowledge
+        - Connect it to other ideas to form new ideas when adding it there and also when creating guides, books etc.
+        - To answer questions in your mind, you can open up your second brain of connected ideas
+        - You can have a to_implement tag to open up ideas you need to implement
+            - You need to have a time each month to check this tag
+            - You need to have a snooze feature for these implementable [[notes]]
+            - Make atomic ideas with the to_implement tag more specific and straightforward to make them more reviewable
+        - Some lessons are general insights that are not applicable but need to be kept in mind, like “Beware of fradulent people, they drain your energy” etc. We can have a lesson tag for these
+    - An event
+    - Something you want to keep for future reference
+## In Summary:
+### We take two types of notes:
+- From Literature and Media
+- Our Thoughts and Ideas. ​These can fall into the following types:
+    - A task
+    - An Idea that can be implemented
+    - A life lesson
+    - An event
+    - Something you want to keep for future reference
+
+### How Each Type can be beneficial:
+- Literature and Media
+	- Ideas can be implemented, either as habits or general lessons that you can use at some point in life
+	- Things can be memorized for the sake of memorization
+	- Things can be memorized for bringing up in outputs impromptu
+	- They can answer your inner questions, and you can understand things and concepts better and can grow in your knowledge
+	- You can create outputs
+	- Items can be kept for future motivation 
+	- They can increase your love for someone 
+- Our Thoughts
+	- Tasks and Events can be planned and completed
+	- Ideas can be implemented, either as habits or general lessons that you can use at some point in life
+	- Memories and Tracked Items can be kept
+		- For future joy
+		- For future contemplation
+	- Items can be kept for future reference
+	- Items can be kept for future motivation 
+	- Things can be memorized for the sake of bringing up in outputs impromptu
+	- You can create outputs 
+	- They can answer your inner questions, and you can understand things and concepts better, and you can grow in your knowledge
+	- They can increase your love for someone 
+
+
+[[Types of Notes]]
