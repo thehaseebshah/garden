@@ -2,7 +2,7 @@
 Created: 2022-12-10 22:43
 Updated: 2023-06-28 07:40
 ---
-# Old Decision
+%% # Old Decision
 Search Keyword: Your soft skill, your hard skill and your Islam skill
 
 Three types of jobs I will be applying to:
@@ -258,17 +258,16 @@ Others:
 - [[Kufic Calligraphy]]
 - [[Reading]]
 
-## May 2024
-### Your One Thing:
+## May 2024 %%
+## Your One Thing:
 - Al Burhan
 ### Your Top Five Skills:
 - Al Burhan
 - Shabab [[Social Gamification]] to gain [[Habits]]
-- [[Maulvified Life]]
+- [[Maulwified Life]]
 - [[Your Combination of (Preferably Two) Rare and Valuable Skills in your Career]]
 - [[Ninjitsu]] with [[Handmade Weapon Design]]
-### Your Hobbies:
-- [[Ninjitsu]] with [[Handmade Weapon Design]]
+
 ### Your Focus Area in Data Science:
 - [[Your Combination of (Preferably Two) Rare and Valuable Skills in your Career]]
 - [[Positions that I can apply for if I wanted]]
