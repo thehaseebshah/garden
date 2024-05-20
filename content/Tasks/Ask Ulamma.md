@@ -1,0 +1,12 @@
+---
+Created: 2024-05-08 22:19
+---
+- [ ] Mufti Asif  
+- [ ] Was Ittar Oath broken  
+- [ ] Were other oaths broken  
+- [ ] Prayed between Forbedde Timrs  
+- [ ] Were Qadha Salahs accepted  
+- [ ] Starting Salah that vecom Qadha midway through  
+- [ ] Mufti Zahid  
+- [ ] Fixing old niyyahs to get ikhlas back  
+- [ ] Does saying out Niyahhs out loud work when your heart says something else  

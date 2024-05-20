@@ -1,0 +1,2 @@
+- [ ] 10 rs shop
+- [ ] Rs 40 Hafeez Bhai  

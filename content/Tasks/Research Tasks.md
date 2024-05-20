@@ -1,0 +1,33 @@
+---
+Created: 2024-05-08 22:16
+---
+- [ ] Questify and gamify khidmah, AI Course, Seerah course and life amd find partners  
+- [ ] [[Life Decisions]]  
+- [ ] Productivity, Disp Mullahs, Ism Discussion and Presentation and Gamification Club in Al Burhan and Shabab  
+- [ ] Minimalist Possessions Names 📅 2024-05-21
+- [ ] Notion vs Google Docs 📅 2024-05-11
+- [x] Offline Task Mgt System or on Obsidian 📅 2024-05-07 ✅ 2024-05-10
+- [x] Office AL Burhan vs Local 📅 2024-05-07 ✅ 2024-05-10
+- [x] Ethical and Permaculture Based Business respecting right to repair and freedom etc. recession free businesses 📅 2024-05-07 ✅ 2024-05-10
+- [ ] List of Anti Consumerism and Decolonization Channels YT  
+- [ ] Family entertainment alternatives 📅 2024-05-16
+- [ ] [[Shabab Activities and Attention Grabbers List]]  
+- [x] Al Burhani Software House research 🔼 📅 2024-05-07 ✅ 2024-05-10
+- [ ] [[Linux Tasks]]  🔼
+- [ ] Studio Office Home Final Setup  
+- [x] Permaculture vs AI 📅 2024-05-07 ✅ 2024-05-10
+- [ ] Note Down Life Decisions  🔼
+- [x] Permaculture Shop vs AI Transformation vs Privacy Transformation vs Digital Islamics Organizations 📅 2024-05-07 ✅ 2024-05-10
+- [ ] Dars e Nizami with Maulana Ehsaan online or with a local madrassah 📅 2024-05-16
+- [ ] Simple Life research and document 📅 2024-05-16
+- [ ] Project Mgt and Mamoolat Software  
+- [x] Open Source Project and Task Mgt+ Shift everything to FOSS and Local First 📅 2024-05-07 ✅ 2024-05-10
+- [ ] Naat Khuans  
+- [ ] Zarrar Bhai Research  
+- [ ] [[Simple Life, Luxury and Money]] 🔼 📅 2024-05-16
+- [ ] Why this phone...  Note down  
+- [x] Business Rules in our permaculture journey 📅 2024-05-07 ✅ 2024-05-10
+- [ ] Home studio and office 📅 2024-05-16
+- [x] All benefits of natural Alternatives 📅 2024-05-15 ✅ 2024-05-17
+- [ ] Is this the Muslim Village? 📅 2024-05-17
+- [ ] [[Where to live]] 📅 2024-05-16

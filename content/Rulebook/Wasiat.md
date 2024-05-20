@@ -5,7 +5,7 @@ Updated: 2023-05-10 06:10
 
 Check and Pay [[Kaffaras]]
 Zakaat is 250K
-Learn about my life from [[content/index]] and complete uncompleted things
+Learn about my life from [[Home 🌍]] and complete uncompleted things
 Whoever reads this should join Al Burhan
 Do tadfeen early
 Jannaza to be done by [[Ustaad Jee]]
