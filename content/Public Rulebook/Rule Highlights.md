@@ -114,6 +114,7 @@ Created: 2024-03-23 01:34
     - Zuhr
         - 1 P2 for 0.25 Juz before Asr
         - Family Rules 
+        - Doing a Community Act of Kindness by either gifting 3 kids something or by giving something to a neighbour
     - Family
         - Debrief + Story + Lecture + Activity + Rewards + Make Day
     - Asr
