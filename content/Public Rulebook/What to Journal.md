@@ -2,6 +2,11 @@
 Created: 2023-04-29 04:09
 Updated: 2023-05-08 19:33
 ---
+
+# New
+- Daily Letter
+- Your Day's Joy
+
 %% # Old
 - 5 Daily Wins
 - Gratitude and Your Faults
@@ -53,6 +58,3 @@ Permanent Notes: (To be replaced in the new journal at the end)
 - MotivPics (Printed, stapled)
 
  %%
-# New
-- Daily Letter
-- Your Day's Joy

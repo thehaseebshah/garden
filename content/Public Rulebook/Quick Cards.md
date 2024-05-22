@@ -4,7 +4,7 @@ Created: 2024-03-24  18:25
 [[Dos and Donts]]
 [[Rule Highlights]]
 [[How to Plan Each Day]]
-[[How to Plan Each Week]]
+[[How to Plan Each Week -- to update]]
 [[Home#The Why]]
 [[Home#Time is fleeting...]]
 [[Current Priorities]]

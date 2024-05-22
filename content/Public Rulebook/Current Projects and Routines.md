@@ -23,3 +23,5 @@ Action Items to Start these Projects/Routines [[2023-09-20]]
 8. Go to Al Burhan and Get Admission, Start Rules
 9. Start Rules
 10. Start Rules, Start MGN Work, Start MAW Work, Start Salman Work, Fix CogNin, Apply to Toptal. Also see [[Business Plan]]
+
+[[Current Priorities]]

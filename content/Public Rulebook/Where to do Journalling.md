@@ -5,6 +5,4 @@ On Laptop [[Obsidian]]
 
 On [[Physical Journal]]
 
-On Mobile [[Obsidian]]
-
-A Day's work should then be combined on [[Obsidian]]
+Each Day's work should then be combined on [[Obsidian]] on each weekend

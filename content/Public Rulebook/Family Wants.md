@@ -5,4 +5,4 @@ Created: 2024-01-17 14:45
 [[Zaify Wants]]
 [[Mama Wants]]
 [[To Buy in Life]]
-[[Baba Wants 1]]
+[[Baba Wants]]

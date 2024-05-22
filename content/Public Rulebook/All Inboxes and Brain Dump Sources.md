@@ -1,2 +1,2 @@
-Obsidian [[Resources/Templates/Inbox]]
+Obsidian Inbox
 [[Index Cards in Purse]]

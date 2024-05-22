@@ -18,5 +18,5 @@ Created: 2023-09-21 00:36
 		- P2 -- Your Day's 1 to 3 Morning Might Dos
 		- P3 -- Your Day's 1 to 3 Evening Might Dos
 	- No task should be scheduled for Today without a flag and No Task should be on some other label other than Next with a flag
-	- [[While going through your task list each week]]
-	- [[While going through your task list each month]]
+	- [[While going through your task list each week -- to update]]
+	- [[While going through your task list each month -- to update]]

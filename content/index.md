@@ -10,7 +10,7 @@ Entry point into my knowledge:
 	- [[Motivation Doc]]
 	- [[Promises]]
 	- [[Full Rules]]
-	- [[House Organization]]
+	- [[House Organization -- to update]]
 	- [[To Buy in Life]]
 	- [[Maulwified Possessions]]
 	- [[Productivity Tactics]]
@@ -18,7 +18,7 @@ Entry point into my knowledge:
 	- [[Finances]]
 	- [[Life Map 🗺]] 
 	- [[Meta PKM -- Best Practices for PKM]] 
-	- [[PKM Guide]]
+	- [[PKM Guide -- to update]]
 	- [[Visualization List]]
 	- [[Tasks]]
 - Dashboards
