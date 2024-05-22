@@ -1,2 +1,2 @@
 [[Job/Business]]
-[[Resources/Rulebook/Finances]]
+[[Finances]]

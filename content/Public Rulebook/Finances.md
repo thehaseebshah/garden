@@ -1,7 +1,6 @@
 ---
 Created: 2023-07-20 18:25 
 ---
-
 Home Spendings:
 	Home Rent
 	Internet Bill
