@@ -2,6 +2,23 @@
 Created: 2022-12-10 22:43
 Updated: 2023-06-28 07:40
 ---
+%% Changed May 2024 %%
+# Current
+## Your One Thing:
+- Al Burhan
+### Your Top Five Skills:
+- Al Burhan
+- Shabab [[Social Gamification]] to gain [[Habits]]
+- [[Maulwified Life]]
+- [[Your Combination of (Preferably Two) Rare and Valuable Skills in your Career]]
+- [[Ninjitsu]] with [[Handmade Weapon Design]]
+
+### Your Focus Area in Data Science:
+- [[Your Combination of (Preferably Two) Rare and Valuable Skills in your Career]]
+- [[Positions that I can apply for if I wanted]]
+- [[Countries for Remote Job Hunting]]
+- [[Industries that I have experience in]]
+
 %% # Old Decision
 Search Keyword: Your soft skill, your hard skill and your Islam skill
 
@@ -70,7 +87,9 @@ Your Sports Expertise:
 - Military Combat
 - Mountain Sports
 
-# Current:
+
+# Old
+## Before May 2023
 ### Your One Thing:
 - [[Islamic]] Life Design for Efficiency through Disciplined Minimalism
 ### Your Top Three Skills:
@@ -89,8 +108,6 @@ Your Sports Expertise:
 - Military Combat
 - MTBs
 - Cruising Travels
-
-# Upcoming Staged Changes
 ## May 2023
 ### Your Top Five Skills
 - [[Islamic]] Life Design for Efficiency through Disciplined Minimalism
@@ -257,19 +274,4 @@ Others:
 - [[Football]]
 - [[Kufic Calligraphy]]
 - [[Reading]]
-
-## May 2024 %%
-## Your One Thing:
-- Al Burhan
-### Your Top Five Skills:
-- Al Burhan
-- Shabab [[Social Gamification]] to gain [[Habits]]
-- [[Maulwified Life]]
-- [[Your Combination of (Preferably Two) Rare and Valuable Skills in your Career]]
-- [[Ninjitsu]] with [[Handmade Weapon Design]]
-
-### Your Focus Area in Data Science:
-- [[Your Combination of (Preferably Two) Rare and Valuable Skills in your Career]]
-- [[Positions that I can apply for if I wanted]]
-- [[Countries for Remote Job Hunting]]
-- [[Industries that I have experience in]]
+%%

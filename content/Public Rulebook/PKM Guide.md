@@ -3,7 +3,15 @@ Created: 2023-04-27 06:58
 Updated: 2023-07-01 14:12
 Tags:: #keep
 ---
-# Old  Research
+# Our Final Note Taking System and Consolidated Research 
+[[Obsidian PKM Guide]]
+[[What to Put on Physical Journal]]
+[[How notes of each type can be useful in life]]
+[[Effective Note-Taking Tips]]
+[[Paper vs Digital Notes]]
+[[Methods of Note Taking for Different Types of Notes]]
+
+%% # Old  Research
 ## --
 - Having knowledge of tools is actually a waste of time if its too much knowledge. Its a burden and a waste of energy. Dont create content on tools in the future. Just have timeless rules and philosophies that must be followed and recommend tools to others and have very short descriptions to share with them on how to use them. Have three kinds of recommendations — one for very basic minimal users, next for normal users and next for advanced power hungry ones. But you need to have a way to be able to shift from tier 1 to 3 on your own tools so as to make it easier to explain to others.
 - Use BOTH Notion and Obsidian — Obsidian for PKM and Notion for Collaboration
@@ -254,10 +262,4 @@ Don't use tags
 
 
 
-# Our Final Note Taking System and Consolidated Research 
-[[Obsidian PKM Guide]]
-[[What to Put on Physical Journal]]
-[[How notes of each type can be useful in life]]
-[[Effective Note-Taking Tips]]
-[[Paper vs Digital Notes]]
-[[Methods of Note Taking for Different Types of Notes]]
+ %%
