@@ -1,1 +1,0 @@
-![[Apps_and_Tools_For_Daily_Use.png]]

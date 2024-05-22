@@ -1,4 +1,0 @@
-- Move to Literature
-	- Create Permanent Notes
-- Archive
-- Delete

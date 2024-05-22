@@ -1,3 +1,0 @@
-[[Ibadah]]
-[[Love]]
-[[Personal Development]]

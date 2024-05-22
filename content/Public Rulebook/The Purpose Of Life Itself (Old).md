@@ -1,1 +1,0 @@
-![[The_Purpose_Of_Life-Simple.png]]

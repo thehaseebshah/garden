@@ -1,7 +1,0 @@
-- Procrastination
-- Lack of Consistency
-- Leaving Old Ideas because of New Ideas
-- Fear of Missing Out
-- Laziness
-- Childish Behavior in Certain Situations
-- Lack of Responsibility in Certain Situations

@@ -1,9 +1,0 @@
-- [ ] Occupying Parks of Islamabad for: Shabab University
-- [ ] And Shabab Camp Centers
-- [ ] Maulvified Life
-- [ ] Burhan Novel
-- [ ] Literary Club
-- [ ] Model Muhallaha Formula and Muhalla Mukhtaari
-- [ ] Muslim Village
-- [ ] Bringing Children of Relatives for a 24/7 Shabab Academy
-- [ ] 1 Min Seerah
