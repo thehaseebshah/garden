@@ -1,0 +1,14 @@
+---
+Created: 2023-10-21 10:35
+---
+- [ ] Uncle Iftikhar's Family
+- [ ] Baji Salma's Family 
+- [ ] Baba Jabbar's Family
+- [ ] Bhai Tariq's Family
+- [ ] Yasir Bhai's Family
+- [ ] AU Database
+- [ ] Mianwali Colleges and Friends Referral
+- [x] Moiz Tehreek
+- [ ] Muneeb Bhai's Sources
+- [ ] Umair Bhai
+- [ ] Al Burhan and Islamic Friends

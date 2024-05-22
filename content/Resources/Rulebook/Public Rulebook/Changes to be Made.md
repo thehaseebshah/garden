@@ -1,0 +1,51 @@
+- Later
+	- new day starts at maghrib
+	- remove irrelevant rules
+	- Entertainment PlayList for Motivation
+	- Meat Consumption [[Rules]] like in Watta Khail
+	- Daily Kalaams and Naats
+	- Make routine similar to that of the Prophet SAWW
+	- Which Rule Types require Approval from AP
+	- Charity [[Rules]]
+	- Khushu [[Rules]]
+	- YC [[Rules]]
+	- Visualization
+	- How to live below sustenance
+- Immediate
+	- Kaffaras and Qadha Salawat
+	- Reduce notifications and create flows and automations
+	- Emergency Break from Pomos
+	- Formal Ways to Do Community and Family Kindness
+	- For rules that are important to you, have them strict with all possibilities listed down so that everything is accounted for
+	- The Big Idea: bore yourself and productively will come. Create only restraint rules except Mamoolat.
+	- No texting in Pomos
+	- Forgetfulness Fix
+	- Type 3 promise system to not allow anything new into life
+	- Make type 2 promises for rulings without penalties
+	- Make life so boring that addictive time wasters get replaced by humanity savers and fun analogue creative endeavours
+- Promises and Oaths
+	- One Time Wifi and BnW [[Rules]] for Phone
+	- Fix Digital Detox App permanently and finalize phone
+	- [[Salah]] Khushu Research
+	- No more replacing apps
+	- make rules on content to consume, not consume and to not make something a part of your continued research or addiction with browser tabs open or tasks written down
+	- Keep Phone offline and silent --- Aitaka of Phone
+	- Act as if your parents are old
+	- Cycling after Asr [[Rules]]
+	- Relatives Calls after Asr [[Rules]]
+	- never eat alone
+	- same meal times rules
+	- Have a time with no screens
+	- Don't text — call always
+	- Repace Downtime with
+	    - Real conversations
+	    - Exercise
+	    - A Creative Hobby
+	- Kissing feet and hands of parents
+	- Talking while smiling always
+	- Being kind and always requesting 🙏
+	- Pedicure and Similar Treats for Parents
+	- Spoonfeeding Parents
+	- Habit Creation System for Cleanliness
+	- online and offline meet and greet daily
+	- no more western content

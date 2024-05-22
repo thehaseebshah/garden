@@ -1,0 +1,430 @@
+## Old
+### Quick Pass:
+
+- [ ]  ML Ops by [Deeplearning.ai](http://Deeplearning.ai) full with Exercises (3 Days)
+    - [ ]  [Machine Learning Modeling Pipelines in Production](https://www.coursera.org/learn/machine-learning-modeling-pipelines-in-production?specialization=machine-learning-engineering-for-production-mlops) (1 Days)
+    - [ ]  Deploying Machine Learning Models in Production (2 Days)
+- [ ]  Google ML Professional Certificate Summary (1 Day)
+- [ ]  Hackerrank Interview Kit (1 Day)
+- [ ]  SQL Questions + Data Engineering Crash Course (.25 Days)
+- [ ]  Stats Review (0.25 Days)
+- [ ]  ML Review (0,5 Days)
+- [ ]  NLP Specialization Full with Excercises (2 Days)
+- [ ]  SoTA NLP + Advanced Pytorch/Hugging Face/TF Review (1 Day)
+    - [ ]  [https://www.youtube.com/watch?v=BP9fi_0XTlw&list=PLIUOU7oqGTLgBf0X_KzRlsqyM2Cs7Dxp9&ab_channel=JamesBriggs](https://www.youtube.com/watch?v=BP9fi_0XTlw&list=PLIUOU7oqGTLgBf0X_KzRlsqyM2Cs7Dxp9&ab_channel=JamesBriggs)
+    - [ ]  [https://www.youtube.com/watch?v=NuYzHtAUbcc&list=PLgy71-0-2-F0byY7llx5kyNrHHyBVguvZ&ab_channel=code_your_own_[[AI]]](https://www.youtube.com/watch?v=NuYzHtAUbcc&list=PLgy71-0-2-F0byY7llx5kyNrHHyBVguvZ&ab_channel=code_your_own_[[AI]])
+    - [ ]  [https://www.youtube.com/watch?v=00GKzGyWFEs&list=PLo2EIpI_JMQvWfQndUesu0nPBAtZ9gP1o&ab_channel=HuggingFace](https://www.youtube.com/watch?v=00GKzGyWFEs&list=PLo2EIpI_JMQvWfQndUesu0nPBAtZ9gP1o&ab_channel=HuggingFace)
+    - [ ]  [https://www.youtube.com/watch?v=mIZLGBD99iU&list=PL1v8zpldgH3pQwRz1FORZdChMaNZaR3pu&index=76&ab_channel=YannicKilcher](https://www.youtube.com/watch?v=mIZLGBD99iU&list=PL1v8zpldgH3pQwRz1FORZdChMaNZaR3pu&index=76&ab_channel=YannicKilcher)
+- [ ]  Scrum Course Google (2 Days)
+    - [ ]  Foundations of Project Management
+    - [ ]  Agile Project Management
+- [ ]  [[AI]] For [[Business]]es (1 Day)
+    - [ ]  [[Business]] Transformation with Google Cloud
+    - [ ]  Innovating with Data and Google Cloud
+
+### Detailed Pass: 
+- [ ]  Google ML Professional Certificate In Depth
+- [ ]  SoTA NLP IN Depth
+- [ ]  Scrum Course Google In Depth
+- [ ]  Google Cloud Digital Leader In Depth
+- [ ]  Algos Full
+- [ ]  Data Engineering Crash Course
+- [ ]  SQL Review
+- [ ]  ML Review
+- [ ]  Stats Review
+
+### Continuous Learning:
+- [ ]  Digital Transformation, Engineering Management and Leadership in [[AI]] Companies
+    - [ ]  Infrastructure and Application Modernization with Google Cloud
+    - [ ]  Managing Machine Learning Projects with Google Cloud
+    - [ ]  The [[AI]] Ladder: A Framework for Deploying [[AI]] in your Enterprise
+    - [ ]  **[Project Initiation: Starting a Successful Project](https://www.coursera.org/learn/project-initiation-google?specialization=google-project-management)**
+    - [ ]  Project Planning: Putting It All Together
+    - [ ]  Project Execution: Running the Project
+    - [ ]  [Capstone: Applying Project Management in the Real World](https://www.coursera.org/learn/applying-project-management?specialization=google-project-management)
+    - [ ]  Managing Change when Moving to Google Cloud
+    - [ ]  Developing a Google SRE Culture
+    - [ ]  Understanding Google Cloud Security and Operations
+    - [ ]  Leadership Principles for Software Engineers
+    - [ ]  Inspiring Peak Performance on Technical Teams
+    - [ ]  Building Products at Global Scale
+    - [ ]  ****Machine Learning Foundations for Product Managers****
+    - [ ]  ****Managing Machine Learning Projects****
+    - [ ]  ****Human Factors in [[AI]]****
+    - [ ]  ****Digital Transformation****
+    - [ ]  ****Design Thinking for Innovation****
+    - [ ]  ****Digital Product Management: Modern Fundamentals****
+    - [ ]  ****Customer-Centric IT Strategy****
+- [ ]  Leadership
+    - [ ]  ****Leadership Style and Building a High-Performance Team****
+    - [ ]  ****Accountability and Employee Engagement****
+    - [ ]  ****Value Creation and Building Enduring Relationships****
+    - [ ]  ****High Performance Collaboration: Leadership, Teamwork, and Negotiation****
+    - [ ]  ****Leadership Communication for Maximum Impact: Storytelling****
+    - [ ]  ****Leadership Through Social Influence****
+    - [ ]  ****Leadership Through [[Marketing]]****
+    - [ ]  ****Leadership Through Design Innovation****
+    - [ ]  ****Organizational Leadership Capstone****
+- [ ]  Innovation and Startups
+    - [ ]  ****Strategic Innovation: Building and Sustaining Innovative Organizations****
+    - [ ]  ****Strategic Innovation: Managing Innovation Initiatives****
+    - [ ]  ****Creativity Toolkit I: Changing Perspectives****
+    - [ ]  Back to Innovation: From Creativity to Entrepreneurship
+    ****Creativity Toolkit II: Creative Collaboration****
+    - [ ]  ****Entrepreneurship I: Laying the Foundation****
+    - [ ]  ****Entrepreneurship II: Preparing for Launch****
+    - [ ]  ****Innovation: From Creativity to Entrepreneurship Capstone****
+- [ ]  Blockchain
+    - [ ]  ****Blockchain Basics****
+    - [ ]  ****Smart Contracts****
+    - [ ]  ****Decentralized Applications (Dapps)****
+    - [ ]  ****Blockchain Platforms****
+    - [ ]  ****Introduction to Blockchain Technologies****
+    - [ ]  ****Transacting on the Blockchain****
+    - [ ]  ****Blockchain and [[Business]]****
+    - [ ]  ****Blockchain Opportunity Analysis****
+    - [ ]  ****Web3 and Blockchain Leadership for Transformation****
+- [ ]  Metaverse
+    - [ ]  ****What is the Metaverse?****
+    - [ ]  ****Foundations of AR****
+    - [ ]  ****AR in marketing using Meta Spark****
+    - [ ]  ****AR for web using JavaScript****
+    - [ ]  ****AR for web using JavaScript****
+    - [ ]  ****Unity and C# basics****
+    - [ ]  ****Using AR Foundation in Unity****
+    - [ ]  ****AR games using Vuforia SDK****
+    - [ ]  ****Meta Spark Creator AR Certification****
+- [ ]  Game Design
+    - [ ]  ****Introduction to Game Design****
+    - [ ]  ****Story and Narrative Development for Video Games****
+    - [ ]  ****World Design for Video Games****
+    - [ ]  ****Character Design for Video Games****
+    - [ ]  ****Game Design Document: Define the Art & Concepts****
+    - [ ]  ****Game Design and Development 1: 2D Shooter****
+    - [ ]  ****Game Design and Development 2: 2D Platformer****
+    - [ ]  ****Game Design and Development 3: 3D Shooter****
+    - [ ]  ****Game Design and Development 4: 3D Platformer****
+    - [ ]  ****Game Design and Development 5: Capstone Project****
+- [ ]  Social Media Design
+    - [ ]  ****Social Media and Digital [[Marketing]] Fundamentals****
+    - [ ]  ****Social Media and Social Content Strategy****
+    - [ ]  ****Facebook, Instagram, and Snapchat [[Marketing]]****
+    - [ ]  ****Twitter, LinkedIn, and YouTube [[Marketing]]****
+- [ ]  Privacy
+    - [ ]  ****Introduction to Privacy - Part 1****
+    - [ ]  ****Introduction to Privacy - Part 2****
+    - [ ]  ****Introduction to Privacy - Part 3****
+    - [ ]  ****Fundamental Privacy Acts and Laws****
+---
+
+
+## Staged on June 28, 2023 
+
+### Quick Pass:
+
+- [ ]  ML Ops by [Deeplearning.ai](http://Deeplearning.ai) full with Exercises (3 Days)
+    - [ ]  [Machine Learning Modeling Pipelines in Production](https://www.coursera.org/learn/machine-learning-modeling-pipelines-in-production?specialization=machine-learning-engineering-for-production-mlops) (1 Days)
+    - [ ]  Deploying Machine Learning Models in Production (2 Days)
+- [ ]  Google ML Professional Certificate Summary (1 Day)
+- [ ]  Hackerrank Interview Kit (1 Day)
+- [ ]  SQL Questions + Data Engineering Crash Course (.25 Days)
+- [ ]  Stats Review (0.25 Days)
+- [ ]  ML Review (0,5 Days)
+- [ ]  NLP Specialization Full with Excercises (2 Days)
+- [ ]  SoTA NLP + Advanced Pytorch/Hugging Face/TF Review (1 Day)
+    - [ ]  [https://www.youtube.com/watch?v=BP9fi_0XTlw&list=PLIUOU7oqGTLgBf0X_KzRlsqyM2Cs7Dxp9&ab_channel=JamesBriggs](https://www.youtube.com/watch?v=BP9fi_0XTlw&list=PLIUOU7oqGTLgBf0X_KzRlsqyM2Cs7Dxp9&ab_channel=JamesBriggs)
+    - [ ]  [https://www.youtube.com/watch?v=NuYzHtAUbcc&list=PLgy71-0-2-F0byY7llx5kyNrHHyBVguvZ&ab_channel=code_your_own_[[AI]]](https://www.youtube.com/watch?v=NuYzHtAUbcc&list=PLgy71-0-2-F0byY7llx5kyNrHHyBVguvZ&ab_channel=code_your_own_[[AI]])
+    - [ ]  [https://www.youtube.com/watch?v=00GKzGyWFEs&list=PLo2EIpI_JMQvWfQndUesu0nPBAtZ9gP1o&ab_channel=HuggingFace](https://www.youtube.com/watch?v=00GKzGyWFEs&list=PLo2EIpI_JMQvWfQndUesu0nPBAtZ9gP1o&ab_channel=HuggingFace)
+    - [ ]  [https://www.youtube.com/watch?v=mIZLGBD99iU&list=PL1v8zpldgH3pQwRz1FORZdChMaNZaR3pu&index=76&ab_channel=YannicKilcher](https://www.youtube.com/watch?v=mIZLGBD99iU&list=PL1v8zpldgH3pQwRz1FORZdChMaNZaR3pu&index=76&ab_channel=YannicKilcher)
+    - [ ]  Gen[[AI]] Deep Learning [[AI]]
+    - [ ]  Other Gen[[AI]] Videos
+- [ ]  Scrum Course Google (2 Days)
+    - [ ]  Foundations of Project Management
+    - [ ]  Agile Project Management
+- [ ]  [[AI]] For [[Business]]es (1 Day)
+    - [ ]  [[Business]] Transformation with Google Cloud
+    - [ ]  Innovating with Data and Google Cloud
+
+### Detailed Pass:
+
+- [ ]  Google ML Professional Certificate In Depth
+- [ ]  GEN NLP In Depth
+- [ ]  Scrum Course Google In Depth
+- [ ]  Google Cloud Digital Leader In Depth
+- [ ]  Data Engineering Crash Course
+- [ ]  ML Review
+- [ ]  Stats Review
+
+### Continuous Learning
+
+- [ ]  Gen[[AI]]
+    - [ ]  Gen[[AI]] Courses
+- [ ]  Digital Transformation, Engineering Management and Leadership in [[AI]] Companies
+    - [ ]  Infrastructure and Application Modernization with Google Cloud
+    - [ ]  Managing Machine Learning Projects with Google Cloud
+    - [ ]  The [[AI]] Ladder: A Framework for Deploying [[AI]] in your Enterprise
+    - [ ]  **[Project Initiation: Starting a Successful Project](https://www.coursera.org/learn/project-initiation-google?specialization=google-project-management)**
+    - [ ]  Project Planning: Putting It All Together
+    - [ ]  Project Execution: Running the Project
+    - [ ]  [Capstone: Applying Project Management in the Real World](https://www.coursera.org/learn/applying-project-management?specialization=google-project-management)
+    - [ ]  Managing Change when Moving to Google Cloud
+    - [ ]  Developing a Google SRE Culture
+    - [ ]  Understanding Google Cloud Security and Operations
+    - [ ]  Leadership Principles for Software Engineers
+    - [ ]  Inspiring Peak Performance on Technical Teams
+    - [ ]  Building Products at Global Scale
+    - [ ]  ****Machine Learning Foundations for Product Managers****
+    - [ ]  ****Managing Machine Learning Projects****
+    - [ ]  ****Human Factors in [[AI]]****
+    - [ ]  ****Digital Transformation****
+    - [ ]  ****Design Thinking for Innovation****
+    - [ ]  ****Digital Product Management: Modern Fundamentals****
+    - [ ]  ****Customer-Centric IT Strategy****
+- [ ]  Leadership
+    - [ ]  ****Leadership Style and Building a High-Performance Team****
+    - [ ]  ****Accountability and Employee Engagement****
+    - [ ]  ****Value Creation and Building Enduring Relationships****
+    - [ ]  ****High Performance Collaboration: Leadership, Teamwork, and Negotiation****
+    - [ ]  ****Leadership Communication for Maximum Impact: Storytelling****
+    - [ ]  ****Leadership Through Social Influence****
+    - [ ]  ****Leadership Through [[Marketing]]****
+    - [ ]  ****Leadership Through Design Innovation****
+    - [ ]  ****Organizational Leadership Capstone****
+- [ ]  Innovation and Startups
+    - [ ]  ****Strategic Innovation: Building and Sustaining Innovative Organizations****
+    - [ ]  ****Strategic Innovation: Managing Innovation Initiatives****
+    - [ ]  ****Creativity Toolkit I: Changing Perspectives****
+    - [ ]  Back to Innovation: From Creativity to Entrepreneurship
+    ****Creativity Toolkit II: Creative Collaboration****
+    - [ ]  ****Entrepreneurship I: Laying the Foundation****
+    - [ ]  ****Entrepreneurship II: Preparing for Launch****
+    - [ ]  ****Innovation: From Creativity to Entrepreneurship Capstone****
+- [ ]  Blockchain
+    - [ ]  ****Blockchain Basics****
+    - [ ]  ****Smart Contracts****
+    - [ ]  ****Decentralized Applications (Dapps)****
+    - [ ]  ****Blockchain Platforms****
+    - [ ]  ****Introduction to Blockchain Technologies****
+    - [ ]  ****Transacting on the Blockchain****
+    - [ ]  ****Blockchain and [[Business]]****
+    - [ ]  ****Blockchain Opportunity Analysis****
+    - [ ]  ****Web3 and Blockchain Leadership for Transformation****
+- [ ]  Metaverse
+    - [ ]  ****What is the Metaverse?****
+    - [ ]  ****Foundations of AR****
+    - [ ]  ****AR in marketing using Meta Spark****
+    - [ ]  ****AR for web using JavaScript****
+    - [ ]  ****AR for web using JavaScript****
+    - [ ]  ****Unity and C# basics****
+    - [ ]  ****Using AR Foundation in Unity****
+    - [ ]  ****AR games using Vuforia SDK****
+    - [ ]  ****Meta Spark Creator AR Certification****
+- [ ]  Game Design
+    - [ ]  ****Introduction to Game Design****
+    - [ ]  ****Story and Narrative Development for Video Games****
+    - [ ]  ****World Design for Video Games****
+    - [ ]  ****Character Design for Video Games****
+    - [ ]  ****Game Design Document: Define the Art & Concepts****
+    - [ ]  ****Game Design and Development 1: 2D Shooter****
+    - [ ]  ****Game Design and Development 2: 2D Platformer****
+    - [ ]  ****Game Design and Development 3: 3D Shooter****
+    - [ ]  ****Game Design and Development 4: 3D Platformer****
+    - [ ]  ****Game Design and Development 5: Capstone Project****
+- [ ]  Social Media Design
+    - [ ]  ****Social Media and Digital [[Marketing]] Fundamentals****
+    - [ ]  ****Social Media and Social Content Strategy****
+    - [ ]  ****Facebook, Instagram, and Snapchat [[Marketing]]****
+    - [ ]  ****Twitter, LinkedIn, and YouTube [[Marketing]]****
+- [ ]  Privacy
+    - [ ]  ****Introduction to Privacy - Part 1****
+    - [ ]  ****Introduction to Privacy - Part 2****
+    - [ ]  ****Introduction to Privacy - Part 3****
+    - [ ]  ****Fundamental Privacy Acts and Laws****
+
+## Staged on July 20 2023
+### Quick Pass:
+- [ ]  ML Ops by [Deeplearning.ai](http://Deeplearning.ai) full with Exercises (3 Days)
+    - [ ]  [Machine Learning Modeling Pipelines in Production](https://www.coursera.org/learn/machine-learning-modeling-pipelines-in-production?specialization=machine-learning-engineering-for-production-mlops) (1 Days)
+    - [ ]  Deploying Machine Learning Models in Production (2 Days)
+- [ ]  Google ML Professional Certificate Summary (1 Day)
+- [ ]  Hackerrank Interview Kit (1 Day)
+- [ ]  SQL Questions + Data Engineering Crash Course (.25 Days)
+- [ ]  Stats Review (0.25 Days)
+- [ ]  ML Review (0,5 Days)
+- [ ]  NLP Specialization Full with Excercises (2 Days)
+- [ ]  SoTA NLP + Advanced Pytorch/Hugging Face/TF Review (5 Days)
+    - [ ]  [https://www.youtube.com/watch?v=BP9fi_0XTlw&list=PLIUOU7oqGTLgBf0X_KzRlsqyM2Cs7Dxp9&ab_channel=JamesBriggs](https://www.youtube.com/watch?v=BP9fi_0XTlw&list=PLIUOU7oqGTLgBf0X_KzRlsqyM2Cs7Dxp9&ab_channel=JamesBriggs)
+    - [ ]  [https://www.youtube.com/watch?v=NuYzHtAUbcc&list=PLgy71-0-2-F0byY7llx5kyNrHHyBVguvZ&ab_channel=code_your_own_[[AI]]](https://www.youtube.com/watch?v=NuYzHtAUbcc&list=PLgy71-0-2-F0byY7llx5kyNrHHyBVguvZ&ab_channel=code_your_own_[[AI]])
+    - [ ]  [https://www.youtube.com/watch?v=00GKzGyWFEs&list=PLo2EIpI_JMQvWfQndUesu0nPBAtZ9gP1o&ab_channel=HuggingFace](https://www.youtube.com/watch?v=00GKzGyWFEs&list=PLo2EIpI_JMQvWfQndUesu0nPBAtZ9gP1o&ab_channel=HuggingFace)
+    - [ ]  [https://www.youtube.com/watch?v=mIZLGBD99iU&list=PL1v8zpldgH3pQwRz1FORZdChMaNZaR3pu&index=76&ab_channel=YannicKilcher](https://www.youtube.com/watch?v=mIZLGBD99iU&list=PL1v8zpldgH3pQwRz1FORZdChMaNZaR3pu&index=76&ab_channel=YannicKilcher)
+    - [ ]  Gen[[AI]] Deep Learning [[AI]]
+    - [ ]  Other Gen[[AI]] Videos
+- [ ]  Scrum Course Google (3 Days)
+    - [ ]  Foundations of Project Management
+    - [ ]  Agile Project Management
+- [ ]  [[AI]] For [[Business]]es (3 Days)
+    - [ ]  [[Business]] Transformation with Google Cloud
+    - [ ]  Innovating with Data and Google Cloud
+    - [ ] Google Cloud Digital Leader
+
+### Future Learning if We Take the Muslim Startups Route
+- [ ]  Digital Transformation, Engineering Management and Leadership in [[AI]] Companies
+    - [ ]  Infrastructure and Application Modernization with Google Cloud
+    - [ ]  Managing Machine Learning Projects with Google Cloud
+    - [ ]  The [[AI]] Ladder: A Framework for Deploying [[AI]] in your Enterprise
+    - [ ]  **[Project Initiation: Starting a Successful Project](https://www.coursera.org/learn/project-initiation-google?specialization=google-project-management)**
+    - [ ]  Project Planning: Putting It All Together
+    - [ ]  Project Execution: Running the Project
+    - [ ]  [Capstone: Applying Project Management in the Real World](https://www.coursera.org/learn/applying-project-management?specialization=google-project-management)
+    - [ ]  Managing Change when Moving to Google Cloud
+    - [ ]  Developing a Google SRE Culture
+    - [ ]  Understanding Google Cloud Security and Operations
+    - [ ]  Leadership Principles for Software Engineers
+    - [ ]  Inspiring Peak Performance on Technical Teams
+    - [ ]  Building Products at Global Scale
+    - [ ]  ****Machine Learning Foundations for Product Managers****
+    - [ ]  ****Managing Machine Learning Projects****
+    - [ ]  ****Human Factors in [[AI]]****
+    - [ ]  ****Digital Transformation****
+    - [ ]  ****Design Thinking for Innovation****
+    - [ ]  ****Digital Product Management: Modern Fundamentals****
+    - [ ]  ****Customer-Centric IT Strategy****
+- [ ]  Leadership
+    - [ ]  ****Leadership Style and Building a High-Performance Team****
+    - [ ]  ****Accountability and Employee Engagement****
+    - [ ]  ****Value Creation and Building Enduring Relationships****
+    - [ ]  ****High Performance Collaboration: Leadership, Teamwork, and Negotiation****
+    - [ ]  ****Leadership Communication for Maximum Impact: Storytelling****
+    - [ ]  ****Leadership Through Social Influence****
+    - [ ]  ****Leadership Through [[Marketing]]****
+    - [ ]  ****Leadership Through Design Innovation****
+    - [ ]  ****Organizational Leadership Capstone****
+- [ ]  Innovation and Startups
+    - [ ]  ****Strategic Innovation: Building and Sustaining Innovative Organizations****
+    - [ ]  ****Strategic Innovation: Managing Innovation Initiatives****
+    - [ ]  ****Creativity Toolkit I: Changing Perspectives****
+    - [ ]  Back to Innovation: From Creativity to Entrepreneurship
+    ****Creativity Toolkit II: Creative Collaboration****
+    - [ ]  ****Entrepreneurship I: Laying the Foundation****
+    - [ ]  ****Entrepreneurship II: Preparing for Launch****
+    - [ ]  ****Innovation: From Creativity to Entrepreneurship Capstone****
+- [ ]  Blockchain
+    - [ ]  ****Blockchain Basics****
+    - [ ]  ****Smart Contracts****
+    - [ ]  ****Decentralized Applications (Dapps)****
+    - [ ]  ****Blockchain Platforms****
+    - [ ]  ****Introduction to Blockchain Technologies****
+    - [ ]  ****Transacting on the Blockchain****
+    - [ ]  ****Blockchain and [[Business]]****
+    - [ ]  ****Blockchain Opportunity Analysis****
+    - [ ]  ****Web3 and Blockchain Leadership for Transformation****
+- [ ]  Metaverse
+    - [ ]  ****What is the Metaverse?****
+    - [ ]  ****Foundations of AR****
+    - [ ]  ****AR in marketing using Meta Spark****
+    - [ ]  ****AR for web using JavaScript****
+    - [ ]  ****AR for web using JavaScript****
+    - [ ]  ****Unity and C# basics****
+    - [ ]  ****Using AR Foundation in Unity****
+    - [ ]  ****AR games using Vuforia SDK****
+    - [ ]  ****Meta Spark Creator AR Certification****
+- [ ]  Game Design
+    - [ ]  ****Introduction to Game Design****
+    - [ ]  ****Story and Narrative Development for Video Games****
+    - [ ]  ****World Design for Video Games****
+    - [ ]  ****Character Design for Video Games****
+    - [ ]  ****Game Design Document: Define the Art & Concepts****
+    - [ ]  ****Game Design and Development 1: 2D Shooter****
+    - [ ]  ****Game Design and Development 2: 2D Platformer****
+    - [ ]  ****Game Design and Development 3: 3D Shooter****
+    - [ ]  ****Game Design and Development 4: 3D Platformer****
+    - [ ]  ****Game Design and Development 5: Capstone Project****
+- [ ]  Social Media Design
+    - [ ]  ****Social Media and Digital [[Marketing]] Fundamentals****
+    - [ ]  ****Social Media and Social Content Strategy****
+    - [ ]  ****Facebook, Instagram, and Snapchat [[Marketing]]****
+    - [ ]  ****Twitter, LinkedIn, and YouTube [[Marketing]]****
+- [ ]  Privacy
+    - [ ]  ****Introduction to Privacy - Part 1****
+    - [ ]  ****Introduction to Privacy - Part 2****
+    - [ ]  ****Introduction to Privacy - Part 3****
+    - [ ]  ****Fundamental Privacy Acts and Laws****
+
+### Future Learning if We Take the Personal Growth SaaS Route:
+  Digital Transformation, Engineering Management and Leadership in [[AI]] Companies
+    - [ ]  Infrastructure and Application Modernization with Google Cloud
+    - [ ]  Managing Machine Learning Projects with Google Cloud
+    - [ ]  The [[AI]] Ladder: A Framework for Deploying [[AI]] in your Enterprise
+    - [ ]  **[Project Initiation: Starting a Successful Project](https://www.coursera.org/learn/project-initiation-google?specialization=google-project-management)**
+    - [ ]  Project Planning: Putting It All Together
+    - [ ]  Project Execution: Running the Project
+    - [ ]  [Capstone: Applying Project Management in the Real World](https://www.coursera.org/learn/applying-project-management?specialization=google-project-management)
+    - [ ]  Managing Change when Moving to Google Cloud
+    - [ ]  Developing a Google SRE Culture
+    - [ ]  Understanding Google Cloud Security and Operations
+    - [ ]  Leadership Principles for Software Engineers
+    - [ ]  Inspiring Peak Performance on Technical Teams
+    - [ ]  Building Products at Global Scale
+    - [ ]  ****Machine Learning Foundations for Product Managers****
+    - [ ]  ****Managing Machine Learning Projects****
+    - [ ]  ****Human Factors in [[AI]]****
+    - [ ]  ****Digital Transformation****
+    - [ ]  ****Design Thinking for Innovation****
+    - [ ]  ****Digital Product Management: Modern Fundamentals****
+    - [ ]  ****Customer-Centric IT Strategy****
+- [ ]  Leadership
+    - [ ]  ****Leadership Style and Building a High-Performance Team****
+    - [ ]  ****Accountability and Employee Engagement****
+    - [ ]  ****Value Creation and Building Enduring Relationships****
+    - [ ]  ****High Performance Collaboration: Leadership, Teamwork, and Negotiation****
+    - [ ]  ****Leadership Communication for Maximum Impact: Storytelling****
+    - [ ]  ****Leadership Through Social Influence****
+    - [ ]  ****Leadership Through [[Marketing]]****
+    - [ ]  ****Leadership Through Design Innovation****
+    - [ ]  ****Organizational Leadership Capstone****
+- [ ]  Innovation and Startups
+    - [ ]  ****Strategic Innovation: Building and Sustaining Innovative Organizations****
+    - [ ]  ****Strategic Innovation: Managing Innovation Initiatives****
+    - [ ]  ****Creativity Toolkit I: Changing Perspectives****
+    - [ ]  Back to Innovation: From Creativity to Entrepreneurship
+    ****Creativity Toolkit II: Creative Collaboration****
+    - [ ]  ****Entrepreneurship I: Laying the Foundation****
+    - [ ]  ****Entrepreneurship II: Preparing for Launch****
+    - [ ]  ****Innovation: From Creativity to Entrepreneurship Capstone****
+- [ ]  Privacy
+    - [ ]  ****Introduction to Privacy - Part 1****
+    - [ ]  ****Introduction to Privacy - Part 2****
+    - [ ]  ****Introduction to Privacy - Part 3****
+    - [ ]  ****Fundamental Privacy Acts and Laws****
+
+
+## Staged on September 18, 2023
+### Quick Pass: (Only takes a few days)
+- [ ]  ML Ops by [Deeplearning.ai](http://Deeplearning.ai) full with Exercises (3 Days)
+    - [ ]  [Machine Learning Modeling Pipelines in Production](https://www.coursera.org/learn/machine-learning-modeling-pipelines-in-production?specialization=machine-learning-engineering-for-production-mlops) (1 Days)
+    - [ ]  Deploying Machine Learning Models in Production (2 Days)
+- [ ]  Google ML Professional Certificate Summary (1 Day)
+- [ ]  Hackerrank Interview Kit (1 Day)
+- [ ]  SQL Questions + Data Engineering Crash Course (.25 Days)
+- [ ]  Stats Review (0.25 Days)
+- [ ]  ML Review (0,5 Days)
+- [ ]  NLP Specialization Full with Excercises (2 Days)
+- [ ]  SoTA NLP + Advanced Pytorch/Hugging Face/TF Review (5 Days)
+    - [ ]  [https://www.youtube.com/watch?v=BP9fi_0XTlw&list=PLIUOU7oqGTLgBf0X_KzRlsqyM2Cs7Dxp9&ab_channel=JamesBriggs](https://www.youtube.com/watch?v=BP9fi_0XTlw&list=PLIUOU7oqGTLgBf0X_KzRlsqyM2Cs7Dxp9&ab_channel=JamesBriggs)
+    - [ ]  [https://www.youtube.com/watch?v=NuYzHtAUbcc&list=PLgy71-0-2-F0byY7llx5kyNrHHyBVguvZ&ab_channel=code_your_own_[[AI]]](https://www.youtube.com/watch?v=NuYzHtAUbcc&list=PLgy71-0-2-F0byY7llx5kyNrHHyBVguvZ&ab_channel=code_your_own_[[AI]])
+    - [ ]  [https://www.youtube.com/watch?v=00GKzGyWFEs&list=PLo2EIpI_JMQvWfQndUesu0nPBAtZ9gP1o&ab_channel=HuggingFace](https://www.youtube.com/watch?v=00GKzGyWFEs&list=PLo2EIpI_JMQvWfQndUesu0nPBAtZ9gP1o&ab_channel=HuggingFace)
+    - [ ]  [https://www.youtube.com/watch?v=mIZLGBD99iU&list=PL1v8zpldgH3pQwRz1FORZdChMaNZaR3pu&index=76&ab_channel=YannicKilcher](https://www.youtube.com/watch?v=mIZLGBD99iU&list=PL1v8zpldgH3pQwRz1FORZdChMaNZaR3pu&index=76&ab_channel=YannicKilcher)
+    - [ ]  Gen[[AI]] Deep Learning [[AI]]
+    - [ ]  Other Gen[[AI]] Videos
+- [ ]  Scrum Course Google (3 Days)
+    - [ ]  Foundations of Project Management
+    - [ ]  Agile Project Management
+- [ ]  [[AI]] For [[Business]]es (3 Days)
+    - [ ]  [[Business]] Transformation with Google Cloud
+    - [ ]  Innovating with Data and Google Cloud
+    - [ ] Google Cloud Digital Leader
+
+### Future Learning if We Take the Muslim Startups Route
+(We did not take this route so this is empty)
+### Future Learning if We Take the Personal Growth SaaS Route: 
+(We did not take this route so this is empty)

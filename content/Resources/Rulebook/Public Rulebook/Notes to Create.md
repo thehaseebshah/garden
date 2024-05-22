@@ -1,0 +1,27 @@
+---
+Created: 2023-08-30 21:54 
+---
+
+- [ ] Use Analogue Devices, ways, communication, productivity tools, games and activities. Create analogue counterparts or at least "no new app needed" counterparts of them.
+- [ ] Be the digital analogue guy
+- [ ] Be extremely niche niche niche in your skill for the job hunt and agency and business
+- [ ] Importance of forgiving and scarifying for  those that matter to you -- also Fatima
+- [ ] Restriction vs [[Love]]
+- [ ] Staying Private While also using open source
+- [ ] Note on Getting tainted and overwhelmed by the inetrnet on ideas. Just start out small with the first 3 videos or blogs.
+- [ ] PAPER NOTES, Daily Surprises, my seriouness with ocasasional fun -- all new family changes.
+- [ ] We vow to stay together foreever as a family iA. 
+- [ ] I hereby consider Mama and Fatima sinless.
+- [ ] Build an Analogue, paper based Social Network Game for Teen Boys with Analogue Scoring and Letters, people in a secret cult teaching it through books. Have dynamic storylines created for players through letters. Tech is not allowed. Permaculture is always promoted. Design Games for Kids and do life design for them and make it your specialty
+- [ ] create a mysterious liveable daily basis story for family dawah
+- [ ] Smile always even when criticising. And make the crticsm lighthearted.
+- [ ] dismantling hollywood's lack of morals in popular movies (a few examples) and its false moral appeal
+- [ ] Live a life below sustenance -- do not collect property and wealth because that would cause us to value Dunya over Akhirah
+- [ ] Thankfulness for Ummah Tour completion, 3 Day Al Burhan, Protection 9f Oath, New Visualizations Gift, Realization 9f Gifts, [[Family]] reunion, TWRAM Syndrome ALHAMDOLILLAH ❤❤❤❤
+- [ ] How one type of specific visualizations that I just discovered get you into a crazy flow state and next level visionary thinking abd a state of unimaginable peace and serenity and calm and focus. Your brain starts to spit rhymes and stress burns away. It is like a feeling you get from a carry beautiful dream.
+- [ ] How Being Offline can help you overcome procrastination
+- [ ] Realize your gifts. Your motivation to do good to the planet has withered away
+- [ ] Lesson on Haya and Adab in Marriage
+- [ ] We need to learn to to unlearn
+- [ ] There should be a quick and easy fix to these relationship problems with humans as that would be the only way to explain how humans are better than animals
+- [ ] Have a big vision in Deen
