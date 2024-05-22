@@ -3,9 +3,9 @@ Created: 2023-09-21 00:36
 ---
 - Inspired from [[Getting Things Done]] and [[Zen to Done]] and [[BASB]]
 	- Have Four Labels (All Tasks must be in any one of these):
-		- Next 7 Days
+		- In 7 Days
 			- This should not contain more than 25 tasks
-		- Next 90 Days
+		- In 90 Days
 			-  This should not contain more than 100 tasks
 		- Someday
 		- Waiting_For

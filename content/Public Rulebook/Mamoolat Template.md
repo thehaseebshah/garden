@@ -63,14 +63,13 @@ Evening (300)
 ❌ on Non-completion
 
 ## Definition of completion:
-In case of a genuine excuse, completion time can be delayed
-Morning Azkaar before Zuhr time enters, or before Asr time enters in case of a genuine excuse
-Evening Azkaar before Isha time enters, or before sleeping in case of genuine excuse
-Surah Yasin before Ishraq time enters, or before Zuhr time enters in case of a genuine excuse
-Surah Waqiah before Isha time enters, or before Isha time enters in case of a genuine excuse
-Surah Mulk before sleeping, or before Fajr time enters in case of a genuine excuse
+Morning Azkaar before Zawal time enters, or before Asr time enters in case of a genuine excuse
+Evening Azkaar before Maghrib time enters, or before Isha time enters in case of genuine excuse
+Surah Yasin before Ishraq time enters, or before Zawal time enters in case of a genuine excuse
+Surah Waqiah before Isha time enters
+Surah Mulk before 0000, or before Fajr time enters in case of a genuine excuse
 Surah Kahf before Asr time enters, or before Maghrib time enters in case of a genuine excuse
 Awabayn before Isha time enters
 Regular Tilawat before Asr time enters, or before Maghrib time enters in case of a genuine excuse
-Manajaat before Asr time enters, or before Maghrib time enters in case of a genuine excuse
+Manajaat before Maghrib time enters
 Salaat Tasbih before Asr time enters, or before Maghrib time enters in case of a genuine excuse

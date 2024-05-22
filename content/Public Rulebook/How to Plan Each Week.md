@@ -2,8 +2,7 @@
 Created: 2023-09-21 00:31
 ---
 This will take 1 to 2 Hours
-This will take 1 to 2 Hours
-- Do this in the [[Weekly]] note
+- Do this in the Weekly note
 - Plan This Week tasks
 - Plan any projects
 - Convert Permanent Notes

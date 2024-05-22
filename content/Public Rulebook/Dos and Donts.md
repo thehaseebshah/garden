@@ -6,7 +6,7 @@ Do:
 - Sleep early, before 2315
 - Wake up early
 - Go to club
-- Complete Pomos
+- 3 + 2 Pomos
 - 2 Work Pomos Mon - Thr
 - Do planning session at night
 - Send Mamolaat to Murabbi

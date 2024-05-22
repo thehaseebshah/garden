@@ -55,5 +55,4 @@ Permanent Notes: (To be replaced in the new journal at the end)
  %%
 # New
 - Daily Letter
-- 3 Gratitudes
-- 3 Faults
+- Your Day's Joy
