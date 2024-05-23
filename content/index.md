@@ -22,7 +22,7 @@ Entry point into my knowledge:
 	- [[Visualization List]]
 	- [[Tasks]]
 - Dashboards
-	- [[Goals]]
+	- [[Goals -- to update]]
 	- [[Life Areas]]
 	- [[Plan]]
 	- [[Projects]]

@@ -3,7 +3,7 @@ Created: 2023-09-21 00:32
 ---
 This will take 2 Hours. Do be done each 1st of Month
 - Do this in the [[Monthly]] note
-- Reassess [[Goals]]
+- Reassess [[Goals -- to update]]
 - Reassess [[Projects]]
 - Plan the Quarter Ahead
 - Plan the Month Ahead

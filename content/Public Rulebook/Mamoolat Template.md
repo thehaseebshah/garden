@@ -53,10 +53,9 @@ Evening (300)
 
 ⚪ Additional
 ⬜ Habit Tracker: https://tinyurl.com/haseeb-habits
-⬜ Rules: https://tinyurl.com/haseeb-rules
+⬜ Rules: https://thehaseebshah.github.io/garden/Public-Rulebook/Full-Rules
 ⬜ Today's Penalties According to Rules = 
-⬜ Mamoolat Template: https://tinyurl.com/mamoolat-template
-
+⬜ Mamoolat Template: https://thehaseebshah.github.io/garden/Public-Rulebook/Mamoolat-Template
 
 ---
 

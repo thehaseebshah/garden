@@ -1,6 +1,6 @@
 ## Meeting Agenda
 
-- [ ] Goals Analysis [[Goals]] and reverse Engineer them
+- [ ] Goals Analysis [[Goals -- to update]] and reverse Engineer them
 - [ ] Current Priorities Analysis [[Current Priorities]]
 - [ ] Roadmap Revamp
 - [ ] Analysis of Full Routine [[Routine]]
@@ -16,7 +16,7 @@
 
 [[My Story]]
 [[Life Areas]]
-[[Goals]]
+[[Goals -- to update]]
 [[Upcoming Priorities]]
 [[Identified Weaknesses]]
 [[My Main Skills]]
