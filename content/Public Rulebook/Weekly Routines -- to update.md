@@ -5,7 +5,7 @@ Created: 2023-09-22 05:10
 - [x] Salaat us Tasbeeh (Friday) 
 - [x] Surah Kahf (Friday)
 - [x] Ahbaab e Azeemat (Friday)
-- [x] Planning Time -- [[How to Plan Each Week -- to update]] (Friday)
+- [x] Planning Time -- [[How to Plan Each Week]] (Friday)
 - [x] Ayyubi Qabeela Meeting (Friday)
 - [ ] Seerah (Friday)
 - [x] Alone time in Khanqah for Islaah -- 24 Hours (Saturday)

@@ -18,7 +18,7 @@ Entry point into my knowledge:
 	- [[Finances]]
 	- [[Life Map 🗺]] 
 	- [[Meta PKM -- Best Practices for PKM]] 
-	- [[PKM Guide -- to update]]
+	- [[PKM Guide]]
 	- [[Visualization List]]
 	- [[Tasks]]
 - Dashboards

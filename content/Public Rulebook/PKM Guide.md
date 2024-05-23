@@ -5,8 +5,9 @@ Tags:: #keep
 ---
 # Our Final Note Taking System and Consolidated Research 
 [[Obsidian PKM Guide]]
-[[What to Put on Physical Journal]]
-[[How notes of each type can be useful in life]]
+[[Types of Notes]]
+[[What to Put on Physical Journal -- to update]]
+[[How notes of Each type can be useful in life]]
 [[Effective Note-Taking Tips]]
 [[Paper vs Digital Notes]]
 [[Methods of Note Taking for Different Types of Notes]]

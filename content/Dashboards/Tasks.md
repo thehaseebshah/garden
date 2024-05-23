@@ -9,5 +9,3 @@ group by backlink
 not done
 sort by function task.originalMarkdown
 ```
-
-

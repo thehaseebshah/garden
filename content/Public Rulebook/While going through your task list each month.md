@@ -1,5 +1,14 @@
 ---
 Created: 2023-09-21 18:38
 ---
-- Delete tasks from Someday label
-- Remove or Add the Someday label from tasks
+- Check all tasks in [[_In 90 Days]] and Decide to:
+	- Delete Tasks
+	- Delegate Tasks
+	- Schedule
+	- Move any to [[_Someday]]
+	- Move any to [[_In 7 Days]]
+- Check all tasks in [[_Someday]] and Decide to:
+	- Delete Tasks
+	- Delegate Tasks
+	- Schedule
+	- Move any to [[_In 90 Days]]

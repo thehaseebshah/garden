@@ -71,11 +71,11 @@
             1. Do tasks on [[How to Plan Each Day]] daily and this should be approved based on UP Rule
             2. Not doing so causes 5 P2s in addition to Pomodoro Penalties
         2. _Weekly Planning Rules_:
-            1. Dedicate part of pomos of Monday to planning the week ahead using [[How to Plan Each Week -- to update]]
+            1. Dedicate part of pomos of Monday to planning the week ahead using [[How to Plan Each Week]]
         3. _Monthly Planning Rules_
-            1. Dedicate part of pomos of current and the next day if needed, of the first of each Month to Monthly Planning using [[How to Plan Each Month -- to update]]
+            1. Dedicate part of pomos of current and the next day if needed, of the first of each Month to Monthly Planning using [[How to Plan Each Month]]
         4. _Yearly Planning Rules_
-            1. Dedicate _Planning Pomo_, and additional pomos of the next day if needed, of the first of each 15th of December to Monthly Planning using [[How to Plan Each Year -- to update]]
+            1. Dedicate _Planning Pomo_, and additional pomos of the next day if needed, of the first of each 15th of December to Monthly Planning using [[How to Plan Each Year]]
     9. Once awake in the morning for Fajr, we can not go back to sleep before completing at least 1 Pomodoro, Mon to Thr. Doing so causes 5 P2s. Paused.
 4. _**Modesty Rules:**_
     1. Seeing someone of the opposite gender we should immediately lower our gaze. If lowering gaze does not help, we should find a way to get past the situation. For times of need this can be allowed. Times of need must be decided based UP Rule. This is also for media. We should put a hand to cover all of it, remove the clip or picture, or move face or device away. Looking away and looking again causes same penalty. Not doing so for once causes 3 P2s.

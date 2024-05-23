@@ -3,20 +3,18 @@ Created: 2023-09-21 00:36
 ---
 - Inspired from [[Getting Things Done]] and [[Zen to Done]] and [[BASB]]
 	- Have Four Labels (All Tasks must be in any one of these):
-		- In 7 Days
+		- [[_In 7 Days]]
 			- This should not contain more than 25 tasks
-		- In 90 Days
+		- [[_In 90 Days]]
 			-  This should not contain more than 100 tasks
-		- Someday
-		- Waiting_For
-	- A task can not have both labels Next and Someday
+		- [[_Someday]]
 	- Have Two Folders:
 		- Projects
 		- Areas
 	- Have 3 Flags
-		- P1 -- Your Day's 1 to 3 MITs
-		- P2 -- Your Day's 1 to 3 Morning Might Dos
-		- P3 -- Your Day's 1 to 3 Evening Might Dos
-	- No task should be scheduled for Today without a flag and No Task should be on some other label other than Next with a flag
-	- [[While going through your task list each week -- to update]]
-	- [[While going through your task list each month -- to update]]
+		- High Priority -- Your Day's 1 to 3 MITs
+		- Medium Priority -- Your Day's 1 to 3 Morning Might Dos
+		- Normal Priority -- Your Day's 1 to 3 Evening Might Dos
+	- Only tasks in [[_In 7 Days]] can have High and Medium Priority
+	- [[While going through your task list each week]]
+	- [[While going through your task list each month]]
