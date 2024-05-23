@@ -4,7 +4,7 @@
     3. (Parentheses) enclose comments for rules.
     4. Underline represents a rule that requires changes
 2. You, the Rule Follower (RF), have promised ALLAH SWT to follow these rules in the contract.
-3. Your Accountability Partner (AP) is: Hassan Irfan.
+3. Your Accountability Partner (AP) is: Syed Addan.
 4. You have agreed to follow these rules with your accountability partner, and have agreed to owe a certain amount of money to a charity fund when a certain action happens in the rules. 
 5. Charity fund is:
     1. Al Khidmat
@@ -34,6 +34,5 @@
         2. Secret Sin Rules
         3. Modesty Rules
         4. Nasheed Rules
-    3. In case of a very sudden, unexpected or catastrophic incident, vacations can be granted immediately. In such a case that Salahs cannot be offered, there will be no penalty for Salahs. Penalties won't increase after Stipluated time in this case. Any other rule that is impeded by this unforeseen incident will also be paused. This rule can not be misused. Anything can not be called an unexpected incident to save yourself from rules. If you are in a position to access and make changes to this document, you must specify how many days worth of vacation this is going to be, within 3 days, or 10 P4s are caused.
     4. Vacation rules can not be misused. 
     5. A Health Vacation can be issued which only overrides Health Rules.

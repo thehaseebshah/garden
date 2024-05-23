@@ -1,0 +1,24 @@
+---
+Created: 2023-09-07 14:24 
+---
+- For Job Search:
+	- Staffing
+	- Content [[Marketing]]
+	- Education
+	- Personal Development
+	- [[Dawah]]
+	- [[AI]] Dev
+	- Project Management
+- For Agency:
+	- Gen[[AI]] Language APIs for Technical Co-Founders
+- For MicroSaaS
+	- Landing Page Copywriting
+	- Project Managment
+	- [[AI]] Dev
+	- Personal Dev
+- For SaaS
+	- Copywriting
+	- Project Managment
+	- Personal Development
+	- [[Dawah]]
+	- [[AI]] Dev

@@ -1,13 +1,17 @@
 0. _**Metadata**_
     - YA ALLAH, new Changes applied on: 
-	    - [[2024-05-21]]
+	    - 2024-05-23
+	- Vacation till 27 May
+	- Old penalties will not increase, and will not count towards P4s.
+	- Mamoolat Rules to restart on 15 June
 1. _**Salah Rules:**_
     1. The Faraidh of Salah should be offered with Takbeer e Oola, or 10 P2s are incurred.
     2. The Witr of Salah should be offered before 0000 daily, or 10 P2s are incurred.
-    3. Nothing is an unforeseen circumstance.
+    3. Nothing is an unforeseen circumstance, except not hearing the morning alarm at all.
     4. If a penalty occurs due to not offering Salah on time, we still need to offer it on the same day or another 10 P2s will be added. If not offered on the next day even, then another penalty will be caused. And this process will keep on repeating until it is offered.
     5. Salahs should be properly completed as described by Shariah, or they are not accepted
-    6. Dua for each Salah should not be less than 1 minute, otherwise 5 P2s are caused. When you get a good time to complete the dua and you do not, the penalty is incurred. The good time will be decide based on UP Rule. Forgetfulness applies. (Paused)
+    6. We can not skip the main Jamah of the masjid except due to a genuine reason. Use the UP Rule. (To be added today 0000)
+    7. Dua for each Salah should not be less than 1 minute, otherwise 5 P2s are caused. When you get a good time to complete the dua and you do not, the penalty is incurred. The good time will be decide based on UP Rule. Forgetfulness applies. (Paused)
 2. _**Health Rules:**_
     1. We can only have:
         1. Breakfast:
@@ -40,15 +44,15 @@
     7. Only Homemade meals for breakfast lunch and dinner allowed unless someone else buys without you telling them to buy, or when homemade food is not attainable
     8. Exceptions for Health Rules:
         1. Things presented to eat at Al Burhan
-    9. Nothing is an unforeseen circumstance except forgetfulness.
+    9. Nothing is an unforeseen circumstance except forgetfulness. Forgetfulness only means being reminded after you have already eaten, and no more food will be allowed after being reminded.
     10. If we are in a 3 KM radius of our Martial Arts Club 1 hour before the called time by the instructor, we need to get into a 100m radius at least once before the called time, on Mon to Fri. The called time is the time the instructor has asked to appear at the club. Your club is club you have paid for the month.
     11. Breaking these rules for a day causes 10 P2s
 3. _**Pomodoro Rules:**_
     1. 5 Pomodoros of 1 hour with optional 10 min ending rest are to be completed daily before the following times:
         1. 3 Mandatory Pomos:
-            1. 0800
-            2. 0900
-            3. 1100
+            1. 1100
+            2. 1200
+            3. 1300
         2. 2 Optional Pomos:
             1. 1500
             2. 1700
@@ -59,7 +63,7 @@
     6. If due to an unforeseen circumstance a Pomo is missed and the unforeseen circumstance is gone now, we will be given 30 or 60 mins of buffer time (depending on the type of unforeseen circumstance) and then we will be able to continue the current Pomo, and it will be considered complete along with the previous ones.
     7. _**Unforeseen Circumstances:**_
         1. Unexpected travelling counts, but only 30 mins in the case of short travels, and 1 hour in the case of long travels are discounted before arrival time and after departure time. This rule can't be misused. This excuse needs to be verified based on UP Rule.
-        2. Not having the morning alarm ring counts, and this is resolved when you are awake. Messing with the alarm does not count.
+        2. Not having the morning alarm ring counts, and this is resolved when you are awake. Messing with the alarm does not count. (Paused)
         3. Severe illness counts
         4. Nothing else counts except the above
     8. _**Planning Rules:**_
@@ -90,13 +94,13 @@
 	5. Breakfast
     1. Isolation for 30 Min
     2. No Devices for 30 Min
-	6. Not doing first 2 before Fajr time enters causes 1 P2.
+	6. Not doing first 2 before Fajr time enters causes 1 P2. (Paused)
 6. _**Fajr Protocol:**_
     4. Yaasin
     6. Zikr Bil Jahr (if given)
     7. Jogging/cycling for at least 1 minute
     8. Once awake and conscious, we can not sleep without completing this rule. (paused)
-    9. Not completing first 2 before Chasht time enters causes 1 P2.
+    9. Not completing first 2 before Chasht time enters causes 1 P2. (Paused)
     10. No unforeseen circumstances count except forgetfulness or not having the alarm ring due to battery optimization. The forgetfulness rule can not be misused.
 7. _**Chasht Protocol:**_
     1. Ishraaq
@@ -105,12 +109,12 @@
     3. Nawafil e Shukr
     5. Qailoola (Optional)
     6. Lunch (Optional)
-    7. Not completing first 3 before Zawal time enters causes 1 P2.
+    7. Not completing first 3 before Zawal time enters causes 1 P2. (Paused)
 8. _**Zuhr Protocol:**_
     2. 0.25 Para
     3. Family Rules 
     4. Doing a Community Act of Kindness by either gifting 3 kids something or by giving something to a neighbour
-    5. Not completing first 1 before Hanafi Asr time enters causes 1 P2.
+    5. Not completing first 1 before Hanafi Asr time enters causes 1 P2. (Paused)
 9. _**Asr Protocol:**_
     2. Dua Manzil (paused)
     3. Evening Azkaar
@@ -118,12 +122,12 @@
     5. Check Messages on Google Chat and WhatsApp (Optional)
     6. Calliraphy/Gardening/Permaculture (Optional)
     7. Walk (Optional)
-    8. Not completing first 2 before Maghrib time enters causes 1 P2.
+    8. Not completing first 2 before Maghrib time enters causes 1 P2. (Paused)
 10.  _**Maghrib Protocol:**_
     1. Awabayn
     2. Surah Waqiah
     4. Iftaar/Dinner (Optional)
-    5. Not completing first 2 before Isha time enters causes 1 P2.
+    5. Not completing first 2 before Isha time enters causes 1 P2. (Paused)
 11. _**Isha Protocol:**_
     2. Surah Mulk
     4. 20 Taraweeh in Ramadan
@@ -132,7 +136,7 @@
     7. Nightly Visualization and Murakba (optional)
     8. It is advisable to wind down and be on bed without tech usage before 2315 HRS. We can't get out of bed and use use tech unless a genuine reason shows up. This rule can't be misused. The genuine reason must be verified based on the opinion of an imaginary unbiased 3rd person. If it is based primarily on an urge to make ease for yourself, then that unbiased person would not allow this as a reason.
     9. Chipchi for both bros must be done if possible (paused)
-    10. Not completing first 4 before 0000 HRS causes 1 P2.
+    10. Not completing first 4 before 0000 HRS causes 1 P2. (Paused)
 12. _**Family Rules:**_
 	1. Debrief Session:
 		1. Ask how many penalties everyone has
@@ -162,7 +166,7 @@
         4. HFU — 1 Healthy Food Unit = 100 Rs
     3. Purchased Rewards will override other rules that may exist in this document.
     4. You can not use any rewards that are mentioned above without either unlocking them, or using a rule in this rules heading to use them without unlock. Consuming otherwise causes 3 P2s per Unit.
-    5. Unlocks:
+    5. Unlocks: (Each tier unlocks with completion of 50% Habits)
         1. 1 Unit of each reward for last day’s dinaars > 500, expires same day
         2. 10 Unit of each reward for last week's dinaars > 3500, expires same week
         3. 100 Units of each reward for last month’s dinaars > 15000, expires same month
@@ -172,7 +176,7 @@
     9. The Definition of Digital Entertainment mentioned under Digital Entertainment Rules.
     10. We can without any hurdle have the healthy or unhealthy foods that are mentioned in the meals in Health Rules, and also using the Exceptions for Health Rules heading in Health Rules.
     11. There will be a 30 minute period right after waking up in the morning before Fajr Jamah, in which health rules, digital entertainment rules and Mamoolat rules are paused. Forgetfulness does not apply to this rule, meaning that you can not consume food or content after you have missed the 30 minute time, later in the day using the forgetfulness excuse.
-    12. Not Sending Mamoolat to Murabbi(s) Daily before 0000 HRS causes 1 P2. Forgetfulness applies.
+    12. Not Sending Mamoolat to Murabbi(s) Daily before 0000 HRS causes 1 P2. Forgetfulness applies. (Paused)
     13. Healthy food is only:
         1. Yakhni
         2. Soup
