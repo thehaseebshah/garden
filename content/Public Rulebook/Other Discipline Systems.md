@@ -4,3 +4,4 @@ This document enlists other discipline systems outside of the rules mentioned in
 [[Murabbi Accountability]]
 [[Consistency Streaks]]
 [[Promises]]
+[[Al Burhan Accountability]]

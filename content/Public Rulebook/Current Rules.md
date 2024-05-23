@@ -91,16 +91,16 @@
 5. _**Tahajjud Protocol**_:
 	1. Tahajjud
 	3. Dua for at least 5 minutes while sitting.
+	4. Zikr Bil Jahr (if given)
 	5. Breakfast
     1. Isolation for 30 Min
     2. No Devices for 30 Min
-	6. Not doing first 2 before Fajr time enters causes 1 P2. (Paused)
+	6. Not doing first 3 before Fajr time enters causes 1 P2. (Paused)
 6. _**Fajr Protocol:**_
     4. Yaasin
-    6. Zikr Bil Jahr (if given)
     7. Jogging/cycling for at least 1 minute
     8. Once awake and conscious, we can not sleep without completing this rule. (paused)
-    9. Not completing first 2 before Chasht time enters causes 1 P2. (Paused)
+    9. Not completing first 1 before Chasht time enters causes 1 P2. (Paused)
     10. No unforeseen circumstances count except forgetfulness or not having the alarm ring due to battery optimization. The forgetfulness rule can not be misused.
 7. _**Chasht Protocol:**_
     1. Ishraaq
