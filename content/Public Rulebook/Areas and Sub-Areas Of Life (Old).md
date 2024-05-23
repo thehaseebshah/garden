@@ -1,1 +1,1 @@
-![[Areas_Of_Life.png]]g]
+![[Areas_Of_Life.png]]
