@@ -1,0 +1,21 @@
+---
+Created: 2023-09-22 05:10
+---
+- [ ] YC Tafseer Class (Thursday)
+- [x] Salaat us Tasbeeh (Friday) 
+- [x] Surah Kahf (Friday)
+- [x] Ahbaab e Azeemat (Friday)
+- [x] Planning Time -- [[How to Plan Each Week -- to update]] (Friday)
+- [x] Ayyubi Qabeela Meeting (Friday)
+- [ ] Seerah (Friday)
+- [x] Alone time in Khanqah for Islaah -- 24 Hours (Saturday)
+- [x] Maulvi Meetups (Saturday) 
+- [x] Chaye with my Bhai (Saturday) 
+- [x] Meetings and Calls with Brothers (Saturday)
+- [ ] Shabab (Saturday-Sunday)
+- [x] Dars-e-Nizami  (Saturday-Sunday)
+- [x] Danial Bhai Classes (Saturday-Sunday) 
+- [x] For Leisure with Family -- 3 Hours (Sunday)
+- [x] Majlis e Islaah Meeting  (Any of Fri-Sat-Sun)
+- [x] Majlis e Shabab Meeting (Any of Fri-Sat-Sun)
+- [x] Al Burhan Khidmah (Any of Fri-Sat-Sun)
