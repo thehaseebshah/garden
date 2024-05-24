@@ -54,6 +54,7 @@ const config: QuartzConfig = {
     transformers: [
       Plugin.FrontMatter(),
       Plugin.HardLineBreaks(),
+      Plugin.TableOfContents(),
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "filesystem"],
       }),
