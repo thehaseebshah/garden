@@ -22,6 +22,7 @@ Created: 2024-03-23 01:02
 	- Seerat Groups
 	- YC Groups
 	- Majlis Tarbiah Groups
+- Viewing, not editing Obsidian Notes
 - Allowed Websites
 	- Prayer Times by Islamic Finder
 	- Todoist

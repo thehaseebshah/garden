@@ -1,8 +1,6 @@
 0. _**Metadata**_
     - YA ALLAH, new Changes applied on: 
-	    - 2024-05-23
-	- Vacation till 27 May
-	- Old penalties will not increase, and will not count towards P4s.
+	    - 2024-05-27
 	- Mamoolat Rules to restart on 15 June
 1. _**Salah Rules:**_
     1. The Faraidh of Salah should be offered with Takbeer e Oola, or 10 P2s are incurred.
@@ -10,7 +8,7 @@
     3. Nothing is an unforeseen circumstance, except not hearing the morning alarm at all.
     4. If a penalty occurs due to not offering Salah on time, we still need to offer it on the same day or another 10 P2s will be added. If not offered on the next day even, then another penalty will be caused. And this process will keep on repeating until it is offered.
     5. Salahs should be properly completed as described by Shariah, or they are not accepted
-    6. We can not skip the main Jamah of the masjid except due to a genuine reason. Use the UP Rule. (To be added today 0000)
+    6. We can not skip the main Jamah of the masjid except due to a genuine reason. Use the UP Rule. 
     7. Dua for each Salah should not be less than 1 minute, otherwise 5 P2s are caused. When you get a good time to complete the dua and you do not, the penalty is incurred. The good time will be decide based on UP Rule. Forgetfulness applies. (Paused)
 2. _**Health Rules:**_
     1. We can only have:
@@ -114,7 +112,8 @@
     2. 0.25 Para
     3. Family Rules 
     4. Doing a Community Act of Kindness by either gifting 3 kids something or by giving something to a neighbour
-    5. Not completing first 1 before Hanafi Asr time enters causes 1 P2. (Paused)
+    5. Calling 1 Murabba aur Texting 3 Murabba
+    6. Not completing first 1 before Hanafi Asr time enters causes 1 P2. (Paused)
 9. _**Asr Protocol:**_
     2. Dua Manzil (paused)
     3. Evening Azkaar
@@ -193,7 +192,8 @@
 16. _**Unforeseen Circumstances:**_
     1. Unforeseen circumstances can prevent addition of Penalties except P4s.
     2. For any unforeseen circumstance to be valid, we must use UP Rule.
-    3. These are mentioned in specific rules too. In such cases, they override the Unforeseen circumstances mentioned here unless specified otherwise.
+    3. Forgetfulness does not mean forgetting the number of penalties for a rule.
+    4. These are mentioned in specific rules too. In such cases, they override the Unforeseen circumstances mentioned here unless specified otherwise.
 17. _**Digital Detox Rules:**_
 	1. The Green Time is defined as any time period in a day except between Hanafi Asr and entering time of Isha in your area.
 	2. During non-Green time, we can use our smartphone fully.

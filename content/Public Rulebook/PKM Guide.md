@@ -3,9 +3,10 @@ Created: 2023-04-27 06:58
 Updated: 2023-07-01 14:12
 Tags:: #keep
 ---
+# CHANGE NOW
 # Our Final Note Taking System and Consolidated Research 
 [[Obsidian PKM Guide]]
-[[Types of Notes]]
+[[Resources/Rulebook/Public Rulebook/Types of Notes]]
 [[What to Put on Physical Journal -- to update]]
 [[How notes of Each type can be useful in life]]
 [[Effective Note-Taking Tips]]

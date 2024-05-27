@@ -120,6 +120,7 @@ Created: 2024-03-23 01:34
 	- 1 P2 for 0.25 Juz before Asr (And in Old Mamoolat, Dua Manzil)
 	- Family Rules (And in Old Mamoolat, Jamah)
 	- Gift 3 Kids OR Gift Neighbour
+	- Text 3 or Call 1 Murabba
 - Family
 	- Debrief + Story + Lecture + Activity + Rewards + Make Day
 - Asr

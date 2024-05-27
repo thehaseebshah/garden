@@ -22,3 +22,4 @@
 [[My Main Skills]]
 [[Other Skills]]
 [[Full Rules]]
+[[Murabbi Answers]]

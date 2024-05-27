@@ -32,7 +32,7 @@
 	- They can increase your love for someone 
 
 
-[[Types of Notes]]
+[[Resources/Rulebook/Public Rulebook/Types of Notes]]
 
 %% ## Old Research
 - While Reading a Book
