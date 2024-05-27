@@ -1,2 +1,2 @@
-Obsidian Inbox
-[[Index Cards in Purse]]
+Obsidian [[The +Inbox]]
+[[Pocket Notebook]]

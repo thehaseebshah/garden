@@ -1,7 +1,7 @@
 0. _**Metadata**_
     - YA ALLAH, new Changes applied on: 
 	    - 2024-05-27
-	- Mamoolat Rules to restart on 15 June
+	- Mamoolat Rules to restart on 18 June
 1. _**Salah Rules:**_
     1. The Faraidh of Salah should be offered with Takbeer e Oola, or 10 P2s are incurred.
     2. The Witr of Salah should be offered before 0000 daily, or 10 P2s are incurred.
@@ -55,7 +55,7 @@
             1. 1500
             2. 1700
     2. In the Pomos we must do any of these: Any Islamic Course that is available outside of YouTube, and/or an Islamic Book, and/or Planning, and/or Research/Creation of Islamic Projects and/or Freelancing and/or Job Work and/or Career Learning
-    3. At least 2 Pomos should be fully based on Freelancing/Job Work/Career Learning on Mon to Thurs, or 2 Pomo penalties are caused.
+    3. At least 2 Pomos, among the above times, should be fully based on Freelancing/Job Work/Career Learning on Mon to Thurs, or 2 Pomo penalties are caused.
     4. Not completing a Pomodoro causes 5 P2s for Mandatory ones.
     5. A Pomo will be considered complete using UP Rule
     6. If due to an unforeseen circumstance a Pomo is missed and the unforeseen circumstance is gone now, we will be given 30 or 60 mins of buffer time (depending on the type of unforeseen circumstance) and then we will be able to continue the current Pomo, and it will be considered complete along with the previous ones.
@@ -117,7 +117,7 @@
 9. _**Asr Protocol:**_
     2. Dua Manzil (paused)
     3. Evening Azkaar
-    4. Calling one relative or friend is also a must during this time, for a total of 1 mins call-time.
+    4. Calling or visiting one relative or friend is also a must during this time, for a total of 1 mins.
     5. Check Messages on Google Chat and WhatsApp (Optional)
     6. Calliraphy/Gardening/Permaculture (Optional)
     7. Walk (Optional)
@@ -159,24 +159,24 @@
 15. _**Mamoolat Rules:**_
     1. I will fill the Mamoolat Sheet truthfully to the best of my knowledge.
     2. Dinaars can purchase these rewards:
-        1. 1 UFU — 1 Unhealthy Food Unit = 100 Rs
-        2. GTU — 1 Game Time Unit = 30 mins
-        3. VEU — 1 Video Entertainment Unit = 30 mins
-        4. HFU — 1 Healthy Food Unit = 100 Rs
+        1. 1 UFU — 1 Unhealthy Food Unit = 50 Rs
+        3. 1 VEU — 1 Video Entertainment Unit = 15 mins
+        4. 1 HFU — 1 Healthy Food Unit = 100 Rs
     3. Purchased Rewards will override other rules that may exist in this document.
     4. You can not use any rewards that are mentioned above without either unlocking them, or using a rule in this rules heading to use them without unlock. Consuming otherwise causes 3 P2s per Unit.
     5. Unlocks: (Each tier unlocks with completion of 50% Habits)
-        1. 1 Unit of each reward for last day’s dinaars > 500, expires same day
-        2. 10 Unit of each reward for last week's dinaars > 3500, expires same week
-        3. 100 Units of each reward for last month’s dinaars > 15000, expires same month
+        1. 5 Unit of each reward for last day’s dinaars > 500, expires same day
+        2. 50 Unit of each reward for last week's dinaars > 3500, expires same week
+        3. 500 Units of each reward for last month’s dinaars > 15000, expires same month
     6. For habits that have days off, you can check them on days off.
     7. Unforeseen circumstances are forgetfulness and medical reasons. Validity of unforeseen circumstance will be decided using UP Rule.
     8. Things cannot be bought under their approximate value.
     9. The Definition of Digital Entertainment mentioned under Digital Entertainment Rules.
     10. We can without any hurdle have the healthy or unhealthy foods that are mentioned in the meals in Health Rules, and also using the Exceptions for Health Rules heading in Health Rules.
     11. There will be a 30 minute period right after waking up in the morning before Fajr Jamah, in which health rules, digital entertainment rules and Mamoolat rules are paused. Forgetfulness does not apply to this rule, meaning that you can not consume food or content after you have missed the 30 minute time, later in the day using the forgetfulness excuse.
-    12. Not Sending Mamoolat to Murabbi(s) Daily before 0000 HRS causes 1 P2. Forgetfulness applies. (Paused)
-    13. Healthy food is only:
+    12. Not Sending Mamoolat to Murabbi(s) Daily before 0000 HRS causes 1 P2. Forgetfulness applies. 
+    13. For habits that are to be completed and have deadlines, if you are reminded about the habit 1 hour before the deadline and within the time pocket of the habit, and you still do not complete it before the deadline the forgetfulness excuse can not be used to forgive the penalty.
+    14. Healthy food is only:
         1. Yakhni
         2. Soup
         3. Roti
@@ -193,7 +193,7 @@
     1. Unforeseen circumstances can prevent addition of Penalties except P4s.
     2. For any unforeseen circumstance to be valid, we must use UP Rule.
     3. Forgetfulness does not mean forgetting the number of penalties for a rule.
-    4. These are mentioned in specific rules too. In such cases, they override the Unforeseen circumstances mentioned here unless specified otherwise.
+    5. These are mentioned in specific rules too. In such cases, they override the Unforeseen circumstances mentioned here unless specified otherwise.
 17. _**Digital Detox Rules:**_
 	1. The Green Time is defined as any time period in a day except between Hanafi Asr and entering time of Isha in your area.
 	2. During non-Green time, we can use our smartphone fully.

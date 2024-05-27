@@ -13,17 +13,9 @@
 	- How to live below sustenance
 - Immediate
 	- Kaffaras and Qadha Salawat
-	- Reduce notifications and create flows and automations
-	- Emergency Break from Pomos
-	- Formal Ways to Do Community and Family Kindness
-	- For rules that are important to you, have them strict with all possibilities listed down so that everything is accounted for
-	- The Big Idea: bore yourself and productively will come. Create only restraint rules except Mamoolat.
-	- No texting in Pomos
-	- Forgetfulness Fix
 	- Type 3 promise system to not allow anything new into life
-	- Make type 2 promises for rulings without penalties
-	- Make life so boring that addictive time wasters get replaced by humanity savers and fun analogue creative endeavours
 - Promises and Oaths
+	- Rules to not lie to father
 	- One Time Wifi and BnW [[Rules]] for Phone
 	- Fix Digital Detox App permanently and finalize phone
 	- [[Salah]] Khushu Research

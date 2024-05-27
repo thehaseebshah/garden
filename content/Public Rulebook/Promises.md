@@ -16,6 +16,8 @@ Created: 2023-09-18 10:40
 | [[Minimalist possessions promise]]              | Type IV  | No   |
 | [[Promise about Perfumes]]                      | Type IV  | No   |
 | [[Final Laptop and Smartphone Buying Decision]] | Type IV  | No   |
+| [[Not to hasten Salah]]                         | Type I   | No   |
+| [[Not to cheat in Al Burhan Excecises]]         | Type I   | No   |
 
 [[Types of Promises and Intentions]]
 [[Oaths and Oath Templates]]

@@ -7,5 +7,4 @@ Created: 2023-09-22 05:07
 [[Half Yearly Routines -- to update]]
 [[Yearly Routines -- to update]]
 [[Things to Avoid]]
-
 # CHANGE NOW!

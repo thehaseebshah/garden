@@ -99,17 +99,17 @@ Created: 2024-03-23 01:34
 	- Isha Protocol
 	- Health, Fasting, Family Rules 
 - Reward Costs:
-            -  1 UFU = 100 Rs
-	        - 1 GTU = 30 mins
-	        - 1 VEU = 30 mins
-	        - 1 HFU = 100 Rs
+	-  1 UFU = 50 Rs
+	- 1 VEU = 15 mins
+	- 1 HFU = 100 Rs
 - Unlocks:
-			- 1 of each for last day > 500, expires same day
-	        - 10 of each for last week > 3500, expires same week
-	        - 100 of each for last month > 15000, expires same month
+	- 5 of each for last day > 500, expires same day
+	- 50 of each for last week > 3500, expires same week
+	- 500 of each for last month > 15000, expires same month
 - Tahajjud
 	- 1 P2 for Tahajjud + 5 Min Dua + Zikr Bil Jahr before Fajr time
 	- Breakfast + 30 Min Isolation + 30 Min No Devices 
+- ---
 - Fajr
 	- 1 P2 for Yaseen before Ishraq time
 	- 1 min Jog (And in Old Mamoolat, Jamah)
@@ -118,20 +118,19 @@ Created: 2024-03-23 01:34
 	- Nawafil Shukr
 - Zhuhr Protocol
 	- 1 P2 for 0.25 Juz before Asr (And in Old Mamoolat, Dua Manzil)
-	- Family Rules (And in Old Mamoolat, Jamah)
-	- Gift 3 Kids OR Gift Neighbour
-	- Text 3 or Call 1 Murabba
+	- Family Rules (And in Old Mamoolat, Jamah) + Gift 3 Kids or 1 Neighbour + Text 3 or Call 1 Murabba
 - Family
 	- Debrief + Story + Lecture + Activity + Rewards + Make Day
 - Asr
-	- 1 P2 for Evening Azkaar (And in Old Mamoolat, 0.25 Para)
-	- Calling relative for 1 Min (And in Old Mamoolat, Jamah)
+	- 1 P2 for Evening Azkaar before Maghrib
+	- Calling or Meeting relative for 1 Min (And in Old Mamoolat, Jamah)
 - Maghrib (+ DE Rules)
-	- 1 P2 for Awabayn + Surah Waqiah before Isha time enters 
+	- 1 P2 for Awabayn + Surah Waqiah before Isha
 	- (And in Old Mamoolat, Jamah)
 - Isha
 	- 1 P2 for Surah Mulk + Taraweeh + Witr + Planning before 1200
 	- (And in Old Mamoolat, Jamah)
+- ---
 - Digital Entertainment
 	- 1 P2 per minute
 	- 5 P2s for Astaghfar Pouch

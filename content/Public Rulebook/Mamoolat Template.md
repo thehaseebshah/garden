@@ -52,13 +52,12 @@ Evening (300)
 🟨 No Music ✅
 
 ⚪ Additional
-⬜ Habit Tracker: https://tinyurl.com/haseeb-habits
-⬜ Rules: https://thehaseebshah.github.io/garden/Public-Rulebook/Full-Rules
 ⬜ Today's Penalties According to Rules = 
-⬜ Mamoolat Template: https://thehaseebshah.github.io/garden/Public-Rulebook/Mamoolat-Template
+⬜ Rules: https://thehaseebshah.github.io/garden/Public-Rulebook/Full-Rules
+⬜ Habit Tracker: https://tinyurl.com/haseeb-habits
+⬜ Mamoolat Definitions: https://thehaseebshah.github.io/garden/Public-Rulebook/Mamoolat-Template
 
 ---
-
 ## Rules:
 ✅ on Completion
 ❌ on Non-completion

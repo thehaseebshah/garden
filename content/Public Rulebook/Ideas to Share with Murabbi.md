@@ -2,8 +2,8 @@
 - [ ] And Shabab Camp Centers
 - [ ] Maulvified Life
 - [ ] Burhan Novel
-- [ ] Literary Club
+- [x] Literary Club ✅ 2024-05-27
 - [ ] Model Muhallaha Formula and Muhalla Mukhtaari
-- [ ] Muslim Village
+- [x] Muslim Village ✅ 2024-05-27
 - [ ] Bringing Children of Relatives for a 24/7 Shabab Academy
-- [ ] 1 Min Seerah
+- [ ] 1 Min Seerah and WA Dawah

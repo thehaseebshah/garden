@@ -1,15 +1,14 @@
-- [ ] AI Career
-- [ ] Digital Privacy in Islam
-- [ ] Liberalism Club
+- [ ] AI Career (vs MAULWI specialty question)
 - [ ] Capitalism, Consumerism, Anti Tech, Environment Friendliness, Self Sufficiency in Islam
-- [ ] Life in Mountains
+	- [ ] Digital Privacy in Islam
 - [ ] Learning Isms
-- [ ] And from Daniel and Sapience
-- [ ] Where to Live
-- [ ] Muslim Village
-- [ ] Marriage
-- [ ] Money for Daees
-- [ ] Show off in Dawah, and will it effect Ikhlas
-- [ ] Social Media in Roadmap
-- [ ] Show Off Question to Al Burhanis
-- [ ] Pesa mil Jana vs Uska mutlashi hona
+	- [ ] And from Daniel and Sapience
+- [x] Life in Mountains ✅ 2024-05-27
+- [x] Where to Live ✅ 2024-05-27
+- [x] Muslim Village ✅ 2024-05-27
+- [x] Marriage ✅ 2024-05-27
+- [x] Money for Daees ✅ 2024-05-27
+- [x] Show off in Dawah, and will it effect Ikhlas ✅ 2024-05-27
+- [x] Show Off Question to Al Burhanis ✅ 2024-05-27
+- [x] Pesa mil Jana vs Uska mutlashi hona ✅ 2024-05-27
+- [x] Liberalism Club ✅ 2024-05-27
