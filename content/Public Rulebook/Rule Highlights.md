@@ -72,8 +72,9 @@ Created: 2024-03-23 01:34
 	- 1700
 - Mamolaat
 	- 3 P2s per 1 Unit
-	- 1 P2 for not Sending Mamoolat to Murabbi(s) Daily before 0000 (1800 in Old Mamoolat)
+	- 1 P2 for not Sending Mamoolat to Murabbi(s) Daily before 0000
 	- 30 minute period right after waking up in the morning before Fajr Jamah 
+	- 1 Hour reminder deadline
 - Healthy Foods:
 		1. Yakhni
 		2. Soup
@@ -147,3 +148,7 @@ Created: 2024-03-23 01:34
 	- 1 P2 per 5 minutes
 - Fasting
 	- 5 P2s for not fasting and having more than 1 glass of drink, one other item, and 3 dates before Maghrib
+- Sleep
+	- 10 P2s
+	- 30 mins for traveling, 5 for forgetfulness
+	- Current Sleep Pocket: 

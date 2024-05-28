@@ -4,6 +4,12 @@ Updated: 2023-06-28 07:40
 ---
 %% Changed May 2024 %%
 # Current
+
+![[1 1.png]]
+![[2 1.png]]
+![[3.png]]
+![[4.png]]
+![[5.png]]
 ## Your One Thing:
 - Al Burhan
 ### Your Top Five Skills:

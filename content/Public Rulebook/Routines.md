@@ -8,3 +8,4 @@ Created: 2023-09-22 05:07
 [[Yearly Routines -- to update]]
 [[Things to Avoid]]
 # CHANGE NOW!
+WE need munazzim nights

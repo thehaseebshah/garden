@@ -18,6 +18,7 @@ Created: 2023-09-18 10:40
 | [[Final Laptop and Smartphone Buying Decision]] | Type IV  | No   |
 | [[Not to hasten Salah]]                         | Type I   | No   |
 | [[Not to cheat in Al Burhan Excecises]]         | Type I   | No   |
+| [[Not to use boycotted products]]               | Type I   | No   |
 
 [[Types of Promises and Intentions]]
 [[Oaths and Oath Templates]]

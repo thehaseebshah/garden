@@ -1,6 +1,6 @@
 0. _**Metadata**_
     - YA ALLAH, new Changes applied on: 
-	    - 2024-05-27
+	    - 2024-05-28
 	- Mamoolat Rules to restart on 18 June
 1. _**Salah Rules:**_
     1. The Faraidh of Salah should be offered with Takbeer e Oola, or 10 P2s are incurred.
@@ -44,7 +44,7 @@
         1. Things presented to eat at Al Burhan
     9. Nothing is an unforeseen circumstance except forgetfulness. Forgetfulness only means being reminded after you have already eaten, and no more food will be allowed after being reminded.
     10. If we are in a 3 KM radius of our Martial Arts Club 1 hour before the called time by the instructor, we need to get into a 100m radius at least once before the called time, on Mon to Fri. The called time is the time the instructor has asked to appear at the club. Your club is club you have paid for the month.
-    11. Breaking these rules for a day causes 10 P2s
+    12. Breaking these rules for a day causes 10 P2s
 3. _**Pomodoro Rules:**_
     1. 5 Pomodoros of 1 hour with optional 10 min ending rest are to be completed daily before the following times:
         1. 3 Mandatory Pomos:
@@ -55,7 +55,7 @@
             1. 1500
             2. 1700
     2. In the Pomos we must do any of these: Any Islamic Course that is available outside of YouTube, and/or an Islamic Book, and/or Planning, and/or Research/Creation of Islamic Projects and/or Freelancing and/or Job Work and/or Career Learning
-    3. At least 2 Pomos, among the above times, should be fully based on Freelancing/Job Work/Career Learning on Mon to Thurs, or 2 Pomo penalties are caused.
+    3. At least 2 Pomos, among the above times, should be fully based on Freelancing/Job Work/Career Learning on Mon to Thurs, or 1 Pomo penalty is caused for each.
     4. Not completing a Pomodoro causes 5 P2s for Mandatory ones.
     5. A Pomo will be considered complete using UP Rule
     6. If due to an unforeseen circumstance a Pomo is missed and the unforeseen circumstance is gone now, we will be given 30 or 60 mins of buffer time (depending on the type of unforeseen circumstance) and then we will be able to continue the current Pomo, and it will be considered complete along with the previous ones.
@@ -155,7 +155,6 @@
     1. Digital entertainment won't be allowed unless by attaining rewards.
     2. Consuming otherwise causes 1 P2 per 5 minutes.
     3. Nasheeds, lecture session lectures, Islamic lectures, self help lectures learning in Pomos, recitation, audiobooks don't count as this. Islamic masail do not count as this. Anything that will be rejected under UP Rules will be considered Digital Entertainment.
-    4. Once phone is in Astaghfar Pouch, we must perform a Zikr of 300 Astaghfar before taking it out. Not doing so causes 5 P2s.
 15. _**Mamoolat Rules:**_
     1. I will fill the Mamoolat Sheet truthfully to the best of my knowledge.
     2. Dinaars can purchase these rewards:
@@ -174,7 +173,7 @@
     9. The Definition of Digital Entertainment mentioned under Digital Entertainment Rules.
     10. We can without any hurdle have the healthy or unhealthy foods that are mentioned in the meals in Health Rules, and also using the Exceptions for Health Rules heading in Health Rules.
     11. There will be a 30 minute period right after waking up in the morning before Fajr Jamah, in which health rules, digital entertainment rules and Mamoolat rules are paused. Forgetfulness does not apply to this rule, meaning that you can not consume food or content after you have missed the 30 minute time, later in the day using the forgetfulness excuse.
-    12. Not Sending Mamoolat to Murabbi(s) Daily before 0000 HRS causes 1 P2. Forgetfulness applies. 
+    12. Not Sending the last day's Mamoolat to Murabbi Daily before 0000 HRS causes 1 P2.
     13. For habits that are to be completed and have deadlines, if you are reminded about the habit 1 hour before the deadline and within the time pocket of the habit, and you still do not complete it before the deadline the forgetfulness excuse can not be used to forgive the penalty.
     14. Healthy food is only:
         1. Yakhni
@@ -201,7 +200,8 @@
 	4. We can also use [[Restricted Apps]] based on the criteria mentioned on the page.
 	5. For every other app, you have a time of 30 minutes overall in a day, which must be tracked on an app or piece of paper.
 	6. We must keep our phone in black and white, and using it in color would require using the above app timer. When we find the phone in color we must either turn it into black and white mode within 60 seconds or start tracking the allowed 30 minute time.
-	7. Not following for 5 minutes or less causes 1 P2. More penalties for more violations.
+	7. Once phone is in Astaghfar Pouch, we must perform a Zikr of 300 Astaghfar before taking it out. Not doing so causes 5 P2s.
+	8. Not following for 5 minutes or less causes 1 P2. More penalties for more violations.
 18. _**Secret Sin Rules**_:
     1. The secret sin can not be performed.
     2. Breaking this rule causes 1 P2.
@@ -215,3 +215,12 @@
 21. _**Unbiased Person Rule**_:
     1. We will need to consider the supposed opinion of an unbiased person, wherever this rule is mentioned. If it is hard to think of this, we will consider the supposed opinion of Abu Bakar Mukhtar Bhai of Al Burhan.
     2. The Unbiased person's opinion would not support a desire to make ease for yourself
+22. ***Sleep Rules:***
+	1. The Sleep pocket is defined as follows: 
+		1. 1100-0300 Apr-Sep
+		2. 1000-0400 Oct-Mar
+	2. We should be on our bed at this time pocket, and should not be using phone or computer.
+	3. Not following this causes 10 P2s. (Starts 3 June)
+	4. Travelling is an unforeseen circumstance and 30 mins of buffer time are given after reaching destination.
+	5. Forgetfulness is an unforeseen circumstance and 5 mins of buffer time are given after being reminded.
+	6. Nothing else is an unforeseen circumstance.

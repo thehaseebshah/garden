@@ -6,11 +6,13 @@ Tags:: #keep
 # CHANGE NOW
 # Our Final Note Taking System and Consolidated Research 
 [[Obsidian PKM Guide]]
-[[Resources/Rulebook/Public Rulebook/Types of Notes]]
-[[What to Put on Physical Journal -- to update]]
-[[How notes of Each type can be useful in life]]
-[[Effective Note-Taking Tips]]
 [[Paper vs Digital Notes]]
+[[Meta PKM]]
+
+First we see [[Where to Take Notes]]
+Now let's see [[Types of Notes]] and [[Note Tags and Folders]]
+And [[How notes of Each type of Note can be useful in life]]
+Notes have [[Stages of Notes]]
 [[Methods of Note Taking for Different Types of Notes]]
 
 %% # Old  Research
