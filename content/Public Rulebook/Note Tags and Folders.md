@@ -25,4 +25,3 @@ These have separate folders
 - [[Express]]
 - [[Readmes]]
 - [[Rulebook]]
-- [[Templates]]

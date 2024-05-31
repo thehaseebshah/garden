@@ -6,14 +6,15 @@ Created: 2024-03-23 01:02
 	- SMS Messenger
 	- Clock
 	- VLC
-- Chats
+- WhatsApp Chats
 	- Students of AI Course
 	- Majlis Shabab Members
 	- Shabab
+	- Murabbas
 	- Our Murabbis
 	- Personal Chat
 	- Al Burhan Aamila Members
-- Groups
+- WhatsApp Groups
 	- Ahbaab e Azeemat
 	- Shabab Groups
 	- AI Course Groups
@@ -22,11 +23,8 @@ Created: 2024-03-23 01:02
 	- Seerat Groups
 	- YC Groups
 	- Majlis Tarbiah Groups
-- Viewing, not editing Obsidian Notes
-- Allowed Websites
+- Allowed Websites.
 	- Prayer Times by Islamic Finder
-	- Todoist
-	- Github
 - Others
 	- Camera
 	- Photos
@@ -42,4 +40,7 @@ Created: 2024-03-23 01:02
 	- Yango
 	- File Managers
 	- PDF Viewers
-	- Gboard
+	- Any Keyboard
+- Viewing, not editing Obsidian Notes Screen 
+- WhatsApp Calls Screen, Chats Screen, WhatsApp Calls
+- Minimized Apps

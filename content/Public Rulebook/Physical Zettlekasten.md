@@ -1,7 +1,7 @@
+---
 Up:: 
 Created:: 2023-09-08 13:03 
 Tags:: 
-
 ---
 Physical Zettlekasten can be used for select Research projects
 The cards are touchable, arrangeable on a canvas, and you can interact with them. 
@@ -53,10 +53,7 @@ The more variety you add in your notes, the better you can recall them. This is 
 [[How to Create a Physical Zettlekasten]]
 
 
-### Cons of Physical Zettlekasten
+### Cons
 - It's not scalble
 - It introduces unnecessary friction for creating the good habit of note taking
 - Friction is the biggest resistance to flow
-
-
-> Ultimately, we don’t know which approach is superior. And, as both students and adults move away from manual note-taking and adopt entirely digital strategies, it may be a moot point. Perhaps the better question is how exactly we might optimize computer note-taking. Some have suggested that using a stylus to write on specialized tablets might bridge the gap. Wide-scale adoption of that approach, however, seems unlikely.

@@ -1,6 +1,6 @@
 0. _**Metadata**_
     - YA ALLAH, new Changes applied on: 
-	    - 2024-05-28
+	    - 2024-05-30
 	- Mamoolat Rules to restart on 18 June
 1. _**Salah Rules:**_
     1. The Faraidh of Salah should be offered with Takbeer e Oola, or 10 P2s are incurred.

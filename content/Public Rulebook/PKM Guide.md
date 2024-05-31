@@ -3,17 +3,11 @@ Created: 2023-04-27 06:58
 Updated: 2023-07-01 14:12
 Tags:: #keep
 ---
-# CHANGE NOW
 # Our Final Note Taking System and Consolidated Research 
-[[Obsidian PKM Guide]]
-[[Paper vs Digital Notes]]
-[[Meta PKM]]
-
 First we see [[Where to Take Notes]]
-Now let's see [[Types of Notes]] and [[Note Tags and Folders]]
-And [[How notes of Each type of Note can be useful in life]]
-Notes have [[Stages of Notes]]
-[[Methods of Note Taking for Different Types of Notes]]
+Now let's see [[Note Tags and Folders]]
+And [[Types of Notes and their Benefits in Life]]
+There are [[Methods of Note Taking]]
 
 %% # Old  Research
 ## --
@@ -264,6 +258,35 @@ Don't use tags
 > 
 > Until an app comes along that can create an experience as simple as pen and paper, all you can do is make your experience as painless as possible. 
 
+The benefits of the system don't increase with its complexity, in fact it's the opposite.
+- Computers have the tendency to pull you towards shiny colorful lights away from your core values and principles
+- Only a select number of notes get turned into permanent notes 
+- Have One Topic Tag per Permanent Note, called the Up link, and one Link to another permanent note at least. One up and one across connection. Up and related.
+- Don't create Hub or Index notes immediately. Let the structure immerge itself.
+- Videos about Obsidian to Recommend:
+    Do not procrastinate on Note Taking Tools
+    [https://www.youtube.com/watch?v=baKCC2uTbRc](https://www.youtube.com/watch?v=baKCC2uTbRc)
+    Simple Setup [https://www.youtube.com/watch?v=E6ySG7xYgjY&t=879s](https://www.youtube.com/watch?v=E6ySG7xYgjY&t=879s)
+- Difference between Literature and References notes
+	- Both are the same
+- There are Two Folder Structures:
+	- [[Obsidian Onboarding]] for beginners
+	- [[My PKM Folders]] for me, an advanced user.
+- Use no tags
+- Temporary: [[What to do with DO NOT MOVE NOTES HERE Folder]]
+- Note taking should be frictionless
+- Make it easy and simple: use PARA
+- Tiago Forte says every app that he uses is at least 10 years old. He doesn't even want to touch or try anything that is less than 5 years old. You can't adopt a new hammer if you are a carpenter.
+- Don’t get blinded and bogged down by 1 hour and 46 seconds complicated workflow walkthroughs.
+- Having knowledge of tools is actually a waste of time if its too much knowledge. Its a burden and a waste of energy. Dont create content on tools in the future. Just have timeless rules and philosophies that must be followed and recommend tools to others and have very short descriptions to share with them on how to use them. Have three kinds of recommendations — one for very basic minimal users, next for normal users and next for advanced power hungry ones. But you need to have a way to be able to shift from tier 1 to 3 on your own tools so as to make it easier to explain to others.
+- Matt Daavella was a decade behind in technology — he uses Apple Notes and a simple todo list app. He took 10 minutes to research a read later app instead of weeks like me. He did not shift to the trendiest note taking apps.
+- You can provide a unique spin on the content you create and people might end up loving it. Dont think you are duplicating.
+- Some literature [[notes]], like books, can become longer
+- While reading a book you should be immersed in it so dont write ideas in your words. Just highlight or rephrase slightly on the sides of pages or on sticky [[notes]]. Or add your little thoughts pn sticky [[notes]] or sides of pages, or a seperate page.
+- Once youre done with a chapter of a book, make permanent [[notes]] and literature [[notes]] using the highlights and [[notes]]. Ask yourself if it is an important thing to take a permanent note about.
+- Refrain from intaking information all the time, take some rest
+- prevent the two primary sins of organizational overengineering: too many categories, and too many levels of hierarchy.
+- Start Small and very minimal and also make the system EXTREMELY LOW MAINTENANCE because you do not want yourself to be burdened by it. Everything should be efficient
 
 
  %%

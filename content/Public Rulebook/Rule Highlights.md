@@ -151,4 +151,5 @@ Created: 2024-03-23 01:34
 - Sleep
 	- 10 P2s
 	- 30 mins for traveling, 5 for forgetfulness
-	- Current Sleep Pocket: 
+	- 1100-0300 Apr-Sep
+	- 1000-0400 Oct-Mar
