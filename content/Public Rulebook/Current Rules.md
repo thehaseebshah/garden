@@ -59,12 +59,13 @@
     4. Not completing a Pomodoro causes 5 P2s for Mandatory ones.
     5. A Pomo will be considered complete using UP Rule
     6. If due to an unforeseen circumstance a Pomo is missed and the unforeseen circumstance is gone now, we will be given 30 or 60 mins of buffer time (depending on the type of unforeseen circumstance) and then we will be able to continue the current Pomo, and it will be considered complete along with the previous ones.
-    7. _**Unforeseen Circumstances:**_
+    7. Try to use [[Deep Pomo Checklist]] if possible
+    8. _**Unforeseen Circumstances:**_
         1. Unexpected travelling counts, but only 30 mins in the case of short travels, and 1 hour in the case of long travels are discounted before arrival time and after departure time. This rule can't be misused. This excuse needs to be verified based on UP Rule.
         2. Not having the morning alarm ring counts, and this is resolved when you are awake. Messing with the alarm does not count. (Paused)
         3. Severe illness counts
         4. Nothing else counts except the above
-    8. _**Planning Rules:**_
+    9. _**Planning Rules:**_
         1. _Daily Planning Rules_:
             1. Do tasks on [[How to Plan Each Day]] daily and this should be approved based on UP Rule
             2. Not doing so causes 5 P2s in addition to Pomodoro Penalties
@@ -74,7 +75,6 @@
             1. Dedicate part of pomos of current and the next day if needed, of the first of each Month to Monthly Planning using [[How to Plan Each Month]]
         4. _Yearly Planning Rules_
             1. Dedicate _Planning Pomo_, and additional pomos of the next day if needed, of the first of each 15th of December to Monthly Planning using [[How to Plan Each Year]]
-    9. Once awake in the morning for Fajr, we can not go back to sleep before completing at least 1 Pomodoro, Mon to Thr. Doing so causes 5 P2s. Paused.
 4. _**Modesty Rules:**_
     1. Seeing someone of the opposite gender we should immediately lower our gaze. If lowering gaze does not help, we should find a way to get past the situation. For times of need this can be allowed. Times of need must be decided based UP Rule. This is also for media. We should put a hand to cover all of it, remove the clip or picture, or move face or device away. Looking away and looking again causes same penalty. Not doing so for once causes 3 P2s.
     2. Touching a non-mahram causes 3 P2s.

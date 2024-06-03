@@ -7,6 +7,8 @@ Entry point into my knowledge:
 	- [[Life Right Now]]
 	- [[The Plan]]
 	- [[My Main Skills]]
+	- [[Other Skills]]
+	- [[Identified Weaknesses]]
 	- [[Motivation Doc]]
 	- [[Promises]]
 	- [[Full Rules]]

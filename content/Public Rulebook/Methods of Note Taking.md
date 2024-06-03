@@ -1,0 +1,246 @@
+---
+Created: 2023-09-21 18:17
+---
+## General Method:
+### [[From Our Thoughts and Ideas]]:
+- Dump
+	- If it's an idea that can be implemented or a life lesson
+		- You should incubate these notes for a Week to see if you really want to keep them or if they no longer feel important
+			- You may want to Delete unimportant notes after the incubation period
+			- Or archive them
+		- If you decide to keep them, move to Distill stage.
+	- If it's something else, move it to the corresponding folder
+		- Task -> [[Tasks]]
+		- Event -> [[Calendar]]
+		- Something you want to keep for future reference -> [[Keep]]
+		- A journal entry -> [[Journal Entry]]
+		- A dream -> [[Dreams]]
+		- Info about a person -> [[People]]
+		- A rule -> [[Rulebook]]
+		- A readme -> [[Readmes]]
+	- Be sure to transfer any captured notes from [[Pocket Notebook]] and [[Physical Journal]] to [[The +Inbox]]
+- Distill
+	- If you decide to keep an idea or a life lesson after incubating it, it's time to convert it into a permanent note.
+	- Go through your notes in [[The +Inbox]] and use the Feyman technique, and rephrase the concepts, using [[Progressive Summarization]]
+	- Incorporate pictures from online sources and add them to the literature note
+	- Incorporate drawings using your stylus (or pen if desired -- scan the images in order to digitize). 
+	- Add screenshots of pictures, NEW diagrams, drawings and interesting figures alongside the outlines, 
+	- Now convert each idea into an atomic idea, that is connected to other ideas in your notes creating Evergreen [[Permanent Notes]]
+	- Tag the permanent note using one of [[Note Tags and Folders]]
+- Change
+	- You may want to update a note based on new information, this step can happen anytime in the process of note taking
+	- Some notes will evolve and accept changes
+	- Some will merge into others, some will expand
+### [[From Literature and Media]]
+- Capture
+	- You should ideally have time to prepare before you consume the content of the literature/media/lecture
+		- Collect the Source Material and put it in [[The +Inbox]]
+			- Source Material can be a book, slides, an article, a tweet, a video, a link to a video, notes
+			- You can put links to the source material in a note, for example the link to a YouTube video. 
+		- Collect Additional Material connected to the original source material and put it in [[The +Inbox]] as well
+		- You may create a temporary folder in [[The +Inbox]] for organizing the material
+		- If your source material is non-digital, you may:
+			- Scan it
+			- Or much better, leave it as it is to take notes on [[Pocket Notebook]] or [[Physical Journal]] -- these will later need to be converted to typed [[Literature Note]]s in the Clean step.
+	- If you are attending a surprise lecture, and did not get time to prepare the source material, that's okay. 
+		- Open up a [[Literature Note]] on your [[Obsidian]].
+		- Or much better, open up your [[Pocket Notebook]] or [[Physical Journal]] and dedicate a page for a [[Literature Note]]. See [[Paper vs Digital Notes]]
+		- Move to the process step.
+- Skim
+	- Skip this step if you are attending a surprise lecture
+	- Go through the book/source material
+	- Go through the chapters, parts
+	- Go through bold entries
+	- Create a flow chart of the source material and make a [[Literature Note]] out of each source material. This can be on [[Obsidian]] or on a physical notebook. If it's on a physical notebook, convert it to digitally typed later on, in this same step.
+	- Ask people who have studied the subject already to create a mind-map for you, or find summary sheets online 
+	- Put the mind map into [[The +Inbox]] as source material, and improve your own mind map that you had already created in the [[Literature Note]]
+- Process
+	- Begin the study session
+	- If you are attending a surprise lecture, skip the next two steps
+	- Open the [[Literature Note]] and pick the first topic, or the topic that is to be studied today.
+	- Open the corresponding note that has the source material and open it side by side.
+	- Start writing the concept in your own words, use the Outline Method. 
+- Clean
+	- At this point you have notes in [[The +Inbox]] that are rough, with typos etc.
+	- You should incubate these notes in [[The +Inbox]] for a Week to see if you really want to keep them or if they no longer feel important
+		- You may want to Delete unimportant notes after the incubation period
+		- Or archive them
+		- If you decide to keep them, move to the next step.
+	- If you had handwritten notes in [[Pocket Notebook]] or [[Physical Journal]] in the process step, now is the time to convert them to typed notes, or ignore them if non-important
+- Distill
+	- Move related source material from [[The +Inbox]] to [[References]]
+	- Link the [[References]] to the [[Literature Note]]
+	- Go through your notes in [[The +Inbox]] and use the Feyman technique, and rephrase the concepts, using [[Progressive Summarization]]
+	- Incorporate pictures from online sources
+	- Incorporate drawings using your stylus (or pen if desired -- scan the images in order to digitize). 
+	- Add screenshots of pictures, NEW diagrams, drawings and interesting figures alongside the outlines, 
+	- Now convert each idea into an atomic idea, that is connected to other ideas in your notes creating Evergreen [[Permanent Notes]]
+	- Tag the permanent note using one of [[Note Tags and Folders]]
+- Update
+	- You may want to update a note based on new information, this step can happen anytime in the process of personal knowledge management 
+	- Some notes will evolve and accept changes
+	- Some will merge into others, some will expand
+- Review:
+	- Use Active Recall — Quiz Yourself, solve practice questions
+	- Apply the knowledge that you can
+	- Create and review flashcards
+		- The flashcards are actually your permanent notes
+		- You convert some of your permanent notes to physical flashcards on Index Cards and put them in your [[Physical Zettlekasten]]
+- Create
+	- Create outputs, such as speeches, courses, blog posts and books etc. 
+	- You can move these outputs to [[Express]] section
+	- This section can have folders, and must avoid links, because the information needs to be sequential
+	- Some outputs can stay in the Express folder and some can go into various places on the internet and in the world, like eBooks, Books, Blogs, Youtube Videos, WhatsApp Statuses etc.
+	- However a link must still stay in the Express folder, tracking all your outputs
+
+## Simplified Version:
+- Capture
+	- Prepare source material, in full or with links, and additional material
+	- Optionally make folder for it in [[The +Inbox]]
+	- If non-digital, Scan it Or Leave it as is
+	- If it's am idea, incubate
+	- If it's something else, move to corresponding folder
+	- Be sure to digitize physical notes
+- Skim
+	- Go through sections and bold entries
+	- Create [[Literature Note]] as an outline or flow chart
+	- Find summaries online and ask others, and put them as additional source material
+- Process
+	- If not live lecture, pick a topic, open source material side by side
+	- Start writing the outline in your own words
+- Clean
+	- Incubate and convert to digital
+- Distill
+	- Move source material to [[References]] and link to the [[Literature Note]]
+	- Rephrase using [[Progressive Summarization]], add pics, diagrams etc.
+	- Make it atomic, connect and tag
+- Update
+- Review
+	- Solve quizzes
+	- Apply
+	- Create digital and physical flash cards
+- Create
+	- Always link to [[Express]] section
+
+## Examples use cases (old)
+- Tafsir
+	- Skim
+		- Learn Names of chapters of the Quran
+	- Process
+		- Scan the Ayahs you will study today into a note taking app, like OneNote
+		- Incorporate pictures from online sources and add them to OneNote
+		- Incorporate drawings using your stylus on OneNote
+		- Create Outlines during the lecture on Notion by paraphrasing in your own words what you are learning
+		- Add screenshots of pictures, drawings on Notion alongside the outlines
+	- Organize/Distill
+	- Review
+		- Solve quizzes provided by instructor
+		- Review Ayah Notes
+- Hadith
+	- Skim
+		- Learn types of Hadith
+		- Learn a Summary of the Fiqh of Hadith
+	- Process
+		- Scan the Hadiths you will study today into a note taking app, like OneNote
+		- Incorporate pictures from online sources and add them to OneNote
+		- Create Outlines during the lecture on Notion by paraphrasing in your own words what you are learning
+		- Add screenshots of pictures, drawings on Notion alongside the outlines
+	- Organize/Distill
+	- Review
+		- Solve quizzes provided by instructor
+		- Review Hadith Notes
+- Fiqh
+	- Skim
+		- Learn a Summary of the Fiqh
+		- Go through the book of Fiqh
+	- Process
+		- Scan the contents you will study today into a note taking app, like OneNote — for future transcribing
+		- Scribe on the scans using your stylus on OneNote
+		- Incorporate pictures from online sources and add them to OneNote
+		- Incorporate drawings using your stylus on OneNote
+		- Create Outlines during the lecture on Notion by paraphrasing in your own words what you are learning
+		- Add screenshots of pictures, drawings and scribes on Notion alongside the outlines
+	- Organize/Distill
+		- Go through your [[notes]] and use the Feyman technique, add more things to your [[notes]]
+		- Make new connections using Summary Sheets — create NEW diagrams and interesting figures
+		- Create Evergreen Notes with the implement tag
+		- Create Evergreen Notes with the concept tag
+	- Review
+		- Solve quizzes provided by instructor
+		- Review concept Notes
+- Tadreeb
+	- Skim
+		- Go through the book/ref material
+		- Ask people who have studied the subject already to create a mind-map for you
+		- Find summary sheets online
+	- Process
+		- Scan the contents you will study today into a note taking app, like OneNote — for future transcribing
+		- Scribe on the scans using your stylus on OneNote
+		- Incorporate pictures from online sources and add them to OneNote
+		- Incorporate drawings using your stylus on OneNote
+		- Create Outlines during the lecture on Notion by paraphrasing in your own words what you are learning
+		- Add screenshots of pictures, drawings and scribes on Notion alongside the outlines
+	- Organize/Distill
+		- Go through your [[notes]] and use the Feyman technique, add more things to your [[notes]]
+		- Make new connections using Summary Sheets — create NEW diagrams and interesting figures
+		- Create Evergreen Notes with the implement tag
+		- Apply the knowledge immediately there and then
+	- Review
+		- Solve quizzes provided by instructor
+		- Practice tadreeb
+- Seerah
+	- Skim
+		- Learn a Summary of the life of the Prophet SAWW
+		- Go through the book of Seerah
+	- Process
+		- Incorporate pictures from online sources and add them to OneNote
+		- Create Outlines during the lecture on Notion by paraphrasing in your own words what you are learning
+		- Add screenshots of pictures, drawings on Notion alongside the outlines
+	- Organize/Distill
+		- Go through your [[notes]] and use the Feyman technique, add more things to your [[notes]]
+		- Make new connections using Summary Sheets — create NEW diagrams and interesting figures
+		- Create Evergreen Notes with the implement tag
+		- Create Evergreen Notes with the story tag
+	- Review
+		- Solve quizzes provided by instructor
+		- Review story [[notes]]
+- Arabic
+	- Skim
+		- Go through the book/ref material
+		- Ask people who have studied the subject already to create a mind-map for you
+		- Find summary sheets online
+	- Process
+		- Scan the contents you will study today into a note taking app, like OneNote — for future transcribing
+		- Scribe on the scans using your stylus on OneNote
+		- Incorporate pictures from online sources and add them to OneNote
+		- Incorporate drawings using your stylus on OneNote
+		- Create Outlines during the lecture on Notion by paraphrasing in your own words what you are learning
+		- Add screenshots of pictures, drawings and scribes on Notion alongside the outlines
+	- Organize/Distill
+		- Not required
+	- Review
+		- Practice
+- For Startup Lectures
+    - Skim
+        - Go through the book/ref material/course
+        - Go through the chapter/section
+        - Go through bold entries
+        - Create a flow chart of the book/course
+        - Ask people who have studied the subject already to create a mind-map for you
+        - Find summary sheets online
+        - Look at the quizzes
+    - Process
+        - Incorporate pictures from online sources and add them to OneNote
+        - Incorporate drawings using your stylus on OneNote
+        - Create Outlines during the lecture on Notion by paraphrasing in your own words what you are learning
+        - Add screenshots of pictures, drawings and scribes on Notion alongside the outlines
+        - Try to apply
+    - Organize/Distill
+        - Go through your [[notes]] and use the Feyman technique, add add things to your [[notes]]
+        - Make new connections using Summary Sheets — create NEW diagrams and interesting figures
+        - Create Evergreen Notes
+        - Apply
+    - Review
+        - Solve quizzes provided by instructor
+        - Review flashcards
+        - Apply

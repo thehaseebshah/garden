@@ -1,6 +1,9 @@
 ---
 Created: 2023-09-22 05:10
 ---
+# New
+![[Journal Template#Routine]]
+# Old
 ### Tahajjud to Fajr 
 - [x] -- [[Remain offline]]
 - [x] Tahajjud
@@ -12,7 +15,7 @@ Created: 2023-09-22 05:10
 - [x] Fajr Jamah
 - [x] Surah Yaseen
 - [x] Morning Azkaar
-- [x] Morning Habit -- [[Daily Device-free times]]
+- [x] Morning Habit -- [[Daily Device-free times -- OLD]]
 	- [x] Run with Zikr (Initially with Kalams) -- for 10 mins
 	- [x] Visualization, Affirmations and Murakba in Deep Silence
 ### Ishraq to Chasht 
@@ -41,7 +44,7 @@ Created: 2023-09-22 05:10
 - [x] Asr
 - [x] Daily Work Shutdown -- Lazy Time starts
 - [x] Evening Azkaar
-- [x] Alone Leisure Time with Calligraphy -- [[Daily Device-free times]]
+- [x] Alone Leisure Time with Calligraphy -- [[Daily Device-free times -- OLD]]
 - [x] Two Community Kindness
 	- [x] Neighbours Act of Kindness
 - [x] One Family Moment Creation

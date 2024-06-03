@@ -125,6 +125,10 @@ Kitchen Cleaner:
 - Lemon
 - Vinegar
 
+Hair Straightner:
+- Vinegar
+- Aloe Vera
+
 Laundry Detergent:
 - Borax
 - Washing Soda

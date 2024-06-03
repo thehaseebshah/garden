@@ -11,7 +11,7 @@ Day:  45/40
 🔸Zohar Takbeer Oola ✅
 🔸Asar Takbeer Oola ✅
 🔸Maghrib Takbeer Oola ✅
-🔸 Isha Takbeer Oola ✅
+🔸Isha Takbeer Oola ✅
 
 🔵 Quran
 🔹 Surah Yaseen ✅

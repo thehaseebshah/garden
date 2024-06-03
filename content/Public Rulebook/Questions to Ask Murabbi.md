@@ -1,4 +1,4 @@
-- [ ] AI Career (vs MAULWI specialty question)
+- [x] AI Career (vs MAULWI specialty question) ✅ 2024-05-31
 - [ ] Capitalism, Consumerism, Anti Tech, Environment Friendliness, Self Sufficiency in Islam
 	- [ ] Digital Privacy in Islam
 - [ ] Learning Isms

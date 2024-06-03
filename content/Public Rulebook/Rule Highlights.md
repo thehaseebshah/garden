@@ -63,6 +63,7 @@ Created: 2024-03-23 01:34
 	- 5 P2s for Mandatory and Planning
 	- 0 P2s for Optional
 	- 3 Dry Fruits as Reward
+	- [[Deep Pomo Checklist]]
 - Mandatory
 	- 1100
 	- 1200
@@ -107,10 +108,10 @@ Created: 2024-03-23 01:34
 	- 5 of each for last day > 500, expires same day
 	- 50 of each for last week > 3500, expires same week
 	- 500 of each for last month > 15000, expires same month
+- ---
 - Tahajjud
 	- 1 P2 for Tahajjud + 5 Min Dua + Zikr Bil Jahr before Fajr time
 	- Breakfast + 30 Min Isolation + 30 Min No Devices 
-- ---
 - Fajr
 	- 1 P2 for Yaseen before Ishraq time
 	- 1 min Jog (And in Old Mamoolat, Jamah)
@@ -129,7 +130,7 @@ Created: 2024-03-23 01:34
 	- 1 P2 for Awabayn + Surah Waqiah before Isha
 	- (And in Old Mamoolat, Jamah)
 - Isha
-	- 1 P2 for Surah Mulk + Taraweeh + Witr + Planning before 1200
+	- 1 P2 for Surah Mulk + Taraweeh + Witr + Planning before 0000
 	- (And in Old Mamoolat, Jamah)
 - ---
 - Digital Entertainment

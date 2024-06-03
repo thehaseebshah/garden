@@ -22,7 +22,7 @@
 10. How Penalties Occur:
     1. 1 P4 = You owe Rs 500 to Charity Fund
     3. 1 P2 = Doing a 60 second plank. This should be performed on a near-straight surface. There can be no support of any kind. The hips should be lowered to make a straight line with the rest of the body, no part of the body can be raised upwards, but it can be lowered even further to make it harder. The plank should be done exactly as this picture, where elbows are touching the ground:
-	    1. ![[Pasted image 20231227115311.png]]
+	    1. ![[Pasted image 20240601225624.png]]
     5. If you realise that a penalty other than P4 was caused 3 days later, it is not caused.  
     6. Penalties doubles after *Stipulated Time* in the sense that 1 P becomes 2 Ps. 
     7. If you remember more than 24 hours later that a penalty other than P4 was not performed according to the rules, it is accepted. Otherwise it is to be repeated. This does not apply if the penalty was not even completed. 

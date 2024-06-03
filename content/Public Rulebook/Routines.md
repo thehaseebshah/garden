@@ -1,11 +1,9 @@
 ---
 Created: 2023-09-22 05:07
 ---
-[[Daily Routines -- to update]]
-[[Weekly Routines -- to update]]
-[[Monthly Routines -- to update]]
-[[Half Yearly Routines -- to update]]
-[[Yearly Routines -- to update]]
+[[Daily Routines]]
+[[Weekly Routines]]
+[[Monthly Routines]]
+[[Half Yearly Routines]]
+[[Yearly Routines]]
 [[Things to Avoid]]
-# CHANGE NOW!
-WE need munazzim nights

@@ -2,21 +2,33 @@
 Created: 2024-03-25 05:00
 ---
 Do:
-- Takbeer Oola
-- Sleep early, before 2315
+- Pray with Takbeer Oola
+- Sleep early, before 2300
 - Wake up early
 - Go to club
-- 3 + 2 Pomos
+- 3 + 2 Pomos using [[Deep Pomo Checklist]]
 - 2 Work Pomos Mon - Thr
-- Do planning session at night
+- Do planning session
 - Send Mamolaat to Murabbi
-- Tahajjud + 5 Min Dua (Tahajjud)
-- Azkaar + Yaseen + Ishraaq (Fajr)
-- Chasht + Nawafil e Shukr (Chasht)
-- Dua Manzil (Zuhr)
-- 0.25 Para + 5 Min Dua (Asr)
-- Awabayn + Surah Waqiah + Azkaar (Maghrib)
-- Surah Mulk + Witr + Taraweeh + Planning (Isha)
+- Tahajjud Protocol
+	- Tahajjud + 5 Min Dua + Zikr Bil Jahr
+	- Breakfast + 30 Min Isolation + 30 Min No Devices 
+- Fajr Protocol
+	- Yaseen 
+	- 1 min Jog + *Jamah*
+- Chasht Protocol
+	- Ishraq + Chasht + Azkaar + *Nawafil e Shukr*
+	- Nawafil Shukr
+- Zuhr Protocol
+	- 0.25 Juzz + *Dua Manzil* 
+	- Family + Gift 3 Kids or 1 Neighbour + Text 3 or Call 1 Murabba + *Jamah*
+- Asr Protocol
+	- Azkaar
+	- Calling or Meeting relative for 1 Min
+- Maghrib Protocol (+ DE Rules)
+	- Awabayn + Surah Waqiah + Azkaar
+- Isha Protocol
+	- Surah Mulk + Witr + Taraweeh + Planning (Isha)
 - Get 500+ dinaars daily
 - Enjoy 30 min rule-free pocket daily
 

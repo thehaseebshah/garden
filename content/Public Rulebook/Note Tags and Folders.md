@@ -14,7 +14,7 @@ These can be identified with Tags
 These have separate folders
 - [[Dreams]]
 - [[People]]
-- [[Daily]]
+- [[Journal Entry]]
 - [[Weekly]]
 - [[Monthly]]
 - [[Quarterly]]

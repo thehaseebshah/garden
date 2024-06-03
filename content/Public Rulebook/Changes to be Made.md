@@ -14,6 +14,7 @@
 - Immediate
 	- Kaffaras and Qadha Salawat
 	- Type 3 promise system to not allow anything new into life
+	- Be more OFFLINE
 - Promises and Oaths
 	- Rules to not lie to father
 	- One Time Wifi and BnW [[Rules]] for Phone
