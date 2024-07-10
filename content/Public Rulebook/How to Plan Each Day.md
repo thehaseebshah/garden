@@ -1,11 +1,12 @@
 ---
 Created: 2023-09-21 00:27
 ---
-1. Do this on Daily Note
+Mandatory:
+1. Open Daily Note
 2. Clean [[All Brain Dump Sources]]
 3. [[While going through your task list each day]]
-4. Plan Any Appointments on Calendar
-5. Track current Days’ Habits
-6. Fill Journal Entry for the Day [[What to Journal]]
-7. Send Mamoolat
-8. Clean Bookmarks, Browser Tabs, Emails
+4. Time Box Your Day
+5. Fill Journal Entry [[What to Journal]]
+Optional:
+1. Check [[Connected DBs]]
+2. Clean [[External Inboxes]]

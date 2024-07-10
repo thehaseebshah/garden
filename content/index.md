@@ -30,11 +30,37 @@ Entry point into my knowledge:
 	- [[Projects]]
 
 ![[pale-blue-dot-banner.jpg]]
+## Tasks
+```tasks
+due before tomorrow
+sort by priority
+short mode
+hide due date
+hide priority
+group by priority
+group by backlink
+not done
+sort by function task.originalMarkdown
+```
+
+## Inbox
+``` dataview
+TABLE WITHOUT ID
+ file.link as "Name",
+ (date(today) - file.cday).day as "Days alive",
+ file.folder as "Sub-folder"
+FROM "+ Inbox"
+WHERE file.name != "+ Focus Page 🎯" AND !contains(file.folder, "Snoozed")
+SORT file.folder asc, "Days alive" asc
+LIMIT 20
+```
 ## Life Right Now
 ![[Life Right Now#^f98883]]
 ## The Why
 The teens of the world counting on you, and you are indebted to save them as a khadim firefighter
 ## Time is fleeting...
 These moments are our capital because these could be our last days
+Live like an Airman
 ## Things to Remember
 - Family Dawah Currently Consists of Silence and Letting Go
+- Live like an Airman

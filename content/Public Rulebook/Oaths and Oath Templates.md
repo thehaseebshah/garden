@@ -8,11 +8,14 @@ WALLAHI I will pay Rs 1500 to Al Khidmat if I do not work on Rules between 1630 
 
 ## Oaths:
 Current:
+
+---
+WALLAHI I will pay Rs 2500 to Al Khidmat if I don't pray all Qadha Salahs pending from 27th June 2024 onwards before 2359 HRS of 29 June 2024.
+
 WALLAHI I will pay Rs 1500 to Al Khidmat if I do not work on Rules between 1100  to 2359 HRS  with only 1 10 minute break, which would be proper work that would make progress and would be approved in the eyes of an unbiased person viewing the work, on 22 March 2024.
 
 WALLAHI I will pay Rs 1500 to Al Khidmat if I do not work on Rules or MAW or on sending MGN Milestones doc, between 0430  to 0730 HRS  with only 3 10 minute breaks, which would be proper work that would make progress and would be approved in the eyes of an unbiased person viewing the work and also in the eyes of the client in the later two cases, on 23 March 2024.
 
-Past:
 WALLAHI I will pay Rs 1500 to Al Khidmat if I do not work on Rules between 2300  to 0000 HRS with only 1 10 minute break, which would be proper work that would make progress and would be approved in the eyes of an unbiased person viewing the work, today.
 
 WALLAHI I will pay Rs 1500 to Al Khidmat if I do not work on MGN between 2030 to 2200 HRS  with only 1 10 minute break, which would be proper work that would make progress and would be approved in the eyes of an unbiased person viewing the work and also in the eyes of the client, today.

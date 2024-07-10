@@ -14,3 +14,10 @@ Rs 20 Dahi wala
 440 Juice Tank?
 6 Lakh Waseem
 200 Ice cream shop
+
+---
+
+Waseem Debt
+
+Faizan Bhai Aqsaat:
+

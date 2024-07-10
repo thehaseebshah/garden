@@ -1,0 +1,37 @@
+---
+Created: 2024-07-05 01:31
+---
+Related: [[Speakers List]]
+
+- Blogs:
+	- The Muslim Skeptic
+- Twitter
+	- Daniel HaqiqatJou
+	- Muhammad Hijab
+- WhatsApp Channels
+	- Ustaad Ji
+- WhatsApp Statuses
+- Funny
+	- Daniel Thrasher
+	- Comedy Central
+	- Ryan George
+	- The Muslim Skeptic Memes
+	- Mufti Tariq Masood
+- Youtube Channels for News
+	- Qaiser Ahmad Raja
+	- Daniel Haqiqatjou
+- Lectures for Joy
+	- Mufti Tariq Masood
+	- Ustaad Ji
+	- Ahmad Javed
+	- Gabriel Romani
+- Debates
+	- Hamza Tzortsis
+	- Yasir Nadeem Wajidi
+	- Muhammad Hijab
+	- Imran Hussein
+	- Fahad Hussain
+	- Hamzah Tzortsis
+	- Suboor Ahmad
+	- Daniel Haqiqatjou
+	- Qaiser Ahmad Raja

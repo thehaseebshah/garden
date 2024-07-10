@@ -7,4 +7,3 @@ Created: 2023-09-20 23:29
 	- Plan these on the Pomodoro Planner if needed
 - Decide [[Morning Might Dos]] and [[Evening Might Dos]]
 - Write your tasks on Pocket Notebook
-- Time block your Day especially your MITs

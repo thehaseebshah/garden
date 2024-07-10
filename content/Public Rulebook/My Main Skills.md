@@ -14,10 +14,19 @@ Updated: 2023-06-28 07:40
 - Al Burhan
 ### Your Top Five Skills:
 - Al Burhan
+	- Showcase: Al Burhan
 - Shabab [[Social Gamification]] to gain [[Habits]]
+	- Dawah, Shabab, Activities
+	- Showcase: Activities Collection and Framework
 - [[Maulwified Life]]
+	- Ilm, Isms, Decolonization
+	- Showcase: Books Collection
 - [[Your Combination of (Preferably Two) Rare and Valuable Skills in your Career]]
-- [[Ninjitsu]] with [[Handmade Weapon Design]]
+	- Khidmah, Via Teaching Skills, CogNin OR Via Teaching Permaculutre Skills, Community Skills
+	- Showcase: CogNin OR Community
+- [[Ninjitsu]]
+	- Islah, Mujahidda, Martial Arts
+	- Showcase: Handmade weapons
 
 ### Your Focus Area in Data Science:
 - [[Your Combination of (Preferably Two) Rare and Valuable Skills in your Career]]

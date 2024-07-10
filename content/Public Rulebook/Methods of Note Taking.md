@@ -1,6 +1,39 @@
 ---
 Created: 2023-09-21 18:17
 ---
+## Simplified Version:
+- Capture
+	- If you want to keep the note as is, move to its corresponding folder
+	- Prepare source material on the topic of study, and one [[Literature Note]] for each and put them all in a main [[Literature Note]]
+	- Upload source material if needed
+	- Optionally make folder for the topic in [[The +Inbox]]
+	- If non-digital, Scan it Or Leave it as is
+	- Create reference for source material in each [[Literature Note]]
+	- If it's an idea, incubate
+	- If it's something else, move to corresponding folder
+	- Be sure to digitize physical notes
+- Skim
+	- Skip this if you are attending a surprise lecture
+	- Go through sections and bold entries
+	- Create [[Literature Note]] as an outline or flow chart
+	- Find summaries online and ask others, and put them as additional source material, creating new [[Literature Note]]s in the same folder
+- Process
+	- If not live lecture, pick a topic from the literature note, open the source material side by side
+	- Start writing the outline in your own words
+- Clean
+	- Incubate and convert to digital
+- Distill
+	- Move source material to [[References]]
+	- Rephrase using [[Progressive Summarization]], add pics, diagrams etc.
+	- Make it atomic, connect and tag Up, Forward, Backward
+- Update
+- Review
+	- Solve quizzes
+	- Apply
+	- Create digital and physical flash cards
+- Create
+	- Always link to [[Express]] section
+
 ## General Method:
 ### [[From Our Thoughts and Ideas]]:
 - Dump
@@ -27,39 +60,45 @@ Created: 2023-09-21 18:17
 	- Add screenshots of pictures, NEW diagrams, drawings and interesting figures alongside the outlines, 
 	- Now convert each idea into an atomic idea, that is connected to other ideas in your notes creating Evergreen [[Permanent Notes]]
 	- Tag the permanent note using one of [[Note Tags and Folders]]
+	- Check Graph View to See if you need to create any Map of Content
 - Change
 	- You may want to update a note based on new information, this step can happen anytime in the process of note taking
 	- Some notes will evolve and accept changes
 	- Some will merge into others, some will expand
 ### [[From Literature and Media]]
 - Capture
-	- You should ideally have time to prepare before you consume the content of the literature/media/lecture
-		- Collect the Source Material and put it in [[The +Inbox]]
-			- Source Material can be a book, slides, an article, a tweet, a video, a link to a video, notes
-			- You can put links to the source material in a note, for example the link to a YouTube video. 
-		- Collect Additional Material connected to the original source material and put it in [[The +Inbox]] as well
-		- You may create a temporary folder in [[The +Inbox]] for organizing the material
-		- If your source material is non-digital, you may:
-			- Scan it
-			- Or much better, leave it as it is to take notes on [[Pocket Notebook]] or [[Physical Journal]] -- these will later need to be converted to typed [[Literature Note]]s in the Clean step.
-	- If you are attending a surprise lecture, and did not get time to prepare the source material, that's okay. 
-		- Open up a [[Literature Note]] on your [[Obsidian]].
-		- Or much better, open up your [[Pocket Notebook]] or [[Physical Journal]] and dedicate a page for a [[Literature Note]]. See [[Paper vs Digital Notes]]
-		- Move to the process step.
+	- If it is something you want to keep as is
+		- Move it to its corresponding folder
+	- Otherwise
+		- You should ideally have time to prepare before you consume the content of the literature/media/lecture
+			- Collect the Source Material on the topic you want to study -- this can be a book, slides, an article, a tweet, a course, a video, notes etc.
+			- Create a main [[Literature Note]] for the topic, and in that note enlist all the sources you prepared
+			- Create one [[Literature Note]] for each source material, naming it after the source material, and putting the links in the main [[Literature Note]]
+			- Create a folder for the topic in [[The +Inbox]] and move the [[Literature Note]](s) into that folder
+			- If you want to keep a copy of the source material in your notes, upload it to the folder you created
+			- On the bottom of each [[Literature Note]] under the References section, create a link to the source material
+				- If you did not upload the source material to your notes, write out where it came from under the references section 
+			- If your source material is non-digital, you may:
+				- Scan it
+				- Leave it as is and start creating notes either on Obsidian or on one of your physical notebooks.
+		- If you are attending a surprise lecture, and did not get time to prepare the source material, that's okay. 
+			- Open up a [[Literature Note]] on your [[Obsidian]].
+			- Or much better, open up your [[Pocket Notebook]] or [[Physical Journal]] and dedicate a page for a [[Literature Note]]. See [[Paper vs Digital Notes]]
+			- Move to the Process Step.
 - Skim
 	- Skip this step if you are attending a surprise lecture
 	- Go through the book/source material
-	- Go through the chapters, parts
+	- Go through the chapters, parts etc.
 	- Go through bold entries
-	- Create a flow chart of the source material and make a [[Literature Note]] out of each source material. This can be on [[Obsidian]] or on a physical notebook. If it's on a physical notebook, convert it to digitally typed later on, in this same step.
-	- Ask people who have studied the subject already to create a mind-map for you, or find summary sheets online 
-	- Put the mind map into [[The +Inbox]] as source material, and improve your own mind map that you had already created in the [[Literature Note]]
+	- Create a flow chart of each of the source material in each of the [[Literature Note]]s. This can be on [[Obsidian]] or on a physical notebook. 
+	- Ask people who have studied the subject already to create a mind-map for you, or find summary sheets online.
+	- Put the mind map into [[The +Inbox]] as source material, creating new [[Literature Note]]s
 - Process
 	- Begin the study session
 	- If you are attending a surprise lecture, skip the next two steps
 	- Open the [[Literature Note]] and pick the first topic, or the topic that is to be studied today.
-	- Open the corresponding note that has the source material and open it side by side.
-	- Start writing the concept in your own words, use the Outline Method. 
+	- Open the source material side by side.
+	- Start writing the concept in your own words in the literature note, use the Outline Method. 
 - Clean
 	- At this point you have notes in [[The +Inbox]] that are rough, with typos etc.
 	- You should incubate these notes in [[The +Inbox]] for a Week to see if you really want to keep them or if they no longer feel important
@@ -67,15 +106,16 @@ Created: 2023-09-21 18:17
 		- Or archive them
 		- If you decide to keep them, move to the next step.
 	- If you had handwritten notes in [[Pocket Notebook]] or [[Physical Journal]] in the process step, now is the time to convert them to typed notes, or ignore them if non-important
+	- Delete the folder you created in [[The +Inbox]] because it will now be empty
 - Distill
-	- Move related source material from [[The +Inbox]] to [[References]]
-	- Link the [[References]] to the [[Literature Note]]
+	- Move related source material from [[The +Inbox]] to [[Sources]] folder
 	- Go through your notes in [[The +Inbox]] and use the Feyman technique, and rephrase the concepts, using [[Progressive Summarization]]
 	- Incorporate pictures from online sources
 	- Incorporate drawings using your stylus (or pen if desired -- scan the images in order to digitize). 
 	- Add screenshots of pictures, NEW diagrams, drawings and interesting figures alongside the outlines, 
 	- Now convert each idea into an atomic idea, that is connected to other ideas in your notes creating Evergreen [[Permanent Notes]]
 	- Tag the permanent note using one of [[Note Tags and Folders]]
+		- Tag Up, Forward and Backward -- Up means to the overarching topic, forward means to other notes, backward means to the [[Literature Note]] (in the References section)
 - Update
 	- You may want to update a note based on new information, this step can happen anytime in the process of personal knowledge management 
 	- Some notes will evolve and accept changes
@@ -93,34 +133,6 @@ Created: 2023-09-21 18:17
 	- Some outputs can stay in the Express folder and some can go into various places on the internet and in the world, like eBooks, Books, Blogs, Youtube Videos, WhatsApp Statuses etc.
 	- However a link must still stay in the Express folder, tracking all your outputs
 
-## Simplified Version:
-- Capture
-	- Prepare source material, in full or with links, and additional material
-	- Optionally make folder for it in [[The +Inbox]]
-	- If non-digital, Scan it Or Leave it as is
-	- If it's am idea, incubate
-	- If it's something else, move to corresponding folder
-	- Be sure to digitize physical notes
-- Skim
-	- Go through sections and bold entries
-	- Create [[Literature Note]] as an outline or flow chart
-	- Find summaries online and ask others, and put them as additional source material
-- Process
-	- If not live lecture, pick a topic, open source material side by side
-	- Start writing the outline in your own words
-- Clean
-	- Incubate and convert to digital
-- Distill
-	- Move source material to [[References]] and link to the [[Literature Note]]
-	- Rephrase using [[Progressive Summarization]], add pics, diagrams etc.
-	- Make it atomic, connect and tag
-- Update
-- Review
-	- Solve quizzes
-	- Apply
-	- Create digital and physical flash cards
-- Create
-	- Always link to [[Express]] section
 
 ## Examples use cases (old)
 - Tafsir

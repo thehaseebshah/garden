@@ -1,15 +1,14 @@
-- A promise to Our Rabbi that: ^promise
-	- We can not own/buy for ourselves items that are not on this list, except consumables and purchases below Rs 50 thousand
+- WALLAHI if I do not follow the below mentioned rules I will give sadaqah of Rs 50,000 within 1 month:
+	- The list is [[Maulwified Possessions]]
+	- We can not own/buy for ourselves items that are not on this list, except consumables/clothes and purchases below Rs 5 thousand.
 	- Items can be removed from this list
 	- Items that cost above 50K can be added to this list only in two ways:
-	    - Remove 1 item and add another after consulting with three of your closest people and getting unbiased approval from them, and then similarly consulting with three other people.
-	    - Adding to this list requires consultation with seven of your closest people and getting unbiased approval from them, and then similarly consulting with seven other people.
+	    - Remove 1 item and add another after consulting with five of your closest people and getting unbiased approval from them
+	    - Adding to this list requires consultation with seven of your closest people and getting unbiased approval from them
 	- Items that cost between 10K and 50K can be added to this list only in one way:
-	    - Adding to this list requires consultation with three of your closest people and getting unbiased approval from them, and then similarly consulting with seven other people.
-	- Items that cost between 2500 and 10K can be added to this list only in one way:
-	    - Adding to this list requires consultation with one of your closest people and getting unbiased approval from them, and then similarly consulting with seven other people.
-	- Exceptions can be added to this list after consultation with seven of your closest people and getting unbiased approval from them, and then similarly consulting with seven other people.
-	- No home or property or company to our name except those that already exist They need to be removed also.
-	- We can own and buy wardrobe selected by other people, already owned wardrobe will remain with us and does not count in the list
-	- Gifts can be accepted but should be given away to other people ASAP
-	- Already owned possessions are accepted if they do not fall on this list
+	    - Adding to this list requires consultation with three of your closest people and getting unbiased approval from them
+	- Items that cost between 5K and 10K can be added to this list only in one way:
+	    - Adding to this list requires consultation with one of your closest people and getting unbiased approval from them
+	- Exceptions can be added to this list after consultation with seven of your closest people and getting unbiased approval from them
+	- Gifts can be accepted but should be given away to other people ASAP.
+	- Already owned possessions are accepted if they do not fall on this list.

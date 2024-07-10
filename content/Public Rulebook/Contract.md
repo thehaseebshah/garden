@@ -5,11 +5,11 @@
 
     **In the presence of Accountability Partner:**
     
-    I, [Your Name], agree on these rules with agreement from
-    — [Your Name] dated ___
+    I, Haseeb, agree on these rules with agreement from Addan
+    — Haseeb dated [[2024-06-12]]
     
     YA ALLAH WALLAHI I will follow the rules that have been applied to me. This is an oath to You.
-    — [Accountability Partner Name] dated ___
+    — Syed Addan dated [[2024-06-12]]
     
-    I agree to be accountability partner for [Your Name] in these rules and vow to follow my part
-    — [Accountability Partner Name] dated ___
+    I agree to be accountability partner for Haseeb in these rules and vow to follow my part
+    — Syed Addan dated [[2024-06-12]]

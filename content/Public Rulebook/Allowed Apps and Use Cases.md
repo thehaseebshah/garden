@@ -15,14 +15,9 @@ Created: 2024-03-23 01:02
 	- Personal Chat
 	- Al Burhan Aamila Members
 - WhatsApp Groups
-	- Ahbaab e Azeemat
-	- Shabab Groups
-	- AI Course Groups
 	- Mamoolat Groups
-	- Majlis e Islaah Groups
-	- Seerat Groups
 	- YC Groups
-	- Majlis Tarbiah Groups
+	- Al Burhan Groups
 - Allowed Websites.
 	- Prayer Times by Islamic Finder
 - Others

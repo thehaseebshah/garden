@@ -8,19 +8,19 @@ Do:
 2. Fajr Protocol
 	- Yaseen before Ishraq time
 	- Fajr
-3. Ishraaq Protocol
+4. Ishraaq Protocol
 	- Ishraq + Chasht + Azkaar before Zawal time
 	- Nawafil Shukr + Planning
-4. Zuhr Protocol
+5. Zuhr Protocol
 	- 0.25 Juz before Asr
 	- Zuhr + Family + Gift 3 Kids or 1 Neighbour + Text 3 or Call 1 Murabba + Update in Shabab Groups
-5. Asr Protocol
+6. Asr Protocol
 	- Dua Manzil + Azkaar before Maghrib
 	- Asr + Calling or Meeting relative for 1 Min + Club
-6. Maghrib Protocol
+7. Maghrib Protocol
 	- Awabayn + Surah Waqiah before Isha
 	- Maghrib
-7. Isha Protocol
+8. Isha Protocol
 	- Surah Mulk + Witr + Taraweeh + Send Mamoolat + (Planning)  before 0000
 	- Isha
 

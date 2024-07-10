@@ -1,9 +1,9 @@
 ### 0. _**Metadata**_
 - YA ALLAH, new Changes applied on: 
-	- 2024-07-09
+	- [[2024-07-04]]
 	- Rank Rewards apply on 11/07/24
 	- Missions, new Fajr and Tahajjud Protocol apply 22/07/24
-	- New Family Rules apply 30/07/24
+	- Salahs older than 27th June 2024 will not cause penalties
 ### 1. _**Salah Rules:**_
 1. The Faraidh of Salah should be offered with Takbeer e Oola, or 10 P2s are incurred.
 2. The Witr of Salah should be offered before 0000 daily, or 10 P2s are incurred.
@@ -87,7 +87,6 @@
 8. We can't watch short films or film summaries that have an immodest plot.
 9. We can't contact random people of the opposite gender with the intention of talking to them to pass time or for entertainment.
 10. Not following for 30 minutes or less causes 3 P2s. More penalties for more hours.
-11. Exception to all of the above and other related rules is Mahnoor. (Applies July 6 1747)
 ### 5. _**Tahajjud Protocol**_:
 1. Tahajjud + Dua for at least 5 minutes while sitting + Zikr Bil Jahr (if given)
 2. Isolation for 30 Min + No Devices for 30 Min
@@ -126,8 +125,6 @@
 4. Activity
 5. Rewards
 6. Make Day for 1 Family Member
-7. This can happen online too
-8. Necessary steps are Debrief, Make Day and Lecture 
 ### 13. _**Fasting Rules:**_
 1. Fasting every other day is a must.
 2. Not doing so causes 5 P2s.
@@ -198,12 +195,16 @@
 2. The “tried to avoid if possible” exception needs to be based on UP Rule.
 ### 30. _**Unbiased Person Rule**_
 1. Wherever this rule is used, we will need to verify using this rule any unforeseen circumstances being used to avoid penalties.
-2. We will need to consider your unbiased opinion, and you can not support a desire to make ease for yourself or to cheat or dodge. If the penalty is ought to be caused it is caused, or otherwise.
+2. We will need to consider the opinion of an unbiased person, who will be your AP.
+3. You need to tell the unbiased person that he can not support a desire to make ease for you, and must give an unbiased opinion.
+4. Within 24 hours of application of this rule, you need to contact the UP and present the case in front of him, and accept his opinion on the matter as final without actively trying to persuade him to forgive your penalties. If you fail to ask the person within said limit and conditions, the corresponding penalty will be caused. 
+5. You can not use the forgetfulness excuse on the UP Rules, meaning that you can not say you forgot to inform the UP and thus apply the forgetfulness excuse to evade the penalty.
 ### 31. ***Sleep Rules:***
 1. The Sleep pocket is defined as follows: 
-	1. 1100-0300 Apr-Sep
+	1. 1100-0230 Apr-Sep
 	2. 1000-0400 Oct-Mar
 2. We should be on our bed at this time pocket, and should not be using phone or computer.
 3. Not following this causes 10 P2s. 
 4. Travelling is an unforeseen circumstance and 30 mins of buffer time are given after reaching destination.
 5. Forgetfulness is an unforeseen circumstance and 15 mins of buffer time are given after being reminded.
+6. Other unforeseen circumstances also exist.
