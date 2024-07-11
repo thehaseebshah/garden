@@ -23,9 +23,13 @@ Created: 2023-09-21 18:17
 - Clean
 	- Incubate and convert to digital
 - Distill
+	- If you want to memorize as is, move it to [[Permanent Notes]]
 	- Move source material to [[References]]
 	- Rephrase using [[Progressive Summarization]], add pics, diagrams etc.
 	- Make it atomic, connect and tag Up, Forward, Backward
+	- Convert to flashcard
+	- Tag the permanent note using one of [[Note Tags and Folders]]
+	- Check Graph View to See if you need to create any Map of Content
 - Update
 - Review
 	- Solve quizzes
@@ -37,7 +41,7 @@ Created: 2023-09-21 18:17
 ## General Method:
 ### [[From Our Thoughts and Ideas]]:
 - Dump
-	- If it's an idea that can be implemented or a life lesson
+	- If it's an idea that can be implemented, or should be memorized or a life lesson
 		- You should incubate these notes for a Week to see if you really want to keep them or if they no longer feel important
 			- You may want to Delete unimportant notes after the incubation period
 			- Or archive them
@@ -54,11 +58,13 @@ Created: 2023-09-21 18:17
 	- Be sure to transfer any captured notes from [[Pocket Notebook]] and [[Physical Journal]] to [[The +Inbox]]
 - Distill
 	- If you decide to keep an idea or a life lesson after incubating it, it's time to convert it into a permanent note.
-	- Go through your notes in [[The +Inbox]] and use the Feyman technique, and rephrase the concepts, using [[Progressive Summarization]]
+	- If you want to memorize it as is, move it to [[Permanent Notes]]
+	- Otherwise, go through your notes in [[The +Inbox]] and use the Feyman technique, and rephrase the concepts, using [[Progressive Summarization]]
 	- Incorporate pictures from online sources and add them to the literature note
 	- Incorporate drawings using your stylus (or pen if desired -- scan the images in order to digitize). 
 	- Add screenshots of pictures, NEW diagrams, drawings and interesting figures alongside the outlines, 
 	- Now convert each idea into an atomic idea, that is connected to other ideas in your notes creating Evergreen [[Permanent Notes]]
+	- Convert it into a flashcard
 	- Tag the permanent note using one of [[Note Tags and Folders]]
 	- Check Graph View to See if you need to create any Map of Content
 - Change
@@ -108,12 +114,14 @@ Created: 2023-09-21 18:17
 	- If you had handwritten notes in [[Pocket Notebook]] or [[Physical Journal]] in the process step, now is the time to convert them to typed notes, or ignore them if non-important
 	- Delete the folder you created in [[The +Inbox]] because it will now be empty
 - Distill
+	- If you want to memorize the note as is, move it to [[Permanent Notes]]
 	- Move related source material from [[The +Inbox]] to [[Sources]] folder
 	- Go through your notes in [[The +Inbox]] and use the Feyman technique, and rephrase the concepts, using [[Progressive Summarization]]
 	- Incorporate pictures from online sources
 	- Incorporate drawings using your stylus (or pen if desired -- scan the images in order to digitize). 
 	- Add screenshots of pictures, NEW diagrams, drawings and interesting figures alongside the outlines, 
 	- Now convert each idea into an atomic idea, that is connected to other ideas in your notes creating Evergreen [[Permanent Notes]]
+	- Convert it into a flashcard
 	- Tag the permanent note using one of [[Note Tags and Folders]]
 		- Tag Up, Forward and Backward -- Up means to the overarching topic, forward means to other notes, backward means to the [[Literature Note]] (in the References section)
 - Update

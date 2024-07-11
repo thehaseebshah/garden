@@ -21,8 +21,8 @@
     - Compiled a collection of Islamic videos titled “Enter in Peace” and started circulating it in local community and college/colony friends
     - Got control over feelings of attraction towards a female that I had encountered in 2010 (but had not met her) after 5 years of being attravted
     - Developed extreme love for children, animals and plants and started feeling connected to children of the local community and playing with them
-    - Started a project called #DoGood lessons wherein I would give daily tasks of goodness to local children and then rewarding and ranking them
-    - Compiled a register of Tasks and Rewards for #DoGood lessons
+    - Started a project called DoGood lessons wherein I would give daily tasks of goodness to local children and then rewarding and ranking them
+    - Compiled a register of Tasks and Rewards for DoGood lessons
     - Family shifted to Karachi while I stayed in the home of one of my father's friends in Mianwali; there I became extremely interested in Tassawuf and started experiencing the power of love through seeing changes in the elders of that home
 - 2016
     - At Karachi, a stage was set up in Alladin Park for public demonstration of talent; went to the stage and did an impromptu speech on Secret Societies, Ishq and Islam

@@ -3,12 +3,12 @@ Created: 2023-09-21 18:22
 ---
 ### Permanent
 These can be identified with Tags
-- [[To Implement]]
-- [[Stories]]
-- [[To memorize]]
-- [[Lesson]]
-- [[Love]]
-- [[Motiv]]
+- #implement
+- #story
+- #mem
+- #lesson
+- #love
+- #motiv
 
 ### Others
 These have separate folders
