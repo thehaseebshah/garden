@@ -2,7 +2,7 @@
 Created: 2023-09-22 05:10
 ---
 # New
-![[Daily Template#Routine]]
+![[Routine Template]]
 # Old
 ### Tahajjud to Fajr 
 - [x] -- [[Remain offline]]

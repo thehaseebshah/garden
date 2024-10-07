@@ -1,14 +1,16 @@
 ---
 Created: 2023-09-21 00:36
 ---
-- Inspired from [[Getting Things Done]] and [[Zen to Done]] and [[BASB]]
-	- Have Four Labels (All Tasks must be in any one of these):
+- Inspired from [[Getting Things Done]],  [[Zen to Done]] and [[BASB]]
+	- Have Five Folders (All Tasks must be in any one of these):
 		- [[_In 7 Days]]
 			- This should not contain more than 25 tasks
 		- [[_In 90 Days]]
 			-  This should not contain more than 100 tasks
 		- [[_Someday]]
-	- Have Two Folders:
+		- [[Delegated]]
+		- [[Routines]]
+	- Have Two Labels:
 		- Projects
 		- Areas
 	- Have 3 Flags

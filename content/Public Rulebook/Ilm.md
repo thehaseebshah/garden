@@ -1,3 +1,4 @@
 [[Ilm-e-Deen]]
 [[Personal Development Knowledge]]
-[[Your Skill]]
+[[My Main Skills#Current#Your One Thing]]
+[[My Main Skills#Current#Your Other 3 Skills]]

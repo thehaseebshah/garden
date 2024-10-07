@@ -4,18 +4,21 @@ Created: 2023-07-05 01:18
 Next:
 - Gifts for All
 - Food for All
+- Perfume
 
 Later:
 - Experiences for All
-- Glasses
 - XPS Pen
+- Mic Stand
+- Brimless Cap
+- Glasses
+- Kiffaya
+- Shoes and Clothes
 
 Later still:
-- Phone and Cover
 - Bike?
 - Keychain and Knife
 - FBISE Sanad
-- Ninitsu Suit?
 - Printer
 - Plants
 - Farm Animals

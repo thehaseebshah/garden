@@ -1,7 +1,7 @@
 ### 0. _**Metadata**_
 - YA ALLAH, new Changes applied on: 
-	- 2024-07-09
-	- Rank Rewards apply on 11/07/24
+	- [[2024-07-19]]
+	- New edit in How Rules Work to be applied at July 20 2024 0000
 	- Missions, new Fajr and Tahajjud Protocol apply 22/07/24
 	- New Family Rules apply 30/07/24
 ### 1. _**Salah Rules:**_
@@ -45,7 +45,7 @@
 	1. Things presented to eat at Al Burhan
 9. Nothing is an unforeseen circumstance except forgetfulness. Forgetfulness only means being reminded after you have already eaten, and no more food will be allowed after being reminded.
 10. If we are in a 3 KM radius of our Martial Arts Club or Sports Club 1 hour before the called time by the instructor or the decided time in [[Routines]], we need to get into a 50m radius at least once before the called time, on Mon to Fri. The called time is the time the instructor has asked to appear at the club. Your club is the club you have paid for the month or have decided with AP.
-12. Breaking these rules for a day causes 10 P2s.
+	1. Breaking these rules for a day causes 10 P2s.
 ### 3. _**Pomodoro Rules:**_
 1. 5 Pomodoros of 1 hour with optional 10 min ending rest are to be completed daily before the following times:
 	1. 3 Mandatory Pomos:
@@ -87,7 +87,7 @@
 8. We can't watch short films or film summaries that have an immodest plot.
 9. We can't contact random people of the opposite gender with the intention of talking to them to pass time or for entertainment.
 10. Not following for 30 minutes or less causes 3 P2s. More penalties for more hours.
-11. Exception to all of the above and other related rules is Mahnoor. (Applies July 6 1747)
+12. Paused.
 ### 5. _**Tahajjud Protocol**_:
 1. Tahajjud + Dua for at least 5 minutes while sitting + Zikr Bil Jahr (if given)
 2. Isolation for 30 Min + No Devices for 30 Min
@@ -96,7 +96,7 @@
 4. Yaasin
 7. Fajr Takbeer e Oola
 9. Not completing first one before Chasht time enters causes 1 P2.
-### 7.  Ishraq Protocol:**_
+### 7.  Ishraq Protocol:**
 1. Ishraaq + Chasht + Morning Azkaar
 2. Nawafil e Shukr + Planning Rules
 5. Not completing first one before Zawal time enters causes 1 P2. 
@@ -127,7 +127,7 @@
 5. Rewards
 6. Make Day for 1 Family Member
 7. This can happen online too
-8. Necessary steps are Debrief, Make Day and Lecture 
+8. Necessary steps are Debrief, Make Day and Lecture
 ### 13. _**Fasting Rules:**_
 1. Fasting every other day is a must.
 2. Not doing so causes 5 P2s.
@@ -184,7 +184,7 @@
 5. For every other app, you have a time of 30 minutes overall in a day, which must be tracked on an app or piece of paper.
 6. We must keep our phone in black and white, and using it in color would require using the above app timer. When we find the phone in color we must either turn it into black and white mode within 60 seconds or start tracking the allowed 30 minute time.
 7. Once phone is in Astaghfar Pouch, we must perform a Zikr of 300 Astaghfar before taking it out. Not doing so causes 5 P2s.
-8. Viewing content on the phone counts as usage. (Starts 16th June 2024)
+8. Viewing content on the phone counts as usage.
 9. Not following for 5 minutes or less causes 1 P2. More penalties for more violations.
 ### 18. _**Secret Sin Rules**_:
 1. The secret sin can not be performed.

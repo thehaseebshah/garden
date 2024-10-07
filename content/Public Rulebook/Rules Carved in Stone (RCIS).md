@@ -46,6 +46,8 @@
     33. If you are not sure if a penalty has been caused or not, you must check the rules to find out what the case is, if you leave yourself in this state of confusion for more than 24 hours, X P4s is/are caused for each day that passes by after the 24 hour mark, until you finally check to rules to clear your confusion. The number X can be increased here but not decreased. X is currently 1.
     34. Forgetfulness does not mean forgetfulness to add a specific rule.
     35. You can not be your own AP.
+    36. If you realise that a penalty other than P4 was caused 3 days later, it is not caused. This rule can not be used to cheat and overcome penalties.
+    37. If you realise that a penalty other than P4 was caused 3 days later, it is not caused. This rule can not be used to cheat and overcome penalties.  (To be added 4 August 2024 0001 HRS)
 3. For Accountability Partner
     1. The accountability partner must make the RF send the owed amount to the charity. It is his responsibility.
     2. The accountability partner can not facilitate the rule follower in any way possible to accommodate for his or her penalties.

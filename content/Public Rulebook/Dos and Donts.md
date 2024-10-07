@@ -3,25 +3,24 @@ Created: 2024-03-25 05:00
 ---
 Do:
 1. Tahajjud Protocol
-	- Tahajjud + 5 Min Dua + Zikr Bil Jahr before Fajr time
-	- 30 Min Isolation + 30 Min No Devices + (Breakfast)
+	- Tahajjud + 1 Min Dua + Zikr Bil Jahr before Fajr time
 2. Fajr Protocol
-	- Yaseen before Ishraq time
+	- Yaseen + Fajr Qadha before Ishraq time
 	- Fajr
 3. Ishraaq Protocol
-	- Ishraq + Chasht + Azkaar before Zawal time
-	- Nawafil Shukr + Planning
+	- Ishraq + Chasht + Nawafil Shukr + Azkaar before Zawal time
+	- Planning
 4. Zuhr Protocol
 	- 0.25 Juz before Asr
-	- Zuhr + Family + Gift 3 Kids or 1 Neighbour + Text 3 or Call 1 Murabba + Update in Shabab Groups
+	- Zuhr
 5. Asr Protocol
-	- Dua Manzil + Azkaar before Maghrib
-	- Asr + Calling or Meeting relative for 1 Min + Club
+	- Half Azkaar Azkaar before Maghrib
+	- Asr
 6. Maghrib Protocol
-	- Awabayn + Surah Waqiah before Isha
+	- Awabayn + Surah Waqiah + Half Azkaar before Isha
 	- Maghrib
 7. Isha Protocol
-	- Surah Mulk + Witr + Taraweeh + Send Mamoolat + (Planning)  before 0000
+	- Surah Mulk + Witr + Taraweeh before 0000
 	- Isha
 
 Don't:
@@ -36,4 +35,3 @@ Don't:
 9. Break Day Streaks rules
 10. Delay sending owed amount to charity fund
 11. Remain in confusion about rules
-12. Skip fasts

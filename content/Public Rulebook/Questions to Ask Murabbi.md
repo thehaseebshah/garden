@@ -1,8 +1,8 @@
 - [x] AI Career (vs MAULWI specialty question) ✅ 2024-05-31
 - [ ] Capitalism, Consumerism, Anti Tech, Environment Friendliness, Self Sufficiency in Islam
 	- [ ] Digital Privacy in Islam
-- [ ] Learning Isms
-	- [ ] And from Daniel and Sapience
+- [x] Learning Isms ✅ 2024-07-17
+	- [x] And from Daniel and Sapience ✅ 2024-07-17
 - [x] Life in Mountains ✅ 2024-05-27
 - [x] Where to Live ✅ 2024-05-27
 - [x] Muslim Village ✅ 2024-05-27
@@ -12,3 +12,4 @@
 - [x] Show Off Question to Al Burhanis ✅ 2024-05-27
 - [x] Pesa mil Jana vs Uska mutlashi hona ✅ 2024-05-27
 - [x] Liberalism Club ✅ 2024-05-27
+- [ ] Managing Shabab Social Media as a Dawah Campaign Startegy

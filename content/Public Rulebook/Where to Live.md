@@ -4,12 +4,19 @@ Updated: 2022-12-19 23:23
 ---
 
 # New
+- 1 Year in G13 + Bani Gala
+	- Seerah Circle in Bani Gala
+	- Al Burhan in G13
+- Move to Mianwali in Sep 2025
+	- Al Burhan and Model Muhalla and Muslim Village and Shabab, Shabab Uni and Shabab Acad
+- Move back to Isb and await decision of Ustaad Jee
+# Pre Sep 2023 Decision
 - Mianwali or Bani Gala
 # Old Decision
 
 (Also which country) and what the structure and organziation of house should be — which pets to keep — which simple themes to include — turkish, Arabic, Pakhtoon, Pakiistani Village, Mianwali
 
-![Untitled](Resources/Attachments/Where%20to%20live%20e99929eee835408db35eb5306c720600/Untitled.png)
+![Untitled](Resources/System/Attachments/Where%20to%20live%20e99929eee835408db35eb5306c720600/Untitled.png)
 
 # Okay so here’s the decision:
 

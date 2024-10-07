@@ -7,35 +7,43 @@ Created: 2024-03-23 01:02
 	- Clock
 	- VLC
 - WhatsApp Chats
-	- Students of AI Course
-	- Majlis Shabab Members
-	- Shabab
-	- Murabbas
-	- Our Murabbis
 	- Personal Chat
-	- Al Burhan Aamila Members
+	- Al Burhanis
+	- Direct Family members
+	- Modesty rule exceptions
 - WhatsApp Groups
-	- Mamoolat Groups
-	- YC Groups
 	- Al Burhan Groups
-- Allowed Websites.
-	- Prayer Times by Islamic Finder
 - Others
-	- Camera
-	- Photos
-	- Gallery
-	- Voice Recorder
+	- Camera Apps
+	- Gallery Apps
+	- Voice Recorders
 	- Settings
-	- OsmAnd
-	- GMapsWV
+	- Maps
 	- Calculator
 	- Sesame
 	- DroidCam
 	- Mega
-	- Yango
+	- Ride Hailing Apps
 	- File Managers
 	- PDF Viewers
 	- Any Keyboard
-- Viewing, not editing Obsidian Notes Screen 
+	- Todoist 
+	- Obsidian
+	- Authenticators
+	- Background Video Recorder
+	- ChatGPT
+	- Feem
+	- Tasbih
+	- Synching Tools
+	- Dictionaries and Thesaurus
+	- Emails
+	- Meeting Tools
+	- VPNs
+	- Raindrop
+	- Prayer Apps
+	- Alarm Apps
+	- Signal 
+	- Translation Tools
+	- Notion
 - WhatsApp Calls Screen, Chats Screen, WhatsApp Calls
 - Minimized Apps

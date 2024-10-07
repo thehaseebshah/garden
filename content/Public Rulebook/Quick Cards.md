@@ -2,7 +2,7 @@
 Created: 2024-03-24  18:25 
 ---
 [[Dos and Donts]]
-[[Rule Highlights]]
+[[Rules]]
 [[How to Plan Each Day]]
 [[How to Plan Each Week]]
 [[Home#The Why]]

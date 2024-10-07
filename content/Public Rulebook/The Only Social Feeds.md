@@ -13,19 +13,14 @@ Related: [[Speakers List]]
 - WhatsApp Statuses
 - Funny
 	- Daniel Thrasher
-	- Comedy Central
-	- Ryan George
-	- The Muslim Skeptic Memes
-	- Mufti Tariq Masood
 - Youtube Channels for News
 	- Qaiser Ahmad Raja
 	- Daniel Haqiqatjou
 - Lectures for Joy
 	- Mufti Tariq Masood
 	- Ustaad Ji
-	- Ahmad Javed
-	- Gabriel Romani
-- Debates
+	- Ahmad Javed (temporary)
+- Debates (temporary)
 	- Hamza Tzortsis
 	- Yasir Nadeem Wajidi
 	- Muhammad Hijab
@@ -35,3 +30,6 @@ Related: [[Speakers List]]
 	- Suboor Ahmad
 	- Daniel Haqiqatjou
 	- Qaiser Ahmad Raja
+- Temporary Watch List:
+	- A few podcasts
+	- Videos downloaded on phone

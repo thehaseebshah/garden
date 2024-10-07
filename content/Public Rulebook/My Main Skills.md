@@ -2,8 +2,57 @@
 Created: 2022-12-10 22:43
 Updated: 2023-06-28 07:40
 ---
-%% Changed May 2024 %%
+%% Changed Sep 2024 %%
 # Current
+
+![[1 1.png]]
+### Your One Thing:
+- Al Burhan
+### Your Other 3 Skills:
+- Shabab [[Social Gamification]] to gain [[Habits]]
+	- Teen Psychology, Activities, Teaching Psychology, Peer-group Effect, Life Gamification, Habit Science
+	- Showcase: Activities Collection and Framework
+	- Publish: Shabab WA Channel
+- Intellectual Decolonization
+	- Isms, Decolonization
+	- Showcase: Books Collection
+	- Publish: WA Channel -> Blog -> eBook
+- [[Your Combination of (Preferably Two) Rare and Valuable Skills in your Career]]
+	- CogNin 
+	- Showcase: CogNin
+	- Publish: LinkedIn and Github
+
+### Your Hobbies
+- [[Yildrim]]![[4.png]]
+- [[Maulwified Life]]![[2 1.png]]
+
+
+### Your Areas of Improvement
+If I summarize Super Areas I will get:
+- Al Burhan or Learning and Implementing [[My Main Skills#Your One Thing]]
+- Ilm
+	- Ilm e Deen
+	- Learning [[My Main Skills#Your Other 3 Skills]]
+	- Personal Dev Knowledge
+- Islaah
+- Khidmah
+	- Family
+	- Community
+	- Relatives
+	- Friends
+- Energy
+	- Health
+	- [[My Main Skills#Your Hobbies]]
+	- Refueling
+- Finances
+![[Life Areas#Super Areas]]
+### Your Focus Area in Data Science:
+- [[Your Combination of (Preferably Two) Rare and Valuable Skills in your Career]]
+- [[Positions that I can apply for if I wanted]]
+- [[Countries for Remote Job Hunting]]
+- [[Industries that I have experience in]]
+
+# Pre Sep 2024
 
 ![[1 1.png]]
 ![[2 1.png]]
@@ -18,15 +67,19 @@ Updated: 2023-06-28 07:40
 - Shabab [[Social Gamification]] to gain [[Habits]]
 	- Dawah, Shabab, Activities
 	- Showcase: Activities Collection and Framework
+	- Publish: Shabab Instagram Reels
 - [[Maulwified Life]]
 	- Ilm, Isms, Decolonization
 	- Showcase: Books Collection
+	- Publish: Threads -> Blog -> eBook
 - [[Your Combination of (Preferably Two) Rare and Valuable Skills in your Career]]
 	- Khidmah, Via Teaching Skills, CogNin OR Via Teaching Permaculutre Skills, Community Skills
 	- Showcase: CogNin OR Community
+	- Publish: LinkedIn and Github
 - [[Ninjitsu]]
 	- Islah, Mujahidda, Martial Arts
-	- Showcase: Handmade weapons
+	- Showcase: Handmade Weapons
+	- Showcase: Yildirim Instagram Pics
 
 ### Your Focus Area in Data Science:
 - [[Your Combination of (Preferably Two) Rare and Valuable Skills in your Career]]

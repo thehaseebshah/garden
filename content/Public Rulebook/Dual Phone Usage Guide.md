@@ -1,0 +1,54 @@
+---
+Created: 2024-07-26 12:31
+---
+
+Pixel 6 would be for Offline Use and the main device we keep with us
+- Pillars
+- Camera
+- Background Video Recorder 
+- Clock
+- Calculator 
+- Calendar 
+- Contacts 
+- Droid Cam
+- Files
+- Reader 
+- Maps
+- Mega
+- Obsidian
+- Photos
+- Proton
+- Recorder
+- SnapTube 
+- Sadapay
+- Alfa
+- SnapTube 
+- Thesaurus 
+- Lughat
+- VLC
+- WhatsApp
+
+Pixel 4a 5G would be for online use and we would keep it away from us
+- Authenticator
+- Autosync 
+- Brave
+- Calls
+- Canva
+- Contacts 
+- Drive
+- Docs
+- Files
+- Eayspaisa 
+- F Droid
+- InDrive
+- JazzCash
+- Messages
+- Mega
+- Payoneer 
+- Phone
+- Photos
+- Proton 
+- Raindrop
+- Sheets
+- SnapTube 
+- Wise

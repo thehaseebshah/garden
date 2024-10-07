@@ -19,6 +19,7 @@ Uncomfortable
 Long-standing
 - Sustainable
 - Long-life
+- Natural
 Westernization-free
 - Decolonized
 - Free of isms

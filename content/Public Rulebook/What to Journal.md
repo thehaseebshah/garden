@@ -4,7 +4,7 @@ Updated: 2023-05-08 19:33
 ---
 
 # New
-- Daily Letter
+- Daily Letter minimum 50 words
 - Your Day's Joy
 
 %% # Old

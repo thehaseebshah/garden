@@ -6,7 +6,7 @@ Mandatory:
 2. Clean [[All Brain Dump Sources]]
 3. [[While going through your task list each day]]
 4. Time Box Your Day
-5. Fill Journal Entry [[What to Journal]]
 Optional:
 1. Check [[Connected DBs]]
 2. Clean [[External Inboxes]]
+3. Fill Journal Entry [[What to Journal]]

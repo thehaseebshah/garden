@@ -82,7 +82,7 @@ There are [[Methods of Note Taking]]
     
     prevent the two primary sins of organizational overengineering: too many categories, and too many levels of hierarchy.
     
-    ![Untitled](Resources/Attachments/Ultimate%20Guide%20to%20Note%20Taking%20and%20PKM%20cef4d1393aa54970a7ffc10f42253609/Untitled%202.png)
+    ![Untitled](Resources/System/Attachments/Ultimate%20Guide%20to%20Note%20Taking%20and%20PKM%20cef4d1393aa54970a7ffc10f42253609/Untitled%202.png)
     
     The key here is to keep in mind that areas are Areas of *Responsibility*. There is a very clear line between things that you are *responsible* for, and those that you’re merely *interested* in.
     

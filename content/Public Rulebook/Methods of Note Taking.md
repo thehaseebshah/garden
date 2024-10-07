@@ -26,7 +26,7 @@ Created: 2023-09-21 18:17
 	- If you want to memorize as is, move it to [[Permanent Notes]]
 	- Move source material to [[References]]
 	- Rephrase using [[Progressive Summarization]], add pics, diagrams etc.
-	- Make it atomic, connect and tag Up, Forward, Backward
+	- Make it atomic, connect it Up, Forward, Backward
 	- Convert to flashcard
 	- Tag the permanent note using one of [[Note Tags and Folders]]
 	- Check Graph View to See if you need to create any Map of Content
@@ -63,7 +63,10 @@ Created: 2023-09-21 18:17
 	- Incorporate pictures from online sources and add them to the literature note
 	- Incorporate drawings using your stylus (or pen if desired -- scan the images in order to digitize). 
 	- Add screenshots of pictures, NEW diagrams, drawings and interesting figures alongside the outlines, 
-	- Now convert each idea into an atomic idea, that is connected to other ideas in your notes creating Evergreen [[Permanent Notes]]
+	- Now convert each idea into an atomic idea, that is connected to other ideas in your notes creating Evergreen [[Permanent Notes]], connecting it Up, Forward and Backward
+		- Up means the upper idea
+		- Forward means related
+		- Backwards means to the literature note
 	- Convert it into a flashcard
 	- Tag the permanent note using one of [[Note Tags and Folders]]
 	- Check Graph View to See if you need to create any Map of Content
