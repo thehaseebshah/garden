@@ -22,6 +22,7 @@ Do:
 7. Isha Protocol
 	- Surah Mulk + Witr + Taraweeh before 0000
 	- Isha
+8. Complete 3 Pomos, and 2 optional ones
 
 Don't:
 1. Eat what's not allowed

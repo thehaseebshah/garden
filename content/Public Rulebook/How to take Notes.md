@@ -1,0 +1,130 @@
+---
+Created: 2023-09-21 18:17
+---
+## General Method:
+[[How to take Notes.canvas|How to take Notes]]
+
+
+%% ## Examples use cases (old)
+- Tafsir
+	- Skim
+		- Learn Names of chapters of the Quran
+	- Process
+		- Scan the Ayahs you will study today into a note taking app, like OneNote
+		- Incorporate pictures from online sources and add them to OneNote
+		- Incorporate drawings using your stylus on OneNote
+		- Create Outlines during the lecture on Notion by paraphrasing in your own words what you are learning
+		- Add screenshots of pictures, drawings on Notion alongside the outlines
+	- Organize/Distill
+	- Review
+		- Solve quizzes provided by instructor
+		- Review Ayah Notes
+- Hadith
+	- Skim
+		- Learn types of Hadith
+		- Learn a Summary of the Fiqh of Hadith
+	- Process
+		- Scan the Hadiths you will study today into a note taking app, like OneNote
+		- Incorporate pictures from online sources and add them to OneNote
+		- Create Outlines during the lecture on Notion by paraphrasing in your own words what you are learning
+		- Add screenshots of pictures, drawings on Notion alongside the outlines
+	- Organize/Distill
+	- Review
+		- Solve quizzes provided by instructor
+		- Review Hadith Notes
+- Fiqh
+	- Skim
+		- Learn a Summary of the Fiqh
+		- Go through the book of Fiqh
+	- Process
+		- Scan the contents you will study today into a note taking app, like OneNote — for future transcribing
+		- Scribe on the scans using your stylus on OneNote
+		- Incorporate pictures from online sources and add them to OneNote
+		- Incorporate drawings using your stylus on OneNote
+		- Create Outlines during the lecture on Notion by paraphrasing in your own words what you are learning
+		- Add screenshots of pictures, drawings and scribes on Notion alongside the outlines
+	- Organize/Distill
+		- Go through your [[notes]] and use the Feyman technique, add more things to your [[notes]]
+		- Make new connections using Summary Sheets — create NEW diagrams and interesting figures
+		- Create Evergreen Notes with the implement tag
+		- Create Evergreen Notes with the concept tag
+	- Review
+		- Solve quizzes provided by instructor
+		- Review concept Notes
+- Tadreeb
+	- Skim
+		- Go through the book/ref material
+		- Ask people who have studied the subject already to create a mind-map for you
+		- Find summary sheets online
+	- Process
+		- Scan the contents you will study today into a note taking app, like OneNote — for future transcribing
+		- Scribe on the scans using your stylus on OneNote
+		- Incorporate pictures from online sources and add them to OneNote
+		- Incorporate drawings using your stylus on OneNote
+		- Create Outlines during the lecture on Notion by paraphrasing in your own words what you are learning
+		- Add screenshots of pictures, drawings and scribes on Notion alongside the outlines
+	- Organize/Distill
+		- Go through your [[notes]] and use the Feyman technique, add more things to your [[notes]]
+		- Make new connections using Summary Sheets — create NEW diagrams and interesting figures
+		- Create Evergreen Notes with the implement tag
+		- Apply the knowledge immediately there and then
+	- Review
+		- Solve quizzes provided by instructor
+		- Practice tadreeb
+- Seerah
+	- Skim
+		- Learn a Summary of the life of the Prophet SAWW
+		- Go through the book of Seerah
+	- Process
+		- Incorporate pictures from online sources and add them to OneNote
+		- Create Outlines during the lecture on Notion by paraphrasing in your own words what you are learning
+		- Add screenshots of pictures, drawings on Notion alongside the outlines
+	- Organize/Distill
+		- Go through your [[notes]] and use the Feyman technique, add more things to your [[notes]]
+		- Make new connections using Summary Sheets — create NEW diagrams and interesting figures
+		- Create Evergreen Notes with the implement tag
+		- Create Evergreen Notes with the story tag
+	- Review
+		- Solve quizzes provided by instructor
+		- Review story [[notes]]
+- Arabic
+	- Skim
+		- Go through the book/ref material
+		- Ask people who have studied the subject already to create a mind-map for you
+		- Find summary sheets online
+	- Process
+		- Scan the contents you will study today into a note taking app, like OneNote — for future transcribing
+		- Scribe on the scans using your stylus on OneNote
+		- Incorporate pictures from online sources and add them to OneNote
+		- Incorporate drawings using your stylus on OneNote
+		- Create Outlines during the lecture on Notion by paraphrasing in your own words what you are learning
+		- Add screenshots of pictures, drawings and scribes on Notion alongside the outlines
+	- Organize/Distill
+		- Not required
+	- Review
+		- Practice
+- For Startup Lectures
+    - Skim
+        - Go through the book/ref material/course
+        - Go through the chapter/section
+        - Go through bold entries
+        - Create a flow chart of the book/course
+        - Ask people who have studied the subject already to create a mind-map for you
+        - Find summary sheets online
+        - Look at the quizzes
+    - Process
+        - Incorporate pictures from online sources and add them to OneNote
+        - Incorporate drawings using your stylus on OneNote
+        - Create Outlines during the lecture on Notion by paraphrasing in your own words what you are learning
+        - Add screenshots of pictures, drawings and scribes on Notion alongside the outlines
+        - Try to apply
+    - Organize/Distill
+        - Go through your [[notes]] and use the Feyman technique, add add things to your [[notes]]
+        - Make new connections using Summary Sheets — create NEW diagrams and interesting figures
+        - Create Evergreen Notes
+        - Apply
+    - Review
+        - Solve quizzes provided by instructor
+        - Review flashcards
+        - Apply
+ %%

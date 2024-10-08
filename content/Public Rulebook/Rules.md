@@ -4,7 +4,7 @@ Created: 2024-03-23 01:34
 ##### Status
 - Last changed: 2024-10-07
 - Manajat removed 10th October Fajr time
-- Notion and Fajr Qadha added 10th October 0830 HRS
+- Notion app and Fajr Qadha added 10th October 0830 HRS
 ##### Decision
 - I will follow these rules and will not let any change or loophole compromise RCIS or facilitate cheating In Sha Allah 
 ##### How Rules Work

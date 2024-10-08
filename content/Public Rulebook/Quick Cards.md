@@ -12,7 +12,7 @@ Created: 2024-03-24  18:25
 [[Visualization List#Visualizations at Night]]
 [[Visualization List#Murakba List]]
 [[What to Journal#New]]
-[[Methods of Note Taking#Simplified Version]]
+[[How to take Notes#Simplified Version]]
 [[Life Areas#Areas]]
 [[Goals -- to update#📈Goals by 30]]
 [[Projects]]

@@ -7,7 +7,7 @@ Tags:: #keep
 First we see [[Where to Take Notes]]
 Now let's see [[Note Tags and Folders]]
 And [[Types of Notes and their Benefits in Life]]
-There are [[Methods of Note Taking]]
+There are [[How to take Notes]]
 
 %% # Old  Research
 ## --
