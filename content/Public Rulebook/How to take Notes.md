@@ -1,8 +1,8 @@
 ---
 Created: 2023-09-21 18:17
 ---
-## General Method:
-[[How to take Notes.canvas|How to take Notes]]
+## The CEPIDAM  Method:
+[[How to take Notes.canvas|How to take Notes]] or [[How to Take Notes (Simple).canvas|How to Take Notes (Simple)]]
 
 
 %% ## Examples use cases (old)

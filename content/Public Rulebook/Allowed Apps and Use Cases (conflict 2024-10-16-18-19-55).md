@@ -6,18 +6,6 @@ Created: 2024-03-23 01:02
 	- SMS Messenger
 	- Clock
 	- VLC
-	- Todoist
-	- Obsidian
-	- Calendar
-	- Quran
-	- Moon
-	- Salatuk
-	- Sheets
-	- Sync
-	- Notion?
-	- Photos
-	- Files
-	- WA
 - WhatsApp Chats
 	- Personal Chat
 	- Al Burhanis
@@ -65,3 +53,5 @@ Created: 2024-03-23 01:02
 	- Camera Apps
 	- PDF Readers
 	- Video Players
+	- Task Managers
+	- Calendars
