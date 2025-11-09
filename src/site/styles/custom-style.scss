@@ -11,3 +11,17 @@ body {
     //   color: black;
     //  }
 }
+
+.contact-email-section {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+.contact-email-section p {
+    margin-bottom: 0;
+}
