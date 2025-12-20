@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/management/people/boards/tree/","created":"2025-12-19T07:18:17.439+05:00","updated":"2025-12-20T15:08:31.228+05:00"}
+{"dg-publish":true,"permalink":"/management/people/boards/tree/","created":"2025-12-19T07:18:17.439+05:00","updated":"2025-12-20T15:17:33.302+05:00"}
 ---
 
 
@@ -15,12 +15,11 @@
 		- Mazhar Hafeez
 		- Mubashir Hafeez
 		- Suraya
-		- m.
+		- m. second wife
 		- Saba
 		- Naveed Ahmad
 		- Sobia
 		- Seerat
-		- 5 Sisters
 	- Saeed Ahmad
 		- Gul e Rana
 		- Waheed d. 2023
@@ -50,6 +49,7 @@
 - Yaseen
 - Ameer Bibi m. [[#^5219a4]]
 
+---
 
 - Muhammad Abdul Khaliq Shah
 { #5219a4}
