@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/management/people/boards/tree/","created":"2025-12-19T07:18:17.439+05:00","updated":"2025-12-20T14:44:17.975+05:00"}
+{"dg-publish":true,"permalink":"/management/people/boards/tree/","created":"2025-12-19T07:18:17.439+05:00","updated":"2025-12-20T14:45:29.362+05:00"}
 ---
+
 
 - Fateh Muhammad 
 - Hafiz Ghulam Muhammad 
