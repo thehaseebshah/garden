@@ -4,12 +4,13 @@
         {% for imp in dynamics.filetree.beforeTitle %}
             {% include imp %}
         {% endfor %}
-        <a href="/" style="text-decoration: none;">
-            {% if meta.siteLogoPath %}
-                <img class="site-logo" src="{{meta.siteLogoPath}}" alt="{{meta.siteName}}">
-            {% else %}
-                <h1 style="margin: 15px !important;">{{meta.siteName}}</h1>
-            {% endif %}
+        {% set logoSrc = meta.siteLogoPath %}
+        {% if not logoSrc %}
+            {% set logoSrc = "/img/logo.svg" %}
+        {% endif %}
+        <a href="/" class="site-brand" aria-label="Home">
+            <img class="site-logo" src="{{logoSrc}}" alt="{{meta.siteName}}" width="26" height="26" loading="eager" decoding="async" />
+            <h1 class="site-title">{{meta.siteName}}</h1>
         </a>
         {% for imp in dynamics.filetree.afterTitle %}
             {% include imp %}

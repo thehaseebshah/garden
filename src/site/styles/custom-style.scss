@@ -30,6 +30,19 @@
     font-display: swap;
 }
 
+:root {
+    --accent-h: 153;
+    --accent-s: 60%;
+    --accent-l: 52%;
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
+    --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+    --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --text-accent-hover: #86efac;
+    --color-purple: #34d399;
+}
+
 body {
     /***
       ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
@@ -60,15 +73,6 @@ body {
     --font-default: "Product Sans", "Google Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     --font-interface-override: "Product Sans", "Google Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     --font-text-override: "Product Sans", "Google Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-    --accent-h: 153;
-    --accent-s: 60%;
-    --accent-l: 52%;
-    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-    --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
-    --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
-    --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
-    --text-accent-hover: var(--dg-accent-strong);
-    --color-purple: var(--dg-accent);
 
     /* Map to Obsidian/Digital Garden variables */
     --background-primary: var(--dg-bg-0);
@@ -98,6 +102,7 @@ body {
         var(--background-primary);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 1200px 600px, 900px 520px, cover;
     color: var(--text-normal);
     font-family: var(--font-text);
 }
@@ -172,6 +177,7 @@ body {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     column-gap: 12px;
+    padding: 0 12px;
 }
 
 .navbar > .navbar-inner {
@@ -298,10 +304,8 @@ body {
     background: rgba(15, 24, 18, 0.9);
 }
 
-@media (min-width: 1401px) {
-    .sidebar {
-        top: var(--dg-header-offset) !important;
-    }
+.has-navbar .sidebar {
+    top: var(--dg-header-offset) !important;
 }
 
 .notelink {
