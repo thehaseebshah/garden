@@ -371,6 +371,23 @@ a.tag:hover {
     top: var(--dg-header-offset) !important;
 }
 
+body.no-filetree .sidebar .toc {
+    position: fixed;
+    left: 20px;
+    top: var(--dg-header-offset);
+    width: var(--dg-filetree-min-width);
+    max-width: calc(var(--dg-filetree-min-width) - 20px);
+    z-index: 110;
+}
+
+@media (max-width: 1400px) {
+    body.no-filetree .sidebar .toc {
+        position: static;
+        width: auto;
+        max-width: none;
+    }
+}
+
 .notelink {
     border-radius: 10px;
     transition: background-color 140ms ease, transform 140ms ease;
