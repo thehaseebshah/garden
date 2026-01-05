@@ -124,6 +124,17 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top left, top right, center;
+    --text-accent: var(--dg-accent);
+    --text-accent-hover: var(--dg-accent-strong);
+    --interactive-accent: var(--dg-accent);
+    --interactive-accent-hover: var(--dg-accent-strong);
+    --link-color: var(--dg-accent);
+    --link-color-hover: var(--dg-accent-strong);
+    --link-external-color: var(--dg-accent);
+    --link-external-color-hover: var(--dg-accent-strong);
+    --link-unresolved-color: rgba(var(--dg-accent-rgb), 0.7);
+    --link-fg-color: var(--dg-accent);
+    --link-hover-fg-color: var(--dg-accent-strong);
     color: var(--text-normal);
     font-family: var(--font-text);
 }
@@ -154,33 +165,38 @@ body {
 
 /* Links */
 .markdown-preview-view a {
-    color: var(--text-accent);
+    color: var(--text-accent) !important;
     text-decoration-thickness: 0.1em;
     text-underline-offset: 0.18em;
     text-decoration-color: rgba(var(--dg-accent-rgb), 0.45);
 }
 
 a {
-    color: var(--text-accent);
+    color: var(--text-accent) !important;
 }
 
 a:visited {
-    color: var(--text-accent);
+    color: var(--text-accent) !important;
 }
 
 a:hover {
-    color: var(--interactive-accent-hover);
+    color: var(--interactive-accent-hover) !important;
 }
 
 .markdown-preview-view a:hover {
-    color: var(--interactive-accent-hover);
+    color: var(--interactive-accent-hover) !important;
     text-decoration-color: rgba(var(--dg-accent-strong-rgb), 0.7);
 }
 
 .markdown-preview-view a.is-unresolved {
-    color: rgba(var(--dg-accent-rgb), 0.7);
+    color: rgba(var(--dg-accent-rgb), 0.7) !important;
     text-decoration-style: dashed;
     text-decoration-color: rgba(var(--dg-accent-rgb), 0.35);
+}
+
+.markdown-preview-view .internal-link,
+.markdown-preview-view a.external-link {
+    color: var(--text-accent) !important;
 }
 
 .tag,
