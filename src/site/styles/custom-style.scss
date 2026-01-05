@@ -41,6 +41,8 @@
     --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
     --text-accent-hover: #86efac;
     --color-purple: #34d399;
+    --link-fg-color: #34d399;
+    --link-hover-fg-color: #86efac;
 }
 
 body {
@@ -70,6 +72,7 @@ body {
     --dg-header-height: 56px;
     --dg-header-margin-top: 12px;
     --dg-header-offset: calc(var(--dg-header-height) + var(--dg-header-margin-top) + 24px);
+    --dg-content-max-width: 760px;
     --font-default: "Product Sans", "Google Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     --font-interface-override: "Product Sans", "Google Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     --font-text-override: "Product Sans", "Google Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
@@ -91,6 +94,8 @@ body {
     --link-external-color: var(--dg-accent);
     --link-external-color-hover: var(--dg-accent-strong);
     --link-unresolved-color: rgba(var(--dg-accent-rgb), 0.7);
+    --link-fg-color: var(--dg-accent);
+    --link-hover-fg-color: var(--dg-accent-strong);
 
     /* Global polish */
     color-scheme: dark;
@@ -113,7 +118,7 @@ body {
 }
 
 .content {
-    max-width: 760px;
+    max-width: var(--dg-content-max-width);
 }
 
 /* Headings */
@@ -145,6 +150,10 @@ body {
 }
 
 a {
+    color: var(--text-accent);
+}
+
+a:visited {
     color: var(--text-accent);
 }
 
@@ -187,24 +196,21 @@ a:hover {
 
 /* Center title in the navbar without changing structure */
 .navbar {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    column-gap: 12px;
-    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 16px;
 }
 
 .navbar > .navbar-inner {
-    grid-column: 2;
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: static;
+    flex: 1;
     min-height: var(--dg-header-height);
 }
 
 .navbar > .search-button {
-    grid-column: 3;
-    justify-self: end;
+    flex-shrink: 0;
 }
 
 .navbar .site-brand {
@@ -216,6 +222,7 @@ a:hover {
     text-decoration: none;
     color: inherit;
     white-space: nowrap;
+    margin-left: auto;
 }
 
 .navbar .site-logo {
@@ -231,14 +238,14 @@ a:hover {
     font-weight: 650;
     letter-spacing: -0.02em;
     color: var(--text-normal);
-    font-size: 1.35rem;
+    font-size: 1.5rem;
     line-height: 1.1;
     white-space: nowrap;
 }
 
 @media (max-width: 800px) {
     .navbar .site-title {
-        font-size: 1.15rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -312,6 +319,8 @@ a:hover {
     background: rgba(15, 24, 18, 0.6);
     box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
 }
 
 .sidebar .toc,
@@ -427,4 +436,13 @@ a:hover {
     margin: 24px auto 40px;
     padding: 12px 16px;
     border-radius: 16px;
+}
+
+.contact-divider {
+    border: 0;
+    height: 1px;
+    background: var(--background-modifier-border);
+    width: calc(100% - 32px);
+    max-width: 760px;
+    margin: 32px auto 12px;
 }
