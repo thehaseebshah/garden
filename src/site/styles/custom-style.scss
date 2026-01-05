@@ -123,6 +123,13 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+body.no-filetree {
+    --dg-content-left: min(
+        calc((100vw - var(--dg-content-max-width)) / 2),
+        calc(100vw - var(--dg-content-max-width) - var(--dg-sidebar-max-width) - var(--dg-sidebar-gap) - 20px)
+    );
+}
+
 /* Layout / readability */
 .theme-dark {
     background:
@@ -149,6 +156,12 @@ body {
 
 .content {
     max-width: var(--dg-content-max-width);
+}
+
+@media (min-width: 1001px) {
+    .content {
+        margin-left: var(--dg-content-left);
+    }
 }
 
 /* Headings */
