@@ -22,6 +22,12 @@ body {
     --dg-accent-strong: #86efac;
     --dg-accent-rgb: 52, 211, 153;
     --dg-accent-strong-rgb: 134, 239, 172;
+    --dg-header-height: 56px;
+    --dg-header-margin-top: 12px;
+    --dg-header-offset: calc(var(--dg-header-height) + var(--dg-header-margin-top) + 12px);
+    --font-default: "Product Sans", "Google Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --font-interface-override: "Product Sans", "Google Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --font-text-override: "Product Sans", "Google Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
     /* Map to Obsidian/Digital Garden variables */
     --background-primary: var(--dg-bg-0);
@@ -50,6 +56,7 @@ body {
         radial-gradient(900px 520px at 90% 0%, rgba(var(--dg-accent-rgb), 0.12), transparent 62%),
         var(--background-primary);
     color: var(--text-normal);
+    font-family: var(--font-text);
 }
 
 .content {
@@ -114,13 +121,13 @@ body {
     top: 0;
     z-index: 120;
     border-radius: 16px;
-    margin: 12px 12px 0;
+    margin: var(--dg-header-margin-top) 12px 0;
 }
 
 /* Center title in the navbar without changing structure */
 .navbar {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr auto auto;
     column-gap: 12px;
 }
 
@@ -128,9 +135,9 @@ body {
     grid-column: 2;
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    min-height: 56px;
+    justify-content: flex-end;
+    position: static;
+    min-height: var(--dg-header-height);
 }
 
 .navbar > .search-button {
@@ -139,14 +146,14 @@ body {
 }
 
 .navbar .site-brand {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    transform: none;
     display: inline-flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
     color: inherit;
+    white-space: nowrap;
 }
 
 .navbar .site-logo {
@@ -162,6 +169,7 @@ body {
     color: var(--text-normal);
     font-size: 1.2rem;
     line-height: 1.1;
+    white-space: nowrap;
 }
 
 @media (max-width: 800px) {
@@ -237,6 +245,12 @@ body {
 .filetree-sidebar {
     border-right: 1px solid var(--background-modifier-border);
     background: rgba(15, 24, 18, 0.9);
+}
+
+@media (min-width: 1401px) {
+    .sidebar {
+        top: var(--dg-header-offset);
+    }
 }
 
 .notelink {
