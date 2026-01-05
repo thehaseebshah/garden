@@ -226,7 +226,7 @@ a.tag:hover {
 .navbar,
 .empty-navbar {
     background: rgba(15, 24, 18, 0.78);
-    border-bottom: 1px solid var(--background-modifier-border);
+    border-bottom: none;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px) saturate(120%);
     -webkit-backdrop-filter: blur(10px) saturate(120%);
@@ -368,11 +368,37 @@ a.tag:hover {
 .sidebar .toc,
 .sidebar .backlinks {
     margin-top: 16px;
+    margin-left: 0;
+    padding: 0 !important;
+}
+
+.sidebar .toc-container ul,
+.sidebar .toc-container ol,
+.sidebar .toc-container li {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    text-indent: 0 !important;
+    list-style: none !important;
+}
+
+.sidebar .toc-container li a {
+    padding-left: 0 !important;
 }
 
 .backlink-list,
 .toc-container {
-    border-left: 1px solid rgba(var(--dg-accent-rgb), 0.25);
+    border-left: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* Avoid double-styled toc (outer card + inner nav.toc) */
+.toc-container > .toc {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
 }
 
 /* File tree */
@@ -389,16 +415,25 @@ a.tag:hover {
     top: var(--dg-header-offset) !important;
 }
 
-body.no-filetree .sidebar .toc {
-    position: fixed;
-    left: max(
-        16px,
-        calc((100vw - var(--dg-content-max-width)) / 2 - var(--dg-toc-width) - var(--dg-toc-gap))
-    );
-    top: var(--dg-header-offset);
-    width: var(--dg-toc-width);
-    max-width: var(--dg-toc-width);
-    z-index: 110;
+body.no-filetree .sidebar {
+    border-top: none !important;
+}
+
+@media (min-width: 1100px) {
+    body.no-filetree .sidebar .toc {
+        position: fixed !important;
+        left: 20px !important;
+        top: var(--dg-header-offset) !important;
+        width: 240px !important;
+        max-width: 240px !important;
+        z-index: 110;
+    }
+    
+    body.no-filetree .content {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        max-width: var(--dg-content-max-width) !important;
+    }
 }
 
 @media (max-width: 1100px) {

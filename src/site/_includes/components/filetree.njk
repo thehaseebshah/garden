@@ -42,9 +42,7 @@
          {% for imp in dynamics.filetree.afterTitle %}
             {% include imp %}
         {% endfor %}
-        {% if settings.dgEnableSearch === true%}
-            {% include "components/searchButton.njk" %}
-        {%endif%}
+        
         {% if settings.dgShowToc === true %}
             {% set tocHtml= (content and (content|toc)) %}
             {% if tocHtml %}

@@ -12,11 +12,6 @@
                         {%set tocHtml= (content and (content|toc)) %}
                         {%if tocHtml %}
                               <div class="toc">
-                                    <div class="toc-title-container">
-                                          <div class="toc-title">
-                                                {% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}
-                                          </div>
-                                    </div>
                                     <div class="toc-container">
                                           {{ tocHtml | safe }}
                                     </div>
