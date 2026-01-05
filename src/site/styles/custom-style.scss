@@ -86,6 +86,11 @@ body {
     --text-accent: var(--dg-accent);
     --interactive-accent: var(--dg-accent);
     --interactive-accent-hover: var(--dg-accent-strong);
+    --link-color: var(--dg-accent);
+    --link-color-hover: var(--dg-accent-strong);
+    --link-external-color: var(--dg-accent);
+    --link-external-color-hover: var(--dg-accent-strong);
+    --link-unresolved-color: rgba(var(--dg-accent-rgb), 0.7);
 
     /* Global polish */
     color-scheme: dark;
@@ -137,6 +142,14 @@ body {
     text-decoration-thickness: 0.1em;
     text-underline-offset: 0.18em;
     text-decoration-color: rgba(var(--dg-accent-rgb), 0.45);
+}
+
+a {
+    color: var(--text-accent);
+}
+
+a:hover {
+    color: var(--interactive-accent-hover);
 }
 
 .markdown-preview-view a:hover {
@@ -218,20 +231,26 @@ body {
     font-weight: 650;
     letter-spacing: -0.02em;
     color: var(--text-normal);
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     line-height: 1.1;
     white-space: nowrap;
 }
 
 @media (max-width: 800px) {
     .navbar .site-title {
-        font-size: 1.05rem;
+        font-size: 1.15rem;
     }
 }
 
 @media (max-width: 800px) {
     .theme-dark {
         background-attachment: scroll;
+    }
+}
+
+@media (max-width: 800px) {
+    .search-container {
+        padding-top: calc(var(--dg-header-height) + 24px);
     }
 }
 
@@ -258,6 +277,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
+    padding-top: calc(var(--dg-header-offset) + 10px);
 }
 
 .search-box {
@@ -291,6 +311,12 @@ body {
     border: 1px solid var(--background-modifier-border);
     background: rgba(15, 24, 18, 0.6);
     box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+.sidebar .toc,
+.sidebar .backlinks {
+    margin-top: 16px;
 }
 
 .backlink-list,
@@ -396,4 +422,9 @@ body {
     border: 1px solid var(--background-modifier-border);
     background-color: rgba(15, 24, 18, 0.6);
     text-align: center;
+    width: calc(100% - 32px);
+    max-width: 760px;
+    margin: 24px auto 40px;
+    padding: 12px 16px;
+    border-radius: 16px;
 }
