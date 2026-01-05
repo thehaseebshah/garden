@@ -8,7 +8,7 @@
                         {%include "components/graphScript.njk"%}
                   {%endif%}
 
-                  {%if settings.dgShowToc === true%}
+                  {%if settings.dgShowToc === true and settings.dgShowFileTree !== true%}
                         {%set tocHtml= (content and (content|toc)) %}
                         {%if tocHtml %}
                               <div class="toc">

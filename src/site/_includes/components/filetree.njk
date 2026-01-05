@@ -45,6 +45,21 @@
         {% if settings.dgEnableSearch === true%}
             {% include "components/searchButton.njk" %}
         {%endif%}
+        {% if settings.dgShowToc === true %}
+            {% set tocHtml= (content and (content|toc)) %}
+            {% if tocHtml %}
+                <div class="toc">
+                    <div class="toc-title-container">
+                        <div class="toc-title">
+                            On this page
+                        </div>
+                    </div>
+                    <div class="toc-container">
+                        {{ tocHtml | safe }}
+                    </div>
+                </div>
+            {% endif %}
+        {% endif %}
          <div class="folder" x-data="{isOpen: true}">
                {%- for fileOrFolderName, fileOrFolder in filetree -%}
                   {{menuItem(fileOrFolderName, fileOrFolder, 0, fileOrFolderName)}}

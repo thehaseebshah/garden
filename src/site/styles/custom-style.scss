@@ -43,6 +43,11 @@
     --color-purple: #34d399;
     --link-fg-color: #34d399;
     --link-hover-fg-color: #86efac;
+    --link-color: #34d399;
+    --link-color-hover: #86efac;
+    --link-external-color: #34d399;
+    --link-external-color-hover: #86efac;
+    --link-unresolved-color: rgba(52, 211, 153, 0.7);
 }
 
 body {
@@ -96,6 +101,12 @@ body {
     --link-unresolved-color: rgba(var(--dg-accent-rgb), 0.7);
     --link-fg-color: var(--dg-accent);
     --link-hover-fg-color: var(--dg-accent-strong);
+    --tag-color: var(--dg-accent);
+    --tag-color-hover: var(--dg-accent-strong);
+    --tag-background: rgba(var(--dg-accent-rgb), 0.12);
+    --tag-background-hover: rgba(var(--dg-accent-rgb), 0.2);
+    --tag-border-color: rgba(var(--dg-accent-rgb), 0.25);
+    --tag-border-color-hover: rgba(var(--dg-accent-rgb), 0.35);
 
     /* Global polish */
     color-scheme: dark;
@@ -172,6 +183,20 @@ a:hover {
     text-decoration-color: rgba(var(--dg-accent-rgb), 0.35);
 }
 
+.tag,
+a.tag {
+    color: var(--tag-color);
+    background-color: var(--tag-background);
+    border-color: var(--tag-border-color);
+}
+
+.tag:hover,
+a.tag:hover {
+    color: var(--tag-color-hover);
+    background-color: var(--tag-background-hover);
+    border-color: var(--tag-border-color-hover);
+}
+
 /* Focus states (keyboard accessibility) */
 :where(a, button, input, textarea, select, summary, [role="button"], .search-button):focus-visible {
     outline: 2px solid rgba(var(--dg-accent-rgb), 0.65);
@@ -188,10 +213,10 @@ a:hover {
     backdrop-filter: blur(10px) saturate(120%);
     -webkit-backdrop-filter: blur(10px) saturate(120%);
     position: sticky;
-    top: 0;
+    top: var(--dg-header-margin-top);
     z-index: 120;
     border-radius: 16px;
-    margin: var(--dg-header-margin-top) 12px 0;
+    margin: 0 12px 0;
 }
 
 /* Center title in the navbar without changing structure */
@@ -222,7 +247,6 @@ a:hover {
     text-decoration: none;
     color: inherit;
     white-space: nowrap;
-    margin-left: auto;
 }
 
 .navbar .site-logo {
@@ -337,6 +361,10 @@ a:hover {
 .filetree-sidebar {
     border-right: 1px solid var(--background-modifier-border);
     background: rgba(15, 24, 18, 0.9);
+}
+
+.filetree-sidebar .toc {
+    margin: 16px 8px 12px;
 }
 
 .has-navbar .sidebar {
