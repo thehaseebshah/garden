@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/keep/my-marriage-research-resources/","created":"2025-11-08T12:00:00.000Z","updated":"2025-11-08T12:00:00.000Z"}
+{"dg-publish":true,"permalink":"/keep/my-marriage-research-resources/","tags":["test"],"created":"2025-12-17T01:37:40.880+05:00","updated":"2026-01-05T18:42:02.925+05:00"}
 ---
 
 ## The Ways I used to find candidates:
