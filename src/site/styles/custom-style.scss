@@ -97,12 +97,12 @@ body {
 /* Layout / readability */
 .theme-dark {
     background:
-        radial-gradient(1200px 600px at 12% -10%, rgba(var(--dg-accent-strong-rgb), 0.16), transparent 60%),
-        radial-gradient(900px 520px at 90% 0%, rgba(var(--dg-accent-rgb), 0.12), transparent 62%),
+        radial-gradient(70vmax 35vmax at 10% -15%, rgba(var(--dg-accent-strong-rgb), 0.16), transparent 60%),
+        radial-gradient(60vmax 32vmax at 95% -5%, rgba(var(--dg-accent-rgb), 0.12), transparent 62%),
         var(--background-primary);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 1200px 600px, 900px 520px, cover;
+    background-position: top left, top right, center;
     color: var(--text-normal);
     font-family: var(--font-text);
 }
