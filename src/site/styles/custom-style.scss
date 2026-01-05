@@ -1,3 +1,35 @@
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/Product Sans Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/Product Sans Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/Product Sans Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/product-sans/Product Sans Bold Italic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
 body {
     /***
       ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
@@ -24,10 +56,19 @@ body {
     --dg-accent-strong-rgb: 134, 239, 172;
     --dg-header-height: 56px;
     --dg-header-margin-top: 12px;
-    --dg-header-offset: calc(var(--dg-header-height) + var(--dg-header-margin-top) + 12px);
+    --dg-header-offset: calc(var(--dg-header-height) + var(--dg-header-margin-top) + 24px);
     --font-default: "Product Sans", "Google Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     --font-interface-override: "Product Sans", "Google Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     --font-text-override: "Product Sans", "Google Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --accent-h: 153;
+    --accent-s: 60%;
+    --accent-l: 52%;
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
+    --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
+    --interactive-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --text-accent-hover: var(--dg-accent-strong);
+    --color-purple: var(--dg-accent);
 
     /* Map to Obsidian/Digital Garden variables */
     --background-primary: var(--dg-bg-0);
@@ -55,6 +96,8 @@ body {
         radial-gradient(1200px 600px at 12% -10%, rgba(var(--dg-accent-strong-rgb), 0.16), transparent 60%),
         radial-gradient(900px 520px at 90% 0%, rgba(var(--dg-accent-rgb), 0.12), transparent 62%),
         var(--background-primary);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: var(--text-normal);
     font-family: var(--font-text);
 }
@@ -127,7 +170,7 @@ body {
 /* Center title in the navbar without changing structure */
 .navbar {
     display: grid;
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: 1fr auto 1fr;
     column-gap: 12px;
 }
 
@@ -135,7 +178,7 @@ body {
     grid-column: 2;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     position: static;
     min-height: var(--dg-header-height);
 }
@@ -159,6 +202,8 @@ body {
 .navbar .site-logo {
     width: 26px;
     height: 26px;
+    display: block;
+    flex-shrink: 0;
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35));
 }
 
@@ -175,6 +220,12 @@ body {
 @media (max-width: 800px) {
     .navbar .site-title {
         font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .theme-dark {
+        background-attachment: scroll;
     }
 }
 
@@ -249,7 +300,7 @@ body {
 
 @media (min-width: 1401px) {
     .sidebar {
-        top: var(--dg-header-offset);
+        top: var(--dg-header-offset) !important;
     }
 }
 
