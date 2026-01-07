@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/keep/discipline/final-diet-plan/","created":"2025-12-30T17:54:15.195+05:00","updated":"2026-01-07T10:51:10.959+05:00"}
+{"dg-publish":true,"permalink":"/keep/discipline/final-diet-plan/","created":"2025-12-30T17:54:15.195+05:00","updated":"2026-01-07T10:51:22.092+05:00"}
 ---
 
 #### **Morning Protocol (Metabolism Kickstart)**
@@ -17,7 +17,6 @@
 - **The Hydration (Lemo Pani):** 1 glass of cold water + Half Lemon squeezed + **1 pinch of regular white salt**.
     - _Role:_ The salt and water prevent cramping; the lemon cuts acidity.
 - **Optional Volume:** If you are very hungry, you may still have **2 seasonal fruits** (Apple/Guava) here. If the dates satisfy you, skip the fruit.
-
 #### **05:00 PM: Evening Activity**
 - **Activity:** Football (Light intensity/Technical skills).
 #### **07:00 PM: Dinner (Recovery)**
