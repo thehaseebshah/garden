@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/keep/my-marriage-research-resources/","created":"2025-12-17T01:37:40.880+05:00","updated":"2026-01-10T22:16:51.537+05:00"}
+{"dg-publish":true,"permalink":"/keep/my-marriage-research-resources/","created":"2025-12-17T01:37:40.880+05:00","updated":"2026-01-10T22:19:48.089+05:00"}
 ---
 
 ## The Ways I used to find candidates:
 
-The was:
+They were:
 - Word of Mouth
 - Asking Parents
 - Research forms circulated in my Uni by announcing in each class of each dept
