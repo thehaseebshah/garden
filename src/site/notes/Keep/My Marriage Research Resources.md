@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/keep/my-marriage-research-resources/","created":"2025-12-17T01:37:40.880+05:00","updated":"2026-01-05T23:04:57.745+05:00"}
+{"dg-publish":true,"permalink":"/keep/my-marriage-research-resources/","created":"2025-12-17T01:37:40.880+05:00","updated":"2026-01-10T22:16:51.537+05:00"}
 ---
 
 ## The Ways I used to find candidates:
@@ -63,7 +63,7 @@ What worked:
 - جوب کا ارادہ کیوں نہیں(یاہے) ؟
     
 
-**
+
 # Marriage Conditions to Put Forward 
 
 Before presenting the conditions I sent these voice recordings:
@@ -124,9 +124,9 @@ Both the Family and the sister should agree to these:
 ![[PTT-20241125-WA0064 1.opus]]
 ![[PTT-20241125-WA0063 1.opus]]
 ![[PTT-20241125-WA0062.opus]]
-3. 9A:
+3. 
 بچوں کی ہوم اسکولنگ پر اعتراض نہ ہونا۔ ہوم اسکلنگ کے علاوہ بہت سے اسلامی تربیتی اداروں میں بھی بھیجا سکتا ہے۔ جیسے آپنے اُس دن پارک میں دیکھا ہوگا شباب البرھان کی کلاس کا سیشن۔
-4. 9B:
+4. 
 سب سے بہترین تو یہ ہوجائے گا کہ ہونے والی بیوی کی بقیہ تعلیم آنلائن کورسز کے ذریعے اور گھر پر شوہر کے تعاون کے ساتھ مل بیٹھ کر پڑھنے سے ہوجائے۔ اس طرح کی بہت ساری معتبر international certifications  موجود ہیں جنکے سامنے عام universities کی ڈگریاں ایسی ہیں جیسے ہاتھی کے سامنے چیونٹی۔
 
 اگر اس پر بیوی کی رضامندی نہ ہو تو کسی آنلائن university میں ڈگری کو شفٹ کرایا جائے۔
