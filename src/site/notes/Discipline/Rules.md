@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/discipline/rules/","created":"2026-01-09T11:29:59.057+05:00","updated":"2026-01-15T12:58:04.577+05:00"}
+{"dg-publish":true,"permalink":"/discipline/rules/","created":"2026-01-09T11:29:59.057+05:00","updated":"2026-01-15T13:07:43.830+05:00"}
 ---
 
 ##### Status
@@ -36,8 +36,7 @@
 - Looking at media while feeling attraction counts as this
 - Prohibitions of Mamoolat count as this
 ##### Pomos
-- ~~Islamic Course/Islamic Book/Planning/Islamic Projects/Freelancing/Job Work/Career Learning/Skills~~
-- ~~At least 4 Pomos based on Freelancing/Job Work/Job Search/Job Learning, or 3 Ps caused per Pomo~~ 
+
 - Job Work/Tafseer Class allowed
 - No Pomos on Sat Sun
 - 3 P for Mandatory Pomos
@@ -58,14 +57,20 @@
 - Protocol set time ends when next prayer time enters, and it is 0000 for Isha protocol
 - Vacation each Friday, but only 1 meal can be Level 3 and bellow. [[Discipline/Cheat Meals Tier List\|Cheat Meals Tier List]]
 - Mamolaat Set List:
-	- Tahajjud Protocol: Tahajjud ~~+ 1m Dua~~ 
-	- Fajr Protocol: Fajr + Yaseen ~~+ Muraakba~~
+	- Tahajjud Protocol: Tahajjud 
+		-  
+	- Fajr Protocol: Fajr + Yaseen 
+		- 
 	- Mandatory Pomos (Only check if done within time, no set penalty)
-	- Chasht Protocol: ~~Ishraaq + Chasht +~~ Morning Azkaar (100 of each) + ~~Zikr Ism e Zaat~~
+	- Chasht Protocol: Morning Azkaar (100 of each)  
+		- 
 	- Optional Pomos (Only check if done within time, no set penalty)
-	- Zhuhr Protocol: Zuhr + .25 Para ~~+ Zikr bil Jahr + [[Productivtiy/Our Task Management and Planning System/Daily Planning\|Daily Planning]]~~
-	- Asr Protocol: Asr + Evening Azkaar (300 of Each) ~~+ Dua~~
-	- Maghrib Protocol: Maghrib ~~+ Half Azkaar + Awabayn~~ + Surah Waqiah
+	- Zhuhr Protocol: Zuhr + .25 Para 
+		- 
+	- Asr Protocol: Asr + Evening Azkaar (300 of Each) 
+		- 
+	- Maghrib Protocol: Maghrib + Surah Waqiah
+		- 
 	- Isha Protocol: Isha + Mulk + Witr
 ##### Digital Entertainment
 - 3 P per 15 minutes of Ent or extra phone usage 
