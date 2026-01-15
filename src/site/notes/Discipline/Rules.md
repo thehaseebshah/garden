@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/discipline/rules/","created":"2026-01-09T11:29:59.057+05:00","updated":"2026-01-15T13:07:43.830+05:00"}
+{"dg-publish":true,"permalink":"/discipline/rules/","created":"2026-01-09T11:29:59.057+05:00","updated":"2026-01-15T13:09:41.595+05:00"}
 ---
 
 ##### Status
@@ -58,19 +58,19 @@
 - Vacation each Friday, but only 1 meal can be Level 3 and bellow. [[Discipline/Cheat Meals Tier List\|Cheat Meals Tier List]]
 - Mamolaat Set List:
 	- Tahajjud Protocol: Tahajjud 
-		-  
+	-  
 	- Fajr Protocol: Fajr + Yaseen 
-		- 
+	- 
 	- Mandatory Pomos (Only check if done within time, no set penalty)
 	- Chasht Protocol: Morning Azkaar (100 of each)  
-		- 
+	- 
 	- Optional Pomos (Only check if done within time, no set penalty)
 	- Zhuhr Protocol: Zuhr + .25 Para 
-		- 
+	- 
 	- Asr Protocol: Asr + Evening Azkaar (300 of Each) 
-		- 
+	- 
 	- Maghrib Protocol: Maghrib + Surah Waqiah
-		- 
+	- 
 	- Isha Protocol: Isha + Mulk + Witr
 ##### Digital Entertainment
 - 3 P per 15 minutes of Ent or extra phone usage 
