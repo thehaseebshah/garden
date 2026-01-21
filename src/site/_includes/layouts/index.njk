@@ -11,6 +11,14 @@
     {% endfor %}
   </head>
   <body class="theme-{{meta.baseTheme}} markdown-preview-view markdown-rendered markdown-preview-section {% if settings.dgShowFileTree !== true %}no-filetree{% endif %} {% if settings.dgHomeLink === true and settings.dgShowFileTree !== true %}has-navbar{% endif %} {{meta.bodyClasses}}">
+    {% include "components/particles.njk" %}
+    
+    <!-- Modern UX Elements -->
+    <div class="scroll-progress"></div>
+    <div class="noise-overlay"></div>
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+    
     {%include "components/notegrowthhistory.njk"%}
     {% if settings.dgShowFileTree !== true %}
       {%include "components/navbar.njk"%}
@@ -75,5 +83,106 @@
       {% include imp %}
     {% endfor %}
     {%include "components/lucideIcons.njk"%}
+    
+    <!-- Modern UX JavaScript -->
+    <script>
+    (function() {
+      // Custom Cursor
+      const cursor = document.querySelector('.custom-cursor');
+      const cursorDot = document.querySelector('.custom-cursor-dot');
+      let mouseX = 0, mouseY = 0;
+      let cursorX = 0, cursorY = 0;
+      let cursorDotX = 0, cursorDotY = 0;
+      
+      function updateCursor() {
+        cursorX += (mouseX - cursorX) * 0.15;
+        cursorY += (mouseY - cursorY) * 0.15;
+        cursorDotX += (mouseX - cursorDotX) * 0.3;
+        cursorDotY += (mouseY - cursorDotY) * 0.3;
+        
+        if (cursor) {
+          cursor.style.left = cursorX + 'px';
+          cursor.style.top = cursorY + 'px';
+        }
+        if (cursorDot) {
+          cursorDot.style.left = cursorDotX + 'px';
+          cursorDot.style.top = cursorDotY + 'px';
+        }
+        requestAnimationFrame(updateCursor);
+      }
+      
+      document.addEventListener('mousemove', e => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        
+        // Update card glows
+        document.querySelectorAll('.feature-card').forEach(card => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          card.style.setProperty('--mouse-x', `${x}px`);
+          card.style.setProperty('--mouse-y', `${y}px`);
+        });
+      });
+      
+      // Scroll Progress
+      function updateScrollProgress() {
+        const scrollProgress = document.querySelector('.scroll-progress');
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        if (scrollProgress && docHeight > 0) {
+          const progress = (window.scrollY / docHeight) * 100;
+          scrollProgress.style.width = `${progress}%`;
+        }
+      }
+      
+      // Cursor hover states
+      const interactiveElements = document.querySelectorAll('a, button, .searchresult, .notelink, .cta-button, .feature-card, .social-link');
+      interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          cursor?.classList.add('cursor-hover');
+          cursorDot?.classList.add('cursor-hover');
+        });
+        el.addEventListener('mouseleave', () => {
+          cursor?.classList.remove('cursor-hover');
+          cursorDot?.classList.remove('cursor-hover');
+        });
+      });
+      
+      // Hide cursor on touch devices
+      if ('ontouchstart' in window) {
+        if (cursor) cursor.style.display = 'none';
+        if (cursorDot) cursorDot.style.display = 'none';
+      } else {
+        updateCursor();
+      }
+      
+      // 3D Tilt Effect
+      const cards = document.querySelectorAll('.feature-card');
+      cards.forEach(card => {
+        card.addEventListener('mousemove', e => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          
+          const isContact = card.classList.contains('contact-email-section');
+          const divisor = isContact ? 30 : 10;
+          
+          const rotateX = (y - centerY) / divisor;
+          const rotateY = (centerX - x) / divisor;
+          
+          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+        });
+      });
+
+      window.addEventListener('scroll', updateScrollProgress);
+      updateScrollProgress();
+    })();
+    </script>
     </body>
   </html>
