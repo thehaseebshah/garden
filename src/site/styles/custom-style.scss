@@ -697,7 +697,7 @@ body.no-filetree .sidebar {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 1rem;
+    padding-top: calc(var(--dg-header-offset) + 2rem);
     position: relative;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -710,7 +710,7 @@ body.no-filetree .sidebar {
     position: relative;
     z-index: 1;
     animation: fadeInUp 0.8s ease-out;
-    margin-top: -5vh;
+    margin-top: 0;
 }
 
 .hero-badge {
@@ -721,7 +721,7 @@ body.no-filetree .sidebar {
     border-radius: 50px;
     font-size: 0.9rem;
     color: var(--dg-accent);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     animation: fadeInUp 0.8s ease-out 0.1s both, pulse 3s ease-in-out infinite;
 }
 
@@ -751,7 +751,7 @@ body.no-filetree .sidebar {
 .hero-tagline {
     font-size: clamp(1.1rem, 3vw, 1.5rem);
     color: var(--dg-text-muted);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     font-weight: 400;
     letter-spacing: 0.02em;
     animation: fadeInUp 0.8s ease-out 0.2s both;
