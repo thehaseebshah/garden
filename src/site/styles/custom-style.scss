@@ -697,7 +697,7 @@ body.no-filetree .sidebar {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 2.5rem;
+    padding-top: 4.5rem;
     position: relative;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1147,7 +1147,7 @@ body.no-filetree .sidebar {
 @media (max-width: 640px) {
     .hero {
         min-height: 100svh;
-        padding: 1.5rem;
+        padding: 4.5rem 1.5rem 1.5rem 1.5rem;
     }
 
     .hero-title {
@@ -1170,6 +1170,10 @@ body.no-filetree .sidebar {
 
     .title-decoration {
         width: 24px;
+    }
+
+    .scroll-indicator {
+        display: none;
     }
 }
 
