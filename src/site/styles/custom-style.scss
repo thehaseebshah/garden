@@ -697,7 +697,7 @@ body.no-filetree .sidebar {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: calc(var(--dg-header-offset) + 2rem);
+    padding-top: var(--dg-header-offset);
     position: relative;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -721,14 +721,14 @@ body.no-filetree .sidebar {
     border-radius: 50px;
     font-size: 0.9rem;
     color: var(--dg-accent);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     animation: fadeInUp 0.8s ease-out 0.1s both, pulse 3s ease-in-out infinite;
 }
 
 .hero-title {
     font-size: clamp(3rem, 12vw, 6rem);
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     line-height: 1.1;
 }
 
@@ -751,7 +751,7 @@ body.no-filetree .sidebar {
 .hero-tagline {
     font-size: clamp(1.1rem, 3vw, 1.5rem);
     color: var(--dg-text-muted);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
     font-weight: 400;
     letter-spacing: 0.02em;
     animation: fadeInUp 0.8s ease-out 0.2s both;
