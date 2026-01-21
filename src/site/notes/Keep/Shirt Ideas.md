@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/keep/shirt-ideas/","created":"2025-12-17T01:37:40.933+05:00","updated":"2026-01-06T07:09:04.570+05:00"}
+{"dg-publish":true,"permalink":"/keep/shirt-ideas/","created":"2025-12-17T01:37:40.933+05:00","updated":"2026-01-21T18:53:30.318+05:00"}
 ---
 
-- Allergic to Collonial Indoctrination (No Anime, no hollywood etc)
+- Allergic to Collonial Indoctrination
 - Entrepreneurial Maulvi Seeking Rishta
 - Maulvi on a Mission
 - Taking Islam to Every Home
