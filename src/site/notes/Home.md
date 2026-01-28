@@ -80,7 +80,7 @@ dgShowInlineTitle: false
   <section class="connect-section">
     <h2 class="section-title reveal">Let's Connect</h2>
     <div class="social-links reveal">
-      <a href="mailto:thehaseebshah@zohomail.in" class="social-link">
+      <a href="mailto:info@thehaseebshah.com" class="social-link">
         <span class="social-icon">✉️</span>
         <span>Email</span>
       </a>
