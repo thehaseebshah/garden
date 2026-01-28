@@ -189,7 +189,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================================
   // TYPEWRITER ANIMATION
   // ============================================
-  const words = ['Developer', 'Creator', 'Lifelong Learner'];
+  const words = [
+    'Learn about AI',
+    'Learn about Discipline',
+    'Learn about Minimalism',
+    'Learn about Gamification',
+    'Learn about Dawah',
+    'Learn about Purpose',
+    'Learn about Leadership',
+    'Learn about Productivity',
+    'Learn about Writing',
+    'Learn about Spirituality',
+  ];
   const typewriterText = document.querySelector('.typewriter-text');
   let wordIndex = 0;
   let charIndex = 0;
