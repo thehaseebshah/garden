@@ -13,6 +13,7 @@ dgShowInlineTitle: false
         <span class="gradient-text">Haseeb Shah</span>
       </h1>
       <p class="hero-tagline">
+        Learn about&nbsp;
         <span class="typewriter-wrapper">
           <span class="typewriter-text"></span>
           <span class="typewriter-cursor">|</span>
@@ -190,16 +191,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // TYPEWRITER ANIMATION
   // ============================================
   const words = [
-    'Learn about AI',
-    'Learn about Discipline',
-    'Learn about Minimalism',
-    'Learn about Gamification',
-    'Learn about Dawah',
-    'Learn about Purpose',
-    'Learn about Leadership',
-    'Learn about Productivity',
-    'Learn about Writing',
-    'Learn about Spirituality',
+    'AI',
+    'Discipline',
+    'Minimalism',
+    'Gamification',
+    'Dawah',
+    'Purpose',
+    'Leadership',
+    'Productivity',
+    'Writing',
+    'Spirituality',
   ];
   const typewriterText = document.querySelector('.typewriter-text');
   let wordIndex = 0;
