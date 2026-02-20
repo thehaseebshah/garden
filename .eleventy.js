@@ -30,7 +30,7 @@ function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
 }
 
 function getAnchorLink(filePath, linkTitle) {
-  const {attributes, innerHTML} = getAnchorAttributes(filePath, linkTitle);
+  const { attributes, innerHTML } = getAnchorAttributes(filePath, linkTitle);
   return `<a ${Object.keys(attributes).map(key => `${key}="${attributes[key]}"`).join(" ")}>${innerHTML}</a>`;
 }
 
@@ -274,6 +274,39 @@ module.exports = function (eleventyConfig) {
     return date && date.toISOString();
   });
 
+  eleventyConfig.addFilter("pdfEmbed", function (str) {
+    if (!str) return str;
+    // Match Obsidian embed syntax: ![[filename.pdf]] (with optional |height)
+    return str.replace(/!\[\[([^\]]+\.pdf)(?:\|([^\]]*?))?\]\]/gi, function (match, fileName, options) {
+      let height = "80vh";
+      if (options && !isNaN(options.trim())) {
+        height = options.trim() + "px";
+      }
+      // Search for the PDF file anywhere under src/site
+      const { globSync } = require("glob");
+      const baseName = fileName.split("/").pop();
+      const matches = globSync(`src/site/**/${baseName}`, { nodir: true });
+      let pdfPath = `/img/user/Attachments/${fileName}`; // fallback default
+      if (matches.length > 0) {
+        // Convert fs path to URL path (strip the "src/site" prefix)
+        pdfPath = "/" + matches[0].replace(/\\/g, "/").replace(/^src\/site\//, "");
+      }
+      const encodedPath = encodeURI(pdfPath);
+      return `<div class="pdf-embed" data-pdf-name="${fileName}">
+        <div class="pdf-embed-header">
+          <span class="pdf-embed-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </span>
+          <span class="pdf-embed-title">${fileName}</span>
+          <a class="pdf-embed-download" href="${encodedPath}" target="_blank" rel="noopener noreferrer" title="Open in new tab">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        <iframe class="pdf-embed-viewer" src="${encodedPath}" style="height:${height}" loading="lazy"></iframe>
+      </div>`;
+    });
+  });
+
   eleventyConfig.addFilter("link", function (str) {
     return (
       str &&
@@ -329,7 +362,7 @@ module.exports = function (eleventyConfig) {
     for (const dataViewJsLink of parsed.querySelectorAll("a[data-href].internal-link")) {
       const notePath = dataViewJsLink.getAttribute("data-href");
       const title = dataViewJsLink.innerHTML;
-      const {attributes, innerHTML} = getAnchorAttributes(notePath, title);
+      const { attributes, innerHTML } = getAnchorAttributes(notePath, title);
       for (const key in attributes) {
         dataViewJsLink.setAttribute(key, attributes[key]);
       }
@@ -445,7 +478,7 @@ module.exports = function (eleventyConfig) {
 
 
   eleventyConfig.addTransform("picture", function (str) {
-    if(process.env.USE_FULL_RESOLUTION_IMAGES === "true"){
+    if (process.env.USE_FULL_RESOLUTION_IMAGES === "true") {
       return str;
     }
     const parsed = parse(str);
@@ -527,6 +560,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("src/site/img");
+  eleventyConfig.addPassthroughCopy("src/site/**/*.pdf");
   eleventyConfig.addPassthroughCopy("src/site/fonts");
   eleventyConfig.addPassthroughCopy("src/site/scripts");
   eleventyConfig.addPassthroughCopy("src/site/styles/_theme.*.css");
@@ -545,7 +579,7 @@ module.exports = function (eleventyConfig) {
       return "";
     }
   });
-  
+
   eleventyConfig.addFilter("jsonify", function (variable) {
     return JSON.stringify(variable) || '""';
   });
