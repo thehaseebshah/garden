@@ -1,8 +1,26 @@
 ---
-{"dg-publish":true,"permalink":"/discipline/final-diet-plan/","created":"2026-01-11T15:43:56.800+05:00","updated":"2026-01-13T08:55:44.942+05:00"}
+{"dg-publish":true,"permalink":"/discipline/final-diet-plan/","created":"2026-02-20T05:28:51.847+05:00","updated":"2026-02-20T05:09:14.613+05:00"}
 ---
 
-## Current OMAD Plan
+## Ramadan Plan 
+- Low fat low carb
+- Paratha, Rice and Chaye once a week
+- Breakfast: 2 Kababs, 2 Eggs, Chicken, Dalia, Coffee, Lassi
+- Iftar: Chicken, 1 measuring cup of fruit, yogurt, green tea
+
+## Dry Fasting Meal
+- **Meal:** 250g Beef + 3 Eggs + 10 Almonds + Yakhni 
+- **Supps:** 1L Salt Water + Urocit-K/Mag/VitD (Electrolytes/Kidney Support).
+- **Optional:** 1 bowl Greek Yogurt nosweet, Non sweet Cream Coffee, 2 cups Cabbage (Probiotics/Fiber).
+- Rule: 1 stevia per day
+
+## Current Keto OMAD
+- Beef Bone Broth 500ml with 2 eggs, green onions, adrak, lehsun, dhania, pink salt, kali mirch, daar cheeni, elaichi, sirka
+- Badam
+- Raita with mooli, piaz, salad patta, kheera, shimla mirch
+- Lemo pink salt pani (temp; green tea/coffee)
+- Urocit K, Magnesium Glycanate, SunnyD
+## Current OMAD Plan (Changed )
 - **The OMAD Meal:** 250g meat in 1 tbsp. mustard oil, 2 boiled eggs, 250g salad, 10 almonds, 1 yogurt bowl, within a strict 1-hour window. (If carbs then add 1 roti/rice and 1 fruit)
 - **The 23-Hour Fast:** Drink only water, plain green tea, Ispaghol water or Chia seeds water, outside your meal window to keep insulin low and activate fat-burning.
 - **The Exercise:** Play badminton (ideally before your meal) to burn maximum fat and preserve muscle, replacing the 30-minute walk on game days.
@@ -19,7 +37,7 @@ _Choose **one** of the following options:_
 - **Shami Kababs:** 2 air-fried chicken shami kababs (preferably homemade).
 - **Keema & Roti:** ½ cup chicken keema + ½ regular roti (mixed wheat/jowar flour preferred).
 - **Besan Chilla:** Pancake made with 4 tbsp gram flour (besan), 1 egg, vegetables (no potatoes) + ½ cup low-fat yogurt.
-- **Porridge:** 4 tbsp oats/barley cooked in water + 1 cup milk + 1 tsp jaggery/sugar + nuts/lotus seeds **OR** 1 apple/peach.
+- **Porridge:** 4 tbsp oats/barley cooked in water + 1 cup milk + 1 tsp jaggery + nuts/lotus seeds **OR** 1 apple/peach.
 - **Paratha Option:** Small paratha (60g dough) with 1-2 tsp desi ghee/olive oil + 1 egg + vegetables **OR** 4-5 tbsp curry (avoid potato/lentil curry).
 - **Tea Note:** Drink tea 15–20 mins _after_ breakfast. Limit milk quantity; use sweetener if needed.
 #### **Snack (Mid-Window)**

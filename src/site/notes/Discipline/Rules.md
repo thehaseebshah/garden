@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/discipline/rules/","created":"2026-01-09T11:29:59.057+05:00","updated":"2026-01-15T13:09:41.595+05:00"}
+{"dg-publish":true,"permalink":"/discipline/rules/","created":"2026-01-20T10:00:49.780+05:00","updated":"2026-01-20T10:00:16.672+05:00"}
 ---
 
 ##### Status
@@ -18,7 +18,7 @@
 	- Mamoolaat Rules
 - Customized vacations can also be taken
 ##### Day Streaks
-- Rs 20000 for breaking, for each 15 mins
+- Rs 100000 for breaking, for each 15 mins
 - First look can't extend 2 seconds
 - Hand sin counts as this 
 ##### Salah
@@ -76,7 +76,7 @@
 - 3 P per 15 minutes of Ent or extra phone usage 
 - 60 Minutes Phone Limit
 	- Asr to Maghrib Phone allowed 
-	- [[Tech/Digital Dumbing Guide\|Digital Dumbing Guide]]
+	- [[Discipline/Digital Dumbing Guide\|Digital Dumbing Guide]]
 	- Phone remains online 
 - These don't count as Digital Entertainment: Nasheeds, Jackbox Party Games
 - Opening an Ent feed counts as this
@@ -85,7 +85,8 @@
 - 5 P
 - 2200-0300 Apr-Sep
 - 2000-0400 Oct-Mar
-- Not Sleeping between sunrise time and 9 AM
+- Not Sleeping between alarm time and 9 AM
+- Waking at Alarm time
 
 ##### Classes: (Paused)
 - Attending Tafseer class and Majlis Zikr, while reaching before the predefined time, is necessary
