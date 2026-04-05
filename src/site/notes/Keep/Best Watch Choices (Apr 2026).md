@@ -1,0 +1,116 @@
+---
+{"dg-publish":true,"permalink":"/keep/best-watch-choices-apr-2026/","created":"2026-04-05T23:03:28.835+05:00","updated":"2026-04-05T23:16:03.073+05:00"}
+---
+
+## The List
+- F201WA
+	- No seconds in timer
+- AE 1200
+	- Cons
+		- ~~Ugly~~
+		- ~~Nerdy~~
+		- ~~Toy-like~~
+	- Pros
+		- Cheaper
+		- More nostalgic
+- ~~AE 1300~~
+	- No 5 alrms
+- ~~LF20H~~
+	- Ugly
+- ~~Skmei – 2091~~
+	- Pros
+		- Its a plastic, light weight beater
+		- We stay with the 2100 module
+		- Its legible white
+		- We remember the combinations
+		- We can use NATO strap (and it looks good)
+		- It is more beautiful than the GA2100
+		- It is not ugly like classic Casios
+		- We used it before so we have memories with it
+		- It is smaller so unisex
+		- It is octagonal
+	- Cons
+		- Quality
+		- Software bugs
+- GW5600J
+	- No Hours and second setting in timer and that's fine
+	- No flashing alert and that's fine
+	- No auto repeat and that's fine
+- ~~GWX-5600~~
+	- Extra tide feature is non-minimalist
+- GA2100-1A1 and this in White-black
+- GWM5610-1/G5600UE/G5600E
+	- LED and not EL
+	- No auto repeat
+	- No flashing alert
+
+## An Objective Analysis on the Best Watches
+- Do we even need a watch?
+	- Yes, because 
+		- We need to look at the time quickly without taking out our phone, and being distracted (L1 Arg because pocket watches existed)
+		- It's the only minimalist accessory for fashion (L1 Arg)
+		- It looks good (L1 Arg)
+		- Fast timers (L1 Arg)
+		- Fast alarms (L1 Arg)
+		- Fast stopwatch (L1 Arg)
+		- Fast WT (L1 Arg)
+	- Criterias for an ideal watch
+		- Quality (P1)
+		- Looks
+			- Beautiful (P1)
+			- Analog Hand if for formal (P1)
+			- Digital and large, legible, positive numerals if for casual use (P1)
+			- Square/Ocatgon if casual (P1, L1 Arg)
+			- Round if for events (P1, L1 Arg)
+			- Seconds Animation (P3)
+			- Not too big (P2)
+			- Must have at least one digital display (P1, because it's accurate -- L3 Arg)
+		- 5 Alarms (P1, because GA2100, our favorite looks on a watch, has 5 alarms, so for consistency; and also if we need 5 alarms in the future -- for future safety -- L2 Arg)
+			- Multiple alarm snoozes for morning alarm (P2, L1 Arg same as 2nd pinoint  above)
+			- Alarm flash (P3)
+		- World Time (P1, L1 Arg same as above)
+		- Timer
+			- Set Seconds for Timer 
+			- Auto-repeat timer   (P2, L1 Arg same as 2nd pinoint  above)
+			- Beep within timer  (P2, L1 Arg same as 2nd pinoint  above)
+			- Time should be displayed when in timer mode
+		- Stopwatch
+			- Sub seconds in stopwatch  (P1, L1 Arg same as above)
+			- Split time stop watch
+			- First and second place finisher
+		- Iconic (P2)
+		- Conversation starter (P2)
+		- Nostalgic (P2)
+		- Tough (P2)
+		- Minimalism in brand and line (P2)
+		- Auto light (P2)
+		- Solar/Long Battery life (P2)
+		- No Bluetooth (Because the watch app is another tool that we might end up using, and even if we don't use it we are paying for it, and we don't want reminder features -- L2 Arg)
+		- Casual watch should be cheaper (P2, L2 Arg)
+		- Casio (P1) is the only good quality watch brand with digital displays and economical 
+		- Watches shouldn't be expensive, both less than 150 USD (P1)
+			- Event watch should be more expensive
+		- The event watch should be unisex so we can make a couple watch (P1)
+		- Longevity 
+		- Military use on the watch/Space certified
+		- Waterproofing
+		- Nerd factor
+		- Light weight
+		- Easy button presses
+
+Decision for Watches:
+- Event watch for both of us would be the GA2100 (one black and one black-white)
+- Casual Watch:
+	- If we consider the above points only two current watch lines fit, the AE1200, and 5600 line
+	- In the 5600 like we like tough solar ones, or the G5600UE/G5600E/DW5600J
+	- The square vs the royale: 
+		- the royale wins on: flash alert, price, nerd factor, 20s alarm, 1 time alarm, easy button presses; 
+		- the square wins on auto light, beauty, toughness, conversation starter, iconic, alarm snooze
+	- But if the square is not available we can buy the royale
+	- Potential options for casual watch can also be copies of the GA2100, and the SKMEI 2091
+		- But SKMEI has very prominent quality and software issues, most notably that the screen wears off easily, dial looks cheap, backlight washes out display, hands only move one way, hands obtrude the digital display, analog hands don't line up, my previous watches failed, display is not of high quality, dial is also low quality, lume is bad
+		- The GA2100 clone we'll have to check 
+
+## Final Watch Decision
+- Sell the DW5600J because of no second setting in timer
+- Keep AE1200, and when it is no longer usable find a 
