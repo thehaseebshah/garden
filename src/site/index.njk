@@ -1,13 +1,19 @@
 ---
+layout: layouts/index.njk
 title: Haseeb Shah
-tags:
-  - gardenEntry
-permalink: /
-dgShowInlineTitle: false
+settings:
+  dgShowFileTree: false
+  dgHomeLink: true
+  dgEnableSearch: false
+  dgShowInlineTitle: false
+  dgShowTags: false
+  dgShowBacklinks: false
+  dgShowLocalGraph: false
+  dgShowToc: false
+  dgLinkPreview: false
 ---
 
 <div class="homepage">
-  <!-- Hero Section -->
   <section class="hero" data-parallax="0.3">
     <div class="hero-content">
       <div class="hero-badge">👋 Welcome</div>
@@ -30,7 +36,6 @@ dgShowInlineTitle: false
     </div>
   </section>
 
-  <!-- Scroll Indicator (positioned fixed) -->
   <div class="scroll-indicator">
     <div class="mouse">
       <div class="wheel"></div>
@@ -38,7 +43,6 @@ dgShowInlineTitle: false
     <span>Scroll</span>
   </div>
 
-  <!-- Featured Section -->
   <section class="featured" id="explore" data-parallax="0.1">
     <h2 class="section-title reveal">
       <span class="title-decoration"></span>
@@ -69,7 +73,6 @@ dgShowInlineTitle: false
     </div>
   </section>
 
-  <!-- About Section -->
   <section class="about-section" id="about" data-parallax="0.05">
     <div class="about-content reveal">
       <h2 class="section-title">Welcome</h2>
@@ -78,7 +81,6 @@ dgShowInlineTitle: false
     </div>
   </section>
 
-  <!-- Connect Section -->
   <section class="connect-section">
     <h2 class="section-title reveal">Let's Connect</h2>
     <div class="social-links reveal">
@@ -86,7 +88,7 @@ dgShowInlineTitle: false
         <span class="social-icon">✉️</span>
         <span>Email</span>
       </a>
-      <a href="https://github.com/thehaseebshah" class="social-link" target="_blank">
+      <a href="https://github.com/thehaseebshah" class="social-link" target="_blank" rel="noopener noreferrer">
         <span class="social-icon">💻</span>
         <span>GitHub</span>
       </a>
@@ -95,14 +97,9 @@ dgShowInlineTitle: false
 </div>
 
 <script>
-// ============================================
-// PARALLAX & REVEAL ANIMATIONS
-// ============================================
 function handleScroll() {
   const scrollY = window.scrollY;
-  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-  
-  // Hide scroll indicator when scrolling
+
   const scrollIndicator = document.querySelector('.scroll-indicator');
   if (scrollIndicator) {
     const hide = scrollY > 50;
@@ -110,97 +107,82 @@ function handleScroll() {
     scrollIndicator.style.visibility = hide ? 'hidden' : 'visible';
     scrollIndicator.style.pointerEvents = hide ? 'none' : 'auto';
   }
-  
-  // Parallax
-  document.querySelectorAll('[data-parallax]').forEach(el => {
+
+  document.querySelectorAll('[data-parallax]').forEach((el) => {
     const speed = parseFloat(el.dataset.parallax);
     el.style.transform = `translateY(${scrollY * speed}px)`;
   });
-  
-  // Staggered reveal on scroll
+
   document.querySelectorAll('.reveal:not(.revealed)').forEach((el, index) => {
     const rect = el.getBoundingClientRect();
     const visible = rect.top < window.innerHeight - 100;
     if (visible) {
       setTimeout(() => {
         el.classList.add('revealed');
-      }, index * 100); // Stagger by 100ms each
+      }, index * 100);
     }
   });
 }
 
-// ============================================
-// MAGNETIC BUTTON EFFECT
-// ============================================
 function initMagneticButtons() {
   const buttons = document.querySelectorAll('.cta-button');
-  
-  buttons.forEach(button => {
-    button.addEventListener('mousemove', e => {
+
+  buttons.forEach((button) => {
+    button.addEventListener('mousemove', (e) => {
       const rect = button.getBoundingClientRect();
       const x = e.clientX - rect.left - rect.width / 2;
       const y = e.clientY - rect.top - rect.height / 2;
-      
+
       button.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
     });
-    
+
     button.addEventListener('mouseleave', () => {
       button.style.transform = 'translate(0, 0)';
     });
   });
 }
 
-// ============================================
-// SOCIAL LINKS MAGNETIC EFFECT
-// ============================================
 function initMagneticSocialLinks() {
   const links = document.querySelectorAll('.social-link');
-  
-  links.forEach(link => {
-    link.addEventListener('mousemove', e => {
+
+  links.forEach((link) => {
+    link.addEventListener('mousemove', (e) => {
       const rect = link.getBoundingClientRect();
       const x = e.clientX - rect.left - rect.width / 2;
       const y = e.clientY - rect.top - rect.height / 2;
-      
+
       link.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px) scale(1.05)`;
     });
-    
+
     link.addEventListener('mouseleave', () => {
       link.style.transform = 'translate(0, 0) scale(1)';
     });
   });
 }
 
-// ============================================
-// INIT
-// ============================================
 document.addEventListener('DOMContentLoaded', () => {
-  // Ensure scroll indicator is visible on load
   const scrollIndicator = document.querySelector('.scroll-indicator');
   if (scrollIndicator && window.scrollY <= 50) {
     scrollIndicator.style.opacity = '1';
     scrollIndicator.style.visibility = 'visible';
   }
-  
+
   handleScroll();
-  
-  // Initialize interactive effects
   initMagneticButtons();
   initMagneticSocialLinks();
-  
-  // ============================================
-  // TYPEWRITER ANIMATION
-  // ============================================
+
   const words = ['Developer', 'Creator', 'Lifelong Learner'];
   const typewriterText = document.querySelector('.typewriter-text');
+  const cursor = document.querySelector('.custom-cursor');
+  const cursorDot = document.querySelector('.custom-cursor-dot');
   let wordIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
   let typeSpeed = 100;
-  
+
   function typeWriter() {
     const currentWord = words[wordIndex];
-    
+
     if (isDeleting) {
       typewriterText.textContent = currentWord.substring(0, charIndex - 1);
       charIndex--;
@@ -210,35 +192,29 @@ document.addEventListener('DOMContentLoaded', () => {
       charIndex++;
       typeSpeed = 100;
     }
-    
+
     if (!isDeleting && charIndex === currentWord.length) {
       isDeleting = true;
       typeSpeed = 2000;
     }
-    
+
     if (isDeleting && charIndex === 0) {
       isDeleting = false;
       wordIndex = (wordIndex + 1) % words.length;
       typeSpeed = 500;
     }
-    
+
     setTimeout(typeWriter, typeSpeed);
   }
-  
+
   if (typewriterText) {
     typeWriter();
   }
-  
-  // Hide custom cursor on mobile/touch devices
+
   if ('ontouchstart' in window) {
     cursor?.style.setProperty('display', 'none');
     cursorDot?.style.setProperty('display', 'none');
   }
-});
-
-window.addEventListener('resize', () => {
-  resizeCanvas();
-  initParticles();
 });
 
 window.addEventListener('scroll', handleScroll);
