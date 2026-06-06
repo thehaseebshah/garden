@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "prebuild": "rimraf dist",
+        "check:homepage": "node -e \"require('fs').accessSync('src/site/index.njk')\"",
         "start": "npm-run-all get-theme build:sass --parallel watch:*",
         "watch:sass": "sass --watch src/site/styles:dist/styles",
         "watch:eleventy": "cross-env ELEVENTY_ENV=dev eleventy --serve",
