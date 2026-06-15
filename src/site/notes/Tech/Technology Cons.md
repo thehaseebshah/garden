@@ -1,0 +1,178 @@
+---
+{"dg-publish":true,"permalink":"/tech/technology-cons/","updated":"2026-06-15T10:46:36.306+05:00","dg-note-properties":{}}
+---
+
+We might think to ourselves why is technology bad naturally doesn't technology equal simple tools that make life easier well I thought about this and the answer to this question is technology creates 2 things the first thing is convenience whenever there is convenience struggle disappears and that is my issues start appearing
+then there comes a level above convenience which is pleasure technology is a product of the pleasure economy and that is why it has so many bad things in it
+then if technology was created by Muslims we could have said that it is a little bit better than the technology of today but the technology of today is a pure consumerist agenda and it has consumerist effects it has individualistic effects
+
+Also:
+- **The Trap of Enframing:** It forces us to view nature and humans as "resources" to be used, optimized, not creations to be respected. Even if a believer creates the technology, the _act_ of technological systematization forces them to treat God’s creation as a dead object to be manipulated for maximum efficiency, rather than a living sign (_Ayah_) to be respected.
+- **The Tyranny of Efficiency:** It eliminates patience, mystery, and slower spiritual practices in favor of pure speed. A religious society that becomes technological will eventually start cutting corners on its spiritual life because the "Tech Mindset" whispers, "This is a waste of time."
+- **The Pharaonic Impulse:** It feeds human arrogance (_Kibr_), encouraging a desire for god-like control and omniscience. Any tool designed to give humans god-like power will inherently corrupt the human heart, regardless of the creator's intent. It feeds the ego, not the soul.
+- **Means Over Ends:** It focuses entirely on _how_ to do things (power), ignoring _why_ we should do them (morality). **The Result:** A society that is technically giant but morally stunted. You get "smart" missiles and "smart" phones, but "stupid" people who have lost the ability to sit in silence or ponder the meaning of life.
+- **The Veil of Simulation:** It replaces the "Real" (God's creation) with the "Virtual" (man-made screens), creating spiritual numbness. We stop interacting with the world and start interacting with _representations_ of the world (photos, profiles, metrics). This creates a spiritual numbness. You cannot feel the majesty of a mountain through a screen; you cannot feel the spiritual presence of a person through a text. Technology essentially creates a "fake" world (Simulacra) that distracts us from the "real" world where God’s signs are found.
+- **Disruption of Fitrah:** It removes natural struggle and friction, leading to the atrophy of human character and resilience.
+
+1. Social Control and Manipulation
+      Used for pervasive social control and manipulation from birth (Brave New World)
+      Used to condition individuals to accept social roles and desires (Brave New World)
+      Facilitates psychological manipulation (Nineteen Eighty-Four)
+      Can be used to control language itself to restrict thought (Nineteen Eighty-Four)
+      Embedded within every tool is an ideological bias (Technopoly)
+      Aims to "automate us" through behavioral science and conditioning (The Age of Surveillance Capitalism)
+      Can be used for manipulation and control (Black Mirror)
+      Increases potential for cruelty and manipulation (Black Mirror)
+      Creates surveillance, data tracking, and manipulation (General)
+2. Loss of Individual Autonomy and Freedom
+      Leads to erosion of individual autonomy and suppression of independent thought (Nineteen Eighty-Four)
+      "Technique" becomes an autonomous force dictating human life (The Technological Society)
+      Individuals become increasingly powerless against autonomous "technique" (The Technological Society)
+      Can create "radical monopolies" limiting individual choices and autonomy (Tools for Conviviality)
+      Unfettered industrialization can diminish personal freedom (Tools for Conviviality)
+      Erodes individual autonomy by transforming experience into surveillance assets (The Age of Surveillance Capitalism)
+      Creates unprecedented power imbalance between tech companies and individuals (The Age of Surveillance Capitalism)
+      Creates algorithmic dependencies that restrict personal freedom and autonomy (General)
+      Diminishes individual autonomy, forcing conformity to rigid systems (Kaczynski/Unabomber Manifesto)
+      Centralizes power, restricting personal freedom (Kaczynski/Unabomber Manifesto)
+3. Erosion of Human Values, Relationships, and Morality
+      Pursuit of scientific knowledge can lead to neglect of social relationships/well-being (Frankenstein)
+      Causes loss of human values and relationships as behavior becomes mechanized (The Technological Society)
+      Overwhelms traditional moral content in societies (The Technological Society)
+      Gains sovereignty over cultural life when it becomes the ultimate authority (Technopoly)
+      Elevates efficiency and technical calculation above human judgment/morals (Technopoly)
+      Leads to erosion of traditional values as it becomes the primary framework (Technopoly)
+      Leads to neglect of asking about ends, focusing on methods and means (The Shallows)
+      Can distort priorities and values when algorithms rank or evaluate (Weapons of Math Destruction)
+      Can distort relationships and perceptions of reality (Black Mirror)
+      Humans may use it selfishly even without scarcity (Black Mirror)
+      Creates negative digital aura by fostering mind-numbing habits and moral decay (General)
+      Creates distractions that divert attention from spiritual practices and meaningful relationships (General)
+4. Cognitive Decline and Impaired Thinking
+      Prioritization of entertainment leads to decline in rational thought (Amusing Ourselves to Death)
+      Can alter meaning of "being informed," creating illusion of knowledge without understanding (Amusing Ourselves to Death)
+      Belief that technology solves all problems can lead to decline in critical thinking (Technopoly)
+      Internet negatively affects concentration and deep thinking (The Shallows)
+      Leads to superficial engagement with information (The Shallows)
+      Constant connectivity/volume trains brains to skim and scan (The Shallows)
+      Can neurologically rewire brains, weakening focused attention pathways (The Shallows)
+      Engagement prioritizes efficiency and speed over depth and contemplation (The Shallows)
+      May cause evolution from "cultivators of personal knowledge to hunters/gatherers" (The Shallows)
+      Emphasis on multitasking hinders deep work and reflection (The Burnout Society)
+      Can lead to "hyperattention," a fragmented and shallow focus (The Burnout Society)
+      Creates constant distractions that shatter deep focus (General)
+      Creates mental clutter impairing clarity and decision-making (General)
+      Creates productivity drains by interrupting meaningful tasks (General)
+      Creates distractions pulling from present-moment mindfulness (General)
+      Creates time wastage through scrolling and trivial engagement (General)
+      Creates abundance of low-value distractions (General)
+      Creates habits of idle screen time replacing meaningful activities (General)
+5. Mental Health Deterioration, Addiction, and Emotional Suppression
+      Pressure of constant self-optimization leads to exhaustion and burnout (The Burnout Society)
+      Diminishes tolerance for boredom, crucial for contemplation/creativity (The Burnout Society)
+      Constant pressure to be cheerful/achieve suppresses negative emotions, leading to burnout (The Burnout Society)
+      Social media platforms intentionally designed to be addictive (The Social Dilemma)
+      Has negative impact on mental health (anxiety, depression) (The Social Dilemma)
+      Leads to excessive usage due to addictive design (The Social Dilemma)
+      Causes constant comparison and dissatisfaction (likes, validation) (The Social Dilemma)
+      Exploits addictive behavior patterns, leading to loss of control (The Social Dilemma)
+      Creates addictive social media loops (scrolling, dopamine) (General)
+      Creates stress and anxiety through relentless digital pressures (General)
+      Creates decision fatigue through micro-decision overload (General)
+      Causes psychological suffering (stress, anxiety, depression) through loss of control (Kaczynski/Unabomber Manifesto)
+6. Surveillance and Loss of Privacy
+      Enables constant surveillance (telescreens), eroding privacy (Nineteen Eighty-Four)
+      Goal is to achieve "digital omniscience" by constantly extracting/analyzing data (The Age of Surveillance Capitalism)
+      Can lead to erosion of privacy (Black Mirror)
+      Creates surveillance, data tracking (General)
+      Creates vulnerabilities to hacks, data leaks, breaches (General)
+7. Algorithmic Bias and Reinforcement of Inequality
+      Algorithms can embed biases leading to discrimination (Weapons of Math Destruction)
+      Algorithms rely on biased historical data, reinforcing social inequalities (Weapons of Math Destruction)
+      Opacity makes it difficult to understand/challenge unfair algorithmic outcomes (Weapons of Math Destruction)
+      Algorithms can amplify disadvantage through feedback loops (Weapons of Math Destruction)
+      Algorithmic personalization can create echo chambers and reinforce biases (Weapons of Math Destruction)
+      Seemingly objective models can encode and amplify human biases (Weapons of Math Destruction)
+8. Economic Exploitation and Surveillance Capitalism
+      Progress can lead to exploitation of humanity (The Technological Society)
+      Commodifies essential functions, taking away independent efficiency (Tools for Conviviality)
+      Tech companies collect/monetize personal data for prediction/control ("surveillance capitalism") (The Age of Surveillance Capitalism)
+      Generates "behavioral surplus" for prediction products in "behavioral futures markets" (The Age of Surveillance Capitalism)
+      Can modify user behavior for profit without full awareness/consent (The Age of Surveillance Capitalism)
+      Involves manipulation of users for profit (The Social Dilemma)
+      Creates system rewarding engagement over well-being/truth (for profit) (The Social Dilemma)
+      Manipulates emotions and behaviors for financial gain (The Social Dilemma)
+      Turns users into products, commodifying attention/data (The Social Dilemma)
+      Creates consumerist pressures (upgrades, subscriptions) (General)
+      Creates attention-hijacking mechanisms exploiting focus for profit (General)
+      Creates exploitative business models commodifying user time/attention (General)
+9. Unforeseen Consequences, Unchecked Ambition, and Systemic Risks
+      Can be unpredictable, not bound by ethics/morals (The Technological Society)
+      Can amplify human flaws and create new, unsettling problems (Black Mirror)
+      Depicts dangers of unchecked technological advancement (Black Mirror)
+      Overwhelms society with uncontrollable progress, dependence on complex systems that can destabilize life (Kaczynski/Unabomber Manifesto)
+      Creates over-reliance on systems that can lead to chaos/collapse if disrupted (Kaczynski/Unabomber Manifesto)
+10. Trivialization of Culture and Discourse
+      Can lead to shallow, consumer-driven society by manufacturing desires (Brave New World)
+      Can suppress art/literature, limiting access to elements fostering individuality (Brave New World)
+      Television prioritizes entertainment over substantive content (Amusing Ourselves to Death)
+      Television trivializes important issues via entertaining format (Amusing Ourselves to Death)
+      Transforms public discourse into show business (Amusing Ourselves to Death)
+      Creates ephemeral digital experiences lacking depth/permanence of analog (General)
+      Creates environment of passive consumption detracting from deep hobbies (General)
+      Creates passive consumption habits draining mental energy/engagement (General)
+11. Information Overload and Meaninglessness
+      Leads to dissemination of fragmented, superficial, irrelevant information ("disinformation") (Amusing Ourselves to Death)
+      Creates explosion of context-free information, disconnected from meaning/purpose (Technopoly)
+      Creates digital overload (notifications, emails, messages) (General)
+      Creates unnecessary complexity overcomplicating life (General)
+      Creates scheduling chaos by forcing response to constant notifications/demands (General)
+12. Distortion of Truth and Spread of Misinformation
+      Can control knowledge and history to maintain social stability (Brave New World)
+      Allows systematic manipulation of information/history to maintain power (Nineteen Eighty-Four)
+      Can overshadow truths proven over time with constant "new" bombardment (Amusing Ourselves to Death)
+      Algorithms amplify spread of misinformation and societal polarization (The Social Dilemma)
+      Can estrange our relationship to truth (The Social Dilemma)
+      Accelerates spread of false information via rapid sharing/amplification (The Social Dilemma)
+      Leads to feedback loop deepening polarization/societal division (The Social Dilemma)
+      Creates echo chambers by filtering content, limiting diverse perspectives (General)
+13. Alienation, Isolation, and Social Fragmentation
+      Can lead to profound alienation/isolation for creator and creation (Frankenstein)
+      Can lead to social disintegration by fostering reliance on professional elites (Tools for Conviviality)
+      Some technologies reduce conviviality (essential for freedom/engagement) (Tools for Conviviality)
+      Frequently highlights potential for social isolation/breakdown of genuine connection (Black Mirror)
+      Reduces genuine human interaction, fosters unhealthy virtual relationships (The Social Dilemma)
+      Creates barriers to genuine face-to-face interactions, leading to superficial connections (General)
+      Creates superficial social interactions replacing deep conversations (General)
+      Creates barriers to deep, conversation-centric communication (favors text) (General)
+      Creates unstructured digital socialization less fulfilling than real-world interactions (General)
+      Undermines traditional social structures, forces unnatural urban environments, reduces face-to-face interactions (Kaczynski/Unabomber Manifesto)
+14. Dependence, Deskilling, and Loss of Self-Reliance
+      Many industrial tools create dependence by undermining natural abilities (Tools for Conviviality)
+      Can lead to reliance on experts/technical solutions for human relations (Technopoly)
+      Creates over-reliance on convenience diminishing discipline/effort (General)
+      Creates dependency on constant connectivity, eroding self-reliance (General)
+      Creates cognitive dependency, weakening memory, navigation, communication skills (General)
+      Creates deficits in real-life skills by reducing face-to-face communication/problem-solving (General)
+      Creates dependence on digital solutions undermining hands-on craftsmanship/manual skills (General)
+      Creates reliance on digital conveniences hindering practical, manual skills (General)
+15. Physical Health and Well-being Neglect
+      Creates sedentary lifestyles promoting passive screen time over physical activity (General)
+      Creates sleep disruptions (blue light, continuous stimulation) (General)
+16. Environmental Damage
+      Creates environmental harm (e-waste, energy consumption, resource depletion) (General)
+17. Erosion of Human Dignity and Dehumanization
+      Can create a society with no deep feelings, emotions, human characteristics (Brave New World)
+      Can make people work like machines without awareness (Nineteen Eighty-Four)
+      Modern world produces people for tools, leading to human obsolescence (Tools for Conviviality)
+      Uncontrolled growth of technology destroys vital sources of our humanity (Technopoly)
+      Can force individuals to make choices compromising fundamental humanity (Black Mirror)
+      Disrupts natural power process (meeting needs too easily, superficial surrogate activities) (Kaczynski/Unabomber Manifesto)
+      Erodes human dignity by making people overly dependent, undermining empowerment (Kaczynski/Unabomber Manifesto)
+18. Blurring Boundaries (Work/Life, Reality/Virtuality)
+      Digital technologies blur traditional boundaries between work and life (constant "on") (The Burnout Society)
+      Creates divide between user’s self-perception and online persona (The Social Dilemma)
+19. Suppression of Individuality and Creativity
+      Leads to standardization and mechanization across human activity (The Technological Society)
+      Unfettered industrialization can diminish creativity (Tools for Conviviality)
+      Algorithm-driven content stifles genuine creativity/original thought (General)
