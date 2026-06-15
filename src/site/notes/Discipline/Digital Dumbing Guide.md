@@ -1,10 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/discipline/digital-dumbing-guide/","updated":"2026-06-15T09:58:29.570+05:00","dg-note-properties":{"Created":"2024-03-23 01:02"}}
+{"dg-publish":true,"permalink":"/discipline/digital-dumbing-guide/","updated":"2026-06-15T10:16:07.418+05:00","dg-note-properties":{"Created":"2024-03-23 01:02"}}
 ---
 
-# Allowed Apps and Use Cases
-## Allowed:
-- *WA: Personal Chat
+## Allowed Apps and Use Cases
+- WA: Personal Chat
 - WA Calls Screen, Chats Screen, WhatsApp Calls
 - Dialers
 - Clock Apps
@@ -22,60 +21,41 @@
 - Dictionaries and Thesaurus
 - SMS Apps
 - Translation Tools
-- *Calendars* (For notifications)
-- *Tasbih Apps* (Only if Tasbeeh not available)
+- Calendars* (For notifications)
+- Tasbih Apps* (Only if Tasbeeh not available)
 - Prayer Apps
 - *Password Managers* (Only when strictly required)
 - *Backup and Sync Apps* (Set up to sync automatically)
 - *VPNs* (Only when required)
-- *Banking Apps* (Only when cash option is not available)
-- *Ride Hailing Apps* (Only if someone else is not available and only if non-ride option is mandatory)
+- Banking Apps (Only when cash option is not available)
+- Ride Hailing Apps (Only if someone else is not available and only if non-ride option is mandatory)
 - *Camera* (Only for select captures)
 - *Obsidian* (Viewing mostly)
-- ---
-## Allowed if Laptop not in easy access:
-- Cloud Storage Apps
-- Maps
-- Office Apps
-- Emails
-- Meeting Tools
-- Remote Access Apps
-- Brave
+- Maps (if laptop not in easy access)
+- Meeting Tools  (if laptop not in easy access)
+- Remote Access Apps  (if laptop not in easy access)
+- Brave (if laptop not in easy access)
 ---
-# Digital Dumbing SOPs
-## Current SOPs:
-### 🏗️ Environmental & Device Boundaries
-- **Fixed Stations:** Laptop does not leave its dedicated place; keep it at the office or a specific home desk. (paused)
-- **The "Out of Sight" Rule:** Phone stays in a bag, not a pocket; it remains away during work. 
-- **BnW:** Keep the screen in Black & White (BnW)
+## Digital Dumbing SOPs
+- Phone stays in a bag, not a pocket.
+- Keep the screen in Black & White (BnW)
 - Prefer audio/text over images/videos. 
 - **Offline First:** Internet is off by default. Treat the phone like an "Eritrean Internet Cafe" with strictly scheduled online windows. 
 - **Analog Tools:** Use physical cash; use paper notepads for notes; take directions from people, not GPS.
-- No LLMs
-
-### 💬 Communication & Social SOPs
 - **Synchronous over Asynchronous:** Call instead of texting; tell people you will call them back rather than chatting all day.
 - **The "Letter" Mindset:** Treat non-urgent texts like physical mail—to be answered in batches, not immediately.
-- **Scheduled Connectivity:** Check messages only during designated "entertainment/answering" times.
-- **Outsourcing Tech:** Ask people for internet searches or have someone else order your Uber to avoid opening the app yourself.
-
-### 📈 Workflow & Productivity
-- **Analog Planning:** Planning time is offline. Transfer Calendar and Task items to paper for the day's use.
-- **Batching:** Sync apps only once a day; list and batch personal online tasks to avoid "quick checks" turning into rabbit holes.
-- **Timed Access:** Define "Office Timings" vs. "Entertainment Timings." Only access the browser during specific windows. (paused)
-
-### 🧘 Mindset & Maintenance
-- **Presence:** Stay in the moment; remember that device-free entertainment is always superior.
-- **The Detox Rule:** Don't use the detox timer when you don't have to.
-- **Travel Flexibility:** Office work can go mobile when traveling, but maintain the boundaries as much as possible.
+- Ask people for internet searches or have someone else order your Uber to avoid opening the app yourself.
+- Define "Office Timings" and "Social Timings." Only access the browser during these specific windows. 
+	- Planning time is offline, right before office time. Transfer Calendar and Task items to paper for the day's use.
+	- Sync apps only once a day during Social time; list and batch personal online tasks to avoid "quick checks" turning into rabbit holes. Check messages only during this time.
+- Stay in the moment; remember that device-free entertainment is always superior.
+- Don't use the 15 minute detox timer when you don't have to.
 - Don't use western LLMs for personal chats
-
-## Future SOPs:
-1. Use Phone Call Feature as a Wired Phone that is placed in a room
-2. Read physical books and read pdfs on others' phones
-3. Have someone call someone for you, save a list of important contacts or memorize them
-4. Ask someone to capture videos and WhatsApp or email you
-5. Listen to live lectures and live nasheeds and videos on laptop 
-6. Ride priority: walk + bus > walk + hitchhike > bicycle >  motorcycle > ride hailing service
-7. Refrain from electricity
-8. No VLC in Normal Circumstances
+- Laptop does not leave its dedicated place; keep it at the office or a specific home desk. (paused)
+- Use Phone Call Feature as a Wired Phone that is placed in a room. (For future)
+- Have someone call someone for you, save a list of important contacts or memorize them. (For future)
+- Ask someone to capture videos and WhatsApp or email you. (For future)
+- Listen to live lectures and live nasheeds and videos on laptop. (For future)
+- Ride priority: walk + bus > walk + hitchhike > bicycle >  motorcycle > ride hailing service. (For future)
+- Refrain from electricity. (For future)
+- No VLC in for video (For future)
