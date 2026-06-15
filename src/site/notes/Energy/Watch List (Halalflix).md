@@ -1,0 +1,47 @@
+---
+{"dg-publish":true,"permalink":"/energy/watch-list-halalflix/","updated":"2026-06-15T10:37:09.572+05:00","dg-note-properties":{"Created":"1970-01-01 05:00"}}
+---
+
+This is for self and family
+- Dramas (one time):
+	- Rumi
+	- https://www.youtube.com/watch?v=6ufrJgsIS70&list=PLWStxMLF-CUQOjJMQ9Gvl251zWNRhTo8k Yunus Emre (Downloaded)
+- Documentaries (no additions by research only by news information)
+	- [ ] https://en.m.wikipedia.org/wiki/Surplus:_Terrorized_into_Being_Consumers
+	- [ ] https://en.m.wikipedia.org/wiki/The_Corporation_(2003_film)
+	- [ ] Food Inc
+- Select comedy dramas
+	- Fat family (Downloaded)
+- Funny Shows
+	- https://www.youtube.com/watch?v=scNmitvYj-w&list=PL8MO4IYyj7jzqvFxbR1snG9C-limcKtuz Khabardaar  (Downloaded)
+- Lectures for Joy
+	- https://www.youtube.com/@MuftiAdnanKakakhail  (Downloaded)
+	- https://www.youtube.com/@GhazzaliForum  (Downloaded)
+- Blogs:
+	- https://muslimskeptic.com/
+	- AI Hero
+	- LLM Arena
+	- Future Tools
+- WhatsApp Channels
+	- Ustaad Ji
+	- Shabab 
+- MMA and Boxing
+	- Islam Makchev, Khazmat
+- ~~Debates and Entertainment (Temporary)~~
+	- ~~Hamza Tzortsis~~
+	- ~~Yasir Nadeem Wajidi~~
+	- ~~Muhammad Hijab~~
+	- ~~Imran Hussein~~
+	- ~~Fahad Hussain~~
+	- ~~Hamzah Tzortsis~~
+	- ~~Suboor Ahmad~~
+	- ~~Daniel Haqiqatjou~~
+	- ~~Blogging Theology~~ 
+	- ~~One Nation~~ 
+	- ~~Shaoor Media~~
+- Courses:
+	- Kalam 3.0
+	- Alasna
+	- Sapience
+	- Revivalists (temp)
+	- Danial Haqiqatjou Debates (temp)
