@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/energy/entertainment-options/","updated":"2026-06-15T10:35:22.631+05:00","dg-note-properties":{}}
+dg-publish: true
 ---
 
 MAIN RULE: Enjoy what you are doing right now without worrying about the future. Have no consumption related tasks (food, buying stuff, watching content etc.) Make it passive not active.
@@ -36,14 +36,13 @@ MAIN RULE: Enjoy what you are doing right now without worrying about the future.
 29. Gardening and Cooking 
 30. Long Walks
 31. Watch List 
-32. [[Energy/Extra Activities List\|Extra Activities List]]
+32. [Extra Activities List](/energy/extra-activities-list)
 
+<div class="transclusion internal-embed is-loaded">
+<div class="markdown-embed">
 
-<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+**My Main Skills**
 
-
-
-### Hobbies and Entertainment
 - Anti-consumerism, anti technology 
 - Isms and Kalam
 - Permaculture
@@ -57,5 +56,5 @@ MAIN RULE: Enjoy what you are doing right now without worrying about the future.
 - Family Business 
 
 
-</div></div>
-
+</div>
+</div>
