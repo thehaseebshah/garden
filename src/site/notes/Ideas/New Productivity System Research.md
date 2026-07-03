@@ -99,7 +99,7 @@
 	- 2 process: making a decision on each item, as in GTD: do it (if it takes 2 minutes or less), trash it, delegate it, file it, or put it on your to-do list or calendar to do later.
 	- 3 plan: Each week, list the [Big Rocks](https://zenhabits.net/2007/04/big-rocks-first-double-your-productivity-this-week/) that you want to accomplish, and schedule them first. Each day, create a list of 1-3 MITs (basically your Big Rocks for the day) and be sure to accomplish them. Do your MITs early in the day to get them out of the way and to ensure that they get done.
 - [Time Sector System](/ideas/time-sector-system)
-	- Using [Time Sector System](/ideas/time-sector-system#^e70483) -- in this way we can link projects to files on Obsidian or Google Drive and we can eliminate the need for a complex project management app.  
+	- Using [Time Sector System](/ideas/time-sector-system#e70483) -- in this way we can link projects to files on Obsidian or Google Drive and we can eliminate the need for a complex project management app.  
 	- And...
 - [Jeff Su's Productivity System](/ideas/jeff-su-s-productivity-system)
 - [In praise of simple productivity](/ideas/in-praise-of-simple-productivity)
