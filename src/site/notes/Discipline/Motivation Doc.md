@@ -2,9 +2,6 @@
 Created: 2023-02-22 03:14
 ---
 
----
-Created: 2023-02-22 03:14
----
 Shabab requires Military Routine 
 Don't think about the next days being difficult. Live in the moment. There is so much to enjoy in life while being productive.
 
