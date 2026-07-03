@@ -22,7 +22,7 @@ Enjoy your Mondays like Ali Ehtesham
 When you feel lazy, tell yourself you are hired as an Airman
 No debt no police custody no health issues -- where's the gratitude?
 
-[Proof that Rules can be Sustained](/notes/ideas/proof-that-rules-can-be-sustained)
+[Proof that Rules can be Sustained](/notes/ideas/proof%20that%20rules%20can%20be%20sustained)
 
 - Motivation:.
 	- You are indebted with things other people marvel at. Games to discipline family, 10 page rules to discipline yourself, speeches to save the world in carnivals and college assemblies, unbelievable confidence, novel in grade 5, a saving the world document in age 17, winning speech and essay competitions, doing unprecedented public speaking events, being the youngest employee of the world's best talent company, conquering every field you touch ALHAMDOLILLAH. Family Dawah
@@ -32,9 +32,9 @@ No debt no police custody no health issues -- where's the gratitude?
 	- 24 Hours study so that you get job quick and then serve Deen 24 seven
 	- Make Baba do Aish now IN SHA ALLAH
 	- [[2020-05-27]]
-	- [The confession](/notes/ideas/dawah-with-love/the-confession)
-	- [Lessons learnt from Soup Vendor listening to Dr Israr Ahmed](/notes/ideas/dawah-with-love/lessons-learnt-from-soup-vendor-listening-to-dr-israr-ahmed)
-	- [Describing this state of Extreme Motivation to do something for the world](/notes/ideas/isms/describing-this-state-of-extreme-motivation-to-do-something-for-the-world)
+	- [The confession](/notes/ideas/dawah%20with%20love/the%20confession)
+	- [Lessons learnt from Soup Vendor listening to Dr Israr Ahmed](/notes/ideas/dawah%20with%20love/lessons%20learnt%20from%20soup%20vendor%20listening%20to%20dr%20israr%20ahmed)
+	- [Describing this state of Extreme Motivation to do something for the world](/notes/ideas/isms/describing%20this%20state%20of%20extreme%20motivation%20to%20do%20something%20for%20the%20world)
 - Gratitude:
 	- Not looking at opposite gender outside 
 	- Not wanting more money than needed
