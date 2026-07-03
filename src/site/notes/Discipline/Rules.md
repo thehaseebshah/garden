@@ -1,5 +1,6 @@
 ---
-{"dg-publish":true,"permalink":"/discipline/rules/","updated":"2026-06-15T10:30:08.606+05:00","dg-note-properties":{"Created":"2024-03-23 01:34"}}
+Created: 2024-03-23 01:34
+dg-publish: true
 ---
 
 ##### Status
@@ -23,21 +24,21 @@
 - 5 P for missing Jammah, or making Qadha or not following the Alarm protocol or missing Masjid Jamah or missing Witr
 ##### Health
 - 5 P for breaking per day
-- Consume only healthy foods, mentioned in [[Discipline/Final Diet Plan\|Final Diet Plan]]
+- Consume only healthy foods, mentioned in [Final Diet Plan](/notes/discipline/final%20diet%20plan)
 - Eating out solo for no valid reason is not allowed
 - There are 3 1-hour eating/drinking windows in 24 hours, Outside these only things allowed are mentioned in the plan. No eating 2200 to 0300.
 - Other UCs:  
 	- Someone asking to consume twice without you asking, only if situation is problematic 
-	- Eating out with someone (when excuse is valid), but in Isb shared eat-outs, only 2 meals per week on Sat-Sun can be Level 2 and bellow from [[Discipline/Cheat Meals Tier List\|Cheat Meals Tier List]]
+	- Eating out with someone (when excuse is valid), but in Isb shared eat-outs, only 2 meals per week on Sat-Sun can be Level 2 and bellow from [Cheat Meals Tier List](/notes/discipline/cheat%20meals%20tier%20list)
 	- Self eat-out allowed on Friday for 2 consecutive hours
 	- Non-Isb shared eatouts are also allowed
 ##### Prohibitions 
 - 5 P a day of being immodest during opposite gender interaction or Mamulat Prohibitions.
-- Dont count if Secret Sin was broken
+- Dont count if Day Streaks was broken
 ##### Pomos (Paused)
 - No Pomos on Sat Sun
 - 3 P for Mandatory Pomos
-- [[Keep/Deep Pomo Checklist\|Deep Pomo Checklist]] is optional.
+- [Deep Pomo Checklist](/notes/keep/deep%20pomo%20checklist) is optional.
 - Mandatory Pomos
 	- 1st before 1000
 	- 2nd before 1100
@@ -47,7 +48,7 @@
 - 3 P per missing a protocol set
 - To be complete 1.5 hours of alarm.
 - Mamolaat Set List:
-	- Tahajjud Protocol: Tahajjud 
+%% 	- Tahajjud Protocol: Tahajjud 
 	- Fajr Protocol: Fajr + Yaseen
 	- Mandatory Pomos (Only check if done within time, no set penalty)
 	- Chasht Protocol: Morning Azkaar + Ishraaq + Chasht  + Optional Planning
@@ -55,15 +56,15 @@
 	- Zhuhr Protocol: Zuhr + 1m Dua
 	- Asr Protocol: Asr + Evening Azkaar (300 of Each) 
 	- Maghrib Protocol: Maghrib + Surah Waqiah + Awabayn
-	- Isha Protocol: Isha + Mulk + Witr
+	- Isha Protocol: Isha + Mulk + Witr %%
 ##### Digital Entertainment
-- 3 P per 15 minutes of Ent or extra phone usage (dont count if Secret Sin was broken)
+- 3 P per 15 minutes of Ent or extra phone usage (dont count if Day Streaks was broken)
 - 15 Minutes Phone Limit
 	- Asr to Maghrib Phone allowed.
-	- [[Discipline/Digital Dumbing Guide\|Digital Dumbing Guide]] (Allowed apps, Batch chats, syncs, online tasks post-Asr, call, outsource internet searches/rides/maps, internet off, BnW, phone in bag, cash)
+	- [Digital Dumbing Guide](/notes/discipline/digital%20dumbing%20guide) (Allowed apps, Batch chats, syncs, online tasks post-Asr, call, outsource internet searches/rides/maps, internet off, BnW, phone in bag, cash)
 - These don't count as Digital Entertainment: Nasheeds.
 - Entertainment is only shared, and is allowed.
-- Temp allowed: Sniper Elite Resistance, Rumi, Yunus Emre, Splinter Cell Blacklist, s
+- Temp allowed: Sniper Elite Resistance, songs
 ##### Sleep (Paused)
 - 5 P
 - 2200-0300 Apr-Sep
@@ -78,6 +79,9 @@
 ##### Unpenalized Rules
 - No lalach
 - No susti
+- No greed 
+- No ghussa
 - Fulfil Mamulat even if penalized 
 - Fullfil additional Mamulat in the app
 - Fulfill Calendar obligations
+- Tasks today should be completed
