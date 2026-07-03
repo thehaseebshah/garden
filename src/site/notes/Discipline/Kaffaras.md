@@ -3,7 +3,7 @@ Created: 2023-09-17 19:50
 dg-publish: true
 ---
 
-25 Kaffara Yameens
+26 Kaffara Yameens
 120K General Sadaqah Charity from three Nazrs
 175K Al Burhan Sadaqah from Penalties
 Make Up Fasts 9
