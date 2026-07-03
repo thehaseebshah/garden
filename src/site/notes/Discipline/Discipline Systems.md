@@ -1,0 +1,18 @@
+---
+{}
+---
+
+- [Rules](/discipline/rules)
+- Task Management Tasks
+- Calendar Routines
+- Accountability to Father
+- [Oaths and Oath Templates (Old)](/keep/oaths-and-oath-templates-old)
+- [Promises](/discipline/promises)
+- Murabbi Accountability
+	- By weekly daily Maamoolat to our Murabbi 
+- Consistency Streaks
+- Al Burhan Accountability
+	- Ahbaab Azeemat
+	- Majlis Islaah
+	- Weekend Shabab and Shabab Training
+	- Honesty with Al Burhanis
