@@ -1,7 +1,24 @@
 ---
-{"dg-publish":true,"permalink":"/discipline/final-diet-plan/","created":"2026-02-20T05:28:51.847+05:00","updated":"2026-02-20T05:09:14.613+05:00"}
+dg-publish: true
 ---
 
+## May 2026 Onwards Plan
+- **Breakfast:** 1 glass of milk with almonds + 2 boiled eggs.
+- **Lunch:** 2 fruits
+- **Dinner:** Salan/rice, Raita Salaad
+- **Snack:** Lemon Water, Green Tea
+- Stevia only 3 tbspn a day
+# Old
+## Post Ramadan 2026 Plan
+- Low fat low carb
+- Paratha, Rice once a week
+- Breakfast: 2 Kababs/2 Eggs, Milk, Badam, Supps
+- Snack: Lemon Water, Green Tea
+- Dinner: Salan, 1 measuring cup of fruit (Optional), yogurt (Optional), salad, yakhni (Optional)
+- Stevia once a week
+## Ramadan OMAD
+- Suhoor: Green Tea + Lemon Water (No Stevia)
+- Evening: Water, Unsweetened Cream Cardamom Coffee, Turkish Raita, Makhni Chapli Kabab, 5 Badam, 2 Boiled Eggs, Lettuce 🥬 
 ## Ramadan Plan 
 - Low fat low carb
 - Paratha, Rice and Chaye once a week
