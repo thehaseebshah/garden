@@ -1,7 +1,3 @@
----
-{}
----
-
 - [Rules](/discipline/rules)
 - Task Management Tasks
 - Calendar Routines
