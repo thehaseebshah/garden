@@ -716,58 +716,6 @@ body.no-filetree .sidebar {
     border-bottom: 1px solid var(--dg-border);
 }
 
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1rem;
-}
-
-.feature-card {
-    background: var(--dg-bg-1);
-    border: 1px solid var(--dg-border);
-    border-radius: 12px;
-    padding: 1.25rem;
-    text-decoration: none !important;
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-    transition: border-color 150ms ease, transform 150ms ease;
-}
-
-.feature-card:hover {
-    border-color: var(--dg-accent);
-    transform: translateY(-2px);
-}
-
-.feature-card.coming-soon {
-    opacity: 0.6;
-    cursor: default;
-}
-
-.feature-card.coming-soon:hover {
-    border-color: var(--dg-border);
-    transform: none;
-}
-
-.card-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.25rem;
-}
-
-.feature-card h3 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--text-normal) !important;
-    margin: 0;
-}
-
-.feature-card p {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin: 0;
-}
-
 .about-content p {
     font-size: 1.05rem;
     line-height: 1.75;
