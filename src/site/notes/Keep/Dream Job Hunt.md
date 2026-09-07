@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/keep/dream-job-hunt/","updated":"2026-09-07T13:20:07.954+05:00","dg-note-properties":{"Created":"2023-06-28 07:32","Updated":"2023-06-28 09:20"}}
+{"dg-publish":true,"permalink":"/keep/dream-job-hunt/","updated":"2026-09-07T14:27:36.954+05:00","dg-note-properties":{"Created":"2023-06-28 07:32","Updated":"2023-06-28 09:20"}}
 ---
 
 # To Do in the First Week
@@ -55,7 +55,7 @@ Complete them now! 😎
 
 Watch https://www.youtube.com/watch?v=uWtm70HLMkM&ab_channel=TariqMasoodExclusive
 
-## 2**. Define Your Niche (IMPORTANT)**
+## 2. Define Your Niche (IMPORTANT)
 
 ℹ️ Start in the end! What does your dream job look like? What’s your ideal career 3-5-10 years from now?
 
@@ -105,7 +105,7 @@ Define 3 max of each of the following (the fewer the better)
     - Something that is sought after in the marketplace
 - If the position and industry are a combination of all three — that is the best!
 
-## 3**. Resume & Cover Letter Building:**
+## 3. Resume & Cover Letter Building:
 
 ℹ️ Most job seekers think about how to get a job but never consider the person on the other side of the table who is hiring.
 
@@ -229,7 +229,7 @@ This shouldn't take you more than 10 minutes to do and if you rinse and repeat e
 
 > Pro Tip: The earlier you comment on a post that eventually gains traction, the better. Influencers with big followings on LinkedIn are pretty much guaranteed to have large view counts on their posts so all you need to do are follow them, figure out their posts times, and show up early!
 
-## 8**. Find Open Positions in your Niche(s)**
+## 8. Find Open Positions in your Niche(s)
 
   
 ℹ️ Now that you know what your dream job looks like, it’s time to find dream companies and positions.
@@ -305,7 +305,7 @@ Here are 3 strategies you can use to find almost anyone’s email address:
 
 Now that you have your potential influencer, it’s time to do some research so you can effectively reach out and build that relationship! Find what you can about them. Save the research somewhere.
 
-## 10**. Sending The Email**
+## 10. Sending The Email
 
 Hopefully, your research uncovered an angle you can use to personalize the email and make the outreach about them. This could be something like:
 
@@ -359,7 +359,7 @@ There are a few key points to the emails above:
 
 You can also contact them directly on LinkedIn.
 
-## 11**. Prepare For Your Meeting**
+## 11. Prepare For Your Meeting
 
 In order to prepare, we have to know what we’re preparing for. The goal of your meeting is to position your influencer as an expert, make them feel special, and build a relationship.
 
@@ -392,7 +392,7 @@ Ask them advice, note it down.
 
 If it goes well, ask them to introduce you to people who may be able to hire you, which is effectively getting a referral from this person. _Do not ask them_ for a job if you promised it was an informational interview.
 
-## 12**. Prove Your Worth With A Value Validation Project**
+## 12. Prove Your Worth With A Value Validation Project
 
 VVPs are kind of like a resume on steroids. You find a pain point or opportunity, then you create a deliverable that illustrates:
 
@@ -421,7 +421,7 @@ _That said, the best medium you can use is the one that you feel the most comfor
 
 _If you want to break into video production, a short film might be a better option. If you want to be a software engineer, coding out a project is probably a good bet._
 
-## 13**. Following Up With Your Proposal**
+## 13. Following Up With Your Proposal
 
 Now we're going to reach back out to our influencer with the proposal.
 
