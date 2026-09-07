@@ -567,7 +567,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/site/logo.*": "/" });
   eleventyConfig.addPassthroughCopy({ "src/site/CNAME": "CNAME" });
   eleventyConfig.addPassthroughCopy({ "src/site/.nojekyll": ".nojekyll" });
-  eleventyConfig.addPlugin(faviconsPlugin, { outputDir: "dist" });
+  const genIcons = require("eleventy-plugin-gen-favicons/favicon-gen");
+  eleventyConfig.addAsyncShortcode("favicons", async (sourceFile, opts) => {
+    await genIcons(sourceFile, "dist", opts);
+    return `
+<link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico?v=2" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+<link rel="manifest" href="/manifest.webmanifest?v=2">`;
+  });
   eleventyConfig.addPlugin(tocPlugin, {
     ul: true,
     tags: ["h1", "h2", "h3", "h4", "h5", "h6"],
