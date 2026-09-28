@@ -437,11 +437,14 @@ body.no-filetree .sidebar {
     body.no-filetree .sidebar > .sidebar-container > .toc {
         position: fixed !important;
         left: 44px !important;
-        top: var(--dg-header-offset) !important;
+        top: 50% !important;
+        transform: translateY(-50%);
         width: 250px !important;
         max-width: 250px !important;
+        max-height: calc(100vh - 2 * var(--dg-header-offset) - 32px);
         z-index: 110;
         display: block !important;
+        margin-top: 0 !important;
         padding: 14px 16px !important;
         box-sizing: border-box;
     }
@@ -451,7 +454,7 @@ body.no-filetree .sidebar {
     }
 
     body.no-filetree .sidebar .toc-container {
-        max-height: calc(100vh - var(--dg-header-offset) - 48px) !important;
+        max-height: calc(100vh - 2 * var(--dg-header-offset) - 62px) !important;
         overflow-y: auto !important;
         scrollbar-width: thin;
     }
@@ -821,5 +824,5 @@ body.no-filetree .sidebar {
 .contact-divider {
     border: 0;
     border-top: 1px solid var(--dg-border);
-    margin: 3rem 0 1.5rem;
+    margin: 3rem auto 1.5rem;
 }
