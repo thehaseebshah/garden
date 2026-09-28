@@ -401,12 +401,18 @@ a.tag:hover {
     margin-left: 0 !important;
 }
 
-/* Avoid double-styled toc (outer card + inner nav.toc) */
-.toc-container>.toc {
-    border: none;
-    background: transparent;
-    box-shadow: none;
-    padding: 0;
+/* Avoid double-styled and nested fixed positioning for inner nav.toc */
+.toc-container > .toc {
+    position: static !important;
+    width: auto !important;
+    max-width: none !important;
+    top: auto !important;
+    left: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
 }
 
 /* File tree */
@@ -428,13 +434,50 @@ body.no-filetree .sidebar {
 }
 
 @media (min-width: 1100px) {
-    body.no-filetree .sidebar .toc {
+    body.no-filetree .sidebar > .sidebar-container > .toc {
         position: fixed !important;
         left: 20px !important;
         top: var(--dg-header-offset) !important;
-        width: 240px !important;
-        max-width: 240px !important;
+        width: 250px !important;
+        max-width: 250px !important;
         z-index: 110;
+        display: block !important;
+        padding: 14px 16px !important;
+        box-sizing: border-box;
+    }
+
+    body.no-filetree .sidebar .toc-container > .toc {
+        display: block !important;
+    }
+
+    body.no-filetree .sidebar .toc-container {
+        max-height: calc(100vh - var(--dg-header-offset) - 48px) !important;
+        overflow-y: auto !important;
+        scrollbar-width: thin;
+    }
+
+    body.no-filetree .sidebar .toc-container li {
+        padding: 3px 0 !important;
+        line-height: 1.4;
+    }
+
+    body.no-filetree .sidebar .toc-container ol ol,
+    body.no-filetree .sidebar .toc-container ul ul,
+    body.no-filetree .sidebar .toc-container ol ul,
+    body.no-filetree .sidebar .toc-container ul ol {
+        padding-left: 12px !important;
+    }
+
+    body.no-filetree .sidebar .toc-container li a {
+        font-size: 0.85rem;
+        color: var(--text-muted) !important;
+        transition: color 120ms ease;
+        display: inline-block;
+    }
+
+    body.no-filetree .sidebar .toc-container li a:hover {
+        color: var(--dg-accent-strong) !important;
+        text-decoration: underline;
     }
 
     body.no-filetree .content {
@@ -444,11 +487,16 @@ body.no-filetree .sidebar {
     }
 }
 
+@media (min-width: 1101px) and (max-width: 1320px) {
+    body.no-filetree .content {
+        margin-left: 290px !important;
+        max-width: calc(100vw - 310px) !important;
+    }
+}
+
 @media (max-width: 1100px) {
-    body.no-filetree .sidebar .toc {
-        position: static;
-        width: auto;
-        max-width: none;
+    body.no-filetree .sidebar > .sidebar-container > .toc {
+        display: none !important;
     }
 }
 
