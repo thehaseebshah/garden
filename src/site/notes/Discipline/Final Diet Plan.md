@@ -1,5 +1,6 @@
 ---
 dg-publish: true
+permalink: /discipline/final-diet-plan/
 ---
 
 ## May 2026 Onwards Plan
