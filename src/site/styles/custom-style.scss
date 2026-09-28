@@ -413,6 +413,9 @@ a.tag:hover {
     border: none !important;
     background: transparent !important;
     box-shadow: none !important;
+    border-radius: 0 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
 }
 
 /* File tree */
