@@ -87,6 +87,7 @@ function startServer(root) {
 // ---------------------------------------------------------------------------
 
 const results = [];
+const warnings = [];
 function check(name, ok, detail = "") {
   results.push({ name, ok });
   console.log(`${ok ? "PASS" : "FAIL"}  ${name}${detail ? `  — ${detail}` : ""}`);
@@ -100,19 +101,29 @@ async function open(browser, base, url, { device = "desktop", colorScheme = "dar
   const requests = [];
   page.on("pageerror", (error) => errors.push(error.message));
   page.on("console", (message) => {
-    if (message.type() === "error" && !/status of 404/.test(message.text())) errors.push(message.text());
+    // Failed network requests are tracked (and classified) by the request listeners below.
+    if (message.type() === "error" && !/^Failed to load resource/.test(message.text())) errors.push(message.text());
   });
   page.on("dialog", (dialog) => {
     errors.push(`unexpected dialog: ${dialog.message()}`);
     dialog.dismiss();
   });
   page.on("request", (request) => requests.push(request.url()));
+  // Our own files and any script, stylesheet or font must load. Images and media
+  // that notes hot-link from other sites are outside our control: warn only.
+  const mustLoad = (request) =>
+    request.url().startsWith(base) || ["script", "stylesheet", "font"].includes(request.resourceType());
+  const recordFailure = (request, reason) => {
+    const entry = `${reason} ${request.url()}`;
+    if (mustLoad(request)) failed.push(entry);
+    else warnings.push(`${url}: third-party ${request.resourceType()} failed: ${entry}`);
+  };
   page.on("requestfailed", (request) => {
     // Headless Chromium aborts PDF iframes; that isn't a site problem.
-    if (!request.url().endsWith(".pdf")) failed.push(`${request.failure()?.errorText} ${request.url()}`);
+    if (!request.url().endsWith(".pdf")) recordFailure(request, request.failure()?.errorText);
   });
   page.on("response", (response) => {
-    if (response.status() >= 400 && response.url() !== base + url) failed.push(`${response.status()} ${response.url()}`);
+    if (response.status() >= 400 && response.url() !== base + url) recordFailure(response.request(), response.status());
   });
   const response = await page.goto(base + url, { waitUntil: "networkidle", timeout: 60000 });
   await page.waitForTimeout(300);
@@ -478,6 +489,9 @@ async function saveScreens(browser, base) {
   } finally {
     await browser.close();
     server.close();
+  }
+  if (warnings.length) {
+    console.log(`\nWarnings (not failures):\n  ${[...new Set(warnings)].join("\n  ")}`);
   }
   const failures = results.filter((r) => !r.ok).length;
   console.log(`\n${results.length - failures}/${results.length} checks passed`);

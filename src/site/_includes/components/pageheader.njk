@@ -38,11 +38,11 @@
 </script>
 
 {%- if settings.dgShowLocalGraph === true %}
-<script defer src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js" integrity="sha384-O9pGchkTNB773eId4AZA3jkFf1FPj3QuX3jJXxjL79WjEz5jQ3KIHgCX7pIcGlJy" crossorigin="anonymous"></script>
+<script defer src="/scripts/vendor/force-graph.min.js"></script>
 {%- endif %}
 {%- if settings.dgShowLocalGraph === true or settings.dgShowFileTree === true %}
-<script defer src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js" integrity="sha384-Wv0QLHfgUB1Q7/u7Qce+9HY0wXwJyDpRonSAqPviFBnBHZ0K7RaQcXCIZx1P9HJ4" crossorigin="anonymous"></script>
-<script defer src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" integrity="sha384-D0U8hqw9ySktLounY2q1PAWeijVsqewBtT2NhQp2pxSugkKfpRnovV2sSwJC+V5U" crossorigin="anonymous"></script>
+<script defer src="/scripts/vendor/alpine-persist.min.js"></script>
+<script defer src="/scripts/vendor/alpine.min.js"></script>
 {%- endif %}
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
