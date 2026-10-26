@@ -16,7 +16,15 @@
 {%- if pageDescription %}
 <meta property="og:description" content="{{ pageDescription }}">
 {%- endif %}
+{%- if meta.siteBaseUrl %}
+<meta property="og:image" content="{{ meta.siteBaseUrl }}/img/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ meta.siteName }}: a digital garden of ideas, research, projects and notes">
+<meta name="twitter:card" content="summary_large_image">
+{%- else %}
 <meta name="twitter:card" content="summary">
+{%- endif %}
 <meta name="theme-color" content="#0a120d">
 
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

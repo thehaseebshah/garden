@@ -1812,3 +1812,28 @@ body {
         gap: 0.35rem;
     }
 }
+
+/* Comments (Giscus) */
+.comments {
+    margin: 2.5rem 0 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--dg-border);
+}
+
+.markdown-preview-view .comments .connections-title {
+    font-size: var(--h3-size);
+    margin: 0 0 0.35rem;
+    border: 0;
+    padding: 0;
+}
+
+.markdown-preview-view .comments p.comments-hint {
+    margin: 0 0 1rem;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+giscus-widget {
+    display: block;
+    min-height: 160px;
+}

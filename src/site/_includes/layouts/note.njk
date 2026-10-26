@@ -93,6 +93,7 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
       {%- if settings.dgShowBacklinks === true or settings.dgShowLocalGraph === true %}
         {%include "components/connections.njk"%}
       {%- endif %}
+      {%include "components/comments.njk"%}
       {% for imp in dynamics.common.afterContent %}
         {% include imp %}
       {% endfor %}

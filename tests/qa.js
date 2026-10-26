@@ -148,6 +148,12 @@ async function checkSitemapAndFeed(base) {
   check("sitemap lists pages without double slashes", urls.length > 10 && !/<loc>https?:\/\/[^<]*[^:]\/\//.test(sitemap), `${urls.length} pages`);
   check("sitemap leaves out the 404 page", !urls.some((u) => /404/.test(u)));
 
+  const home = await (await fetch(`${base}/`)).text();
+  const shareImage = (home.match(/<meta property="og:image" content="([^"]+)"/) || [])[1];
+  const imageResponse = shareImage ? await fetch(base + new URL(shareImage).pathname) : null;
+  check("share image (og:image) is declared and served as a PNG",
+    !!imageResponse && imageResponse.ok && /image\/png/.test(imageResponse.headers.get("content-type") || ""), shareImage);
+
   const feed = await (await fetch(`${base}/feed.xml`)).text();
   check("feed.xml has entries and no double slashes", /<entry>/.test(feed) && !/https?:\/\/[^\s"<]*[^:]\/\//.test(feed));
   return urls;
@@ -168,6 +174,7 @@ async function checkAllPages(browser, base, urls) {
           title: document.title,
           description: document.querySelector('meta[name="description"]')?.content || "",
           canonical: document.querySelector('link[rel="canonical"]')?.href || "",
+          shareImage: document.querySelector('meta[property="og:image"]')?.content || "",
           h1Count: document.querySelectorAll("h1").length,
           badAlt: [...document.querySelectorAll("main img")].filter((img) => !img.hasAttribute("alt") || /\|\d+$|\.(png|jpe?g)$|\\$/i.test(img.alt)).length,
           unsizedImages: [...document.querySelectorAll("main picture img")].filter((img) => !img.getAttribute("width") || !img.getAttribute("height") || img.loading !== "lazy").length,
@@ -188,6 +195,7 @@ async function checkAllPages(browser, base, urls) {
       if (!info.title) issues.push("no title");
       if (!info.description) issues.push("no meta description");
       if (!info.canonical || /[^:]\/\//.test(info.canonical)) issues.push(`bad canonical ${info.canonical}`);
+      if (!info.shareImage) issues.push("no og:image");
       if (info.h1Count < 1) issues.push("no <h1>");
       if (info.badAlt) issues.push(`${info.badAlt} images with missing or file-name alt text`);
       if (info.unsizedImages) issues.push(`${info.unsizedImages} images without size or lazy loading`);
@@ -452,6 +460,37 @@ async function checkConnections(browser, base) {
   await emptyContext.close();
 }
 
+async function checkComments(browser, base) {
+  const config = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "src/site/_data/giscus.json"), "utf8"));
+  const configured = Boolean(config.repo && config.repoId && config.category && config.categoryId);
+
+  const { context, page, requests } = await open(browser, base, NOTE_WITH_BACKLINKS);
+  const note = await page.evaluate(() => {
+    const widget = document.querySelector(".comments giscus-widget");
+    return {
+      section: !!document.querySelector(".comments"),
+      repo: widget && widget.getAttribute("repo"),
+      mapping: widget && widget.getAttribute("mapping"),
+      theme: widget && widget.getAttribute("theme"),
+    };
+  });
+  const scriptRequests = requests.filter((r) => r.includes("giscus"));
+  await context.close();
+  const { context: homeContext, page: homePage } = await open(browser, base, "/");
+  const onHome = await homePage.evaluate(() => !!document.querySelector(".comments"));
+  await homeContext.close();
+
+  if (configured) {
+    const ownScript = scriptRequests.some((r) => r === `${base}/scripts/vendor/giscus.js`);
+    check("comments: Giscus section on notes (not on the homepage), served from the site",
+      note.section && note.repo === config.repo && note.mapping === "pathname" && !!note.theme && ownScript && !onHome,
+      JSON.stringify({ ...note, ownScript, onHome }));
+  } else {
+    check("comments: hidden and not loaded until src/site/_data/giscus.json is filled in",
+      !note.section && !onHome && scriptRequests.length === 0, JSON.stringify({ ...note, scriptRequests }));
+  }
+}
+
 async function saveScreens(browser, base) {
   fs.mkdirSync(SCREENS, { recursive: true });
   for (const colorScheme of ["dark", "light"]) {
@@ -483,6 +522,7 @@ async function saveScreens(browser, base) {
     await checkSearch(browser, base);
     await checkNotes(browser, base);
     await checkConnections(browser, base);
+    await checkComments(browser, base);
     if (SCREENS) await saveScreens(browser, base);
   } catch (error) {
     check("QA run completed", false, error.stack);

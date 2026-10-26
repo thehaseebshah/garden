@@ -70,6 +70,14 @@ These are derived from `package.json` scripts and CI.
 - The feature checks use a few real notes as samples (constants at the top of
   `tests/qa.js`); update them if those notes are renamed or unpublished.
 
+## Comments (Giscus)
+- Config: `src/site/_data/giscus.json` (`repo`, `repoId`, `category`, `categoryId` from https://giscus.app).
+  The section in `components/comments.njk` renders only when all four are set; `comments: false`
+  in a note's front matter hides it for that note.
+- Kept out of `.env` on purpose: the Obsidian Digital Garden plugin rewrites `.env`.
+- The widget is a vendored bundle (`src/site/scripts/vendor/giscus.js`); rebuild it with
+  `npm run vendor:giscus` after changing the `giscus`/`lit` versions in `package.json`.
+
 ## Troubleshooting local runs
 - Theme fetching:
   - `npm start` / `npm run build` runs `node src/site/get-theme.js`.
