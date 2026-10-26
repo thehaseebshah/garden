@@ -236,7 +236,9 @@
 
             const content = doc.querySelector('.content, .cm-s-obsidian, article, main');
             if (content) {
-                content.querySelectorAll('script').forEach(s => s.remove());
+                // Scripts never run here anyway; the title is shown separately above the preview,
+                // and the inline table of contents is just noise in a preview.
+                content.querySelectorAll('script, header h1, .toc-inline').forEach(el => el.remove());
             }
             const htmlContent = content ? content.innerHTML : '';
             previewCache.set(url, htmlContent);

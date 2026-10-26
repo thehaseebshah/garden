@@ -4,6 +4,7 @@ const matter = require("gray-matter");
 const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 const tocPlugin = require("eleventy-plugin-nesting-toc");
 const { parse } = require("node-html-parser");
+const { globSync } = require("glob");
 const { DateTime } = require("luxon");
 const htmlMinifier = require("html-minifier-terser");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -383,11 +384,41 @@ module.exports = function (eleventyConfig) {
     return date ? date.toISO() : "";
   });
 
+  function normalizeTitle(text) {
+    return String(text || "")
+      .replace(/<[^>]+>/g, "")
+      .replace(/&amp;/g, "&")
+      .replace(/&#39;|&apos;/g, "'")
+      .replace(/&quot;/g, '"')
+      .replace(/\s+/g, " ")
+      .trim()
+      .toLowerCase();
+  }
+
+  // Drops the note's leading "# Title" heading when it repeats the page title,
+  // which the layout already shows (Obsidian notes often start with one).
+  eleventyConfig.addFilter("stripLeadingH1", function (html, title) {
+    if (!html || !title) return html;
+    const match = String(html).match(/^\s*<h1\b[^>]*>([\s\S]*?)<\/h1>\s*/);
+    if (!match || normalizeTitle(match[1]) !== normalizeTitle(title)) {
+      return html;
+    }
+    return String(html).substring(match[0].length);
+  });
+
+  // "4 min read", based on ~220 words per minute.
+  eleventyConfig.addFilter("readingTime", function (html) {
+    if (!html) return "";
+    const words = parse(String(html)).text.trim().split(/\s+/).filter(Boolean).length;
+    const minutes = Math.max(1, Math.round(words / 220));
+    return `${minutes} min read`;
+  });
+
   // Plain-text summary of the rendered page for <meta name="description">.
   eleventyConfig.addFilter("metaDescription", function (html, maxLength = 160) {
     if (!html) return "";
     const root = parse(String(html));
-    root.querySelectorAll("script, style, nav, .toc, .callout-title").forEach((el) => el.remove());
+    root.querySelectorAll("script, style, nav, .toc, .callout-title, h1, sup.footnote-ref, .footnotes").forEach((el) => el.remove());
     const text = root.text.replace(/\s+/g, " ").trim();
     if (text.length <= maxLength) return text;
     const cut = text.substring(0, maxLength - 1);
@@ -395,39 +426,101 @@ module.exports = function (eleventyConfig) {
     return `${cut.substring(0, lastSpace > maxLength * 0.6 ? lastSpace : cut.length)}…`;
   });
 
-  eleventyConfig.addFilter("pdfEmbed", function (str) {
-    if (!str) return str;
-    // Match Obsidian embed syntax: ![[filename.pdf]] (with optional |height)
-    return str.replace(/!\[\[([^\]]+\.pdf)(?:\|([^\]]*?))?\]\]/gi, function (match, fileName, options) {
-      let height = "80vh";
-      if (options && !isNaN(options.trim())) {
-        height = options.trim() + "px";
+  // Attachments under src/site, keyed by lower-cased file name (built once per build).
+  let attachmentIndex = null;
+  function findAttachment(fileName) {
+    if (!attachmentIndex) {
+      attachmentIndex = new Map();
+      const files = globSync("src/site/**/*.*", {
+        nodir: true,
+        ignore: ["src/site/notes/**", "src/site/_*/**", "src/site/styles/**"],
+      });
+      for (const file of files) {
+        const key = file.split(/[\\/]/).pop().toLowerCase();
+        if (!attachmentIndex.has(key)) {
+          attachmentIndex.set(key, "/" + file.replace(/\\/g, "/").replace(/^src\/site\//, ""));
+        }
       }
-      // Search for the PDF file anywhere under src/site
-      const { globSync } = require("glob");
-      const baseName = fileName.split("/").pop();
-      const matches = globSync(`src/site/**/${baseName}`, { nodir: true });
-      let pdfPath = `/img/user/Attachments/${fileName}`; // fallback default
-      if (matches.length > 0) {
-        // Convert fs path to URL path (strip the "src/site" prefix)
-        pdfPath = "/" + matches[0].replace(/\\/g, "/").replace(/^src\/site\//, "");
-      }
-      const encodedPath = encodeURI(pdfPath);
-      const safeName = escapeHtml(fileName);
-      return `<div class="pdf-embed" data-pdf-name="${safeName}">
-        <div class="pdf-embed-header">
-          <span class="pdf-embed-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-          </span>
-          <span class="pdf-embed-title">${safeName}</span>
-          <a class="pdf-embed-download" href="${encodedPath}" target="_blank" rel="noopener noreferrer" title="Open in new tab">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          </a>
-        </div>
-        <iframe class="pdf-embed-viewer" src="${encodedPath}" style="height:${height}" loading="lazy" title="${safeName}"></iframe>
-      </div>`;
-    });
+    }
+    return attachmentIndex.get(fileName.split("/").pop().toLowerCase()) || null;
+  }
+  eleventyConfig.on("eleventy.before", () => {
+    attachmentIndex = null;
   });
+
+  const AUDIO_EXTENSIONS = ["mp3", "m4a", "ogg", "opus", "wav", "flac", "aac", "webm"];
+  const VIDEO_EXTENSIONS = ["mp4", "mov", "mkv", "ogv"];
+  const IMAGE_EXTENSIONS = ["png", "jpg", "jpeg", "gif", "webp", "avif", "svg", "bmp"];
+
+  function missingEmbed(fileName) {
+    return `<span class="embed-missing" title="This attachment isn't published">` +
+      `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>` +
+      `<span>${escapeHtml(fileName)}</span><span class="visually-hidden"> (attachment not published)</span></span>`;
+  }
+
+  function pdfEmbed(fileName, options, pdfPath) {
+    let height = "80vh";
+    if (options && !isNaN(options.trim())) {
+      height = options.trim() + "px";
+    }
+    const encodedPath = encodeURI(pdfPath);
+    const safeName = escapeHtml(fileName);
+    return `<div class="pdf-embed" data-pdf-name="${safeName}">
+      <div class="pdf-embed-header">
+        <span class="pdf-embed-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </span>
+        <span class="pdf-embed-title">${safeName}</span>
+        <a class="pdf-embed-download" href="${encodedPath}" target="_blank" rel="noopener noreferrer" title="Open in new tab">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+      <iframe class="pdf-embed-viewer" src="${encodedPath}" style="height:${height}" loading="lazy" title="${safeName}"></iframe>
+    </div>`;
+  }
+
+  // Obsidian embeds left in the rendered HTML: ![[file.ext]] or ![[file.ext|option]].
+  // PDFs get a viewer, audio/video a player, images an <img>; anything that
+  // isn't published shows a small placeholder instead of the raw syntax.
+  function renderEmbeds(str) {
+    if (!str) return str;
+    return str.replace(/!\[\[([^\]|]+?)(?:\\?\|([^\]]*?))?\]\]/g, function (match, rawName, options) {
+      const fileName = rawName.trim();
+      const extension = (fileName.match(/\.([a-z0-9]+)$/i) || [])[1];
+      if (!extension || extension.toLowerCase() === "md") {
+        // Note transclusions are produced by the Obsidian plugin; leave anything else untouched.
+        return match;
+      }
+      const ext = extension.toLowerCase();
+      const filePath = findAttachment(fileName);
+      if (!filePath) {
+        return missingEmbed(fileName);
+      }
+      if (ext === "pdf") {
+        return pdfEmbed(fileName, options, filePath);
+      }
+      const src = escapeAttribute(encodeURI(filePath));
+      const label = escapeAttribute(fileName);
+      const fallback = `<a href="${src}">${escapeHtml(fileName)}</a>`;
+      if (AUDIO_EXTENSIONS.includes(ext)) {
+        return `<audio class="media-embed" controls preload="none" src="${src}" aria-label="${label}">${fallback}</audio>`;
+      }
+      if (VIDEO_EXTENSIONS.includes(ext)) {
+        return `<video class="media-embed" controls preload="metadata" src="${src}" aria-label="${label}">${fallback}</video>`;
+      }
+      if (IMAGE_EXTENSIONS.includes(ext)) {
+        const option = (options || "").trim();
+        const width = /^\d+$/.test(option) ? ` width="${option}"` : "";
+        const alt = option && !/^\d+$/.test(option) ? option : fileName.replace(/\.[a-z0-9]+$/i, "");
+        return `<img src="${src}" alt="${escapeAttribute(alt)}"${width} loading="lazy" decoding="async">`;
+      }
+      return `<a class="attachment-link" href="${src}" download>${escapeHtml(fileName)}</a>`;
+    });
+  }
+
+  eleventyConfig.addFilter("embeds", renderEmbeds);
+  // Older name kept for templates that still use it.
+  eleventyConfig.addFilter("pdfEmbed", renderEmbeds);
 
   eleventyConfig.addFilter("link", function (str) {
     return (

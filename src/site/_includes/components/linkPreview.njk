@@ -78,7 +78,10 @@
           if (previewTitle) {
             tooltipContentHtml += '<div style="font-weight: bold; unicode-bidi: plaintext;">' + previewTitle.innerHTML + '</div>'
           }
-          tooltipContentHtml += previewContent.innerHTML
+          // The title is shown above; drop the page header, inline TOC and scripts from the body.
+          const previewBody = previewContent.cloneNode(true)
+          previewBody.querySelectorAll('header, .toc-inline, script').forEach(function (el) { el.remove() })
+          tooltipContentHtml += previewBody.innerHTML
           tooltipContent.innerHTML = tooltipContentHtml
           linkHistories[contentURL] = tooltipContentHtml
           tooltipWrapper.style.display = 'block';

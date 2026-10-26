@@ -1,6 +1,12 @@
 ---
 permalink: "notes/{{ page.fileSlug | slugify }}/"
 ---
+{#- The inline title already shows the note title, so a leading "# Title" in the note is dropped. -#}
+{%- if settings.dgShowInlineTitle === true -%}
+  {%- set noteContent = content | stripLeadingH1(title) -%}
+{%- else -%}
+  {%- set noteContent = content -%}
+{%- endif -%}
 <!DOCTYPE html>
 <html lang="{{ meta.mainLanguage }}">
   <head>
@@ -41,7 +47,6 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
               {% endfor %}
             </div>
           {% endif %}
-          {%- if meta.timestampSettings.showCreated or meta.timestampSettings.showUpdated -%}
           <div class="timestamps">
             {%- if meta.timestampSettings.showCreated and created -%}
             <div><i data-lucide="calendar-plus" aria-hidden="true"></i> <span class="visually-hidden">Created</span> <time datetime="{{ created | isoDateTime }}">{{ created | humanDate(meta.timestampSettings.timestampFormat) }}</time></div>
@@ -49,8 +54,8 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
             {%- if meta.timestampSettings.showUpdated and updated -%}
             <div><i data-lucide="calendar-clock" aria-hidden="true"></i> <span class="visually-hidden">Updated</span> <time datetime="{{ updated | isoDateTime }}">{{ updated | humanDate(meta.timestampSettings.timestampFormat) }}</time></div>
             {%- endif -%}
+            <div><i data-lucide="clock" aria-hidden="true"></i> {{ noteContent | readingTime }}</div>
           </div>
-          {%- endif -%}
         </div>
       {% for imp in dynamics.common.header %}
         {% include imp %}
@@ -59,13 +64,23 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
         {% include imp %}
       {% endfor %}
       </header>
+      {#- On narrower screens the sidebar table of contents is hidden; show it inline instead. -#}
+      {%- if settings.dgShowToc === true -%}
+        {%- set inlineTocHtml = (noteContent and (noteContent | toc)) -%}
+        {%- if inlineTocHtml %}
+      <details class="toc-inline">
+        <summary>On this page</summary>
+        <nav aria-label="On this page">{{ inlineTocHtml | safe }}</nav>
+      </details>
+        {%- endif -%}
+      {%- endif %}
       {% for imp in dynamics.common.beforeContent %}
         {% include imp %}
       {% endfor %}
       {% for imp in dynamics.notes.beforeContent %}
         {% include imp %}
       {% endfor %}
-      {{ content | hideDataview | taggify | pdfEmbed | link | safe}}
+      {{ noteContent | hideDataview | taggify | embeds | link | safe}}
       {% for imp in dynamics.common.afterContent %}
         {% include imp %}
       {% endfor %}

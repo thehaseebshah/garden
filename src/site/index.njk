@@ -30,6 +30,21 @@ settings:
     </div>
   </header>
 
+  {%- set recent = collections.note | recentNotes(6) %}
+  {%- if recent.length %}
+  <section class="home-section" id="recent" aria-labelledby="recent-title">
+    <h2 class="home-section-title" id="recent-title">Recently updated</h2>
+    <ul class="recent-notes">
+      {%- for note in recent %}
+      <li>
+        <a href="{{ note.url }}">{{ note.title }}</a>
+        <time datetime="{{ note.updated | isoDateTime }}">{{ note.updated | humanDate("MMM d, yyyy") }}</time>
+      </li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+
   <section class="home-section" id="notes" aria-labelledby="notes-title">
     <h2 class="home-section-title" id="notes-title">Notes</h2>
     <div class="note-folders">

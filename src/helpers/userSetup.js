@@ -34,6 +34,24 @@ function userEleventySetup(eleventyConfig) {
         notes: folders.get(name).sort((a, b) => byName(a.title, b.title)),
       }));
   });
+
+  // Most recently updated notes for the homepage: [{ title, url, updated }]
+  eleventyConfig.addFilter("recentNotes", function (notes, limit = 6) {
+    const timestamp = (note) => {
+      const value = note.data.updated || note.data.created;
+      const time = value ? new Date(value).getTime() : NaN;
+      return isNaN(time) ? 0 : time;
+    };
+    return (notes || [])
+      .filter((note) => note.url && !note.data.hide && timestamp(note) > 0)
+      .sort((a, b) => timestamp(b) - timestamp(a))
+      .slice(0, limit)
+      .map((note) => ({
+        title: note.data.title || note.fileSlug,
+        url: note.url,
+        updated: note.data.updated || note.data.created,
+      }));
+  });
 }
 exports.userMarkdownSetup = userMarkdownSetup;
 exports.userEleventySetup = userEleventySetup;

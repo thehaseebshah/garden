@@ -44,7 +44,7 @@
         {% endfor %}
         
         {% if settings.dgShowToc === true %}
-            {% set tocHtml= (content and (content|toc)) %}
+            {% set tocHtml= ((noteContent or content) and ((noteContent or content)|toc)) %}
             {% if tocHtml %}
                 <div class="toc">
                     <div class="toc-title-container">

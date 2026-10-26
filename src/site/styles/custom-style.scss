@@ -1006,3 +1006,145 @@ button.hero-btn svg {
         scroll-behavior: auto !important;
     }
 }
+
+/* Inline table of contents for screens where the sidebar one is hidden */
+.toc-inline {
+    display: none;
+    margin: 0 0 1.5rem;
+    background: var(--dg-bg-1);
+    border: 1px solid var(--dg-border);
+    border-radius: 10px;
+    padding: 0.25rem 1rem;
+}
+
+@media (max-width: 1100px) {
+    .toc-inline {
+        display: block;
+    }
+}
+
+/* The base styles hide every .toc on small screens; this one is meant for them. */
+.toc-inline nav.toc {
+    display: block !important;
+}
+
+.toc-inline summary {
+    cursor: pointer;
+    padding: 0.6rem 0;
+    font-weight: 600;
+    color: var(--text-normal);
+}
+
+.toc-inline[open] {
+    padding-bottom: 0.75rem;
+}
+
+.markdown-preview-view .toc-inline ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.toc-inline li {
+    padding: 0.15rem 0;
+}
+
+.toc-inline a {
+    color: var(--text-muted) !important;
+    text-decoration: none;
+}
+
+.toc-inline a:hover {
+    color: var(--dg-accent-strong) !important;
+}
+
+/* "#" link next to headings */
+.heading-anchor {
+    margin-left: 0.4em;
+    font-weight: 400;
+    color: var(--text-faint) !important;
+    text-decoration: none !important;
+    opacity: 0;
+    transition: opacity 120ms ease;
+    position: relative;
+}
+
+:is(h2, h3, h4, h5, h6):hover > .heading-anchor,
+.heading-anchor:focus-visible {
+    opacity: 1;
+}
+
+@media (hover: none) {
+    .heading-anchor {
+        display: none;
+    }
+}
+
+.heading-anchor[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(0.5rem, -50%);
+    white-space: nowrap;
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 6px;
+    background: var(--dg-bg-2);
+    color: var(--text-normal);
+    border: 1px solid var(--dg-border);
+}
+
+/* Embedded media and attachments that aren't published */
+.media-embed {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0.5rem 0;
+}
+
+video.media-embed {
+    border-radius: 8px;
+    background: #000;
+}
+
+.embed-missing {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.1rem 0.55rem;
+    border: 1px dashed var(--dg-border-strong);
+    border-radius: 6px;
+    color: var(--text-muted);
+    font-size: 0.9em;
+}
+
+/* Homepage: recently updated notes */
+.markdown-preview-view .recent-notes {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.markdown-preview-view .recent-notes li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin: 0;
+    padding: 0.55rem 0;
+    border-bottom: 1px solid var(--dg-border);
+}
+
+.recent-notes li::before {
+    display: none;
+}
+
+.recent-notes a {
+    text-decoration: none;
+}
+
+.recent-notes time {
+    flex-shrink: 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}

@@ -20,6 +20,13 @@ function defaultPermalink(notePath) {
   return fixPermalink(`/${segments.join("/")}/`);
 }
 
+// The note's own title when its body starts with "# Title" (common in Obsidian).
+function getLeadingH1(body) {
+  const firstLine = (body || "").replace(/^\s+/, "").split("\n")[0] || "";
+  const match = firstLine.match(/^#\s+(.+?)\s*#*\s*$/);
+  return match ? match[1].trim() : null;
+}
+
 let index = null;
 
 // Every published note keyed by its lower-cased path inside notes/ (no extension).
@@ -31,14 +38,18 @@ function getNoteIndex() {
   for (const file of globSync(`${NOTES_DIR}/**/*.md`)) {
     const notePath = path.relative(NOTES_DIR, file).replace(/\\/g, "/").replace(/\.md$/i, "");
     let data = {};
+    let body = "";
     try {
-      data = matter(fs.readFileSync(file, "utf8")).data || {};
+      const parsed = matter(fs.readFileSync(file, "utf8"));
+      data = parsed.data || {};
+      body = parsed.content;
     } catch (error) {
       console.warn(`[notes] Could not read front matter of ${file}: ${error.message}`);
     }
     const isHome = Array.isArray(data.tags) && data.tags.indexOf("gardenEntry") !== -1;
     index.set(notePath.toLowerCase(), {
       notePath,
+      leadingH1: getLeadingH1(body),
       originalPermalink: typeof data.permalink === "string" ? data.permalink : null,
       permalink: isHome ? "/" : data.permalink ? fixPermalink(data.permalink) : defaultPermalink(notePath),
     });
@@ -84,7 +95,14 @@ function resolveNoteHref(href) {
   return `${note.permalink}${hash ? `#${hash}` : ""}`;
 }
 
+// Note entry for a template's inputPath ("./src/site/notes/Folder/Note.md").
+function getNoteByInputPath(inputPath) {
+  const notePath = path.relative(NOTES_DIR, inputPath).replace(/\\/g, "/").replace(/\.md$/i, "");
+  return getNoteIndex().get(notePath.toLowerCase()) || null;
+}
+
 exports.defaultPermalink = defaultPermalink;
+exports.getNoteByInputPath = getNoteByInputPath;
 exports.getNoteIndex = getNoteIndex;
 exports.resetNoteIndex = resetNoteIndex;
 exports.resolveNoteHref = resolveNoteHref;

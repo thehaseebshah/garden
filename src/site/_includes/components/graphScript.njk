@@ -168,6 +168,8 @@
         }
     }
 
+    // Stores the graph on window.graph and returns nothing: Alpine calls any
+    // function an expression returns, and a force-graph instance is a function.
     function renderLocalGraph(graphData, depth, fullScreen) {
         if (graphData == null) {
             return;
@@ -176,7 +178,7 @@
             window.graph._destructor();
         }
         const data = filterLocalGraphData(graphData, depth);
-        return renderGraph(data, 'link-graph', null, fullScreen);
+        window.graph = renderGraph(data, 'link-graph', null, fullScreen);
     }
 
     function filterFullGraphData(graphData) {
@@ -230,7 +232,7 @@
                 </div>
         </div>
     </div>
-    <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph" ></div>
+    <div x-effect="renderLocalGraph(graphData, depth, fullScreen)" id="link-graph" ></div>
     <div x-show="showFullGraph" id="full-graph" class="show" style="display: none;">
         <span id="full-graph-close" role="button" tabindex="0" aria-label="Close full graph" x-on:keydown.enter.prevent="$el.click()" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i data-lucide="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
     </div>

@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {%- set pageTitle = title or noteTitle or page.fileSlug -%}
-{%- set pageDescription = description or (content | metaDescription) -%}
+{%- set pageDescription = description or ((noteContent or content) | hideDataview | link | metaDescription) -%}
 {%- if pageDescription %}
 <meta name="description" content="{{ pageDescription }}">
 {%- endif %}

@@ -25,13 +25,35 @@
         }
       }, false);
       const url = window.location.href.split("#")[0];
+      function copySectionLink(id) {
+        if (!navigator.clipboard) return Promise.resolve(false);
+        // Clipboard access can be denied by the browser; copying is a convenience only.
+        return navigator.clipboard.writeText(url + '#' + id).then(() => true, () => false);
+      }
       document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function (el) {
-        el.ondblclick = function(evt) {
-          if (!navigator.clipboard) return;
-          const ref_url = url + '#' + evt.target.id
-          navigator.clipboard.writeText(ref_url).catch(() => {
-            // Clipboard access can be denied by the browser; copying is a convenience only.
-          });
+        el.ondblclick = function() {
+          copySectionLink(el.id);
         }
+      });
+
+      // Visible "#" link on headings: jumps to the section and copies its URL.
+      document.querySelectorAll(".cm-s-obsidian > :is(h2, h3, h4, h5, h6)[id]").forEach(function (heading) {
+        const anchor = document.createElement("a");
+        anchor.className = "heading-anchor";
+        anchor.href = "#" + encodeURIComponent(heading.id);
+        anchor.setAttribute("aria-label", "Link to section: " + heading.textContent.trim());
+        anchor.textContent = "#";
+        anchor.addEventListener("click", function () {
+          copySectionLink(heading.id).then(function (copied) {
+            if (!copied) return;
+            anchor.classList.add("copied");
+            anchor.setAttribute("data-tooltip", "Link copied");
+            setTimeout(function () {
+              anchor.classList.remove("copied");
+              anchor.removeAttribute("data-tooltip");
+            }, 1500);
+          });
+        });
+        heading.appendChild(anchor);
       });
     </script>
