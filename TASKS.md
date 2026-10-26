@@ -47,7 +47,7 @@ Implementation (code):
 
 ## Later / ideas
 
-- [ ] Share image (`og:image`): one branded default image so links shared on WhatsApp/X/LinkedIn show a preview.
+- [x] Share image (`og:image`): branded 1200×630 card at `src/site/img/og-default.png`, declared on every page (`summary_large_image`).
 - [ ] Growth labels ("seedling", "budding", "evergreen") from front matter, shown in the note header and on homepage cards.
 - [ ] Style or remove leftover base-theme rules for the old right sidebar (graph/backlinks moved into the Connections section in PR #9).
 - [ ] Product Sans font licence: confirm it may be self-hosted, or switch to an openly licensed font.
