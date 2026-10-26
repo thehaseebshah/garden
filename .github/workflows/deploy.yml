@@ -35,6 +35,10 @@ jobs:
         run: npm run check:homepage
       - name: Build site
         run: npm run build
+      - name: Install browser for QA
+        run: npx playwright install --with-deps chromium
+      - name: Browser QA
+        run: npm run qa
       - name: Upload artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3

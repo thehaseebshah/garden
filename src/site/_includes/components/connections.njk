@@ -1,0 +1,26 @@
+{#- Backlinks and the local graph, shown below the note. -#}
+<section class="connections" aria-labelledby="connections-title">
+    <h2 class="connections-title" id="connections-title">Connections</h2>
+    <div class="connections-grid">
+        {%- if settings.dgShowBacklinks === true %}
+        {%- set backlinks = graph | backlinksFor(page.url) %}
+        <div class="connections-card backlinks">
+            <p class="connections-label">{{ meta.uiStrings.backlinkHeader }}</p>
+            {%- if backlinks.length %}
+            <ul class="backlink-list">
+                {%- for backlink in backlinks %}
+                <li><a href="{{ backlink.url }}" class="backlink">{{ backlink.title }}</a></li>
+                {%- endfor %}
+            </ul>
+            {%- else %}
+            <p class="no-backlinks-message">{{ meta.uiStrings.noBacklinksMessage }}</p>
+            {%- endif %}
+        </div>
+        {%- endif %}
+        {%- if settings.dgShowLocalGraph === true %}
+        <div class="connections-card graph-card">
+            {%include "components/graphScript.njk"%}
+        </div>
+        {%- endif %}
+    </div>
+</section>

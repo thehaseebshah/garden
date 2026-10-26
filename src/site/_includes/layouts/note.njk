@@ -20,6 +20,7 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
     {% endfor %}
   </head>
   <body class="theme-{{meta.baseTheme}} markdown-preview-view markdown-rendered markdown-preview-section {% if settings.dgShowFileTree !== true %}no-filetree{% endif %} {% if settings.dgHomeLink === true and settings.dgShowFileTree !== true %}has-navbar{% endif %} {{meta.bodyClasses}}">
+    {%include "components/themeScript.njk"%}
     {%include "components/notegrowthhistory.njk"%}
     
     {% if settings.dgShowFileTree !== true %}
@@ -89,6 +90,9 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
         {% include imp %}
       {% endfor %}
       {{ noteContent | hideDataview | taggify | embeds | link | safe}}
+      {%- if settings.dgShowBacklinks === true or settings.dgShowLocalGraph === true %}
+        {%include "components/connections.njk"%}
+      {%- endif %}
       {% for imp in dynamics.common.afterContent %}
         {% include imp %}
       {% endfor %}

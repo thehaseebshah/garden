@@ -16,6 +16,14 @@ function userEleventySetup(eleventyConfig) {
 
   eleventyConfig.addFilter("noteFolder", getTopFolder);
 
+  // Graph/file-tree scripts are served from the site (versions pinned in package.json)
+  // instead of a CDN, so they can't fail on a CDN or CORS hiccup.
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/alpinejs/dist/cdn.min.js": "scripts/vendor/alpine.min.js",
+    "node_modules/@alpinejs/persist/dist/cdn.min.js": "scripts/vendor/alpine-persist.min.js",
+    "node_modules/force-graph/dist/force-graph.min.js": "scripts/vendor/force-graph.min.js",
+  });
+
   // Groups notes by their top-level folder for the homepage index:
   // [{ name: "Discipline", notes: [{ title, url }] }, ...]
   eleventyConfig.addFilter("notesByFolder", function (notes) {
@@ -40,6 +48,20 @@ function userEleventySetup(eleventyConfig) {
         name,
         notes: folders.get(name).sort((a, b) => byName(a.title, b.title)),
       }));
+  });
+
+  // Notes linking to the page at `url`, from the site graph: [{ title, url }]
+  eleventyConfig.addFilter("backlinksFor", function (graph, url) {
+    const node = graph && graph.nodes && graph.nodes[url];
+    if (!node) {
+      return [];
+    }
+    return node.backLinks
+      .map((backlink) => graph.nodes[backlink])
+      // `hide` only means "hide in graph" (hideInGraph); the reference itself still counts.
+      .filter((linked) => linked && linked.url !== url)
+      .map((linked) => ({ title: linked.title, url: linked.url }))
+      .sort((a, b) => a.title.localeCompare(b.title));
   });
 
   // Most recently updated notes for the homepage: [{ title, url, updated, folder, content }]

@@ -1,0 +1,47 @@
+<script>
+  // Light/dark theme: the reader's saved choice, else their system setting.
+  // Runs at the start of <body> so the right theme applies before first paint.
+  (function () {
+    var STORAGE_KEY = "garden-theme";
+    function savedTheme() {
+      try {
+        return localStorage.getItem(STORAGE_KEY);
+      } catch (e) {
+        // Storage can be blocked (private mode, strict settings): fall back to the system theme.
+        return null;
+      }
+    }
+    function systemTheme() {
+      return window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+    }
+    function applyTheme(theme) {
+      document.body.classList.remove("theme-dark", "theme-light");
+      document.body.classList.add("theme-" + theme);
+      document.documentElement.style.colorScheme = theme;
+      document.querySelectorAll(".theme-toggle").forEach(function (button) {
+        button.setAttribute("aria-label", theme === "dark" ? "Switch to light theme" : "Switch to dark theme");
+        button.setAttribute("aria-pressed", theme === "light" ? "true" : "false");
+      });
+      document.dispatchEvent(new CustomEvent("garden:themechange", { detail: { theme: theme } }));
+    }
+    window.toggleTheme = function () {
+      var next = document.body.classList.contains("theme-light") ? "dark" : "light";
+      try {
+        localStorage.setItem(STORAGE_KEY, next);
+      } catch (e) {
+        // Not persisted when storage is blocked; the switch still applies to this page.
+      }
+      applyTheme(next);
+    };
+    applyTheme(savedTheme() || systemTheme());
+    document.addEventListener("DOMContentLoaded", function () {
+      // Set the toggle's labels now that it exists.
+      applyTheme(document.body.classList.contains("theme-light") ? "light" : "dark");
+    });
+    if (window.matchMedia) {
+      window.matchMedia("(prefers-color-scheme: light)").addEventListener("change", function (event) {
+        if (!savedTheme()) applyTheme(event.matches ? "light" : "dark");
+      });
+    }
+  })();
+</script>
