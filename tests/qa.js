@@ -460,6 +460,37 @@ async function checkConnections(browser, base) {
   await emptyContext.close();
 }
 
+async function checkComments(browser, base) {
+  const config = JSON.parse(fs.readFileSync(path.join(__dirname, "..", "src/site/_data/giscus.json"), "utf8"));
+  const configured = Boolean(config.repo && config.repoId && config.category && config.categoryId);
+
+  const { context, page, requests } = await open(browser, base, NOTE_WITH_BACKLINKS);
+  const note = await page.evaluate(() => {
+    const widget = document.querySelector(".comments giscus-widget");
+    return {
+      section: !!document.querySelector(".comments"),
+      repo: widget && widget.getAttribute("repo"),
+      mapping: widget && widget.getAttribute("mapping"),
+      theme: widget && widget.getAttribute("theme"),
+    };
+  });
+  const scriptRequests = requests.filter((r) => r.includes("giscus"));
+  await context.close();
+  const { context: homeContext, page: homePage } = await open(browser, base, "/");
+  const onHome = await homePage.evaluate(() => !!document.querySelector(".comments"));
+  await homeContext.close();
+
+  if (configured) {
+    const ownScript = scriptRequests.some((r) => r === `${base}/scripts/vendor/giscus.js`);
+    check("comments: Giscus section on notes (not on the homepage), served from the site",
+      note.section && note.repo === config.repo && note.mapping === "pathname" && !!note.theme && ownScript && !onHome,
+      JSON.stringify({ ...note, ownScript, onHome }));
+  } else {
+    check("comments: hidden and not loaded until src/site/_data/giscus.json is filled in",
+      !note.section && !onHome && scriptRequests.length === 0, JSON.stringify({ ...note, scriptRequests }));
+  }
+}
+
 async function saveScreens(browser, base) {
   fs.mkdirSync(SCREENS, { recursive: true });
   for (const colorScheme of ["dark", "light"]) {
@@ -491,6 +522,7 @@ async function saveScreens(browser, base) {
     await checkSearch(browser, base);
     await checkNotes(browser, base);
     await checkConnections(browser, base);
+    await checkComments(browser, base);
     if (SCREENS) await saveScreens(browser, base);
   } catch (error) {
     check("QA run completed", false, error.stack);

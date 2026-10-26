@@ -1,0 +1,37 @@
+{#- Threaded comments (Giscus / GitHub Discussions). Hidden until all four values in
+    src/site/_data/giscus.json are filled in (from https://giscus.app); a note can opt out
+    with `comments: false` in its front matter. -#}
+{%- if giscus.repo and giscus.repoId and giscus.category and giscus.categoryId and comments !== false %}
+<section class="comments" aria-labelledby="comments-title">
+    <h2 class="connections-title" id="comments-title">Comments</h2>
+    <p class="comments-hint">Sign in with GitHub to comment or reply. Comments are stored as GitHub Discussions.</p>
+    <giscus-widget
+        id="giscus-comments"
+        repo="{{ giscus.repo }}"
+        repoid="{{ giscus.repoId }}"
+        category="{{ giscus.category }}"
+        categoryid="{{ giscus.categoryId }}"
+        mapping="pathname"
+        strict="1"
+        reactionsenabled="1"
+        emitmetadata="0"
+        inputposition="top"
+        theme="transparent_dark"
+        lang="en"
+        loading="lazy"></giscus-widget>
+    <noscript><p class="comments-hint">Comments need JavaScript.</p></noscript>
+</section>
+<script type="module" src="/scripts/vendor/giscus.js"></script>
+<script>
+    // Keep the comments' theme in step with the site's light/dark theme.
+    (function () {
+        function syncGiscusTheme() {
+            var widget = document.getElementById("giscus-comments");
+            if (!widget) return;
+            widget.setAttribute("theme", document.body.classList.contains("theme-light") ? "light" : "transparent_dark");
+        }
+        syncGiscusTheme();
+        document.addEventListener("garden:themechange", syncGiscusTheme);
+    })();
+</script>
+{%- endif %}
