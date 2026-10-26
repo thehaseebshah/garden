@@ -1,26 +1,59 @@
     <script>
-      if (window.location.hash) {
-        document.getElementById(window.location.hash.slice(1)).classList.add('referred');
+      // Highlight the element the URL fragment points at. Fragments that don't
+      // match an element (or aren't valid ids) are ignored instead of throwing.
+      function getReferredElement(hash) {
+        if (!hash) return null;
+        try {
+          return document.getElementById(decodeURIComponent(hash));
+        } catch {
+          // Malformed percent-encoding in the URL; nothing to highlight.
+          return null;
+        }
+      }
+      const initialRef = getReferredElement(window.location.hash.slice(1));
+      if (initialRef) {
+        initialRef.classList.add('referred');
       }
       window.addEventListener('hashchange', (evt) => {
-        const oldParts = evt.oldURL.split("#");
-        if (oldParts[1]) {
-          document.getElementById(oldParts[1]).classList.remove('referred');
+        const oldRef = getReferredElement(evt.oldURL.split("#")[1]);
+        if (oldRef) {
+          oldRef.classList.remove('referred');
         }
-        const newParts = evt.newURL.split("#");
-        if (newParts[1]) {
-          document.getElementById(newParts[1]).classList.add('referred');
+        const newRef = getReferredElement(evt.newURL.split("#")[1]);
+        if (newRef) {
+          newRef.classList.add('referred');
         }
       }, false);
-      const url_parts = window.location.href.split("#")
-      const url = url_parts[0];
-      const referrence = url_parts[1];
-      document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function (el) {
-        el.ondblclick = function(evt) {
-          const ref_url = url + '#' + evt.target.id
-          navigator.clipboard.writeText(ref_url);
+      const url = window.location.href.split("#")[0];
+      function copySectionLink(id) {
+        if (!navigator.clipboard) return Promise.resolve(false);
+        // Clipboard access can be denied by the browser; copying is a convenience only.
+        return navigator.clipboard.writeText(url + '#' + id).then(() => true, () => false);
       }
+      document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function (el) {
+        el.ondblclick = function() {
+          copySectionLink(el.id);
+        }
       });
 
-      
+      // Visible "#" link on headings: jumps to the section and copies its URL.
+      document.querySelectorAll(".cm-s-obsidian > :is(h2, h3, h4, h5, h6)[id]").forEach(function (heading) {
+        const anchor = document.createElement("a");
+        anchor.className = "heading-anchor";
+        anchor.href = "#" + encodeURIComponent(heading.id);
+        anchor.setAttribute("aria-label", "Link to section: " + heading.textContent.trim());
+        anchor.textContent = "#";
+        anchor.addEventListener("click", function () {
+          copySectionLink(heading.id).then(function (copied) {
+            if (!copied) return;
+            anchor.classList.add("copied");
+            anchor.setAttribute("data-tooltip", "Link copied");
+            setTimeout(function () {
+              anchor.classList.remove("copied");
+              anchor.removeAttribute("data-tooltip");
+            }, 1500);
+          });
+        });
+        heading.appendChild(anchor);
+      });
     </script>

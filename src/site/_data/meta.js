@@ -1,11 +1,26 @@
 require("dotenv").config();
+const fs = require("fs");
+const crypto = require("crypto");
 const { globSync } = require("glob");
+
+// Version for stylesheet URLs: changes only when a stylesheet changes, so
+// browsers keep their cached CSS across deploys that don't touch styles.
+function getStyleVersion() {
+  const hash = crypto.createHash("sha256");
+  for (const file of globSync("src/site/styles/**/*.{scss,css}").sort()) {
+    hash.update(file);
+    hash.update(fs.readFileSync(file));
+  }
+  return hash.digest("hex").substring(0, 10);
+}
 
 module.exports = async (data) => {
   let baseUrl = process.env.SITE_BASE_URL || "";
   if (baseUrl && !baseUrl.startsWith("http")) {
     baseUrl = "https://" + baseUrl;
   }
+  // Page URLs start with "/", so the base must not end with one (avoids "//" in URLs).
+  baseUrl = baseUrl.replace(/\/+$/, "");
   let themeStyle = globSync("src/site/styles/_theme.*.css")[0] || "";
 
   // Check for logo file (supports multiple image formats)
@@ -94,6 +109,7 @@ module.exports = async (data) => {
     styleSettingsCss,
     uiStrings,
     buildDate: new Date(),
+    styleVersion: getStyleVersion(),
   };
 
   return meta;

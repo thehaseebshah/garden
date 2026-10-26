@@ -1,21 +1,28 @@
-const slugify = require("@sindresorhus/slugify");
 const markdownIt = require("markdown-it");
 const fs = require("fs");
 const matter = require("gray-matter");
 const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 const tocPlugin = require("eleventy-plugin-nesting-toc");
 const { parse } = require("node-html-parser");
+const { globSync } = require("glob");
+const { DateTime } = require("luxon");
 const htmlMinifier = require("html-minifier-terser");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 const { headerToId, namedHeadingsFilter } = require("./src/helpers/utils");
+const { fixPermalink } = require("./src/helpers/pathFixes");
+const {
+  defaultPermalink,
+  resetNoteIndex,
+  resolveNoteHref,
+} = require("./src/helpers/noteIndex");
 const {
   userMarkdownSetup,
   userEleventySetup,
 } = require("./src/helpers/userSetup");
 
-const Image = require("@11ty/eleventy-img");
-function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
+const Image = require("@11ty/eleventy-img").default;
+async function transformImage(src, cls, alt, sizes, widths = [500, 700, "auto"]) {
   let options = {
     widths: widths,
     formats: ["webp", "jpeg"],
@@ -23,51 +30,75 @@ function transformImage(src, cls, alt, sizes, widths = ["500", "700", "auto"]) {
     urlPath: "/img/optimized",
   };
 
-  // generate images, while this is async we don’t wait
-  Image(src, options);
-  let metadata = Image.statsSync(src, options);
-  return metadata;
+  // Waits for the resized images to be written (results are cached by eleventy-img).
+  return Image(src, options);
+}
+
+function escapeAttribute(value) {
+  return String(value == null ? "" : value)
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+function escapeHtml(value) {
+  return escapeAttribute(value).replace(/'/g, "&#39;");
 }
 
 function getAnchorLink(filePath, linkTitle) {
   const { attributes, innerHTML } = getAnchorAttributes(filePath, linkTitle);
-  return `<a ${Object.keys(attributes).map(key => `${key}="${attributes[key]}"`).join(" ")}>${innerHTML}</a>`;
+  return `<a ${Object.keys(attributes).map(key => `${key}="${escapeAttribute(attributes[key])}"`).join(" ")}>${innerHTML}</a>`;
+}
+
+// Front matter of linked notes, cached so every wikilink doesn't re-read and
+// re-parse its target from disk. Cleared on each (re)build.
+const frontMatterCache = new Map();
+
+function readNoteFrontMatter(fullPath) {
+  if (!frontMatterCache.has(fullPath)) {
+    let data = null;
+    try {
+      data = matter(fs.readFileSync(fullPath, "utf8")).data;
+    } catch {
+      // Missing or unreadable note: cached as null and rendered as a dead link.
+      data = null;
+    }
+    frontMatterCache.set(fullPath, data);
+  }
+  return frontMatterCache.get(fullPath);
 }
 
 function getAnchorAttributes(filePath, linkTitle) {
   let fileName = filePath.replaceAll("&amp;", "&");
   let header = "";
   let headerLinkPath = "";
-  if (filePath.includes("#")) {
-    [fileName, header] = filePath.split("#");
+  if (fileName.includes("#")) {
+    [fileName, header] = fileName.split("#");
     headerLinkPath = `#${headerToId(header)}`;
   }
 
   let noteIcon = process.env.NOTE_ICON_DEFAULT;
   const title = linkTitle ? linkTitle : fileName;
-  let permalink = `/notes/${slugify(filePath)}`;
+  let permalink = defaultPermalink(fileName);
   let deadLink = false;
-  try {
-    const startPath = "./src/site/notes/";
-    const fullPath = fileName.endsWith(".md")
-      ? `${startPath}${fileName}`
-      : `${startPath}${fileName}.md`;
-    const file = fs.readFileSync(fullPath, "utf8");
-    const frontMatter = matter(file);
-    if (frontMatter.data.permalink) {
-      permalink = frontMatter.data.permalink;
+  const startPath = "./src/site/notes/";
+  const fullPath = fileName.endsWith(".md")
+    ? `${startPath}${fileName}`
+    : `${startPath}${fileName}.md`;
+  const data = readNoteFrontMatter(fullPath);
+  if (!data) {
+    deadLink = true;
+  } else {
+    if (data.permalink) {
+      permalink = fixPermalink(data.permalink);
     }
-    if (
-      frontMatter.data.tags &&
-      frontMatter.data.tags.indexOf("gardenEntry") != -1
-    ) {
+    if (data.tags && data.tags.indexOf("gardenEntry") != -1) {
       permalink = "/";
     }
-    if (frontMatter.data.noteIcon) {
-      noteIcon = frontMatter.data.noteIcon;
+    if (data.noteIcon) {
+      noteIcon = data.noteIcon;
     }
-  } catch {
-    deadLink = true;
   }
 
   if (deadLink) {
@@ -89,6 +120,18 @@ function getAnchorAttributes(filePath, linkTitle) {
     },
     innerHTML: title,
   }
+}
+
+function isExternalHref(href) {
+  if (!/^https?:\/\//i.test(href)) {
+    return false;
+  }
+  const siteBase = (process.env.SITE_BASE_URL || "").replace(/^https?:\/\//i, "").replace(/\/+$/, "").toLowerCase();
+  if (!siteBase) {
+    return true;
+  }
+  const host = href.replace(/^https?:\/\//i, "").split(/[/?#]/)[0].toLowerCase();
+  return host !== siteBase && host !== `www.${siteBase}`;
 }
 
 const tagRegex = /(^|\s|\>)(#[^\s!@#$%^&*()=+\.,\[{\]};:'"?><]+)(?!([^<]*>))/g;
@@ -163,9 +206,11 @@ module.exports = function (eleventyConfig) {
           let nbLinesToSkip = 0
           for (let i = 0; i < 4; i++) {
             if (parts[i] && parts[i].trim()) {
-              let line = parts[i] && parts[i].trim().toLowerCase()
+              // Keep the original casing for values (titles); match keys case-insensitively.
+              let originalLine = parts[i].trim()
+              let line = originalLine.toLowerCase()
               if (line.startsWith("title:")) {
-                titleLine = line.substring(6);
+                titleLine = escapeHtml(originalLine.substring(6).trim());
                 nbLinesToSkip++;
               } else if (line.startsWith("icon:")) {
                 icon = line.substring(5);
@@ -184,7 +229,7 @@ module.exports = function (eleventyConfig) {
             }
           }
           const foldDiv = collapsible ? `<div class="callout-fold">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down" aria-hidden="true">
               <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
           </div>` : "";
@@ -196,7 +241,7 @@ module.exports = function (eleventyConfig) {
             collapseClasses += " is-collapsed"
           }
 
-          let res = `<div data-callout-metadata class="callout ${collapseClasses}" data-callout="${token.info.substring(3)
+          let res = `<div data-callout-metadata class="callout ${collapseClasses}" data-callout="${escapeAttribute(token.info.substring(3))
             }">${titleDiv}\n<div class="callout-content">${md.render(
               parts.slice(nbLinesToSkip).join("\n")
             )}</div></div>`;
@@ -217,7 +262,7 @@ module.exports = function (eleventyConfig) {
         //"image.png|metadata?|width"
         const [fileName, ...widthAndMetaData] = imageName.split("|");
         const lastValue = widthAndMetaData[widthAndMetaData.length - 1];
-        const lastValueIsNumber = !isNaN(lastValue);
+        const lastValueIsNumber = lastValue !== undefined && lastValue.trim() !== "" && !isNaN(lastValue);
         const width = lastValueIsNumber ? lastValue : null;
 
         let metaData = "";
@@ -225,13 +270,19 @@ module.exports = function (eleventyConfig) {
           metaData = widthAndMetaData.slice(0, widthAndMetaData.length - 1).join(" ");
         }
 
-        if (!lastValueIsNumber) {
+        if (!lastValueIsNumber && lastValue !== undefined) {
           metaData += ` ${lastValue}`;
         }
 
+        // Alt text: Obsidian's "|alt" metadata when present, otherwise the
+        // file name without its extension (never the "|width" suffix).
+        // ("\|" is how a pipe is escaped inside Markdown tables, so drop the backslash.)
+        const altText = metaData.trim() || fileName.replace(/\\+$/, "").replace(/\.[a-z0-9]+$/i, "").trim();
+        tokens[idx].children = [{ type: "text", content: altText }];
+
         if (width) {
           const widthIndex = tokens[idx].attrIndex("width");
-          const widthAttr = `${width}px`;
+          const widthAttr = String(parseInt(width, 10));
           if (widthIndex < 0) {
             tokens[idx].attrPush(["width", widthAttr]);
           } else {
@@ -248,6 +299,33 @@ module.exports = function (eleventyConfig) {
           return self.renderToken(tokens, idx, options, env, self);
         };
       md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
+        // Only links to other sites open in a new tab and get the external style.
+        // Links to this site (relative paths, #anchors, mailto:, own domain) stay as they are.
+        const href = tokens[idx].attrGet("href") || "";
+
+        // Point links to other notes ("/notes/folder/note name", "Note.md") at the note's real URL.
+        const noteHref = resolveNoteHref(href);
+        if (noteHref) {
+          tokens[idx].attrSet("href", noteHref);
+          tokens[idx].attrJoin("class", "internal-link");
+          return defaultLinkRule(tokens, idx, options, env, self);
+        }
+        if (noteHref === false) {
+          // The linked note isn't published: same treatment as an unresolved wikilink.
+          tokens[idx].attrSet("href", "/404");
+          tokens[idx].attrJoin("class", "internal-link is-unresolved");
+          return defaultLinkRule(tokens, idx, options, env, self);
+        }
+
+        if (!isExternalHref(href)) {
+          return defaultLinkRule(tokens, idx, options, env, self);
+        }
+
+        const relIndex = tokens[idx].attrIndex("rel");
+        if (relIndex < 0) {
+          tokens[idx].attrPush(["rel", "noopener noreferrer"]);
+        }
+
         const aIndex = tokens[idx].attrIndex("target");
         const classIndex = tokens[idx].attrIndex("class");
 
@@ -274,38 +352,175 @@ module.exports = function (eleventyConfig) {
     return date && date.toISOString();
   });
 
-  eleventyConfig.addFilter("pdfEmbed", function (str) {
-    if (!str) return str;
-    // Match Obsidian embed syntax: ![[filename.pdf]] (with optional |height)
-    return str.replace(/!\[\[([^\]]+\.pdf)(?:\|([^\]]*?))?\]\]/gi, function (match, fileName, options) {
-      let height = "80vh";
-      if (options && !isNaN(options.trim())) {
-        height = options.trim() + "px";
-      }
-      // Search for the PDF file anywhere under src/site
-      const { globSync } = require("glob");
-      const baseName = fileName.split("/").pop();
-      const matches = globSync(`src/site/**/${baseName}`, { nodir: true });
-      let pdfPath = `/img/user/Attachments/${fileName}`; // fallback default
-      if (matches.length > 0) {
-        // Convert fs path to URL path (strip the "src/site" prefix)
-        pdfPath = "/" + matches[0].replace(/\\/g, "/").replace(/^src\/site\//, "");
-      }
-      const encodedPath = encodeURI(pdfPath);
-      return `<div class="pdf-embed" data-pdf-name="${fileName}">
-        <div class="pdf-embed-header">
-          <span class="pdf-embed-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-          </span>
-          <span class="pdf-embed-title">${fileName}</span>
-          <a class="pdf-embed-download" href="${encodedPath}" target="_blank" rel="noopener noreferrer" title="Open in new tab">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-          </a>
-        </div>
-        <iframe class="pdf-embed-viewer" src="${encodedPath}" style="height:${height}" loading="lazy"></iframe>
-      </div>`;
-    });
+  eleventyConfig.on("eleventy.before", () => {
+    frontMatterCache.clear();
+    resetNoteIndex();
   });
+
+  function toDateTime(value) {
+    if (!value) return null;
+    if (value instanceof Date) return DateTime.fromJSDate(value);
+    const str = String(value);
+    // setZone keeps the author's UTC offset, so the date reads the same for every visitor.
+    for (const parsed of [
+      DateTime.fromISO(str, { setZone: true }),
+      DateTime.fromSQL(str, { setZone: true }),
+      DateTime.fromHTTP(str, { setZone: true }),
+    ]) {
+      if (parsed.isValid) return parsed;
+    }
+    return null;
+  }
+
+  // Dates are formatted at build time instead of in the browser, which removes
+  // a client-side date library and the text popping in after load.
+  eleventyConfig.addFilter("humanDate", function (value, format) {
+    const date = toDateTime(value);
+    return date ? date.toFormat(format || "MMM dd, yyyy h:mm a") : value;
+  });
+
+  eleventyConfig.addFilter("isoDateTime", function (value) {
+    const date = toDateTime(value);
+    return date ? date.toISO() : "";
+  });
+
+  function normalizeTitle(text) {
+    return String(text || "")
+      .replace(/<[^>]+>/g, "")
+      .replace(/&amp;/g, "&")
+      .replace(/&#39;|&apos;/g, "'")
+      .replace(/&quot;/g, '"')
+      .replace(/\s+/g, " ")
+      .trim()
+      .toLowerCase();
+  }
+
+  // Drops the note's leading "# Title" heading when it repeats the page title,
+  // which the layout already shows (Obsidian notes often start with one).
+  eleventyConfig.addFilter("stripLeadingH1", function (html, title) {
+    if (!html || !title) return html;
+    const match = String(html).match(/^\s*<h1\b[^>]*>([\s\S]*?)<\/h1>\s*/);
+    if (!match || normalizeTitle(match[1]) !== normalizeTitle(title)) {
+      return html;
+    }
+    return String(html).substring(match[0].length);
+  });
+
+  // "4 min read", based on ~220 words per minute.
+  eleventyConfig.addFilter("readingTime", function (html) {
+    if (!html) return "";
+    const words = parse(String(html)).text.trim().split(/\s+/).filter(Boolean).length;
+    const minutes = Math.max(1, Math.round(words / 220));
+    return `${minutes} min read`;
+  });
+
+  // Plain-text summary of the rendered page for <meta name="description">.
+  eleventyConfig.addFilter("metaDescription", function (html, maxLength = 160) {
+    if (!html) return "";
+    const root = parse(String(html));
+    root.querySelectorAll("script, style, nav, .toc, .callout-title, h1, sup.footnote-ref, .footnotes").forEach((el) => el.remove());
+    const text = root.text.replace(/\s+/g, " ").trim();
+    if (text.length <= maxLength) return text;
+    const cut = text.substring(0, maxLength - 1);
+    const lastSpace = cut.lastIndexOf(" ");
+    return `${cut.substring(0, lastSpace > maxLength * 0.6 ? lastSpace : cut.length)}…`;
+  });
+
+  // Attachments under src/site, keyed by lower-cased file name (built once per build).
+  let attachmentIndex = null;
+  function findAttachment(fileName) {
+    if (!attachmentIndex) {
+      attachmentIndex = new Map();
+      const files = globSync("src/site/**/*.*", {
+        nodir: true,
+        ignore: ["src/site/notes/**", "src/site/_*/**", "src/site/styles/**"],
+      });
+      for (const file of files) {
+        const key = file.split(/[\\/]/).pop().toLowerCase();
+        if (!attachmentIndex.has(key)) {
+          attachmentIndex.set(key, "/" + file.replace(/\\/g, "/").replace(/^src\/site\//, ""));
+        }
+      }
+    }
+    return attachmentIndex.get(fileName.split("/").pop().toLowerCase()) || null;
+  }
+  eleventyConfig.on("eleventy.before", () => {
+    attachmentIndex = null;
+  });
+
+  const AUDIO_EXTENSIONS = ["mp3", "m4a", "ogg", "opus", "wav", "flac", "aac", "webm"];
+  const VIDEO_EXTENSIONS = ["mp4", "mov", "mkv", "ogv"];
+  const IMAGE_EXTENSIONS = ["png", "jpg", "jpeg", "gif", "webp", "avif", "svg", "bmp"];
+
+  function missingEmbed(fileName) {
+    return `<span class="embed-missing" title="This attachment isn't published">` +
+      `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>` +
+      `<span>${escapeHtml(fileName)}</span><span class="visually-hidden"> (attachment not published)</span></span>`;
+  }
+
+  function pdfEmbed(fileName, options, pdfPath) {
+    let height = "80vh";
+    if (options && !isNaN(options.trim())) {
+      height = options.trim() + "px";
+    }
+    const encodedPath = encodeURI(pdfPath);
+    const safeName = escapeHtml(fileName);
+    return `<div class="pdf-embed" data-pdf-name="${safeName}">
+      <div class="pdf-embed-header">
+        <span class="pdf-embed-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </span>
+        <span class="pdf-embed-title">${safeName}</span>
+        <a class="pdf-embed-download" href="${encodedPath}" target="_blank" rel="noopener noreferrer" title="Open in new tab">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+      <iframe class="pdf-embed-viewer" src="${encodedPath}" style="height:${height}" loading="lazy" title="${safeName}"></iframe>
+    </div>`;
+  }
+
+  // Obsidian embeds left in the rendered HTML: ![[file.ext]] or ![[file.ext|option]].
+  // PDFs get a viewer, audio/video a player, images an <img>; anything that
+  // isn't published shows a small placeholder instead of the raw syntax.
+  function renderEmbeds(str) {
+    if (!str) return str;
+    return str.replace(/!\[\[([^\]|]+?)(?:\\?\|([^\]]*?))?\]\]/g, function (match, rawName, options) {
+      const fileName = rawName.trim();
+      const extension = (fileName.match(/\.([a-z0-9]+)$/i) || [])[1];
+      if (!extension || extension.toLowerCase() === "md") {
+        // Note transclusions are produced by the Obsidian plugin; leave anything else untouched.
+        return match;
+      }
+      const ext = extension.toLowerCase();
+      const filePath = findAttachment(fileName);
+      if (!filePath) {
+        return missingEmbed(fileName);
+      }
+      if (ext === "pdf") {
+        return pdfEmbed(fileName, options, filePath);
+      }
+      const src = escapeAttribute(encodeURI(filePath));
+      const label = escapeAttribute(fileName);
+      const fallback = `<a href="${src}">${escapeHtml(fileName)}</a>`;
+      if (AUDIO_EXTENSIONS.includes(ext)) {
+        return `<audio class="media-embed" controls preload="none" src="${src}" aria-label="${label}">${fallback}</audio>`;
+      }
+      if (VIDEO_EXTENSIONS.includes(ext)) {
+        return `<video class="media-embed" controls preload="metadata" src="${src}" aria-label="${label}">${fallback}</video>`;
+      }
+      if (IMAGE_EXTENSIONS.includes(ext)) {
+        const option = (options || "").trim();
+        const width = /^\d+$/.test(option) ? ` width="${option}"` : "";
+        const alt = option && !/^\d+$/.test(option) ? option : fileName.replace(/\.[a-z0-9]+$/i, "");
+        return `<img src="${src}" alt="${escapeAttribute(alt)}"${width} loading="lazy" decoding="async">`;
+      }
+      return `<a class="attachment-link" href="${src}" download>${escapeHtml(fileName)}</a>`;
+    });
+  }
+
+  eleventyConfig.addFilter("embeds", renderEmbeds);
+  // Older name kept for templates that still use it.
+  eleventyConfig.addFilter("pdfEmbed", renderEmbeds);
 
   eleventyConfig.addFilter("link", function (str) {
     return (
@@ -326,7 +541,8 @@ module.exports = function (eleventyConfig) {
     return (
       str &&
       str.replace(tagRegex, function (match, precede, tag) {
-        return `${precede}<a class="tag" onclick="toggleTagSearch(this)" data-content="${tag}">${tag}</a>`;
+        // The href makes tags real, focusable links that also work without JS.
+        return `${precede}<a class="tag" href="?q=${encodeURIComponent(tag)}" onclick="toggleTagSearch(this); return false;" data-content="${tag}">${tag}</a>`;
       })
     );
   });
@@ -357,8 +573,7 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  eleventyConfig.addTransform("dataview-js-links", function (str) {
-    const parsed = parse(str);
+  function transformDataviewJsLinks(parsed) {
     for (const dataViewJsLink of parsed.querySelectorAll("a[data-href].internal-link")) {
       const notePath = dataViewJsLink.getAttribute("data-href");
       const title = dataViewJsLink.innerHTML;
@@ -368,13 +583,9 @@ module.exports = function (eleventyConfig) {
       }
       dataViewJsLink.innerHTML = innerHTML;
     }
+  }
 
-    return str && parsed.innerHTML;
-  });
-
-  eleventyConfig.addTransform("callout-block", function (str) {
-    const parsed = parse(str);
-
+  function transformCallouts(parsed) {
     const transformCalloutBlocks = (
       blockquotes = parsed.querySelectorAll("blockquote")
     ) => {
@@ -404,7 +615,7 @@ module.exports = function (eleventyConfig) {
                 .substring(1)
                 .toLowerCase()}`;
             const fold = isCollapsable
-              ? `<div class="callout-fold"><i icon-name="chevron-down"></i></div>`
+              ? `<div class="callout-fold"><i data-lucide="chevron-down" aria-hidden="true"></i></div>`
               : ``;
 
             calloutType = callout;
@@ -438,12 +649,17 @@ module.exports = function (eleventyConfig) {
     };
 
     transformCalloutBlocks();
-
-    return str && parsed.innerHTML;
-  });
+  }
 
   function fillPictureSourceSets(src, cls, alt, meta, width, imageTag) {
     imageTag.tagName = "picture";
+    // These belong on the inner <img>, not on <picture>.
+    ["src", "alt", "width", "height", "class"].forEach((attr) => imageTag.removeAttribute(attr));
+
+    // Give the browser the intrinsic size so the layout doesn't jump while loading.
+    const original = meta.jpeg[meta.jpeg.length - 1];
+    const displayWidth = parseInt(width, 10) || original.width;
+    const displayHeight = Math.round(displayWidth * original.height / original.width);
     let html = `<source
       media="(max-width:480px)"
       srcset="${meta.webp[0].url}"
@@ -468,20 +684,22 @@ module.exports = function (eleventyConfig) {
         />`
     }
     html += `<img
-      class="${cls.toString()}"
-      src="${src}"
-      alt="${alt}"
-      width="${width}"
+      class="${escapeAttribute(cls.toString())}"
+      src="${escapeAttribute(src)}"
+      alt="${escapeAttribute(alt || "")}"
+      width="${displayWidth}"
+      height="${displayHeight}"
+      loading="lazy"
+      decoding="async"
       />`;
     imageTag.innerHTML = html;
   }
 
 
-  eleventyConfig.addTransform("picture", function (str) {
+  async function transformPictures(parsed) {
     if (process.env.USE_FULL_RESOLUTION_IMAGES === "true") {
-      return str;
+      return;
     }
-    const parsed = parse(str);
     for (const imageTag of parsed.querySelectorAll(".cm-s-obsidian img")) {
       const src = imageTag.getAttribute("src");
       if (src && src.startsWith("/") && !src.endsWith(".svg")) {
@@ -490,7 +708,7 @@ module.exports = function (eleventyConfig) {
         const width = imageTag.getAttribute("width") || '';
 
         try {
-          const meta = transformImage(
+          const meta = await transformImage(
             "./src/site" + decodeURI(imageTag.getAttribute("src")),
             cls.toString(),
             alt,
@@ -500,17 +718,15 @@ module.exports = function (eleventyConfig) {
           if (meta) {
             fillPictureSourceSets(src, cls, alt, meta, width, imageTag);
           }
-        } catch {
-          // Make it fault tolarent.
+        } catch (error) {
+          // Keep the original <img> if the image can't be processed, but say why.
+          console.warn(`[image] Using the original image for ${src}: ${error.message}`);
         }
       }
     }
-    return str && parsed.innerHTML;
-  });
+  }
 
-  eleventyConfig.addTransform("table", function (str) {
-    const parsed = parse(str);
-    for (const t of parsed.querySelectorAll(".cm-s-obsidian > table")) {
+  function transformTables(parsed) {    for (const t of parsed.querySelectorAll(".cm-s-obsidian > table")) {
       let inner = t.innerHTML;
       t.tagName = "div";
       t.classList.add("table-wrapper");
@@ -531,7 +747,21 @@ module.exports = function (eleventyConfig) {
         th.classList.add("table-view-th");
       });
     }
-    return str && parsed.innerHTML;
+  }
+
+  // All DOM-based post-processing shares one parse per page, and only runs on
+  // HTML output (not on feed.xml, sitemap.xml, graph.json or searchIndex.json).
+  eleventyConfig.addTransform("html-dom", async function (str) {
+    const outputPath = this.page && this.page.outputPath;
+    if (!str || typeof outputPath !== "string" || !outputPath.endsWith(".html")) {
+      return str;
+    }
+    const parsed = parse(str);
+    transformDataviewJsLinks(parsed);
+    transformCallouts(parsed);
+    await transformPictures(parsed);
+    transformTables(parsed);
+    return parsed.innerHTML;
   });
 
   eleventyConfig.addTransform("htmlMinifier", async (content, outputPath) => {

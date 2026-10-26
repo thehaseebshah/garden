@@ -1,4 +1,3 @@
-<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', init, false);
     document.addEventListener('DOMContentLoaded', setCorrectShortcut, false);
@@ -6,13 +5,103 @@
     // Preview content cache
     const previewCache = new Map();
 
-    window.toggleSearch = function () {
+    // ===== Escaping Utilities =====
+    // Everything that comes from the URL, the search box or the search index is
+    // treated as text and escaped before it is put into the DOM.
+
+    function escapeHtml(str) {
+        return String(str == null ? '' : str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
+    function decodeHtml(str) {
+        if (!str) return '';
+        // DOMParser does not run scripts or load resources.
+        return new DOMParser().parseFromString(str, 'text/html').documentElement.textContent;
+    }
+
+    function escapeRegex(str) {
+        return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    // ===== Lazy Loading =====
+    // The search library and index are only downloaded the first time search is used.
+
+    let indexPromise = null;
+
+    function loadScript(src, integrity) {
+        return new Promise((resolve, reject) => {
+            const s = document.createElement('script');
+            s.src = src;
+            s.integrity = integrity;
+            s.crossOrigin = 'anonymous';
+            s.referrerPolicy = 'no-referrer';
+            s.onload = resolve;
+            s.onerror = () => reject(new Error('Failed to load ' + src));
+            document.head.appendChild(s);
+        });
+    }
+
+    function ensureIndex() {
+        if (!indexPromise) {
+            indexPromise = Promise.all([
+                typeof FlexSearch === 'undefined'
+                    ? loadScript('https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js', 'sha384-ZflVYmoWn2YFWaz5Cw6NjprAqYTmiAy9XLVm29qbq7WCC2GzO1RjWvQZ9YIlJm+m')
+                    : Promise.resolve(),
+                fetch('/searchIndex.json?v={{meta.buildDate|isoDate}}').then(r => r.json())
+            ]).then(([, docs]) => {
+                window.docs = docs;
+                window.index = createIndex(docs);
+                return window.index;
+            }).catch((error) => {
+                // Allow a retry the next time search is opened.
+                indexPromise = null;
+                throw error;
+            });
+        }
+        return indexPromise;
+    }
+
+    // ===== Open / Close =====
+
+    let lastFocused = null;
+
+    function isSearchOpen() {
         const searchContainer = document.getElementById('globalsearch');
-        if (searchContainer.classList.contains('active')) {
-            searchContainer.classList.remove('active');
+        return searchContainer && searchContainer.classList.contains('active');
+    }
+
+    function openSearch() {
+        const searchContainer = document.getElementById('globalsearch');
+        if (!searchContainer || isSearchOpen()) return;
+        lastFocused = document.activeElement;
+        searchContainer.classList.add('active');
+        searchContainer.setAttribute('aria-hidden', 'false');
+        document.querySelectorAll('.search-button').forEach(b => b.setAttribute('aria-expanded', 'true'));
+        document.getElementById('term').focus();
+        ensureIndex().catch((error) => console.error('Failed to load search index:', error));
+    }
+
+    function closeSearch() {
+        const searchContainer = document.getElementById('globalsearch');
+        if (!searchContainer || !isSearchOpen()) return;
+        searchContainer.classList.remove('active');
+        searchContainer.setAttribute('aria-hidden', 'true');
+        document.querySelectorAll('.search-button').forEach(b => b.setAttribute('aria-expanded', 'false'));
+        if (lastFocused && typeof lastFocused.focus === 'function') {
+            lastFocused.focus();
+        }
+    }
+
+    window.toggleSearch = function () {
+        if (isSearchOpen()) {
+            closeSearch();
         } else {
-            searchContainer.classList.add('active');
-            document.getElementById('term').focus();
+            openSearch();
         }
     }
 
@@ -20,14 +109,14 @@
         const term = evt.textContent;
         if (term) {
             document.getElementById('term').value = term.trim();
-            window.toggleSearch();
+            openSearch();
             window.search();
         }
     }
 
     const loadingSvg = `
-    <div style="display: flex; justify-content: center; padding: 40px;">
-        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
+    <div style="display: flex; justify-content: center; padding: 40px;" role="status" aria-label="Loading">
+        <svg width="40" height="40" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" aria-hidden="true">
             <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
                 <circle cx="22" cy="22" r="6" stroke-opacity="0">
                     <animate attributeName="r" begin="1.5s" dur="3s" values="6;22" calcMode="linear" repeatCount="indefinite" />
@@ -63,7 +152,7 @@
 
     function setCorrectShortcut() {
         if (navigator.platform.toUpperCase().indexOf('MAC') >= 0) {
-            document.querySelectorAll(".search-keys").forEach(x => x.innerHTML = "⌘K");
+            document.querySelectorAll(".search-keys").forEach(x => x.textContent = "⌘K");
         }
     }
 
@@ -82,20 +171,22 @@
         return terms.sort((a, b) => b.length - a.length);
     }
 
+    // Takes plain text and returns escaped HTML with the search terms wrapped.
     function highlightTerms(text, terms) {
-        if (!terms || terms.length === 0 || !text) return text;
-        let result = text;
-        terms.forEach(term => {
-            const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            const regex = new RegExp(`(${escaped})`, 'gi');
-            result = result.replace(regex, '<span class="search-highlight">$1</span>');
-        });
-        return result;
+        if (!text) return '';
+        if (!terms || terms.length === 0) return escapeHtml(text);
+        const regex = new RegExp(`(${terms.map(escapeRegex).join('|')})`, 'gi');
+        // With a capture group, split() puts the matches at the odd indexes.
+        return String(text).split(regex).map((part, i) =>
+            i % 2 === 1
+                ? `<span class="search-highlight">${escapeHtml(part)}</span>`
+                : escapeHtml(part)
+        ).join('');
     }
 
     function getContextualExcerpt(content, terms, maxLength = 150) {
         if (!content) return '';
-        const plainText = content.replace(/<[^>]*>/g, '');
+        const plainText = decodeHtml(content.replace(/<[^>]*>/g, ''));
 
         if (!terms || terms.length === 0) {
             return truncateText(plainText, maxLength);
@@ -126,7 +217,6 @@
 
     function truncateText(str, size) {
         if (!str) return '';
-        str = str.replace(/<[^>]*>/g, '');
         if (str.length <= size) return str;
         return str.substring(0, size - 3) + '...';
     }
@@ -145,6 +235,11 @@
             const doc = parser.parseFromString(html, 'text/html');
 
             const content = doc.querySelector('.content, .cm-s-obsidian, article, main');
+            if (content) {
+                // Scripts never run here anyway; the title is shown separately above the preview,
+                // and the inline table of contents is just noise in a preview.
+                content.querySelectorAll('script, header h1, .toc-inline').forEach(el => el.remove());
+            }
             const htmlContent = content ? content.innerHTML : '';
             previewCache.set(url, htmlContent);
             return htmlContent;
@@ -166,21 +261,26 @@
 
         textNodes.forEach(node => {
             const text = node.textContent;
-            let hasMatch = false;
-
-            terms.forEach(term => {
-                if (text.toLowerCase().includes(term.toLowerCase())) {
-                    hasMatch = true;
-                }
-            });
+            const lower = text.toLowerCase();
+            const hasMatch = terms.some(term => lower.includes(term.toLowerCase()));
 
             if (hasMatch) {
                 const span = document.createElement('span');
+                // highlightTerms escapes the text, so decoded entities stay text.
                 span.innerHTML = highlightTerms(text, terms);
                 node.parentNode.replaceChild(span, node);
             }
         });
     }
+
+    function tagsToHtml(tags, className, clickable) {
+        if (!tags || tags.length === 0) return '';
+        return `<div class="${className}">${tags.map(tag => clickable
+            ? `<button type="button" class="tag" onclick="toggleTagSearch(this)">#${escapeHtml(tag)}</button>`
+            : `<span class="tag">#${escapeHtml(tag)}</span>`).join('')}</div>`;
+    }
+
+    let previewRequest = 0;
 
     async function showPreview(index) {
         const results = window.searchResults;
@@ -189,33 +289,24 @@
         const result = results[index];
         const previewPanel = document.getElementById('search-preview');
         const previewContent = document.getElementById('preview-content');
+        if (!previewPanel || !previewContent) return;
         const placeholder = previewPanel.querySelector('.preview-placeholder');
 
-        if (!previewPanel || !previewContent) return;
-
-        // Update active state on results
-        document.querySelectorAll('.searchresult').forEach(el => el.classList.remove('active'));
-        const activeResult = document.querySelector(`.searchresult[data-index="${index}"]`);
-        if (activeResult) {
-            activeResult.classList.add('active');
-        }
+        setActiveResult(index);
 
         // Show loading state in preview
         previewContent.innerHTML = loadingSvg;
         previewContent.classList.add('has-content');
-        placeholder.style.display = 'none';
+        if (placeholder) placeholder.style.display = 'none';
 
-        // Fetch the content
+        // Ignore responses that arrive after a newer preview was requested.
+        const request = ++previewRequest;
         const htmlContent = await fetchPreviewContent(result.url);
-
-        const tagsHTML = result.tags && result.tags.length > 0
-            ? `<div class="preview-tags">${result.tags.map(tag =>
-                `<a class="tag" href="javascript:void(0);" onclick="toggleTagSearch(this)">#${tag}</a>`).join('')}</div>`
-            : '';
+        if (request !== previewRequest) return;
 
         previewContent.innerHTML = `
-            <div class="preview-title">${highlightTerms(result.title, window.searchTerms)}</div>
-            ${tagsHTML}
+            <div class="preview-title">${highlightTerms(decodeHtml(result.title), window.searchTerms)}</div>
+            ${tagsToHtml(result.tags, 'preview-tags', true)}
             <div class="preview-body">${htmlContent}</div>
         `;
 
@@ -228,11 +319,23 @@
         window.currentPreviewIndex = index;
     }
 
+    function setActiveResult(index) {
+        document.querySelectorAll('.searchresult').forEach(el => {
+            const isActive = parseInt(el.dataset.index) === index;
+            el.classList.toggle('active', isActive);
+            el.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            if (isActive) {
+                document.getElementById('term').setAttribute('aria-activedescendant', el.id);
+            }
+        });
+    }
+
     function hidePreview() {
         const previewPanel = document.getElementById('search-preview');
         const previewContent = document.getElementById('preview-content');
         const placeholder = previewPanel?.querySelector('.preview-placeholder');
 
+        previewRequest++;
         if (placeholder) placeholder.style.display = 'flex';
         if (previewContent) {
             previewContent.classList.remove('has-content');
@@ -263,40 +366,63 @@
 
     // ===== Initialization =====
 
-    async function init() {
-        // Fetch search index (browser caches based on query param)
-        const docs = await fetch('/searchIndex.json?v={{meta.buildDate|isoDate}}').then(r => r.json());
-        const index = createIndex(docs);
-        window.docs = docs;
-        window.index = index;
+    function init() {
+        const searchContainer = document.getElementById('globalsearch');
+        window.field = document.querySelector('#term');
+        window.resultsDiv = document.querySelector('#search-results');
+        if (!searchContainer || !field || !resultsDiv) return;
 
         // Keyboard shortcuts
         document.addEventListener('keydown', (e) => {
-            if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+            if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
                 e.preventDefault();
                 toggleSearch();
+                return;
             }
+
+            if (!isSearchOpen()) return;
+
             if (e.key === 'Escape') {
-                document.getElementById('globalsearch').classList.remove('active');
+                e.preventDefault();
+                closeSearch();
+                return;
+            }
+
+            // Keep keyboard focus inside the open dialog.
+            if (e.key === 'Tab') {
+                const focusable = [...searchContainer.querySelectorAll('input, button, a[href], [tabindex]:not([tabindex="-1"])')]
+                    .filter(el => el.offsetParent !== null);
+                if (focusable.length === 0) return;
+                const first = focusable[0];
+                const last = focusable[focusable.length - 1];
+                if (e.shiftKey && document.activeElement === first) {
+                    e.preventDefault();
+                    last.focus();
+                } else if (!e.shiftKey && document.activeElement === last) {
+                    e.preventDefault();
+                    first.focus();
+                } else if (!searchContainer.contains(document.activeElement)) {
+                    e.preventDefault();
+                    first.focus();
+                }
+                return;
             }
 
             // Navigate search results with arrow keys
-            if (document.getElementById('globalsearch').classList.contains('active')) {
-                if (e.key === 'ArrowDown') {
-                    e.preventDefault();
-                    navigateResults(1);
-                }
-                if (e.key === 'ArrowUp') {
-                    e.preventDefault();
-                    navigateResults(-1);
-                }
-                if (e.key === 'Enter') {
-                    e.preventDefault();
-                    const active = document.querySelector('.searchresult.active');
-                    if (active) {
-                        const url = active.dataset.url;
-                        if (url) window.location.href = url;
-                    }
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                navigateResults(1);
+            }
+            if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                navigateResults(-1);
+            }
+            if (e.key === 'Enter' && document.activeElement === field) {
+                e.preventDefault();
+                const active = document.querySelector('.searchresult.active');
+                if (active) {
+                    const url = active.dataset.url;
+                    if (url) window.location.href = url;
                 }
             }
         });
@@ -321,27 +447,39 @@
                 if (newIndex >= results.length) newIndex = 0;
             }
 
-            results.forEach(el => el.classList.remove('active'));
-            results[newIndex].classList.add('active');
             results[newIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
             // Sync preview with selection
             showPreview(parseInt(results[newIndex].dataset.index));
         }
 
-        const debouncedSearch = debounce(search, 200, false);
-        window.field = document.querySelector('#term');
-        field.addEventListener('keydown', (e) => {
-            if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp' && e.key !== 'Enter') {
-                debouncedSearch();
+        // Clicking the backdrop closes the dialog; clicks inside the box do not.
+        searchContainer.addEventListener('click', (e) => {
+            if (e.target === searchContainer) closeSearch();
+        });
+
+        // Result list interactions (no inline handlers, so URLs never end up in JS strings).
+        resultsDiv.addEventListener('mouseover', (e) => {
+            const result = e.target.closest('.searchresult');
+            if (result && !result.classList.contains('active')) {
+                showPreview(parseInt(result.dataset.index));
             }
         });
-        window.resultsDiv = document.querySelector('#search-results');
+        resultsDiv.addEventListener('click', (e) => {
+            const result = e.target.closest('.searchresult');
+            if (result && !e.target.closest('a')) {
+                window.location.href = result.dataset.url;
+            }
+        });
+
+        const debouncedSearch = debounce(search, 200, false);
+        // "input" also covers paste, cut, autocomplete and the clear button.
+        field.addEventListener('input', debouncedSearch);
 
         const params = new URL(location.href).searchParams;
         if (params.get('q')) {
-            field.setAttribute('value', params.get('q'));
-            toggleSearch();
+            field.value = params.get('q');
+            openSearch();
             search();
         }
     }
@@ -358,6 +496,7 @@
         const searchLayout = document.getElementById('search-layout');
 
         if (!searchQuery) {
+            window.lastSearch = '';
             resultsDiv.innerHTML = '';
             hidePreview();
             if (searchLayout) searchLayout.classList.add('no-preview');
@@ -371,19 +510,29 @@
         resultsDiv.innerHTML = loadingSvg;
         hidePreview();
 
+        try {
+            await ensureIndex();
+        } catch (error) {
+            window.lastSearch = '';
+            resultsDiv.innerHTML = `<div class="no-results"><p>Search is unavailable right now. Please try again.</p></div>`;
+            return;
+        }
+        // The query may have changed while the index was loading.
+        if (searchQuery !== field.value.trim()) return;
+
         const results = offlineSearch(searchQuery);
         window.searchResults = results;
 
         if (!results.length) {
             if (searchLayout) searchLayout.classList.add('no-preview');
             resultsDiv.innerHTML = `
-                <div class="no-results">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <div class="no-results" role="status">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <circle cx="11" cy="11" r="8"></circle>
                         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         <line x1="8" y1="11" x2="14" y2="11"></line>
                     </svg>
-                    <p>{{ meta.uiStrings.searchNoResults }} "${searchQuery}"</p>
+                    <p>{{ meta.uiStrings.searchNoResults }} "${escapeHtml(searchQuery)}"</p>
                 </div>
             `;
             return;
@@ -395,22 +544,16 @@
         let resultsHTML = '';
         results.forEach((r, index) => {
             const excerpt = getContextualExcerpt(r.content, window.searchTerms, 120);
-            const highlightedExcerpt = highlightTerms(excerpt, window.searchTerms);
-            const highlightedTitle = highlightTerms(r.title, window.searchTerms);
-
-            const tagsHTML = r.tags && r.tags.length > 0
-                ? `<div class="result-tags">${r.tags.map(tag => `<span class="tag">#${tag}</span>`).join('')}</div>`
-                : '';
-
             resultsHTML += `
                 <div class="searchresult${index === 0 ? ' active' : ''}"
+                     id="search-result-${index}"
+                     role="option"
+                     aria-selected="${index === 0 ? 'true' : 'false'}"
                      data-index="${index}"
-                     data-url="${r.url}"
-                     onmouseenter="showPreview(${index})"
-                     onclick="window.location.href='${r.url}'">
-                    <span class="result-title">${highlightedTitle}</span>
-                    ${tagsHTML}
-                    <div class="result-excerpt">${highlightedExcerpt}</div>
+                     data-url="${escapeHtml(r.url)}">
+                    <a class="result-title" href="${escapeHtml(r.url)}" tabindex="-1">${highlightTerms(decodeHtml(r.title), window.searchTerms)}</a>
+                    ${tagsToHtml(r.tags, 'result-tags', false)}
+                    <div class="result-excerpt">${highlightTerms(excerpt, window.searchTerms)}</div>
                 </div>
             `;
         });
@@ -418,14 +561,7 @@
         resultsDiv.innerHTML = resultsHTML;
 
         // Auto-show preview for first result
-        if (results.length > 0) {
-            showPreview(0);
-        }
-
-        // Reinitialize Lucide icons if available
-        if (typeof lucide !== 'undefined') {
-            lucide.createIcons();
-        }
+        showPreview(0);
     }
 
     window.search = search;

@@ -9,7 +9,7 @@
                   {%endif%}
 
                   {%if settings.dgShowToc === true and settings.dgShowFileTree !== true%}
-                        {%set tocHtml= (content and (content|toc)) %}
+                        {%set tocHtml= ((noteContent or content) and ((noteContent or content)|toc)) %}
                         {%if tocHtml %}
                               <div class="toc">
                                     <div class="toc-container">

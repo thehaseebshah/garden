@@ -1,7 +1,7 @@
-<div class="search-button align-icon" onclick="toggleSearch()">
-    <span class="search-icon">
+<button type="button" class="search-button align-icon" onclick="toggleSearch()" aria-haspopup="dialog" aria-expanded="false" aria-controls="globalsearch">
+    <span class="search-icon" aria-hidden="true">
         <i data-lucide="search"></i>
     </span>
     <span class="search-text">{{ meta.uiStrings.searchButtonText }}</span>
-    <span class="search-keys">Ctrl K</span>
-</div>
+    <span class="search-keys" aria-hidden="true">Ctrl K</span>
+</button>
