@@ -1,10 +1,11 @@
 ---
 layout: layouts/index.njk
 title: Haseeb Shah
+description: Haseeb Shah's digital garden, a personal collection of ideas, research, projects, and notes cultivated over time.
 settings:
   dgShowFileTree: false
   dgHomeLink: true
-  dgEnableSearch: false
+  dgEnableSearch: true
   dgShowInlineTitle: false
   dgShowTags: false
   dgShowBacklinks: false
@@ -20,10 +21,33 @@ settings:
       Welcome to my digital garden, a personal space where I collect ideas, research, projects, and notes cultivated over time.
     </p>
     <div class="hero-links">
+      <a href="#notes" class="hero-btn primary">Browse notes</a>
+      <button type="button" class="hero-btn secondary" onclick="toggleSearch()" aria-haspopup="dialog" aria-controls="globalsearch">
+        <i data-lucide="search" aria-hidden="true"></i>
+        <span>Search</span>
+      </button>
       <a href="#about" class="hero-btn secondary">About</a>
-      <a href="#connect" class="hero-btn secondary">Connect</a>
     </div>
   </header>
+
+  <section class="home-section" id="notes" aria-labelledby="notes-title">
+    <h2 class="home-section-title" id="notes-title">Notes</h2>
+    <div class="note-folders">
+      {%- for folder in collections.note | notesByFolder %}
+      <details class="note-folder"{% if folder.notes.length <= 8 %} open{% endif %}>
+        <summary>
+          <span class="note-folder-name">{{ folder.name }}</span>
+          <span class="note-folder-count">{{ folder.notes.length }}</span>
+        </summary>
+        <ul class="note-list">
+          {%- for note in folder.notes %}
+          <li><a href="{{ note.url }}">{{ note.title }}</a></li>
+          {%- endfor %}
+        </ul>
+      </details>
+      {%- endfor %}
+    </div>
+  </section>
 
   <section class="home-section" id="about">
     <h2 class="home-section-title">About</h2>
@@ -37,11 +61,11 @@ settings:
     <h2 class="home-section-title">Connect</h2>
     <div class="social-links">
       <a href="mailto:hi@haseebshah.com" class="social-link">
-        <span class="social-icon">✉️</span>
+        <i class="social-icon" data-lucide="mail" aria-hidden="true"></i>
         <span>Email</span>
       </a>
       <a href="https://github.com/thehaseebshah" class="social-link" target="_blank" rel="noopener noreferrer">
-        <span class="social-icon">💻</span>
+        <i class="social-icon" data-lucide="github" aria-hidden="true"></i>
         <span>GitHub</span>
       </a>
     </div>

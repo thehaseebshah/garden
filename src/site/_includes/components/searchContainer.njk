@@ -1,17 +1,17 @@
-<div class="search-container" id="globalsearch" onclick="toggleSearch()">
-    <div class="search-box" onclick="event.stopPropagation()">
+<div class="search-container" id="globalsearch" aria-hidden="true">
+    <div class="search-box" role="dialog" aria-modal="true" aria-label="{{ meta.uiStrings.searchButtonText }}">
         <div class="search-header">
-            <input type="search" id="term" placeholder="{{ meta.uiStrings.searchPlaceholder }}">
+            <input type="search" id="term" placeholder="{{ meta.uiStrings.searchPlaceholder }}" aria-label="{{ meta.uiStrings.searchButtonText }}" autocomplete="off" role="combobox" aria-expanded="true" aria-controls="search-results" aria-autocomplete="list">
         </div>
 
         <div class="search-layout no-preview" id="search-layout">
             <!-- Left panel: Results list -->
-            <div class="search-results-panel" id="search-results"></div>
+            <div class="search-results-panel" id="search-results" role="listbox" aria-label="Search results" aria-live="polite"></div>
 
             <!-- Right panel: Content preview (hidden until search starts) -->
             <div class="search-preview-panel" id="search-preview">
                 <div class="preview-placeholder">
-                    <i data-lucide="file-text"></i>
+                    <i data-lucide="file-text" aria-hidden="true"></i>
                     <p>{{ meta.uiStrings.searchPreviewPlaceholder | default("Select a result to preview") }}</p>
                 </div>
                 <div class="preview-content" id="preview-content"></div>

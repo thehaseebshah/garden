@@ -1,3 +1,5 @@
+const { fixPermalink, fixFolderName } = require("./pathFixes");
+
 const sortTree = (unsorted) => {
   //Sort by folder before file, then by name
   const orderedTree = Object.keys(unsorted)
@@ -66,7 +68,7 @@ function getPermalinkMeta(note, key) {
   let folders = null;
   try {
     if (note.data.permalink) {
-      permalink = note.data.permalink;
+      permalink = fixPermalink(note.data.permalink);
     }
     if (note.data.tags && note.data.tags.indexOf("gardenEntry") != -1) {
       permalink = "/";
@@ -90,20 +92,21 @@ function getPermalinkMeta(note, key) {
     } else {
       folders = note.filePathStem
         .split("notes/")[1]
-        .split("/");
+        .split("/")
+        .map((folder, i, all) => (i < all.length - 1 ? fixFolderName(folder) : folder));
     }
     folders[folders.length - 1]+= ".md";
   } catch {
-    //ignore
+    // Malformed front matter or a path outside notes/: keep the defaults above.
   }
 
   return [{ permalink, name, noteIcon, hide, pinned }, folders];
 }
 
 function assignNested(obj, keyPath, value) {
-  lastKeyIndex = keyPath.length - 1;
-  for (var i = 0; i < lastKeyIndex; ++i) {
-    key = keyPath[i];
+  const lastKeyIndex = keyPath.length - 1;
+  for (let i = 0; i < lastKeyIndex; ++i) {
+    const key = keyPath[i];
     if (!(key in obj)) {
       obj[key] = { isFolder: true };
     }
@@ -116,6 +119,10 @@ function getFileTree(data) {
   const tree = {};
   (data.collections.note || []).forEach((note) => {
     const [meta, folders] = getPermalinkMeta(note);
+    if (!folders) {
+      // Not under notes/ and no dg-path: nowhere to place it in the tree.
+      return;
+    }
     assignNested(tree, folders, { isNote: true, ...meta });
   });
   const fileTree = sortTree(tree);

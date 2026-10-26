@@ -15,20 +15,33 @@
                     calloutIconContainer.appendChild(calloutIcon);
                     calloutIcon.setAttribute("data-lucide", iconName);
                     calloutIconContainer.setAttribute("class", "callout-icon");
+                    calloutIconContainer.setAttribute("aria-hidden", "true");
                     calloutTitle.insertBefore(calloutIconContainer, calloutTitle.firstChild);
                 }
             }
         });
 
-        lucide.createIcons();
+        if (typeof lucide !== "undefined") {
+            lucide.createIcons();
+        }
 
-        // Collapse callouts
+        // Collapse callouts (mouse and keyboard)
         Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((elem) => {
-            elem.querySelector('.callout-title').addEventListener("click", (event) => {
-                if (elem.classList.contains("is-collapsed")) {
-                    elem.classList.remove("is-collapsed");
-                } else {
-                    elem.classList.add("is-collapsed");
+            const title = elem.querySelector('.callout-title');
+            if (!title) return;
+            const sync = () => title.setAttribute("aria-expanded", elem.classList.contains("is-collapsed") ? "false" : "true");
+            const toggle = () => {
+                elem.classList.toggle("is-collapsed");
+                sync();
+            };
+            title.setAttribute("role", "button");
+            title.setAttribute("tabindex", "0");
+            sync();
+            title.addEventListener("click", toggle);
+            title.addEventListener("keydown", (event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    toggle();
                 }
             });
         });

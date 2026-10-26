@@ -1,19 +1,23 @@
 ---
 permalink: 404.html
+eleventyExcludeFromCollections: true
 ---
 <!DOCTYPE html>
 <html lang="{{ meta.mainLanguage }}">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="noindex">
         <title>Nothing here</title>
-        <link href="/styles/digital-garden-base.css" rel="stylesheet">
+        <link href="/styles/digital-garden-base.css?v={{meta.styleVersion}}" rel="stylesheet">
         {%-if meta.themeStyle%}
             <link href="/styles/obsidian-base.css" rel="stylesheet">
     	    <link href="{{meta.themeStyle}}" rel="stylesheet">
         {% else %}
-            <link href="/styles/style.css" rel="stylesheet">
+            <link href="/styles/style.css?v={{meta.styleVersion}}" rel="stylesheet">
         {%endif%}
 
-        <link href="/styles/custom-style.css" rel="stylesheet">
+        <link href="/styles/custom-style.css?v={{meta.styleVersion}}" rel="stylesheet">
         
     </head>
     <body class="theme-{{meta.baseTheme}} markdown-preview-view">

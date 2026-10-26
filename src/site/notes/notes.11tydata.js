@@ -1,5 +1,7 @@
 require("dotenv").config();
 const settings = require("../../helpers/constants");
+const { fixPermalink } = require("../../helpers/pathFixes");
+const { defaultPermalink } = require("../../helpers/noteIndex");
 
 const allSettings = settings.ALL_NOTE_SETTINGS;
 
@@ -15,7 +17,12 @@ module.exports = {
       if (data.tags.indexOf("gardenEntry") != -1) {
         return "/";
       }
-      return data.permalink || undefined;
+      if (data.permalink) {
+        return fixPermalink(data.permalink);
+      }
+      // Notes published without a permalink get a clean slug URL instead of
+      // "/notes/Folder/Note Name/"; the old URL redirects (src/site/redirects.11ty.js).
+      return defaultPermalink(data.page.filePathStem);
     },
     settings: (data) => {
       const noteSettings = {};

@@ -17,7 +17,8 @@
                 }
                 return acc;
             }, {});
-        return existing, n_remaining;
+        // `existing` is extended in place; only the shrinking remainder is returned.
+        return n_remaining;
     }
 
     function filterLocalGraphData(graphData, depth) {
@@ -28,18 +29,23 @@
         let links = JSON.parse(JSON.stringify(graphData.links));
         let currentLink = decodeURI(window.location.pathname);
         let currentNode = remaining[currentLink] || Object.values(remaining).find((v) => v.home);
+        if (!currentNode) {
+            return null;
+        }
         delete remaining[currentNode.url];
         if (!currentNode.home) {
             let home = Object.values(remaining).find((v) => v.home);
-            delete remaining[home.url];
+            if (home) {
+                delete remaining[home.url];
+            }
         }
         currentNode.current = true;
         let existing = {};
         existing[currentNode.url] = currentNode;
         for (let i = 0; i < depth; i++) {
-            existing, remaining = getNextLevelNeighbours(existing, remaining);
+            remaining = getNextLevelNeighbours(existing, remaining);
         }
-        nodes = Object.values(existing);
+        let nodes = Object.values(existing);
         if (!currentNode.home) {
             nodes = nodes.filter(n => !n.home);
         }
@@ -70,8 +76,8 @@
         if (typeof ForceGraph === 'undefined') {
             return;
         }
-        width = el.offsetWidth;
-        height = el.offsetHeight;
+        const width = el.offsetWidth;
+        const height = el.offsetHeight;
         if (width === 0 || height === 0) {
             return;
         }
@@ -219,13 +225,13 @@
                     <span id="depth-display" x-text="depth"></span>
                 </div>
                 <div class="ctrl-right">
-                    <span id="global-graph-btn" x-on:click="showFullGraph = true; setTimeout(() => {fullGraph = openFullGraph(fullGraphData)}, 100)"><i  data-lucide="globe" aria-hidden="true"></i></span>
-                    <span  id="graph-fs-btn"  x-on:click="fullScreen = !fullScreen"><i  data-lucide="expand" aria-hidden="true"></i></span>
+                    <span id="global-graph-btn" role="button" tabindex="0" aria-label="Open full graph" x-on:keydown.enter.prevent="$el.click()" x-on:click="showFullGraph = true; setTimeout(() => {fullGraph = openFullGraph(fullGraphData)}, 100)"><i  data-lucide="globe" aria-hidden="true"></i></span>
+                    <span  id="graph-fs-btn" role="button" tabindex="0" aria-label="Toggle full screen graph" x-on:keydown.enter.prevent="$el.click()" x-on:click="fullScreen = !fullScreen"><i  data-lucide="expand" aria-hidden="true"></i></span>
                 </div>
         </div>
     </div>
     <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph" ></div>
     <div x-show="showFullGraph" id="full-graph" class="show" style="display: none;">
-        <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i data-lucide="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
+        <span id="full-graph-close" role="button" tabindex="0" aria-label="Close full graph" x-on:keydown.enter.prevent="$el.click()" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i data-lucide="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
     </div>
 </div>

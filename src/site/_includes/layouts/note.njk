@@ -36,9 +36,7 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
             <div class="header-tags">
               {% for tag in tags %}
                 {% if tag != 'gardenEntry' and tag !='note' %}
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #{{tag}}
-                  </a>
+                  <a class="tag" href="?q=%23{{ tag | urlencode }}" onclick="toggleTagSearch(this); return false;">#{{tag}}</a>
                 {% endif %}
               {% endfor %}
             </div>
@@ -46,10 +44,10 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
           {%- if meta.timestampSettings.showCreated or meta.timestampSettings.showUpdated -%}
           <div class="timestamps">
             {%- if meta.timestampSettings.showCreated and created -%}
-            <div><i data-lucide="calendar-plus"></i> <span class="human-date" data-date="{{created}}"></span></div>
+            <div><i data-lucide="calendar-plus" aria-hidden="true"></i> <span class="visually-hidden">Created</span> <time datetime="{{ created | isoDateTime }}">{{ created | humanDate(meta.timestampSettings.timestampFormat) }}</time></div>
             {%- endif -%}
             {%- if meta.timestampSettings.showUpdated and updated -%}
-            <div><i data-lucide="calendar-clock"></i> <span class="human-date" data-date="{{updated}}"></span></div>
+            <div><i data-lucide="calendar-clock" aria-hidden="true"></i> <span class="visually-hidden">Updated</span> <time datetime="{{ updated | isoDateTime }}">{{ updated | humanDate(meta.timestampSettings.timestampFormat) }}</time></div>
             {%- endif -%}
           </div>
           {%- endif -%}
@@ -87,7 +85,6 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
       {%include "components/linkPreview.njk"%}
     {% endif %}
     {% include "components/references.njk" %}
-    {% include "components/timestamps.njk" %}
     {% for imp in dynamics.common.footer %}
       {% include imp %}
     {% endfor %}
