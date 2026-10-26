@@ -4,9 +4,17 @@ function userMarkdownSetup(md) {
   // The md parameter stands for the markdown-it instance used throughout the site generator.
   // Feel free to add any plugin you want here instead of /.eleventy.js
 }
+// Top-level folder of a note ("/notes/Discipline/Rules" -> "Discipline"), or "Other".
+function getTopFolder(filePathStem) {
+  const parts = ((filePathStem || "").split("notes/")[1] || "").split("/");
+  return parts.length > 1 ? fixFolderName(parts[0]) : "Other";
+}
+
 function userEleventySetup(eleventyConfig) {
   // The eleventyConfig parameter stands for the the config instantiated in /.eleventy.js.
   // Feel free to add any plugin you want here instead of /.eleventy.js
+
+  eleventyConfig.addFilter("noteFolder", getTopFolder);
 
   // Groups notes by their top-level folder for the homepage index:
   // [{ name: "Discipline", notes: [{ title, url }] }, ...]
@@ -16,8 +24,7 @@ function userEleventySetup(eleventyConfig) {
       if (!note.url || note.data.hide) {
         continue;
       }
-      const parts = (note.filePathStem.split("notes/")[1] || "").split("/");
-      const folder = parts.length > 1 ? fixFolderName(parts[0]) : "Other";
+      const folder = getTopFolder(note.filePathStem);
       if (!folders.has(folder)) {
         folders.set(folder, []);
       }
@@ -35,7 +42,7 @@ function userEleventySetup(eleventyConfig) {
       }));
   });
 
-  // Most recently updated notes for the homepage: [{ title, url, updated }]
+  // Most recently updated notes for the homepage: [{ title, url, updated, folder, content }]
   eleventyConfig.addFilter("recentNotes", function (notes, limit = 6) {
     const timestamp = (note) => {
       const value = note.data.updated || note.data.created;
@@ -50,6 +57,8 @@ function userEleventySetup(eleventyConfig) {
         title: note.data.title || note.fileSlug,
         url: note.url,
         updated: note.data.updated || note.data.created,
+        folder: getTopFolder(note.filePathStem),
+        content: note.templateContent,
       }));
   });
 }

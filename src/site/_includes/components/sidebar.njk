@@ -12,6 +12,7 @@
                         {%set tocHtml= ((noteContent or content) and ((noteContent or content)|toc)) %}
                         {%if tocHtml %}
                               <div class="toc">
+                                    <p class="toc-label">On this page</p>
                                     <div class="toc-container">
                                           {{ tocHtml | safe }}
                                     </div>

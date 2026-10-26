@@ -440,11 +440,10 @@ body.no-filetree .sidebar {
     body.no-filetree .sidebar > .sidebar-container > .toc {
         position: fixed !important;
         left: 44px !important;
-        top: 50% !important;
-        transform: translateY(-50%);
+        top: calc(var(--dg-header-offset) + 48px) !important;
         width: 250px !important;
         max-width: 250px !important;
-        max-height: calc(100vh - 2 * var(--dg-header-offset) - 32px);
+        max-height: calc(100vh - var(--dg-header-offset) - 96px);
         z-index: 110;
         display: block !important;
         margin-top: 0 !important;
@@ -457,7 +456,7 @@ body.no-filetree .sidebar {
     }
 
     body.no-filetree .sidebar .toc-container {
-        max-height: calc(100vh - 2 * var(--dg-header-offset) - 62px) !important;
+        max-height: calc(100vh - var(--dg-header-offset) - 150px) !important;
         overflow-y: auto !important;
         scrollbar-width: thin;
     }
@@ -693,7 +692,7 @@ body.no-filetree .sidebar {
 .homepage {
     max-width: var(--dg-content-max-width, 760px);
     margin: 0 auto;
-    padding: 2.5rem 1.5rem 5rem;
+    padding: 2.5rem 1.5rem 2rem;
 }
 
 .home-hero {
@@ -1118,33 +1117,332 @@ video.media-embed {
     font-size: 0.9em;
 }
 
-/* Homepage: recently updated notes */
-.markdown-preview-view .recent-notes {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* ==========================================================================
+   Design pass
+   ========================================================================== */
+
+/* The downloaded theme forces pure black; use the garden's own deep green-black. */
+.theme-dark {
+    --background-primary: var(--dg-bg-0);
+    --background-secondary: var(--dg-bg-1);
 }
 
-.markdown-preview-view .recent-notes li {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
-    margin: 0;
-    padding: 0.55rem 0;
+/* Type scale: a clear step between the page title and the note's own headings */
+body {
+    --h1-size: 1.75rem;
+    --h2-size: 1.45rem;
+    --h3-size: 1.2rem;
+    --h4-size: 1.05rem;
+    --h5-size: 1rem;
+    --h6-size: 0.95rem;
+}
+
+.markdown-preview-view .cm-s-obsidian > h1 {
+    font-size: var(--h1-size);
+    margin-top: 2.75rem;
+}
+
+.markdown-preview-view .cm-s-obsidian > h2 {
+    font-size: var(--h2-size);
+    margin-top: 2.25rem;
+}
+
+.markdown-preview-view .cm-s-obsidian > h3 {
+    font-size: var(--h3-size);
+    margin-top: 1.75rem;
+}
+
+.markdown-preview-view .cm-s-obsidian > h4 {
+    font-size: var(--h4-size);
+    margin-top: 1.5rem;
+}
+
+.markdown-preview-view .cm-s-obsidian > :is(h1, h2, h3, h4, h5, h6):first-child,
+.markdown-preview-view .cm-s-obsidian > header + :is(h1, h2, h3, h4, h5, h6),
+.markdown-preview-view .cm-s-obsidian > .toc-inline + :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 0;
+}
+
+.markdown-preview-view .cm-s-obsidian p,
+.markdown-preview-view .cm-s-obsidian li {
+    line-height: 1.7;
+}
+
+/* Page header: prominent title, quiet metadata, room before the content
+   (only on notes; the homepage header is empty) */
+.markdown-preview-view .cm-s-obsidian > header:has(> h1) {
+    margin-bottom: 2rem;
+    padding-bottom: 1.25rem;
     border-bottom: 1px solid var(--dg-border);
 }
 
-.recent-notes li::before {
+.markdown-preview-view .cm-s-obsidian > header > h1 {
+    font-size: clamp(2rem, 1.4rem + 2.2vw, 2.6rem);
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    margin: 0 0 0.75rem;
+}
+
+.cm-s-obsidian > header .timestamps {
+    margin-top: 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cm-s-obsidian > header .timestamps > div {
+    gap: 0.35rem;
+}
+
+.cm-s-obsidian > header .timestamps svg {
+    width: 0.95rem;
+    height: 0.95rem;
+    opacity: 0.8;
+}
+
+/* Highlights in the garden's green rather than yellow-on-olive */
+.markdown-preview-view mark,
+.markdown-preview-view .cm-highlight {
+    background-color: rgba(var(--dg-accent-rgb), 0.2);
+    color: var(--dg-accent-strong);
+    border-radius: 3px;
+    padding: 0.05em 0.25em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+/* Sidebar contents: label and current-section highlight */
+.toc .toc-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin: 0 0 0.6rem;
+}
+
+body.no-filetree .sidebar .toc-container li a.is-active,
+.toc-inline a.is-active {
+    color: var(--dg-accent-strong) !important;
+}
+
+body.no-filetree .sidebar .toc-container li a {
+    border-left: 2px solid transparent;
+    padding-left: 8px;
+}
+
+body.no-filetree .sidebar .toc-container li a.is-active {
+    border-left-color: var(--dg-accent);
+}
+
+/* Mobile "On this page": same chevron as the homepage folders */
+.toc-inline summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.toc-inline summary::-webkit-details-marker {
     display: none;
 }
 
-.recent-notes a {
+.toc-inline summary::before {
+    content: "";
+    width: 0.45em;
+    height: 0.45em;
+    border-right: 2px solid var(--text-muted);
+    border-bottom: 2px solid var(--text-muted);
+    transform: rotate(-45deg);
+    transition: transform 150ms ease;
+    flex-shrink: 0;
+}
+
+.toc-inline[open] summary::before {
+    transform: rotate(45deg);
+}
+
+/* Homepage hero (the theme sizes every h1 from --h1-size, so set that here) */
+.markdown-preview-view .homepage .hero-title {
+    --h1-size: clamp(2.4rem, 1.6rem + 3vw, 3.4rem);
+    font-size: var(--h1-size);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+}
+
+.home-hero {
+    padding-top: 1rem;
+}
+
+@media (max-width: 480px) {
+    /* .content already has side padding on phones */
+    .homepage {
+        padding: 1.5rem 0 3rem;
+    }
+
+    .hero-links {
+        gap: 0.5rem;
+    }
+
+    .hero-btn {
+        padding: 0.45rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Site footer */
+.site-footer {
+    max-width: var(--dg-content-max-width);
+    margin: 1rem auto 0;
+    padding: 1.5rem 1.5rem 3rem;
+    border-top: 1px solid var(--dg-border);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.site-footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+}
+
+.site-footer a {
+    color: var(--text-muted) !important;
     text-decoration: none;
 }
 
-.recent-notes time {
-    flex-shrink: 0;
-    font-size: 0.85rem;
+.site-footer a:hover {
+    color: var(--dg-accent-strong) !important;
+}
+
+/* 404 */
+.not-found {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 18vh 1.5rem 4rem;
+    text-align: center;
+}
+
+.not-found-code {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--dg-accent);
+    margin: 0 0 0.75rem;
+}
+
+.not-found h1 {
+    font-size: clamp(1.8rem, 1.3rem + 2vw, 2.4rem);
+    letter-spacing: -0.02em;
+    margin: 0 0 0.75rem;
+}
+
+.not-found p {
     color: var(--text-muted);
+    line-height: 1.6;
+    margin: 0 0 1.75rem;
+}
+
+.not-found .hero-links {
+    justify-content: center;
+}
+
+/* Breadcrumb above note titles */
+.note-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0 0 0.6rem;
+    font-size: 0.85rem;
+    color: var(--text-faint);
+}
+
+.markdown-preview-view .note-breadcrumb a {
+    color: var(--text-muted) !important;
+    text-decoration: none;
+}
+
+.markdown-preview-view .note-breadcrumb a:hover {
+    color: var(--dg-accent-strong) !important;
+}
+
+/* Homepage: recently tended notes as cards */
+.markdown-preview-view .recent-cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+    gap: 0.75rem;
+}
+
+.markdown-preview-view .recent-card {
+    position: relative;
+    margin: 0;
+    padding: 1rem 1.1rem 1.1rem;
+    background: var(--dg-bg-1);
+    border: 1px solid var(--dg-border);
+    border-radius: 12px;
+    transition: border-color 150ms ease, transform 150ms ease, background-color 150ms ease;
+}
+
+.recent-card::before {
+    display: none;
+}
+
+.markdown-preview-view .recent-card:hover,
+.markdown-preview-view .recent-card:focus-within {
+    border-color: rgba(var(--dg-accent-rgb), 0.45);
+    background: var(--dg-bg-2);
+    transform: translateY(-1px);
+}
+
+.recent-card-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 0.45rem;
+}
+
+.recent-card-folder {
+    color: var(--dg-accent);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+}
+
+.markdown-preview-view a.recent-card-title {
+    display: block;
+    font-size: 1.08rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--text-normal) !important;
+    text-decoration: none;
+}
+
+/* The whole card is clickable through the title link */
+.recent-card-title::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+}
+
+.markdown-preview-view .recent-card-excerpt {
+    margin: 0.4rem 0 0;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: var(--text-muted);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }

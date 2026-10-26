@@ -1,5 +1,8 @@
 ---
 layout: layouts/index.njk
+# Render after the notes so their content is available for the excerpts below.
+eleventyImport:
+  collections: ["note"]
 title: Haseeb Shah
 description: Haseeb Shah's digital garden, a personal collection of ideas, research, projects, and notes cultivated over time.
 settings:
@@ -33,12 +36,16 @@ settings:
   {%- set recent = collections.note | recentNotes(6) %}
   {%- if recent.length %}
   <section class="home-section" id="recent" aria-labelledby="recent-title">
-    <h2 class="home-section-title" id="recent-title">Recently updated</h2>
-    <ul class="recent-notes">
+    <h2 class="home-section-title" id="recent-title">Recently tended</h2>
+    <ul class="recent-cards">
       {%- for note in recent %}
-      <li>
-        <a href="{{ note.url }}">{{ note.title }}</a>
-        <time datetime="{{ note.updated | isoDateTime }}">{{ note.updated | humanDate("MMM d, yyyy") }}</time>
+      <li class="recent-card">
+        <div class="recent-card-meta">
+          <span class="recent-card-folder">{{ note.folder }}</span>
+          <time datetime="{{ note.updated | isoDateTime }}">{{ note.updated | humanDate("MMM d, yyyy") }}</time>
+        </div>
+        <a class="recent-card-title" href="{{ note.url }}">{{ note.title }}</a>
+        <p class="recent-card-excerpt">{{ note.content | link | metaDescription(110) }}</p>
       </li>
       {%- endfor %}
     </ul>
@@ -49,7 +56,7 @@ settings:
     <h2 class="home-section-title" id="notes-title">Notes</h2>
     <div class="note-folders">
       {%- for folder in collections.note | notesByFolder %}
-      <details class="note-folder"{% if folder.notes.length <= 8 %} open{% endif %}>
+      <details class="note-folder" id="folder-{{ folder.name | slugify }}"{% if folder.notes.length <= 8 %} open{% endif %}>
         <summary>
           <span class="note-folder-name">{{ folder.name }}</span>
           <span class="note-folder-count">{{ folder.notes.length }}</span>
@@ -63,6 +70,21 @@ settings:
       {%- endfor %}
     </div>
   </section>
+
+  <script>
+    // Breadcrumb links on notes point at "/#folder-name": open that folder.
+    (function () {
+      function openFolderFromHash() {
+        var id = decodeURIComponent(location.hash.slice(1));
+        var folder = id && document.getElementById(id);
+        if (folder && folder.tagName === "DETAILS") {
+          folder.open = true;
+        }
+      }
+      openFolderFromHash();
+      window.addEventListener("hashchange", openFolderFromHash);
+    })();
+  </script>
 
   <section class="home-section" id="about">
     <h2 class="home-section-title">About</h2>

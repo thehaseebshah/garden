@@ -34,6 +34,14 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
 
     <main class="content cm-s-obsidian {{contentClasses}}">
       <header>
+        {%- set folderName = page.filePathStem | noteFolder %}
+        {%- if folderName != "Other" %}
+        <nav class="note-breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Garden</a>
+          <span aria-hidden="true">/</span>
+          <a href="/#folder-{{ folderName | slugify }}">{{ folderName }}</a>
+        </nav>
+        {%- endif %}
         {% if settings.dgShowInlineTitle === true %}
           <h1 data-note-icon="{% if noteIcon %}{{noteIcon}}{% else %}{{meta.noteIconsSettings.default}}{% endif %}">{% if title %}{{ title }}{% else %}{{ page.fileSlug }}{% endif %}</h1>
         {% endif %}
