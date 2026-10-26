@@ -46,8 +46,14 @@ function escapeHtml(value) {
   return escapeAttribute(value).replace(/'/g, "&#39;");
 }
 
+const UNPUBLISHED_TITLE = "Not published yet";
+
 function getAnchorLink(filePath, linkTitle) {
   const { attributes, innerHTML } = getAnchorAttributes(filePath, linkTitle);
+  if (attributes.class.includes("is-unresolved")) {
+    // A link to a note that isn't public goes nowhere useful: show it as text.
+    return `<span class="internal-link is-unresolved" title="${UNPUBLISHED_TITLE}">${innerHTML}</span>`;
+  }
   return `<a ${Object.keys(attributes).map(key => `${key}="${escapeAttribute(attributes[key])}"`).join(" ")}>${innerHTML}</a>`;
 }
 
@@ -311,7 +317,15 @@ module.exports = function (eleventyConfig) {
           return defaultLinkRule(tokens, idx, options, env, self);
         }
         if (noteHref === false) {
-          // The linked note isn't published: same treatment as an unresolved wikilink.
+          // The linked note isn't published: render the link text as plain text,
+          // like an unresolved wikilink, by turning this link into a <span>.
+          const close = tokens.slice(idx + 1).find((t) => t.type === "link_close" && t.level === tokens[idx].level);
+          if (close) {
+            tokens[idx].tag = "span";
+            close.tag = "span";
+            tokens[idx].attrs = [["class", "internal-link is-unresolved"], ["title", UNPUBLISHED_TITLE]];
+            return defaultLinkRule(tokens, idx, options, env, self);
+          }
           tokens[idx].attrSet("href", "/404");
           tokens[idx].attrJoin("class", "internal-link is-unresolved");
           return defaultLinkRule(tokens, idx, options, env, self);

@@ -48,8 +48,9 @@ These are derived from `package.json` scripts and CI.
 
 ### CI check
 - GitHub Actions runs:
-  - `npm install`
-  - `npm run build --if-present`
+  - `npm ci` (falls back to `npm install`)
+  - `npm run build`
+  - `npx playwright install --with-deps chromium` and `npm run qa`
 
 ## Linting / formatting
 - No dedicated linter/formatter is configured (no ESLint/Prettier found).
@@ -59,12 +60,15 @@ These are derived from `package.json` scripts and CI.
   - Avoid drive-by formatting.
 
 ## Tests
-- No test runner is configured in `package.json` and no `tests/` directory was found.
-- “Single test” guidance:
-  - Not applicable (no Jest/Vitest/etc.).
-  - For targeted verification, run the smallest relevant command:
-    - `npm run build` (catches most template/render errors)
-    - `npm start` then visit the specific URL for the page you changed
+- Browser QA lives in `tests/qa.js` (Playwright + axe-core).
+  - `npm run build` then `npm run qa` (about 4–5 minutes).
+  - Serves `dist/` like GitHub Pages and checks every sitemap page at desktop and phone
+    widths (errors, failed requests, sideways scrolling, meta tags, alt text, links,
+    accessibility), plus search, light/dark theme, backlinks, graphs, callouts and contents.
+  - `npm run qa -- --screens <dir>` also saves screenshots of key pages in both themes.
+  - CI runs it after the build; a failing check blocks the deploy.
+- The feature checks use a few real notes as samples (constants at the top of
+  `tests/qa.js`); update them if those notes are renamed or unpublished.
 
 ## Troubleshooting local runs
 - Theme fetching:

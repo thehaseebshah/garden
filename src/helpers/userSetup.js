@@ -42,6 +42,19 @@ function userEleventySetup(eleventyConfig) {
       }));
   });
 
+  // Notes linking to the page at `url`, from the site graph: [{ title, url }]
+  eleventyConfig.addFilter("backlinksFor", function (graph, url) {
+    const node = graph && graph.nodes && graph.nodes[url];
+    if (!node) {
+      return [];
+    }
+    return node.backLinks
+      .map((backlink) => graph.nodes[backlink])
+      .filter((linked) => linked && linked.url !== url && !linked.hide)
+      .map((linked) => ({ title: linked.title, url: linked.url }))
+      .sort((a, b) => a.title.localeCompare(b.title));
+  });
+
   // Most recently updated notes for the homepage: [{ title, url, updated, folder, content }]
   eleventyConfig.addFilter("recentNotes", function (notes, limit = 6) {
     const timestamp = (note) => {

@@ -83,8 +83,8 @@ module.exports = async (data) => {
   };
 
   const uiStrings = {
-    backlinkHeader: process.env.UI_BACKLINK_HEADER || "Pages mentioning this page",
-    noBacklinksMessage: process.env.UI_NO_BACKLINKS_MESSAGE || "No other pages mentions this page",
+    backlinkHeader: process.env.UI_BACKLINK_HEADER || "Linked from",
+    noBacklinksMessage: process.env.UI_NO_BACKLINKS_MESSAGE || "No other notes link here yet.",
     searchButtonText: process.env.UI_SEARCH_BUTTON_TEXT || "Search",
     searchPlaceholder: process.env.UI_SEARCH_PLACEHOLDER || "Start typing...",
     searchEnterHint: process.env.UI_SEARCH_ENTER_HINT || "Enter to select",
