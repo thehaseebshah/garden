@@ -49,8 +49,8 @@ These are derived from `package.json` scripts and CI.
 ### CI check
 - GitHub Actions runs:
   - `npm ci` (falls back to `npm install`)
-  - `npm run build`
-  - `npx playwright install --with-deps chromium` and `npm run qa`
+  - job `build` (`npm run build`), then job `deploy` (main only): publishing goes live in a few minutes
+  - job `qa` in parallel: builds again, then `npx playwright install --with-deps chromium` and `npm run qa`
 
 ## Linting / formatting
 - No dedicated linter/formatter is configured (no ESLint/Prettier found).
@@ -66,7 +66,8 @@ These are derived from `package.json` scripts and CI.
     widths (errors, failed requests, sideways scrolling, meta tags, alt text, links,
     accessibility), plus search, light/dark theme, backlinks, graphs, callouts and contents.
   - `npm run qa -- --screens <dir>` also saves screenshots of key pages in both themes.
-  - CI runs it after the build; a failing check blocks the deploy.
+  - CI runs it as a separate `qa` job alongside the deploy, so it never delays publishing notes;
+    a failing check shows red on the commit and on pull requests.
 - The feature checks use a few real notes as samples (constants at the top of
   `tests/qa.js`); update them if those notes are renamed or unpublished.
 
