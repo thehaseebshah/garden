@@ -116,7 +116,8 @@ async function open(browser, base, url, { device = "desktop", colorScheme = "dar
   const recordFailure = (request, reason) => {
     const entry = `${reason} ${request.url()}`;
     if (mustLoad(request)) failed.push(entry);
-    else warnings.push(`${url}: third-party ${request.resourceType()} failed: ${entry}`);
+    // A request cut off because the test moved to another page isn't a failure.
+    else if (!/ERR_ABORTED/.test(String(reason))) warnings.push(`${url}: third-party ${request.resourceType()} failed: ${entry}`);
   };
   page.on("requestfailed", (request) => {
     // Headless Chromium aborts PDF iframes; that isn't a site problem.
