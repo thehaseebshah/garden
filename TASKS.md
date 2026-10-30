@@ -2,16 +2,19 @@
 
 Working list for the garden site. Check items off as they're done; add new ones at the bottom of a section.
 
-## Status (2026-10-26)
+## Status (2026-10-30)
 
 Done and merged:
 - PR #7: security fixes (search XSS), performance, homepage note index, a11y, SEO, feature fixes.
 - PR #8: design pass (palette, type scale, note header, homepage cards, footer, 404).
 - PR #9: light mode, backlinks, local + full graph, unpublished-link text, browser QA (`npm run qa`) in CI.
 
-Done in the next PR:
-- [x] Share image for link previews (`src/site/img/og-default.png`, `og:image` on every page).
-- [x] Threaded comments with Giscus, built and tested; **hidden until configured** (see below).
+- PR #10: share image for link previews (`src/site/img/og-default.png`, `og:image` on every page); Giscus comments built (hidden until configured).
+- PR #11: comments switched on. PR #12: email card removed from notes; contents list as a rail.
+- PR #13: local graph zoom capped so labels stay readable.
+- PR #14: browser QA runs in its own CI job alongside the deploy, so publishing from Obsidian goes live in a couple of minutes (it had grown to ~15); removed an accidental duplicate of "Q4 2026 Projects" under "+ Inbox".
+
+Working agreement: PRs from this work are merged as soon as their checks pass, no need to ask.
 
 ## Comments (Giscus): on
 
@@ -23,6 +26,8 @@ a note opts out with `comments: false` in its front matter. The widget is bundle
 - [x] Discussions enabled, giscus app installed, IDs filled in.
 - [ ] Moderation: new comments appear under Discussions → Announcements; delete or lock threads there.
       Consider turning on GitHub notifications for the repo's Discussions so replies reach you.
+- Note: the Obsidian plugin commits to `main` directly (often twice per publish: add, then move). If a
+  note is moved in Obsidian, check the old path isn't left published (as happened with "+ Inbox").
 
 ## Owner tasks in Obsidian (can't be done from the repo)
 
