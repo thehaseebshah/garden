@@ -13,21 +13,16 @@ Done in the next PR:
 - [x] Share image for link previews (`src/site/img/og-default.png`, `og:image` on every page).
 - [x] Threaded comments with Giscus, built and tested; **hidden until configured** (see below).
 
-## Comments (Giscus): owner setup to switch them on
+## Comments (Giscus): on
 
-Comments are stored as GitHub Discussions in this repo; replies are threaded, readers sign in
-with GitHub. The widget is bundled into `src/site/scripts/vendor/giscus.js` (giscus 1.6.0 + lit,
-regenerate with `npm run vendor:giscus`), so no unpinned third-party script runs on the page.
+Threaded comments are live on every note: stored as GitHub Discussions in this repo (category
+"Announcements"), threaded replies, GitHub sign-in. Config is in `src/site/_data/giscus.json`;
+a note opts out with `comments: false` in its front matter. The widget is bundled into
+`src/site/scripts/vendor/giscus.js` (regenerate with `npm run vendor:giscus`).
 
-- [ ] Enable Discussions: repo Settings → General → Features → Discussions.
-- [ ] Create a discussion category for comments, e.g. "Comments", type **Announcement**
-      (only Giscus/maintainers start threads; anyone can reply).
-- [ ] Install the giscus app on this repo: https://github.com/apps/giscus
-- [ ] On https://giscus.app enter `thehaseebshah/garden` and pick the category; copy the
-      `data-repo-id` and `data-category-id` values.
-- [ ] Fill in `src/site/_data/giscus.json` (`repo`, `repoId`, `category`, `categoryId`) and push.
-      The comments section then appears below every note. A note can opt out with
-      `comments: false` in its front matter.
+- [x] Discussions enabled, giscus app installed, IDs filled in.
+- [ ] Moderation: new comments appear under Discussions → Announcements; delete or lock threads there.
+      Consider turning on GitHub notifications for the repo's Discussions so replies reach you.
 
 ## Owner tasks in Obsidian (can't be done from the repo)
 
