@@ -173,7 +173,9 @@
             // Fit the view once the layout has settled, so no nodes start off-screen.
             if (graphData.nodes.length > 1) {
                 let fitted = false;
-                Graph.cooldownTime(3000).onEngineStop(() => {
+                // Zoom to fit, but never magnify: with only a few notes, fitting them to
+                // the whole panel would blow the labels up to several times their size.
+                Graph.maxZoom(3).cooldownTime(3000).onEngineStop(() => {
                     if (!fitted) {
                         fitted = true;
                         Graph.zoomToFit(400, 40);
