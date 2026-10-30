@@ -396,10 +396,6 @@ a.tag:hover {
     list-style: none !important;
 }
 
-.sidebar .toc-container li a {
-    padding-left: 0 !important;
-}
-
 .backlink-list,
 .toc-container {
     border-left: none !important;
@@ -594,26 +590,6 @@ body.no-filetree .sidebar {
     --callout-padding: 14px 14px 14px 18px;
 }
 
-/* Footer component already exists; just align styling */
-.contact-email-section {
-    border: 1px solid var(--background-modifier-border);
-    background-color: rgba(var(--dg-surface-rgb), 0.6);
-    text-align: center;
-    width: calc(100% - 32px);
-    max-width: 760px;
-    margin: 24px auto 40px;
-    padding: 12px 16px;
-    border-radius: 16px;
-}
-
-.contact-divider {
-    border: 0;
-    height: 1px;
-    background: var(--background-modifier-border);
-    width: calc(100% - 32px);
-    max-width: 760px;
-    margin: 32px auto 12px;
-}
 
 /* PDF Embed */
 .pdf-embed {
@@ -810,29 +786,6 @@ body.no-filetree .sidebar {
 
 .social-icon {
     font-size: 1.1rem;
-}
-
-/* Contact footer section in notes */
-.contact-section {
-    background: var(--dg-bg-1);
-    border: 1px solid var(--dg-border);
-    border-radius: 10px;
-    padding: 1.25rem;
-    margin: 2rem 0;
-    text-align: center;
-}
-
-.contact-section p {
-    color: var(--text-muted);
-    margin: 0;
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
-.contact-divider {
-    border: 0;
-    border-top: 1px solid var(--dg-border);
-    margin: 3rem auto 1.5rem;
 }
 
 /* The navbar is sticky (in the page flow) rather than fixed, so the content
@@ -1232,13 +1185,43 @@ body.no-filetree .sidebar .toc-container li a.is-active,
     color: var(--dg-accent-strong) !important;
 }
 
+/* Contents list as a rail: a thin line down the left, the section being read
+   marked on it. Nesting is shown by indenting the text, so the rail stays straight. */
+body.no-filetree .sidebar .toc-container ul ul,
+body.no-filetree .sidebar .toc-container ol ol,
+body.no-filetree .sidebar .toc-container ul ol,
+body.no-filetree .sidebar .toc-container ol ul {
+    padding-left: 0 !important;
+}
+
+body.no-filetree .sidebar .toc-container li {
+    padding: 0 !important;
+}
+
 body.no-filetree .sidebar .toc-container li a {
-    border-left: 2px solid transparent;
-    padding-left: 8px;
+    display: block;
+    padding: 4px 8px 4px 14px;
+    border-left: 2px solid var(--dg-border);
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+body.no-filetree .sidebar .toc-container li li a {
+    padding-left: 26px;
+}
+
+body.no-filetree .sidebar .toc-container li li li a {
+    padding-left: 38px;
+}
+
+body.no-filetree .sidebar .toc-container li a:hover {
+    text-decoration: none;
+    border-left-color: rgba(var(--dg-accent-rgb), 0.5);
 }
 
 body.no-filetree .sidebar .toc-container li a.is-active {
     border-left-color: var(--dg-accent);
+    font-weight: 600;
 }
 
 /* Mobile "On this page": same chevron as the homepage folders */
