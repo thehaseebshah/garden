@@ -1,0 +1,31 @@
+---
+{"dg-publish":true,"permalink":"/inbox/q4-2026-projects/","updated":"2026-10-30T17:46:33.726+05:00","dg-note-properties":{}}
+---
+
+Highlighted Projects are ==Radical Overhaul== ones
+- The One Thing
+	- We have not decided the One Thing yet
+- Ilm
+	- Seerat
+	- Dr Rasheed Arshad Vids -> Daniel HaqiqatJou Courses -> Sapience Courses
+	- Books
+- Islaah
+	- ==Durood==
+	- ==Mamoolaat==
+	- Majlis Zikr
+- Heath
+	- ==Football==
+- Dawah
+	- Seerat Circle
+	- ==Shabab Skills==
+	- ==Shabab AI Academy==
+	- Shabab IT
+- Khidmah
+	- ==Family Value Creation + Dawah==
+	- Relatives Value Creation + Dawah
+	- Friends Value Creation + Dawah
+	- Community Value Creation + Dawah
+	- Al Burhan Ad Hoc Khidmah
+- Finances
+	- ==Get New Job==
+	- ==Sports AI Projects==
