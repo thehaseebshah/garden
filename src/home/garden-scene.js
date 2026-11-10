@@ -1261,7 +1261,11 @@ export function startGardenScene({ canvas, data, label }) {
     setRunning(false);
     root.classList.remove("garden-on");
   });
-  listen(canvas, "webglcontextrestored", () => setRunning(!document.hidden));
+  listen(canvas, "webglcontextrestored", () => {
+    // Show the scene again once the next frame has been drawn.
+    firstFrame = true;
+    setRunning(!document.hidden);
+  });
 
   resize(true);
   readScroll();

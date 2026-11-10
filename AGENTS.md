@@ -122,6 +122,7 @@ These are derived from `package.json` scripts and CI.
 ## Code style (repository conventions)
 ### JavaScript module system
 - Use **CommonJS** (`require`, `module.exports`) to match the codebase.
+  - Exception: browser sources that esbuild bundles for the page (`src/home/`) are ES modules.
 - Prefer `const` for imports and values; use `let` only when reassigned.
 
 ### Formatting
