@@ -14,7 +14,8 @@
         "get-theme": "node src/site/get-theme.js",
         "build": "npm-run-all get-theme build:*",
         "qa": "node tests/qa.js",
-        "vendor:giscus": "esbuild node_modules/giscus/dist/giscus.mjs --bundle --minify --format=esm --legal-comments=eof --outfile=src/site/scripts/vendor/giscus.js"
+        "vendor:giscus": "esbuild node_modules/giscus/dist/giscus.mjs --bundle --minify --format=esm --legal-comments=eof --outfile=src/site/scripts/vendor/giscus.js",
+        "vendor:home": "esbuild src/home/garden-scene.js --bundle --minify --format=esm --target=es2020 --legal-comments=eof --outfile=src/site/scripts/vendor/garden-scene.js"
     },
     "keywords": [],
     "author": "",
@@ -33,7 +34,8 @@
         "lit": "3.2.1",
         "node-html-parser": "^6.1.13",
         "playwright": "1.63.0",
-        "sass": "^1.49.9"
+        "sass": "^1.49.9",
+        "three": "0.180.0"
     },
     "dependencies": {
         "@11ty/eleventy-img": "^7.1.1",

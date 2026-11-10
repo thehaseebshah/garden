@@ -1,0 +1,572 @@
+// Homepage only (linked from components/user/index/head/home.njk).
+// The 3D garden is drawn by scripts/vendor/garden-scene.js into .garden-scene;
+// everything here also has to look right when that script never runs.
+
+html {
+    scroll-behavior: smooth;
+}
+
+// ---------------------------------------------------------------------------
+// The scene, fixed behind the page
+// ---------------------------------------------------------------------------
+
+.garden-scene {
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    height: 100lvh;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1.6s ease;
+}
+
+.garden-on .garden-scene {
+    opacity: 1;
+}
+
+.garden-scene canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+// Dims as the reader scrolls into the content (--garden-dim is set by the scene).
+.garden-scene::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--dg-bg-0);
+    opacity: var(--garden-dim, 0);
+}
+
+// A soft shade behind the headline so it reads over the sky.
+.garden-scene::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        radial-gradient(90vmax 70vmax at 0% 55%, rgba(var(--dg-bg-rgb), 0.62), transparent 62%),
+        linear-gradient(to top, rgba(var(--dg-bg-rgb), 0.5), transparent 28%);
+}
+
+@media (min-width: 640px) and (orientation: landscape) {
+    body.theme-light .garden-scene::before {
+        background: radial-gradient(90vmax 70vmax at 0% 55%, rgba(var(--dg-bg-rgb), 0.5), transparent 58%);
+    }
+}
+
+html.garden-pointing,
+html.garden-pointing body {
+    cursor: pointer;
+}
+
+// Name tag for the light under the pointer
+.garden-label {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 60;
+    pointer-events: none;
+    opacity: 0;
+    text-decoration: none !important;
+    transition: opacity 160ms ease;
+    will-change: transform;
+}
+
+.garden-label.is-visible {
+    opacity: 1;
+}
+
+@media (hover: none) {
+    .garden-label.is-visible {
+        pointer-events: auto;
+    }
+}
+
+.garden-label-inner {
+    display: block;
+    max-width: min(280px, 70vw);
+    padding: 0.55rem 0.85rem 0.65rem;
+    transform: translate(20px, -50%);
+    background: rgba(var(--dg-surface-rgb), 0.82);
+    border: 1px solid rgba(var(--dg-accent-rgb), 0.45);
+    border-radius: 12px;
+    -webkit-backdrop-filter: blur(14px) saturate(1.4);
+    backdrop-filter: blur(14px) saturate(1.4);
+    box-shadow: 0 12px 40px rgba(var(--dg-shadow-rgb), 0.45), 0 0 24px rgba(var(--dg-accent-rgb), 0.18);
+}
+
+.garden-label.is-flipped .garden-label-inner {
+    transform: translate(calc(-100% - 20px), -50%);
+}
+
+.garden-label-folder {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--dg-accent);
+}
+
+.garden-label-title {
+    display: block;
+    margin-top: 0.1rem;
+    font-size: 0.98rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--dg-text);
+}
+
+// ---------------------------------------------------------------------------
+// Layout
+// ---------------------------------------------------------------------------
+
+// (the base theme positions .content with !important at some widths)
+body.no-filetree .content.home-content,
+body .content.home-content {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0;
+}
+
+.home-content > header:empty,
+.home-content > header {
+    margin: 0;
+    padding: 0;
+}
+
+.home-content .header-meta:empty {
+    display: none;
+}
+
+.home-content .homepage {
+    max-width: none;
+    padding: 0;
+}
+
+// ---------------------------------------------------------------------------
+// Hero
+// ---------------------------------------------------------------------------
+
+.home-content .home-hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: calc(100vh - 68px);
+    min-height: calc(100svh - 68px);
+    margin: 0;
+    padding: 2rem clamp(1.25rem, 6vw, 6.5rem) 6rem;
+    border-bottom: 0;
+}
+
+.hero-copy {
+    max-width: 40rem;
+}
+
+.hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0 0 1.25rem;
+    padding: 0.35rem 0.85rem 0.35rem 0.7rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--dg-text-muted);
+    background: rgba(var(--dg-surface-rgb), 0.5);
+    border: 1px solid var(--dg-border);
+    border-radius: 999px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.hero-pulse {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--dg-accent);
+    box-shadow: 0 0 12px rgba(var(--dg-accent-rgb), 0.9);
+}
+
+.hero-pulse::after {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    border: 1px solid rgba(var(--dg-accent-rgb), 0.7);
+    animation: hero-pulse 2.4s ease-out infinite;
+}
+
+@keyframes hero-pulse {
+    from { transform: scale(0.5); opacity: 1; }
+    to { transform: scale(1.9); opacity: 0; }
+}
+
+.markdown-preview-view .homepage .hero-title {
+    --h1-size: clamp(3.3rem, 1.2rem + 9.2vw, 8.4rem);
+    margin: 0 0 1.4rem;
+    font-size: var(--h1-size);
+    font-weight: 700;
+    line-height: 0.92;
+    letter-spacing: -0.05em;
+    color: var(--dg-text);
+    background: linear-gradient(175deg, var(--dg-text) 35%, rgba(var(--dg-accent-strong-rgb), 0.9) 120%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    // Room for descenders inside the clipped gradient
+    padding-bottom: 0.08em;
+}
+
+.home-content .hero-intro {
+    max-width: 34rem;
+    margin: 0 0 2rem;
+    font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.3rem);
+    line-height: 1.6;
+    color: var(--dg-text-muted);
+}
+
+.home-content .hero-links {
+    gap: 0.75rem;
+}
+
+.home-content .hero-btn {
+    padding: 0.7rem 1.35rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: transform 200ms ease, box-shadow 200ms ease, background 200ms ease, border-color 200ms ease, color 200ms ease;
+}
+
+.home-content .hero-btn:hover {
+    transform: translateY(-2px);
+}
+
+.home-content .hero-btn.primary {
+    box-shadow: 0 0 0 1px rgba(var(--dg-accent-strong-rgb), 0.5), 0 8px 34px rgba(var(--dg-accent-rgb), 0.38);
+}
+
+.home-content .hero-btn.primary:hover {
+    box-shadow: 0 0 0 1px rgba(var(--dg-accent-strong-rgb), 0.7), 0 12px 46px rgba(var(--dg-accent-rgb), 0.55);
+}
+
+.home-content .hero-btn.secondary {
+    background: rgba(var(--dg-surface-rgb), 0.5);
+    border-color: var(--dg-border-strong);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
+
+// Shown once the scene is running: explains what the lights are.
+.hero-legend {
+    display: none;
+    max-width: 34rem;
+    margin: 2.25rem 0 0;
+    font-size: 0.86rem;
+    line-height: 1.7;
+    color: var(--dg-text-muted);
+}
+
+.garden-on .hero-legend {
+    display: block;
+}
+
+.legend-dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    background: #34d399;
+    box-shadow: 0 0 10px 2px rgba(52, 211, 153, 0.75);
+}
+
+.legend-dot.is-recent {
+    background: #fbbf24;
+    box-shadow: 0 0 10px 2px rgba(251, 191, 36, 0.75);
+}
+
+body.theme-light .legend-dot {
+    background: #f58fa8;
+    box-shadow: 0 0 0 2px rgba(245, 143, 168, 0.3);
+}
+
+body.theme-light .legend-dot.is-recent {
+    background: #f2b01e;
+    box-shadow: 0 0 0 2px rgba(242, 176, 30, 0.3);
+}
+
+.legend-line,
+.legend-hint {
+    display: block;
+    color: var(--dg-text-faint);
+}
+
+.legend-hint-touch {
+    display: none;
+}
+
+@media (hover: none) {
+    .legend-hint-mouse {
+        display: none;
+    }
+
+    .legend-hint-touch {
+        display: block;
+    }
+}
+
+.hero-scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 1.6rem;
+    width: 26px;
+    height: 42px;
+    margin-left: -13px;
+    border: 1.5px solid rgba(var(--dg-accent-strong-rgb), 0.55);
+    border-radius: 14px;
+    opacity: calc(1 - var(--garden-dim, 0) * 4);
+}
+
+.hero-scroll span {
+    position: absolute;
+    left: 50%;
+    top: 8px;
+    width: 4px;
+    height: 8px;
+    margin-left: -2px;
+    border-radius: 2px;
+    background: var(--dg-accent);
+    animation: hero-scroll 2s ease-in-out infinite;
+}
+
+@keyframes hero-scroll {
+    0% { transform: translateY(0); opacity: 0; }
+    30% { opacity: 1; }
+    100% { transform: translateY(16px); opacity: 0; }
+}
+
+// Entrance
+@keyframes hero-rise {
+    from { opacity: 0; transform: translateY(26px); filter: blur(10px); }
+    to { opacity: 1; transform: none; filter: none; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .hero-copy > * {
+        animation: hero-rise 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    }
+
+    .hero-copy > :nth-child(2) { animation-delay: 0.12s; }
+    .hero-copy > :nth-child(3) { animation-delay: 0.26s; }
+    .hero-copy > :nth-child(4) { animation-delay: 0.4s; }
+    .hero-copy > :nth-child(5) { animation-delay: 0.9s; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .hero-pulse::after,
+    .hero-scroll span {
+        animation: none;
+    }
+}
+
+// ---------------------------------------------------------------------------
+// Panels of glass over the garden
+// ---------------------------------------------------------------------------
+
+.home-content .home-section {
+    box-sizing: border-box;
+    width: min(1120px, calc(100% - 2rem));
+    margin: 0 auto clamp(1.5rem, 5vw, 4.5rem);
+    padding: clamp(1.25rem, 3.2vw, 2.75rem);
+    background: rgba(var(--dg-surface-rgb), 0.58);
+    border: 1px solid var(--dg-border);
+    border-radius: 26px;
+    -webkit-backdrop-filter: blur(22px) saturate(1.5);
+    backdrop-filter: blur(22px) saturate(1.5);
+    box-shadow: 0 30px 80px rgba(var(--dg-shadow-rgb), 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    scroll-margin-top: 88px;
+}
+
+.home-content #recent {
+    margin-top: clamp(1rem, 4vw, 3rem);
+}
+
+.home-reveal .home-panel {
+    opacity: 0;
+    transform: translateY(46px) scale(0.985);
+    transition: opacity 900ms ease, transform 900ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.home-reveal .home-panel.is-in {
+    opacity: 1;
+    transform: none;
+}
+
+.home-content .home-section-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    border: 0;
+    font-size: clamp(1.4rem, 1.1rem + 1vw, 1.9rem);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+.home-content .home-section-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(var(--dg-accent-rgb), 0.5), transparent);
+}
+
+// Recently tended: cards that tilt toward the pointer
+.markdown-preview-view .home-content .recent-cards {
+    gap: 1rem;
+    perspective: 1200px;
+}
+
+.markdown-preview-view .home-content .recent-card {
+    padding: 1.15rem 1.25rem 1.3rem;
+    background: rgba(var(--dg-bg-rgb), 0.55);
+    border-radius: 16px;
+    overflow: hidden;
+    transform: rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+    transform-style: preserve-3d;
+    transition: transform 260ms ease, border-color 200ms ease, box-shadow 260ms ease, background-color 200ms ease;
+}
+
+.markdown-preview-view .home-content .recent-card:hover,
+.markdown-preview-view .home-content .recent-card:focus-within {
+    background: rgba(var(--dg-bg-rgb), 0.7);
+    border-color: rgba(var(--dg-accent-rgb), 0.55);
+    box-shadow: 0 18px 50px rgba(var(--dg-shadow-rgb), 0.4), 0 0 30px rgba(var(--dg-accent-rgb), 0.14);
+    transform: rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)) translateZ(8px);
+}
+
+// Light that follows the pointer across the card
+.home-content .recent-card::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(240px circle at var(--glow-x, 50%) var(--glow-y, 0%), rgba(var(--dg-accent-rgb), 0.2), transparent 65%);
+    opacity: 0;
+    transition: opacity 260ms ease;
+    pointer-events: none;
+}
+
+.home-content .recent-card:hover::before {
+    opacity: 1;
+}
+
+.home-content .recent-card-meta,
+.home-content .recent-card-excerpt,
+.markdown-preview-view .home-content a.recent-card-title {
+    position: relative;
+}
+
+// The title's ::after still covers the whole card for clicks.
+.markdown-preview-view .home-content a.recent-card-title {
+    position: static;
+    font-size: 1.14rem;
+}
+
+// Notes index
+.home-content .note-folders {
+    gap: 1rem;
+}
+
+.home-content .note-folder {
+    background: rgba(var(--dg-bg-rgb), 0.5);
+    border-radius: 16px;
+    padding: 0.35rem 1.15rem;
+    transition: border-color 200ms ease;
+}
+
+.home-content .note-folder:hover {
+    border-color: var(--dg-border-strong);
+}
+
+.home-content .note-folder[open] {
+    padding-bottom: 0.9rem;
+}
+
+.home-content .note-folder-count {
+    background: rgba(var(--dg-accent-rgb), 0.14);
+    color: var(--dg-text);
+}
+
+// About and Connect
+.home-content .about-content p {
+    max-width: 46rem;
+    font-size: clamp(1.05rem, 0.98rem + 0.4vw, 1.25rem);
+    line-height: 1.7;
+}
+
+.home-content .about-content p:last-child {
+    margin-bottom: 0;
+}
+
+.home-content .social-link {
+    padding: 0.7rem 1.3rem;
+    border-radius: 999px;
+    background: rgba(var(--dg-bg-rgb), 0.5);
+    transition: transform 200ms ease, border-color 200ms ease, color 200ms ease, box-shadow 200ms ease;
+}
+
+.home-content .social-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(var(--dg-accent-rgb), 0.2);
+}
+
+// ---------------------------------------------------------------------------
+// Phones: the tree stands above the headline
+// ---------------------------------------------------------------------------
+
+@media (max-width: 639px), (orientation: portrait) {
+    .home-content .home-hero {
+        justify-content: flex-end;
+        padding-bottom: 5.5rem;
+    }
+
+    .garden-scene::before {
+        background: linear-gradient(to top, rgba(var(--dg-bg-rgb), 0.86) 8%, rgba(var(--dg-bg-rgb), 0.55) 36%, transparent 62%);
+    }
+
+    .hero-legend {
+        margin-top: 1.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content .home-section {
+        width: calc(100% - 1.25rem);
+        border-radius: 20px;
+    }
+
+    .home-content .hero-btn {
+        padding: 0.6rem 1.05rem;
+        font-size: 0.95rem;
+    }
+
+    .hero-eyebrow {
+        font-size: 0.64rem;
+        letter-spacing: 0.09em;
+        white-space: nowrap;
+    }
+}

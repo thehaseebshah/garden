@@ -79,6 +79,18 @@ These are derived from `package.json` scripts and CI.
 - The widget is a vendored bundle (`src/site/scripts/vendor/giscus.js`); rebuild it with
   `npm run vendor:giscus` after changing the `giscus`/`lit` versions in `package.json`.
 
+## Homepage 3D garden
+- The homepage (`src/site/index.njk`, styles in `src/site/styles/home.scss`) has a WebGL scene behind it:
+  a tree grown from the real notes (one limb per folder, one light per note, gold for the recently
+  tended ones), grass, aurora and fireflies; the light theme is the same garden by day.
+- Source: `src/home/garden-scene.js` (three.js). The page loads the committed bundle
+  `src/site/scripts/vendor/garden-scene.js`; rebuild it with `npm run vendor:home` after editing the
+  source or changing the `three` version. Nothing else on the site loads it.
+- Notes reach the scene through the `gardenSceneData` filter (`src/helpers/userSetup.js`).
+- The page must stay complete without the scene (no WebGL 2, script blocked): all content is plain HTML.
+  It honours reduced motion (still frame), pauses in background tabs, and picks a quality tier by
+  device; `/?garden=low|medium|high` forces one.
+
 ## Troubleshooting local runs
 - Theme fetching:
   - `npm start` / `npm run build` runs `node src/site/get-theme.js`.
@@ -110,6 +122,7 @@ These are derived from `package.json` scripts and CI.
 ## Code style (repository conventions)
 ### JavaScript module system
 - Use **CommonJS** (`require`, `module.exports`) to match the codebase.
+  - Exception: browser sources that esbuild bundles for the page (`src/home/`) are ES modules.
 - Prefer `const` for imports and values; use `let` only when reassigned.
 
 ### Formatting
