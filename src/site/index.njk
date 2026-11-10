@@ -4,6 +4,7 @@ layout: layouts/index.njk
 eleventyImport:
   collections: ["note"]
 title: Haseeb Shah
+contentClasses: home-content
 description: Haseeb Shah's digital garden, a personal collection of ideas, research, projects, and notes cultivated over time.
 settings:
   dgShowFileTree: false
@@ -18,24 +19,47 @@ settings:
 ---
 
 <div class="homepage">
+  {%- set folders = collections.note | notesByFolder %}
+  {%- set noteCount = folders | noteTotal %}
+
+  {# The living garden behind the page: drawn by scripts/vendor/garden-scene.js (source: src/home/). #}
+  <div class="garden-scene" aria-hidden="true"><canvas id="garden-canvas"></canvas></div>
+  <a class="garden-label" id="garden-label" href="/" tabindex="-1" aria-hidden="true">
+    <span class="garden-label-inner">
+      <span class="garden-label-folder"></span>
+      <span class="garden-label-title"></span>
+    </span>
+  </a>
+  <script type="application/json" id="garden-data">{{ collections.note | gardenSceneData | safe }}</script>
+
   <header class="home-hero">
-    <h1 class="hero-title">Haseeb Shah</h1>
-    <p class="hero-intro">
-      Welcome to my digital garden, a personal space where I collect ideas, research, projects, and notes cultivated over time.
-    </p>
-    <div class="hero-links">
-      <a href="#notes" class="hero-btn primary">Browse notes</a>
-      <button type="button" class="hero-btn secondary" onclick="toggleSearch()" aria-haspopup="dialog" aria-controls="globalsearch">
-        <i data-lucide="search" aria-hidden="true"></i>
-        <span>Search</span>
-      </button>
-      <a href="#about" class="hero-btn secondary">About</a>
+    <div class="hero-copy">
+      <p class="hero-eyebrow"><span class="hero-pulse" aria-hidden="true"></span>Digital garden · {{ noteCount }} notes growing</p>
+      <h1 class="hero-title">Haseeb Shah</h1>
+      <p class="hero-intro">
+        Welcome to my digital garden, a personal space where I collect ideas, research, projects, and notes cultivated over time.
+      </p>
+      <div class="hero-links">
+        <a href="#notes" class="hero-btn primary">Browse notes</a>
+        <button type="button" class="hero-btn secondary" onclick="toggleSearch()" aria-haspopup="dialog" aria-controls="globalsearch">
+          <i data-lucide="search" aria-hidden="true"></i>
+          <span>Search</span>
+        </button>
+        <a href="#about" class="hero-btn secondary">About</a>
+      </div>
+      <p class="hero-legend">
+        <span class="legend-line"><span class="legend-dot" aria-hidden="true"></span>Every light on the tree is a note, one branch per topic.</span>
+        <span class="legend-line"><span class="legend-dot is-recent" aria-hidden="true"></span>Golden ones were tended recently.</span>
+        <span class="legend-hint legend-hint-mouse">Point at one to read it, click to open it.</span>
+        <span class="legend-hint legend-hint-touch">Tap one to see its name.</span>
+      </p>
     </div>
+    <a class="hero-scroll" href="#recent" aria-label="Scroll to recently tended notes"><span aria-hidden="true"></span></a>
   </header>
 
   {%- set recent = collections.note | recentNotes(6) %}
   {%- if recent.length %}
-  <section class="home-section" id="recent" aria-labelledby="recent-title">
+  <section class="home-section home-panel" id="recent" aria-labelledby="recent-title">
     <h2 class="home-section-title" id="recent-title">Recently tended</h2>
     <ul class="recent-cards">
       {%- for note in recent %}
@@ -52,10 +76,10 @@ settings:
   </section>
   {%- endif %}
 
-  <section class="home-section" id="notes" aria-labelledby="notes-title">
+  <section class="home-section home-panel" id="notes" aria-labelledby="notes-title">
     <h2 class="home-section-title" id="notes-title">Notes</h2>
     <div class="note-folders">
-      {%- for folder in collections.note | notesByFolder %}
+      {%- for folder in folders %}
       <details class="note-folder" id="folder-{{ folder.name | slugify }}"{% if folder.notes.length <= 8 %} open{% endif %}>
         <summary>
           <span class="note-folder-name">{{ folder.name }}</span>
@@ -86,16 +110,16 @@ settings:
     })();
   </script>
 
-  <section class="home-section" id="about">
-    <h2 class="home-section-title">About</h2>
+  <section class="home-section home-panel" id="about" aria-labelledby="about-title">
+    <h2 class="home-section-title" id="about-title">About</h2>
     <div class="about-content">
       <p>Hey, I'm Haseeb! This is my personal corner of the internet where I share ideas, projects, and things I'm learning along the way.</p>
       <p>Unlike a traditional blog with rigid chronological posts, this is a living digital garden that evolves as my thoughts and research develop. Feel free to wander around and discover something new.</p>
     </div>
   </section>
 
-  <section class="home-section" id="connect">
-    <h2 class="home-section-title">Connect</h2>
+  <section class="home-section home-panel" id="connect" aria-labelledby="connect-title">
+    <h2 class="home-section-title" id="connect-title">Connect</h2>
     <div class="social-links">
       <a href="mailto:hi@haseebshah.com" class="social-link">
         <i class="social-icon" data-lucide="mail" aria-hidden="true"></i>
@@ -107,4 +131,68 @@ settings:
       </a>
     </div>
   </section>
+
+  <script>
+    // Page effects that don't need WebGL: sections rise in as they are reached,
+    // and the recent cards tilt toward the pointer.
+    (function () {
+      var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var panels = document.querySelectorAll(".home-panel");
+      if (!reduced && "IntersectionObserver" in window) {
+        document.documentElement.classList.add("home-reveal");
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-in");
+            observer.unobserve(entry.target);
+          });
+        }, { rootMargin: "0px 0px -12% 0px" });
+        panels.forEach(function (panel) { observer.observe(panel); });
+      }
+      if (!reduced && window.matchMedia && window.matchMedia("(hover: hover)").matches) {
+        document.querySelectorAll(".recent-card").forEach(function (card) {
+          card.addEventListener("pointermove", function (event) {
+            var box = card.getBoundingClientRect();
+            var x = (event.clientX - box.left) / box.width;
+            var y = (event.clientY - box.top) / box.height;
+            card.style.setProperty("--tilt-x", ((0.5 - y) * 7).toFixed(2) + "deg");
+            card.style.setProperty("--tilt-y", ((x - 0.5) * 9).toFixed(2) + "deg");
+            card.style.setProperty("--glow-x", (x * 100).toFixed(1) + "%");
+            card.style.setProperty("--glow-y", (y * 100).toFixed(1) + "%");
+          });
+          card.addEventListener("pointerleave", function () {
+            card.style.removeProperty("--tilt-x");
+            card.style.removeProperty("--tilt-y");
+          });
+        });
+      }
+    })();
+
+    // The 3D garden: only fetched where WebGL 2 exists; everything above works without it.
+    (function () {
+      var canvas = document.getElementById("garden-canvas");
+      var dataElement = document.getElementById("garden-data");
+      function hasWebGL2() {
+        try {
+          return !!document.createElement("canvas").getContext("webgl2");
+        } catch (error) {
+          // Some browsers throw instead of returning null when WebGL is blocked.
+          return false;
+        }
+      }
+      if (!canvas || !dataElement || !hasWebGL2()) return;
+      import("/scripts/vendor/garden-scene.js?v={{ 'src/site/scripts/vendor/garden-scene.js' | fileVersion }}")
+        .then(function (module) {
+          window.gardenScene = module.startGardenScene({
+            canvas: canvas,
+            data: JSON.parse(dataElement.textContent),
+            label: document.getElementById("garden-label"),
+          });
+        })
+        .catch(function (error) {
+          // The page is complete without the scene; leave the plain background in place.
+          console.warn("Garden scene unavailable:", error);
+        });
+    })();
+  </script>
 </div>

@@ -345,6 +345,20 @@ async function checkNotes(browser, base) {
       footerRss: !!document.querySelector('.site-footer a[href="/feed.xml"]'),
     }));
     check("homepage lists the notes, recent cards and footer", home.notes > 30 && home.recent > 0 && home.footerRss && home.fileNameTitles === 0, JSON.stringify(home));
+
+    // The 3D garden behind the homepage needs WebGL 2; without it the page stays as plain HTML.
+    const webgl2 = await page.evaluate(() => !!document.createElement("canvas").getContext("webgl2"));
+    if (webgl2) {
+      await page.waitForFunction(() => document.documentElement.classList.contains("garden-on"), null, { timeout: 30000 }).catch(() => {});
+      const scene = await page.evaluate(() => ({
+        running: document.documentElement.classList.contains("garden-on"),
+        lights: window.gardenScene ? window.gardenScene.notes : 0,
+        canvasWidth: document.getElementById("garden-canvas").width,
+      }));
+      check("homepage garden scene runs with one light per note", scene.running && scene.lights === home.notes && scene.canvasWidth > 0, JSON.stringify(scene));
+    } else {
+      warnings.push("homepage garden scene not checked: this browser has no WebGL 2");
+    }
     await context.close();
   }
   {

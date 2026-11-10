@@ -1,3 +1,6 @@
+const fs = require("fs");
+const crypto = require("crypto");
+
 const { fixFolderName } = require("./pathFixes");
 
 function userMarkdownSetup(md) {
@@ -82,6 +85,32 @@ function userEleventySetup(eleventyConfig) {
         folder: getTopFolder(note.filePathStem),
         content: note.templateContent,
       }));
+  });
+
+  // Total number of notes across the folders from notesByFolder.
+  eleventyConfig.addFilter("noteTotal", function (folders) {
+    return (folders || []).reduce((total, folder) => total + folder.notes.length, 0);
+  });
+
+  // Notes for the homepage's 3D garden, as JSON that is safe inside a <script> element:
+  // { folders: [{ name, notes: [{ t: title, u: url, r: recently tended }] }] }
+  eleventyConfig.addFilter("gardenSceneData", function (notes, recentCount = 6) {
+    const recent = new Set(eleventyConfig.getFilter("recentNotes")(notes, recentCount).map((note) => note.url));
+    const folders = eleventyConfig.getFilter("notesByFolder")(notes).map((folder) => ({
+      name: folder.name,
+      notes: folder.notes.map((note) => ({ t: note.title, u: note.url, r: recent.has(note.url) ? 1 : 0 })),
+    }));
+    return JSON.stringify({ folders }).replace(/</g, "\\u003c");
+  });
+
+  // Short content hash of a file, for cache-busting URLs of scripts served from the site.
+  const fileVersions = new Map();
+  eleventyConfig.addFilter("fileVersion", function (file) {
+    if (!fileVersions.has(file)) {
+      const hash = crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
+      fileVersions.set(file, hash.substring(0, 10));
+    }
+    return fileVersions.get(file);
   });
 }
 exports.userMarkdownSetup = userMarkdownSetup;

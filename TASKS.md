@@ -13,6 +13,7 @@ Done and merged:
 - PR #11: comments switched on. PR #12: email card removed from notes; contents list as a rail.
 - PR #13: local graph zoom capped so labels stay readable.
 - PR #14: browser QA runs in its own CI job alongside the deploy, so publishing from Obsidian goes live in a couple of minutes (it had grown to ~15); removed an accidental duplicate of "Q4 2026 Projects" under "+ Inbox".
+- Homepage rebuilt as a 3D scene (see "Homepage 3D garden" in `AGENTS.md`): a tree of lights grown from the notes, grass, aurora and fireflies; day version in the light theme.
 
 Working agreement: PRs from this work are merged as soon as their checks pass, no need to ask.
 
